@@ -83,6 +83,32 @@
       scrollbar-width: none;
     }
   
+    
+    /* Ensure mobile accessibility touch targets (>= 44px) */
+    .nav-tab, .plan-type-btn, .servings-btn, .exp-filter-btn, .exp-tag-btn, .exp-kosher-btn,
+    .pantry-cat-btn, .swap-filter-btn, .cart-filter-btn, .online-store-tab,
+    .btn-swap-meal, .btn-skip-meal, .btn-toggle-twonight, .btn-repeat-days, .btn-view-recipe,
+    .btn-slot-recipe, .btn-choose-swap, #btnQuickCheapest, #btnOpenCreateCustomMeal,
+    #btnQuickOnlineCart, #btnQuickWhatsApp, #btnRegeneratePlan, #btnDismissHero,
+    #btnTwoNightBatch, #btnBatchLunches, #btnBatchBreakfasts, #btnFilterMealPrepPlan,
+    #btnToggleShabbat, #btnRefreshPrices, #btnOpenOnlineCartModal, #btnExportWhatsAppCart,
+    #btnCopyCartText, #btnPrintCart, #btnSelectAllPantry, #btnClearAllPantry,
+    #btnExportJSON, #btnResetAllData, #quickStoreSelect, #citySelect {
+      min-height: 44px !important;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-view-recipe, .btn-delete-custom, .btn-del-custom-ing, .btn-toggle-online-item,
+    #btnCloseOnlineCartModal, #btnCloseWhatsAppModal, #btnCloseRepeatDaysModal,
+    #btnCloseCustomMealModal, #btnCloseSwapModal, #btnCloseRecipeModal, #btnCloseDayPickerModal {
+      min-width: 44px !important;
+      min-height: 44px !important;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     html, body {
       overflow-x: clip !important;
       max-width: 100vw !important;
@@ -538,7 +564,7 @@
           </div>
           <div>
             <h3 class="text-base font-bold text-slate-900">Preferred Supermarket Chain</h3>
-            <p class="text-xs text-slate-500">Select where you typically buy groceries. Prices adjust according to official Israeli price monitor surveys.</p>
+            <p class="text-xs text-slate-500">Select your primary chain and regional branch. Prices reflect each chain's benchmark multiplier and regional delivery index.</p>
           </div>
         </div>
 
@@ -668,7 +694,7 @@
             </span>
             <div>
               <h3 class="text-base font-bold text-slate-900">Shop Online Supermarket Cart</h3>
-              <p class="text-xs text-slate-500">Directly search products and export to Rami Levy, Shufersal, Victory & Carrefour.</p>
+              <p class="text-xs text-slate-500">Directly search products and export to Rami Levy, Shufersal & Victory Online.</p>
             </div>
           </div>
         </div>
@@ -713,7 +739,7 @@
               <i class="fa-solid fa-copy"></i> Copy Smart List
             </button>
           </div>
-          <textarea id="smartListTextArea" rows="4" readonly class="w-full bg-white border border-blue-200 rounded-lg p-2.5 text-xs font-mono text-slate-800 leading-relaxed focus:outline-none"></textarea>
+          <textarea id="smartListTextArea" rows="5" readonly dir="rtl" class="w-full bg-white border border-blue-200 rounded-lg p-3 text-xs font-sans text-slate-800 text-right leading-relaxed focus:outline-none"></textarea>
         </div>
 
         <!-- Item-by-Item Quick Search Links Table -->
@@ -1138,7 +1164,7 @@ function escapeHtml(str) {
     "badge": "Lowest Avg Price",
     "pricingType": "Online Catalog Benchmark",
     "pricingTypeHe": "מדד מחירי רשת רמי לוי",
-    "sourceDetails": "Online catalog benchmark based on store basket filings",
+    "sourceDetails": "Manually maintained benchmark multiplier (1.00x baseline)",
     "color": "emerald",
     "onlineUrl": "https://www.rami-levy.co.il/he/online/",
     "searchUrl": "https://www.rami-levy.co.il/he/online/search?q=",
@@ -1153,7 +1179,7 @@ function escapeHtml(str) {
     "badge": "Widest Variety",
     "pricingType": "Online Catalog Benchmark",
     "pricingTypeHe": "מדד מחירי שופרסל דיל",
-    "sourceDetails": "National digital store price index",
+    "sourceDetails": "Manually maintained benchmark multiplier (1.10x baseline)",
     "color": "blue",
     "onlineUrl": "https://www.shufersal.co.il/online/he/",
     "searchUrl": "https://www.shufersal.co.il/online/he/search?text=",
@@ -1168,7 +1194,7 @@ function escapeHtml(str) {
     "badge": "Suburban Convenience",
     "pricingType": "Online Catalog Benchmark",
     "pricingTypeHe": "מדד מחירי ויקטורי",
-    "sourceDetails": "Victory Online digital store price index",
+    "sourceDetails": "Manually maintained benchmark multiplier (1.08x baseline)",
     "color": "purple",
     "onlineUrl": "https://www.victoryonline.co.il/",
     "searchUrl": "https://www.victoryonline.co.il/search?q=",
@@ -1183,7 +1209,7 @@ function escapeHtml(str) {
     "badge": "Family Bulk & Mehadrin",
     "pricingType": "Physical Store Survey Index",
     "pricingTypeHe": "מדד סקרי חנויות אושר עד",
-    "sourceDetails": "Warehouse club format; basket estimated from Ministry of Economy physical store audits (in-store only)",
+    "sourceDetails": "Manually maintained benchmark multiplier (0.97x baseline, in-store only)",
     "color": "amber",
     "onlineUrl": "https://www.osherad.co.il/",
     "searchUrl": null,
@@ -1198,7 +1224,7 @@ function escapeHtml(str) {
     "badge": "Hypermarket Fresh",
     "pricingType": "Physical Store Survey Index",
     "pricingTypeHe": "מדד סקרי חנויות יוחננוף",
-    "sourceDetails": "Hypermarket format; pricing benchmarked on physical store price audits",
+    "sourceDetails": "Manually maintained benchmark multiplier (1.03x baseline)",
     "color": "teal",
     "onlineUrl": "https://yochananof.co.il/",
     "searchUrl": "https://yochananof.co.il/search?q=",
@@ -1213,7 +1239,7 @@ function escapeHtml(str) {
     "badge": "European Imports",
     "pricingType": "Physical Store Survey Index",
     "pricingTypeHe": "מדד סקרי חנויות קרפור",
-    "sourceDetails": "Hypermarket & City branches; basket estimated from national market price surveys",
+    "sourceDetails": "Manually maintained benchmark multiplier (1.09x baseline)",
     "color": "sky",
     "onlineUrl": "https://www.carrefour.co.il/",
     "searchUrl": "https://www.carrefour.co.il/search?q=",
@@ -1344,127 +1370,138 @@ function escapeHtml(str) {
     }
 
     function getStoreMultiplier(storeKey = state.currentStore) {
-      return SUPERMARKETS[storeKey] ? SUPERMARKETS[storeKey].indexMultiplier : 1.0;
+      const baseMult = SUPERMARKETS[storeKey] ? SUPERMARKETS[storeKey].indexMultiplier : 1.0;
+      const cityFactors = {
+        center: 1.00,
+        jerusalem: 0.98,
+        sharon: 1.02,
+        north: 0.97,
+        south: 0.96,
+        modiin: 0.99
+      };
+      const cityMult = cityFactors[state.city || 'center'] || 1.0;
+      return baseMult * cityMult;
     }
 
     function calculateRecipeCost(recipe, servings = state.servings, storeKey = state.currentStore) {
-      const baseCost = recipe.costBase;
-      const servingScale = servings / 4;
+      const scale = servings / 4;
       const mult = getStoreMultiplier(storeKey);
-      return baseCost * servingScale * mult;
+      const certMult = (state.kosherCert === 'mehadrin' && recipe.kosherType === 'meat') ? 1.08 : 1.0;
+      return recipe.costBase * scale * mult * certMult;
     }
 
-    
-    // ==========================================
-    // RESTORED CORE FUNCTIONS
-    // ==========================================
-    function getAggregatedGroceryList() {
+    function matchIngredientToPantryStapleId(ing) {
+      const n = ((ing.name || '') + ' ' + (ing.searchHe || '')).toLowerCase();
+      if (n.includes('olive oil') || n.includes('שמן זית')) return 'olive_oil';
+      if (n.includes('tahini') || n.includes('טחינה')) return 'tahini';
+      if (n.includes('silan') || n.includes('סילאן')) return 'silan';
+      if (n.includes('canola') || n.includes('sunflower') || n.includes('שמן קנולה')) return 'canola_oil';
+      if (n.includes('soy sauce') || n.includes('רוטב סויה')) return 'soy_sauce';
+      if (n.includes('sesame oil') || n.includes('שמן שומשום')) return 'sesame_oil';
+      if (n.includes('mayonnaise') || n.includes('mayo') || n.includes('מיונז')) return 'mayo';
+      if (n.includes('mustard') || n.includes('חרדל')) return 'mustard';
+      if (n.includes('vinegar') || n.includes('חומץ')) return 'vinegar';
+      if (n.includes('skhug') || n.includes('harissa') || n.includes('סחוג')) return 'skhug';
+      if (n.includes('amba') || n.includes('עמבה')) return 'amba';
+      if (n.includes('honey') || n.includes('דבש')) return 'honey';
+      if (n.includes('za\'atar') || n.includes('zaatar') || n.includes('זעתר')) return 'zaatar';
+      if (n.includes('paprika') || n.includes('פפריקה')) return 'paprika';
+      if (n.includes('cumin') || n.includes('turmeric') || n.includes('כמון') || n.includes('כורכום')) return 'cumin_turmeric';
+      if (n.includes('salt') || n.includes('pepper') || n.includes('מלח')) return 'salt_pepper';
+      if (n.includes('baharat') || n.includes('shawarma') || n.includes('בהרט') || n.includes('שווארמה')) return 'baharat';
+      if (n.includes('garlic powder') || n.includes('אבקת שום')) return 'garlic_powder';
+      if (n.includes('cinnamon') || n.includes('קינמון')) return 'cinnamon';
+      if (n.includes('oregano') || n.includes('אורגנו')) return 'oregano';
+      if (n.includes('coriander') || n.includes('כוסברה טחונה')) return 'coriander_seeds';
+      if (n.includes('chili') || n.includes('צ\'ילי')) return 'chili_flakes';
+      if (n.includes('basmati') || n.includes('white rice') || n.includes('jasmine rice') || n.includes('sushi') || n.includes('אורז בסמטי') || n.includes('אורז יסמין') || n.includes('אורז לבן')) return 'basmati_rice';
+      if (n.includes('brown rice') || n.includes('whole grain brown rice') || n.includes('אורז מלא')) return 'brown_rice';
+      if (n.includes('ptitim') || n.includes('pasta pearls') || n.includes('פתיתים')) return 'ptitim';
+      if (n.includes('penne') || n.includes('spaghetti') || n.includes('farfalle') || n.includes('fettuccine') || n.includes('pasta shells') || n.includes('פסטה') || n.includes('ספגטי')) return 'pasta';
+      if (n.includes('couscous') || n.includes('קוסקוס')) return 'couscous';
+      if (n.includes('quinoa') || n.includes('קינואה')) return 'quinoa';
+      if (n.includes('oats') || n.includes('oatmeal') || n.includes('שיבולת שועל')) return 'oats';
+      if (n.includes('green lentils') || n.includes('brown lentils') || n.includes('עדשים ירוקות') || n.includes('עדשים חומות')) return 'green_lentils';
+      if (n.includes('red lentils') || n.includes('עדשים כתומות')) return 'red_lentils';
+      if (n.includes('breadcrumbs') || n.includes('flour') || n.includes('פירורי לחם') || n.includes('קמח')) return 'flour_breadcrumbs';
+      if (n.includes('sugar') || n.includes('סוכר')) return 'sugar';
+      if (n.includes('chia') || n.includes('צ\'יה')) return 'chia_seeds';
+      if (n.includes('crushed canned tomatoes') || n.includes('crushed tomatoes') || n.includes('passata') || n.includes('עגבניות מרוסקות')) return 'crushed_tomatoes';
+      if (n.includes('tomato paste') || n.includes('רסק עגבניות')) return 'tomato_paste';
+      if (n.includes('canned chickpeas') || n.includes('cooked chickpeas') || n.includes('גרגרי חומוס')) return 'canned_chickpeas';
+      if (n.includes('cannellini') || n.includes('white beans') || n.includes('שעועית לבנה')) return 'canned_white_beans';
+      if (n.includes('tuna') || n.includes('טונה')) return 'canned_tuna';
+      if (n.includes('corn') || n.includes('תירס')) return 'canned_corn';
+      if (n.includes('pickles') || n.includes('pickled cucumbers') || n.includes('מלפפון חמוץ') || n.includes('מלפפונים חמוצים')) return 'pickles';
+      if (n.includes('olives') || n.includes('זיתים') || n.includes('זיתי קלמטה')) return 'olives';
+      if (n.includes('coconut') || n.includes('קרם קוקוס')) return 'coconut_milk';
+      if (n.includes('peanut butter') || n.includes('חמאת בוטנים')) return 'peanut_butter';
+      if (n.includes('eggs') || n.includes('ביצים')) return 'eggs';
+      if (n.includes('butter') && !n.includes('peanut') && !n.includes('almond')) return 'butter';
+      if (n.includes('milk') && !n.includes('coconut')) return 'milk';
+      if (n.includes('garlic bulbs') || n.includes('garlic cloves') || n.includes('yellow onions') || n.includes('red onions')) return 'garlic_onions';
+      if (n.includes('yellow cheese') || n.includes('גבינה צהובה')) return 'yellow_cheese_slices';
+      return null;
+    }
+
+    function isIngredientOwnedInPantry(ing) {
+      const stapleId = matchIngredientToPantryStapleId(ing);
+      if (stapleId) {
+        return !!state.pantryState[stapleId];
+      }
+      return false;
+    }
+
+    function getAggregatedGroceryList(storeKey = state.currentStore) {
       const list = {};
-      const mult = getStoreMultiplier();
+      const mult = getStoreMultiplier(storeKey);
       const baseScale = state.servings / 4;
 
-      // Dinners with 2-night batching
-      (state.activeSchedule || []).forEach((slot, idx) => {
-        if (!slot.recipeId || slot.recipeId === 'no_meal') return;
-        if (idx > 0 && state.twoNightBatchDays[idx - 1]) return; // Covered by previous night's 2-night batch
+      function processSchedule(schedule, isDinner = false) {
+        (schedule || []).forEach((slot, idx) => {
+          if (!slot.recipeId || slot.recipeId === 'no_meal') return;
+          if (isDinner && idx > 0 && state.twoNightBatchDays[idx - 1]) return;
 
-        const recipe = RECIPES.find(r => r.id === slot.recipeId);
-        if (!recipe) return;
+          const recipe = RECIPES.find(r => r.id === slot.recipeId);
+          if (!recipe) return;
 
-        const isTwoNight = !!state.twoNightBatchDays[idx];
-        const scale = isTwoNight ? baseScale * 2 : baseScale;
-        const sourceLabel = isTwoNight ? `${recipe.title} (2-Night Batch)` : recipe.title;
+          const isTwoNight = isDinner && !!state.twoNightBatchDays[idx];
+          const scale = isTwoNight ? baseScale * 2 : baseScale;
+          const sourceLabel = isTwoNight ? `${recipe.title} (2-Night Batch)` : recipe.title;
 
-        (recipe.ingredients || []).forEach(ing => {
-          const key = ing.name.toLowerCase().trim();
-          const searchKeyword = ing.searchHe || ing.name.replace(/\(.*\)/, '').trim();
+          (recipe.ingredients || []).forEach(ing => {
+            const key = ing.name.toLowerCase().trim();
+            const searchKeyword = ing.searchHe || ing.name.replace(/\(.*\)/, '').trim();
+            const certMult = (state.kosherCert === 'mehadrin' && ing.aisle === 'meat') ? 1.12 : 1.0;
+            const itemPrice = ing.storePrice * scale * mult * certMult;
+            const ownedInPantry = isIngredientOwnedInPantry(ing);
 
-          if (!list[key]) {
-            list[key] = {
-              name: ing.name,
-              searchHe: searchKeyword,
-              qty: ing.qty * scale,
-              unit: ing.unit,
-              aisle: ing.aisle,
-              storePrice: ing.storePrice * scale * mult,
-              isPantry: !!ing.isPantry,
-              mealSources: [sourceLabel]
-            };
-          } else {
-            list[key].qty += ing.qty * scale;
-            list[key].storePrice += ing.storePrice * scale * mult;
-            if (!list[key].mealSources.includes(sourceLabel)) {
-              list[key].mealSources.push(sourceLabel);
+            if (!list[key]) {
+              list[key] = {
+                name: ing.name,
+                searchHe: searchKeyword,
+                qty: ing.qty * scale,
+                unit: ing.unit,
+                aisle: ing.aisle,
+                storePrice: itemPrice,
+                isPantry: ownedInPantry,
+                mealSources: [sourceLabel]
+              };
+            } else {
+              list[key].qty += ing.qty * scale;
+              list[key].storePrice += itemPrice;
+              if (!list[key].mealSources.includes(sourceLabel)) {
+                list[key].mealSources.push(sourceLabel);
+              }
             }
-          }
+          });
         });
-      });
+      }
 
-      // Lunches
-      (state.lunchSchedule || []).forEach(slot => {
-        if (!slot.recipeId || slot.recipeId === 'no_meal') return;
-        const recipe = RECIPES.find(r => r.id === slot.recipeId);
-        if (!recipe) return;
-        const scale = baseScale;
+      processSchedule(state.activeSchedule, true);
+      processSchedule(state.lunchSchedule, false);
+      processSchedule(state.bfastSchedule, false);
 
-        (recipe.ingredients || []).forEach(ing => {
-          const key = ing.name.toLowerCase().trim();
-          const searchKeyword = ing.searchHe || ing.name.replace(/\(.*\)/, '').trim();
-
-          if (!list[key]) {
-            list[key] = {
-              name: ing.name,
-              searchHe: searchKeyword,
-              qty: ing.qty * scale,
-              unit: ing.unit,
-              aisle: ing.aisle,
-              storePrice: ing.storePrice * scale * mult,
-              isPantry: !!ing.isPantry,
-              mealSources: [`Lunch: ${recipe.title}`]
-            };
-          } else {
-            list[key].qty += ing.qty * scale;
-            list[key].storePrice += ing.storePrice * scale * mult;
-            if (!list[key].mealSources.includes(`Lunch: ${recipe.title}`)) {
-              list[key].mealSources.push(`Lunch: ${recipe.title}`);
-            }
-          }
-        });
-      });
-
-      // Breakfasts
-      (state.bfastSchedule || []).forEach(slot => {
-        if (!slot.recipeId || slot.recipeId === 'no_meal') return;
-        const recipe = RECIPES.find(r => r.id === slot.recipeId);
-        if (!recipe) return;
-        const scale = baseScale;
-
-        (recipe.ingredients || []).forEach(ing => {
-          const key = ing.name.toLowerCase().trim();
-          const searchKeyword = ing.searchHe || ing.name.replace(/\(.*\)/, '').trim();
-
-          if (!list[key]) {
-            list[key] = {
-              name: ing.name,
-              searchHe: searchKeyword,
-              qty: ing.qty * scale,
-              unit: ing.unit,
-              aisle: ing.aisle,
-              storePrice: ing.storePrice * scale * mult,
-              isPantry: !!ing.isPantry,
-              mealSources: [`Breakfast: ${recipe.title}`]
-            };
-          } else {
-            list[key].qty += ing.qty * scale;
-            list[key].storePrice += ing.storePrice * scale * mult;
-            if (!list[key].mealSources.includes(`Breakfast: ${recipe.title}`)) {
-              list[key].mealSources.push(`Breakfast: ${recipe.title}`);
-            }
-          }
-        });
-      });
-
-      // Custom direct items
       (state.customItems || []).forEach(ci => {
         const key = 'custom_' + ci.id;
         list[key] = {
@@ -1508,14 +1545,14 @@ function escapeHtml(str) {
             </div>
             <div class="mt-1 flex items-center justify-between gap-1">
               <span class="text-[9px] font-semibold px-1.5 py-0.5 rounded-full ${store.inStoreOnly ? 'bg-amber-100 text-amber-800' : 'bg-slate-200 text-slate-700'}">
-                ${store.inStoreOnly ? 'In-Store Survey' : 'Digital Index'}
+                ${store.inStoreOnly ? 'In-Store Survey' : 'Benchmark Index'}
               </span>
             </div>
             <div class="text-sm font-extrabold text-slate-900 mt-2">₪${stats.totalCart.toFixed(2)}</div>
             <div class="text-[10px] text-slate-500 mt-0.5 truncate">${escapeHtml(store.badge)}</div>
           </div>
           <div class="text-[10px] font-semibold mt-2 pt-1 border-t border-slate-200/60 ${diffFromBase <= 0 ? 'text-emerald-600' : 'text-slate-500'}">
-            ${diffFromBase === 0 ? 'Baseline Price' : diffFromBase < 0 ? `Save ₪${Math.abs(diffFromBase).toFixed(1)}` : `+₪${diffFromBase.toFixed(1)}`}
+            ${Math.abs(diffFromBase) < 0.05 ? 'Baseline Price' : diffFromBase < 0 ? `Save ₪${Math.abs(diffFromBase).toFixed(1)}` : `+₪${diffFromBase.toFixed(1)}`}
           </div>
         `;
 
@@ -1546,8 +1583,7 @@ function escapeHtml(str) {
     const fetchLiveSupermarketPrices = recalculateSupermarketPrices;
 
     function calculatePantrySavings(storeKey = state.currentStore) {
-      // Honest pantry savings: calculate only for ingredients required by current plan that user owns
-      const groceryList = getAggregatedGroceryList();
+      const groceryList = getAggregatedGroceryList(storeKey);
       let planPantrySavings = 0;
       let planPantryItemsCount = 0;
 
@@ -1558,7 +1594,6 @@ function escapeHtml(str) {
         }
       });
 
-      // Total cupboard value if requested
       const mult = getStoreMultiplier(storeKey);
       let totalCupboardValue = 0;
       let totalStaplesOwned = 0;
@@ -1578,11 +1613,7 @@ function escapeHtml(str) {
     }
 
     function calculateCartTotals(storeKey = state.currentStore) {
-      const mult = getStoreMultiplier(storeKey);
-      const baseScale = state.servings / 4;
       let totalPortions = 0;
-
-      // Calculate total portions from active slots
       ['activeSchedule', 'lunchSchedule', 'bfastSchedule'].forEach(schedKey => {
         (state[schedKey] || []).forEach(slot => {
           if (slot.recipeId && slot.recipeId !== 'no_meal') {
@@ -1591,8 +1622,7 @@ function escapeHtml(str) {
         });
       });
 
-      // Unify cost calculation directly from getAggregatedGroceryList
-      const groceryList = getAggregatedGroceryList();
+      const groceryList = getAggregatedGroceryList(storeKey);
       let totalToBuy = 0;
       let pantryDeducted = 0;
 
@@ -1602,11 +1632,6 @@ function escapeHtml(str) {
         } else {
           totalToBuy += item.storePrice;
         }
-      });
-
-      // Add custom items
-      state.customItems.forEach(item => {
-        totalToBuy += (item.price || 10) * mult;
       });
 
       return {
@@ -1621,11 +1646,27 @@ function escapeHtml(str) {
 
     function showToast(message, icon = 'fa-check-circle', type = 'success') {
       const container = document.getElementById('toastContainer');
+      if (!container) return;
       const toast = document.createElement('div');
       toast.className = `pointer-events-auto flex items-center gap-2.5 px-4 py-3 rounded-xl shadow-lg border text-xs font-semibold transform transition-all duration-300 translate-y-2 opacity-0 ${
         type === 'success' ? 'bg-slate-900 text-white border-slate-800' : 'bg-amber-600 text-white border-amber-500'
       }`;
-      toast.innerHTML = `<i class="fa-solid ${icon} text-emerald-400"></i> <span>${message}</span>`;
+
+      const iconEl = document.createElement('i');
+      iconEl.className = `fa-solid ${icon} text-emerald-400`;
+
+      const spanEl = document.createElement('span');
+      // Decode HTML entities if message was already escaped so it displays cleanly once via textContent
+      const decoded = String(message || '')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&#039;/g, "'")
+        .replace(/&amp;/g, '&');
+      spanEl.textContent = decoded;
+
+      toast.appendChild(iconEl);
+      toast.appendChild(spanEl);
       container.appendChild(toast);
 
       setTimeout(() => toast.classList.remove('translate-y-2', 'opacity-0'), 10);
@@ -1686,19 +1727,33 @@ function escapeHtml(str) {
           '4_meat': '4 Meat / 1 Non-Meat',
           'vegetarian': 'Vegetarian (No Meat)'
         };
+        const cityLabels = {
+          center: 'Center (1.00x)',
+          jerusalem: 'Jerusalem (0.98x)',
+          sharon: 'Sharon (1.02x)',
+          north: 'North (0.97x)',
+          south: 'South (0.96x)',
+          modiin: 'Modi\'in (0.99x)'
+        };
+        const certLabels = {
+          rabbanut: 'Standard Kosher',
+          mehadrin: 'Mehadrin (+12% Meat)'
+        };
         const ratioText = ratioLabels[state.meatRatio] || 'Standard Plan';
+        const cityText = cityLabels[state.city || 'center'] || 'Center';
+        const certText = certLabels[state.kosherCert || 'rabbanut'] || 'Standard Kosher';
         const excludedText = state.excludedIngredients && state.excludedIngredients.length > 0
-          ? `Dislikes Excluded: ${state.excludedIngredients.join(', ')}`
-          : 'No Ingredient Exclusions';
-        const applianceText = state.appliances ? `Appliances: ${state.appliances.join(', ')}` : '';
+          ? `Dislikes: ${state.excludedIngredients.join(', ')}`
+          : 'No Dislikes';
 
         prefRow.innerHTML = `
           <div class="flex items-center gap-1.5 font-semibold text-slate-700">
-            <i class="fa-solid fa-sliders text-emerald-600"></i> Active Preferences:
+            <i class="fa-solid fa-sliders text-emerald-600"></i> Active Settings:
           </div>
-          <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700 font-medium">${ratioText}</span>
+          <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700 font-medium">Region: ${escapeHtml(cityText)}</span>
+          <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700 font-medium">${escapeHtml(certText)}</span>
+          <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700 font-medium">${escapeHtml(ratioText)}</span>
           <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700 font-medium">${escapeHtml(excludedText)}</span>
-          <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-600">${escapeHtml(applianceText)}</span>
         `;
       }
     }
@@ -2594,8 +2649,9 @@ function escapeHtml(str) {
         });
       }
 
-      document.getElementById('pantryTotalSavingsDisplay').textContent = `₪${totalSaved.toFixed(2)}`;
-      document.getElementById('pantryItemsCountDisplay').textContent = `${count} of ${PANTRY_STAPLES.length} staples currently deducted`;
+      const pantryStats = calculatePantrySavings();
+      document.getElementById('pantryTotalSavingsDisplay').textContent = `-₪${pantryStats.total.toFixed(2)}`;
+      document.getElementById('pantryItemsCountDisplay').textContent = `${pantryStats.count} plan ingredients deducted (${pantryStats.totalStaplesOwned}/${PANTRY_STAPLES.length} staples owned)`;
     }
 
     function renderPreferences() {
@@ -2708,11 +2764,34 @@ function escapeHtml(str) {
         return !state.onlineCartExcludedKeys.includes(key);
       });
 
+      const unitHeMap = {
+        'g': 'גרם',
+        'kg': 'ק״ג',
+        'units': 'יח׳',
+        'unit': 'יח׳',
+        'pack': 'חבילה',
+        'can': 'קופסה',
+        'cans': 'קופסאות',
+        'tbsp': 'כפות',
+        'ml': 'מ״ל',
+        'loaf': 'כיכר',
+        'head': 'ראש',
+        'bunch': 'צרור',
+        'bottle': 'בקבוק',
+        'carton': 'קרטון',
+        'jar': 'צנצנת',
+        'tub': 'גביע',
+        'slices': 'פרוסות',
+        'cloves': 'שיניים',
+        'item': 'יח׳',
+        'set': 'מארז'
+      };
       let smartListText = '';
       activeItemsToBuy.forEach(i => {
         const cleanName = i.searchHe || i.name.replace(/\(.*\)/, '').trim();
         const displayQty = Math.round(i.qty * 10) / 10;
-        smartListText += `${cleanName} ${displayQty} ${i.unit}\n`;
+        const heUnit = unitHeMap[(i.unit || '').toLowerCase()] || i.unit;
+        smartListText += `${cleanName} - ${displayQty} ${heUnit}\n`;
       });
       document.getElementById('smartListTextArea').value = smartListText.trim();
 
@@ -3325,7 +3404,8 @@ function escapeHtml(str) {
         citySelect.addEventListener('change', (e) => {
           state.city = e.target.value;
           saveState();
-          showToast('Region preference saved');
+          renderAll();
+          showToast(`Region updated — basket prices adjusted for ${e.target.options[e.target.selectedIndex].text.split('(')[0].trim()}`);
         });
       }
 
