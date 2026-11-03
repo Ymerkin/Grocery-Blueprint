@@ -1,0 +1,2063 @@
+{
+  "schema": "grocery-blueprint-mappings/1",
+  "note": "Pins with selected_by=assistant were chosen by the Instinct assistant under the user's explicit 2026-11-03 delegation, not individually reviewed by the user. approved_by_user=true is reserved for pins the user confirmed himself.",
+  "pins": {
+    "All-Purpose Flour": {
+      "shufersal": {
+        "item_code": "7290003107216",
+        "pinned_name": "קמח לבן 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290015834162",
+        "pinned_name": "קמח לבן רמי לוי 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Beef Pastrami Slices": {
+      "rami-levy": {
+        "item_code": "7290000318400",
+        "pinned_name": "פסטרמה בקר סגנון רומני 250 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Beef Stew Chuck Cubes": {
+      "shufersal": {
+        "item_code": "7290000916118",
+        "pinned_name": "כתף בקר טרי מס 4",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "8202046",
+        "pinned_name": "כתף בקר טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Bulgarian / Feta Salty Cheese": {
+      "shufersal": {
+        "item_code": "7290002133889",
+        "pinned_name": "בולגרית מעודנת5% 250ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290102397334",
+        "pinned_name": "בולגרית 5% 250 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Burger Buns": {
+      "shufersal": {
+        "item_code": "7290000574462",
+        "pinned_name": "לחמניות המבורגר 4*100ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290018882979",
+        "pinned_name": "לחמניות המבורגר 4יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Canned Black Beans": {
+      "shufersal": {
+        "item_code": "7290015009461",
+        "pinned_name": "שימורי שעועית שחורה 400",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290110559014",
+        "pinned_name": "שעועית שחורה 380גר טעם הטבע",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Canned Chickpeas": {
+      "shufersal": {
+        "item_code": "7290016087901",
+        "pinned_name": "גרגירי חומוס שלמים 400 ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290100704974",
+        "pinned_name": "שימורי גרגירי חומוס 240 גר סוגת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Canned Red Kidney Beans": {
+      "shufersal": {
+        "item_code": "7290015009478",
+        "pinned_name": "שימורי שעועית אדומה400גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290100704950",
+        "pinned_name": "שימורי שעועית אדומה 240 גר סוגת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Canned White Cannellini Beans": {
+      "rami-levy": {
+        "item_code": "7290112348142",
+        "pinned_name": "שעועית לבנה 230גר קופסה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Chia Seeds": {
+      "shufersal": {
+        "item_code": "7296073381693",
+        "pinned_name": "זרעי צ'יה אורגניים 300 ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290008101264",
+        "pinned_name": "תבלין מימון זרעי צ'יה 150 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Chickpea Falafel Mix": {
+      "shufersal": {
+        "item_code": "7290015809214",
+        "pinned_name": "תערובת לפלאפל לל\"ג 180ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Classic Spaghetti Pasta": {
+      "shufersal": {
+        "item_code": "8008912010034",
+        "pinned_name": "ספגטי 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290119673537",
+        "pinned_name": "ספגטי 500גר רמילוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Coconut Cream / Milk": {
+      "shufersal": {
+        "item_code": "7290012911477",
+        "pinned_name": "קרם קוקוס 400 מ\"ל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290015603546",
+        "pinned_name": "שימורי קרם קוקוס 400 מל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Cooked Vacuum-Packed Beets": {
+      "shufersal": {
+        "item_code": "7290003996575",
+        "pinned_name": "סלק מבושל מהדרין (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290016733259",
+        "pinned_name": "סלק מבושל בוואקום 500ג רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Cooking Cream 15%": {
+      "shufersal": {
+        "item_code": "7290000522340",
+        "pinned_name": "שמנת לבישול 15% 250 מ\"ל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290000522340",
+        "pinned_name": "שמנת לבישול 15% 250 מ\"ל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Cottage Cheese 5%": {
+      "shufersal": {
+        "item_code": "7290004127329",
+        "pinned_name": "קוטג 5% 250 גרם בעלז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290011194246",
+        "pinned_name": "קוטג' 5% שומן 250 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Cream Cheese Spread": {
+      "shufersal": {
+        "item_code": "7290019635369",
+        "pinned_name": "גבינת שמנת 16% 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290108502541",
+        "pinned_name": "גבינת שמנת 200 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Creamy Natural Peanut Butter": {
+      "shufersal": {
+        "item_code": "7290000446547",
+        "pinned_name": "חמאת בוטנים טבעית 350גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290113197169",
+        "pinned_name": "חמאת בוטנים טבעית 510 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Crisp Fresh Apples": {
+      "shufersal": {
+        "item_code": "7290000963518",
+        "pinned_name": "תפוח עץ סמיט 70",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "219",
+        "pinned_name": "תפוח עץ גאלה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Crisp Lettuce Hearts": {
+      "shufersal": {
+        "item_code": "7296073592891",
+        "pinned_name": "לבבות חסה קראנץ (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290010051373",
+        "pinned_name": "לבבות חסה בשקית א.אדמה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Crisp Romaine Lettuce": {
+      "shufersal": {
+        "item_code": "7290000000978",
+        "pinned_name": "חסה ערבית כשרה (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290010051151",
+        "pinned_name": "חסה רומית א.אדמה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Crushed Canned Tomatoes": {
+      "shufersal": {
+        "item_code": "7296073079866",
+        "pinned_name": "עגבניות מרוסקות 800 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290112357045",
+        "pinned_name": "מחית עגבניות מרוסקות 390 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Cut Green Beans": {
+      "shufersal": {
+        "item_code": "7296073422211",
+        "pinned_name": "שעועית ירוקה טרייה מארז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290016584219",
+        "pinned_name": "שעועית ירוקה שלמה טריה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Dry Brown Lentils": {
+      "shufersal": {
+        "item_code": "7290018989937",
+        "pinned_name": "עדשים חומות יכין 2 *200ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Dry Green Lentils": {
+      "shufersal": {
+        "item_code": "7290001041208",
+        "pinned_name": "עדשים ירוקות 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290013677037",
+        "pinned_name": "מיה עדשים ירוקות 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Dry Red Lentils": {
+      "shufersal": {
+        "item_code": "7296073733409",
+        "pinned_name": "עדשים אדומות 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290020238139",
+        "pinned_name": "עדשים אדומות 1קג רמילוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Edamame (Green Soybeans)": {
+      "shufersal": {
+        "item_code": "7296073691372",
+        "pinned_name": "פולי סויה קלופים 450גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290119672608",
+        "pinned_name": "אדממה קלוף קפוא 600 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Egg Stir-Fry Noodles": {
+      "shufersal": {
+        "item_code": "4260147890513",
+        "pinned_name": "אטריות ביצים דקות",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290018860984",
+        "pinned_name": "אטריות ביצים דקות 400 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Farfalle (Bowtie) Pasta": {
+      "shufersal": {
+        "item_code": "7296073011248",
+        "pinned_name": "פסטה פרפלה 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "8076809580144",
+        "pinned_name": "ברילה פרפלה חדש 500גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fettuccine Pasta": {
+      "rami-levy": {
+        "item_code": "7290006653765",
+        "pinned_name": "פסטה פרפקטו פטוצ'יני 500 גרם אסם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "shufersal": {
+        "item_code": "8004690050507",
+        "pinned_name": "פטוציני 500ג לה מוליזנה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Firm Tofu": {
+      "shufersal": {
+        "item_code": "7290003726615",
+        "pinned_name": "טופו ויילר 300 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290011923303",
+        "pinned_name": "טופו טבעי 300גרם ליב",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Flour Tortilla Wraps": {
+      "shufersal": {
+        "item_code": "7290117901205",
+        "pinned_name": "טורטיה 420 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290112194510",
+        "pinned_name": "טורטיה חיטה 450גר רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fluffy Jasmine Rice": {
+      "shufersal": {
+        "item_code": "7290013200198",
+        "pinned_name": "אורז יסמין בוואקום 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290020505521",
+        "pinned_name": "אורז יסמין 1 ק\"ג רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fragrant Basmati Rice": {
+      "shufersal": {
+        "item_code": "7290113196414",
+        "pinned_name": "אורז בסמטי 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "8904498502492",
+        "pinned_name": "אורז בסמטי סופר 1קג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Baby Spinach": {
+      "shufersal": {
+        "item_code": "7290003996742",
+        "pinned_name": "עלי תרד חסלט-מהדרין (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290003996742",
+        "pinned_name": "עלי תרד מגשית חסלט",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Bananas": {
+      "shufersal": {
+        "item_code": "7290000964775",
+        "pinned_name": "בננה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "134",
+        "pinned_name": "בננה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Basil Leaves": {
+      "shufersal": {
+        "item_code": "7290000001050",
+        "pinned_name": "בזיליקום 50 גרם (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290017487557",
+        "pinned_name": "בזיליקום שדות בעמק",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Carrots": {
+      "shufersal": {
+        "item_code": "7290000099941",
+        "pinned_name": "מארז גזר  אורגני",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "102",
+        "pinned_name": "גזר ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Cauliflower Head": {
+      "shufersal": {
+        "item_code": "7290000000176",
+        "pinned_name": "כרובית",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "1092",
+        "pinned_name": "כרובית",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Celery": {
+      "shufersal": {
+        "item_code": "7290016334623",
+        "pinned_name": "סלרי עלים (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290010051205",
+        "pinned_name": "סלרי אמריקאי א.אדמה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Champignon Mushrooms": {
+      "rami-levy": {
+        "item_code": "7290003996209",
+        "pinned_name": "פטריות שמפניון חסלט",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Chicken Livers": {
+      "shufersal": {
+        "item_code": "7290002069577",
+        "pinned_name": "כבד עוף טרי ארוז פלייש",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "2680451",
+        "pinned_name": "כבד עוף טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Chives": {
+      "shufersal": {
+        "item_code": "7290000000633",
+        "pinned_name": "עירית מארז (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290010050109",
+        "pinned_name": "עירית א. אדמה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Cucumbers": {
+      "shufersal": {
+        "item_code": "7290000000046",
+        "pinned_name": "מלפפון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "101",
+        "pinned_name": "מלפפון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Dill": {
+      "shufersal": {
+        "item_code": "7290016334593",
+        "pinned_name": "שמיר ארוז (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290010051175",
+        "pinned_name": "שמיר א.אדמה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Eggplant": {
+      "shufersal": {
+        "item_code": "7290000000114",
+        "pinned_name": "חציל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "106",
+        "pinned_name": "חציל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Garlic Bulbs": {
+      "shufersal": {
+        "item_code": "7290001970034",
+        "pinned_name": "שום גבישי במשקל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "612",
+        "pinned_name": "שום טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Green Asparagus": {
+      "shufersal": {
+        "item_code": "7290016334975",
+        "pinned_name": "אספרגוס (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290015855228",
+        "pinned_name": "אספרגוס א.אדמה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Hummus Tub": {
+      "shufersal": {
+        "item_code": "7296073733324",
+        "pinned_name": "חומוס 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290003727667",
+        "pinned_name": "חומוס צבר 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Lemons": {
+      "shufersal": {
+        "item_code": "7290000964492",
+        "pinned_name": "לימון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "117",
+        "pinned_name": "לימון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Mango": {
+      "shufersal": {
+        "item_code": "7290000966434",
+        "pinned_name": "מנגו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "118",
+        "pinned_name": "מנגו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Milk 3%": {
+      "shufersal": {
+        "item_code": "7290010945306",
+        "pinned_name": "חלב 3% בקרטון 2 ליטר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290010945306",
+        "pinned_name": "חלב 3% טרה 2 ליטר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Mushrooms": {
+      "shufersal": {
+        "item_code": "7290010650002",
+        "pinned_name": "פטריות יער מארז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "333",
+        "pinned_name": "פטריות במשקל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Parsley": {
+      "shufersal": {
+        "item_code": "7290016334579",
+        "pinned_name": "פטרוזיליה ארוזה (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290010051052",
+        "pinned_name": "פטרוזיליה א.אדמה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Pita Bread Pockets": {
+      "shufersal": {
+        "item_code": "7290009398786",
+        "pinned_name": "5 פיתות אסליות 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290005719844",
+        "pinned_name": "פיתות 10יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Ricotta Cheese": {
+      "shufersal": {
+        "item_code": "7290000554822",
+        "pinned_name": "ריקוטה גד 5% שומן 250 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290014890176",
+        "pinned_name": "ריקוטה 250 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Salmon Fillet": {
+      "shufersal": {
+        "item_code": "7290002345404",
+        "pinned_name": "פילה סלמון טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "1750247",
+        "pinned_name": "פילה סלמון שלם טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Tomatoes": {
+      "shufersal": {
+        "item_code": "7290000000022",
+        "pinned_name": "עגבניה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "100",
+        "pinned_name": "עגבניה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh White Cabbage": {
+      "shufersal": {
+        "item_code": "7290000000138",
+        "pinned_name": "כרוב לבן",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "109",
+        "pinned_name": "כרוב לבן",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Zucchini": {
+      "shufersal": {
+        "item_code": "7290000000053",
+        "pinned_name": "קישואים מובחר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "107",
+        "pinned_name": "קישוא ירוק",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Frozen Broccoli Florets": {
+      "shufersal": {
+        "item_code": "7296073692621",
+        "pinned_name": "ברוקולי מוקפא 800 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290018564172",
+        "pinned_name": "ברוקולי 800גר רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Frozen Cut Green Beans": {
+      "shufersal": {
+        "item_code": "7290000104720",
+        "pinned_name": "שעועית ירוקה חתוכה 800 ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290018564196",
+        "pinned_name": "שעועית ירוקה חתוכה 800 ג רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Frozen Sweet Green Peas": {
+      "shufersal": {
+        "item_code": "7290000104201",
+        "pinned_name": "אפונה עדינה 600 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290018564028",
+        "pinned_name": "אפונה עדינה 600ג רמילוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Goat Cheese Log": {
+      "rami-levy": {
+        "item_code": "7290000045917",
+        "pinned_name": "פרומעז גבינת עזים גליל 23%",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Grated Parmesan Cheese": {
+      "shufersal": {
+        "item_code": "7290019635000",
+        "pinned_name": "גבינת פרמזן מגורד 100 ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290019635000",
+        "pinned_name": "פתיתי פרמזן 100 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Greek Strained Yogurt": {
+      "shufersal": {
+        "item_code": "7290014890589",
+        "pinned_name": "יוגורט יווני 8% 850 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290013771384",
+        "pinned_name": "יוגורט יווני 400 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Ground Cinnamon": {
+      "shufersal": {
+        "item_code": "7290000134307",
+        "pinned_name": "קינמון טחון 50 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290022005258",
+        "pinned_name": "קינמון טחון רמי לוי 100 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Ground Cumin": {
+      "shufersal": {
+        "item_code": "7290010003754",
+        "pinned_name": "כמון טחון בשקית 50 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290018711347",
+        "pinned_name": "כמון טחון 200 גרם רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Ground Turmeric": {
+      "shufersal": {
+        "item_code": "7290000134840",
+        "pinned_name": "כורכום טחון 100 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290018711354",
+        "pinned_name": "כורכום טחון 200גר רמילוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Halloumi Grilling Cheese": {
+      "shufersal": {
+        "item_code": "7290102393718",
+        "pinned_name": "חלומי בקר 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290019790310",
+        "pinned_name": "חלומי 24% 200 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Jumbo Pasta Shells": {
+      "shufersal": {
+        "item_code": "7290002327066",
+        "pinned_name": "קונכיות בצק למילוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "8004350005861",
+        "pinned_name": "פסטה קונכיות גדולות 500 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Labneh Yogurt Cheese": {
+      "shufersal": {
+        "item_code": "7290003075652",
+        "pinned_name": "לבנה 11%שומן 250 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290001258552",
+        "pinned_name": "לבנה בקר 250 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Lean Ground Turkey": {
+      "shufersal": {
+        "item_code": "7290003751242",
+        "pinned_name": "הודו טחון גלאט 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290004323882",
+        "pinned_name": "הודו אדום טחון 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Matzo Meal": {
+      "shufersal": {
+        "item_code": "7290000130248",
+        "pinned_name": "קמח מצה חמץ 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290008636650",
+        "pinned_name": "קמח מצה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Mayonnaise": {
+      "shufersal": {
+        "item_code": "7296073629153",
+        "pinned_name": "מיונז אמיתי 1 ק\"ג MAYO",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290000111186",
+        "pinned_name": "מיונז תלמה 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Medjool Sweet Dates": {
+      "shufersal": {
+        "item_code": "7296073719618",
+        "pinned_name": "תמר מג'הול ישראלי 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "8719326034096",
+        "pinned_name": "תמר מג'הול 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Natural Almond Butter": {
+      "shufersal": {
+        "item_code": "8010024006010",
+        "pinned_name": "חמאת שקדים100% 350 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "8010024006010",
+        "pinned_name": "חמאת שקדים 350 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Paprika": {
+      "shufersal": {
+        "item_code": "7296073216247",
+        "pinned_name": "פפריקה מתוקה מיכל 100ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290010002467",
+        "pinned_name": "פפריקה מתוקה 100גר רמילוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Penne Rigate Pasta": {
+      "shufersal": {
+        "item_code": "7296073011217",
+        "pinned_name": "פסטה פנה מוריני 500ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "8008912010423",
+        "pinned_name": "ליגורי- פנה ריגטה מספר 42 500גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Pickled Cucumbers in Brine": {
+      "shufersal": {
+        "item_code": "7290117905302",
+        "pinned_name": "מלפפונים חמוצים 580 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290018564554",
+        "pinned_name": "מלפפונים חמוצים ביתיים כבושים 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Pitted Kalamata Olives": {
+      "shufersal": {
+        "item_code": "7290113194090",
+        "pinned_name": "טבעות זיתי קלמטה 560 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290118484370",
+        "pinned_name": "זיתים קלמטה 215 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Potato Gnocchi": {
+      "shufersal": {
+        "item_code": "7290013861740",
+        "pinned_name": "ניוקי 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290112191328",
+        "pinned_name": "ניוקי 500 ג רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Potatoes": {
+      "shufersal": {
+        "item_code": "7290018619308",
+        "pinned_name": "תפוח אדמה אגו שף",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "111",
+        "pinned_name": "תפוח אדמה לבן ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Pure Butter": {
+      "shufersal": {
+        "item_code": "3274932103819",
+        "pinned_name": "חמאה לה גל זהב 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290102394814",
+        "pinned_name": "חמאה טרה 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Pure Date Syrup (Silan)": {
+      "shufersal": {
+        "item_code": "7290002703679",
+        "pinned_name": "סילאן בצנצנת 900 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290012983276",
+        "pinned_name": "סילאן כנרת 900 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Pure Honey": {
+      "shufersal": {
+        "item_code": "7296073078609",
+        "pinned_name": "דבש טבעי 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290015834315",
+        "pinned_name": "דבש טהור רמי לוי 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Quick Fluffy Couscous": {
+      "shufersal": {
+        "item_code": "7290002040064",
+        "pinned_name": "קוסקוס דק 350 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290100702260",
+        "pinned_name": "קוסקוס דק 350 גרם סוגת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Raw Sesame Tahini": {
+      "shufersal": {
+        "item_code": "7296073596387",
+        "pinned_name": "טחינה גולמית 500 גרם סלה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290020030290",
+        "pinned_name": "טחינה גולמית 500 גרם רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Raw Walnuts": {
+      "shufersal": {
+        "item_code": "7296073705895",
+        "pinned_name": "אגוזי מלך קלופים 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290119673681",
+        "pinned_name": "אגוזי מלך קלופים 500 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Raw Whole Almonds": {
+      "rami-levy": {
+        "item_code": "522",
+        "pinned_name": "שקדים",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "shufersal": {
+        "item_code": "7296073705949",
+        "pinned_name": "שקדים טבעיים קלופים 200",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Ready Falafel Patties": {
+      "shufersal": {
+        "item_code": "7290008343626",
+        "pinned_name": "פלאפל 1קג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290008343626",
+        "pinned_name": "כדורי פלאפל שלושת האופים 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Ready-to-Eat Creamy Hummus": {
+      "shufersal": {
+        "item_code": "7296073733324",
+        "pinned_name": "חומוס 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290003727667",
+        "pinned_name": "חומוס צבר 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Red Bell Peppers": {
+      "shufersal": {
+        "item_code": "7290000000091",
+        "pinned_name": "פלפל אדום",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "104",
+        "pinned_name": "פלפל אדום",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Red Onions": {
+      "shufersal": {
+        "item_code": "7290000001036",
+        "pinned_name": "בצל יבש אדום",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "289",
+        "pinned_name": "בצל אדום",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Rice Vermicelli Noodles": {
+      "shufersal": {
+        "item_code": "7296073274667",
+        "pinned_name": "אטריות אורז דק לל\"ג 454",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "8856429000341",
+        "pinned_name": "אטריות אורז דקות 400 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Ripe Haas Avocado": {
+      "shufersal": {
+        "item_code": "7290000964980",
+        "pinned_name": "אבוקדו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "135",
+        "pinned_name": "אבוקדו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Rolled Oats (Oatmeal)": {
+      "shufersal": {
+        "item_code": "7290014095960",
+        "pinned_name": "שיבולת שועל עבה 400 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290014095960",
+        "pinned_name": "שיבולת שועל עבה 400 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Seasoned Breadcrumbs": {
+      "shufersal": {
+        "item_code": "7290100700075",
+        "pinned_name": "פירורי לחם 200ג סוגת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290001041635",
+        "pinned_name": "פירורי לחם מיה 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Sesame Bagels": {
+      "shufersal": {
+        "item_code": "7290002020868",
+        "pinned_name": "מארז בייגל רומני 3יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "8504133",
+        "pinned_name": "בייגלה 5 יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Shelled Roasted Pistachios": {
+      "shufersal": {
+        "item_code": "7290000976846",
+        "pinned_name": "פיסטוק מקולף שקיל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290018566152",
+        "pinned_name": "פיסטוק * 150 גר בקופסא",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Smoked Salmon Slices": {
+      "shufersal": {
+        "item_code": "7290008340618",
+        "pinned_name": "סלמון מעושן מצונן 100 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290002345275",
+        "pinned_name": "פילה דג סלמון מעושן  100 גרם רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Smoked Turkey Breast Slices": {
+      "shufersal": {
+        "item_code": "7290000318950",
+        "pinned_name": "פסטרמה הודו מהמעשנה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290000318950",
+        "pinned_name": "פסטרמה הודו מהמעשנת יחיעם 180 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Soft White Cheese 5%": {
+      "shufersal": {
+        "item_code": "7290000047621",
+        "pinned_name": "גבינה לבנה 5% 250ג תנובה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290000474502",
+        "pinned_name": "גבינה לבנה 5% טרה 250 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Soy Sauce": {
+      "shufersal": {
+        "item_code": "7290012911095",
+        "pinned_name": "רוטב סויה כהה 500 מ\"ל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290112011930",
+        "pinned_name": "רוטב סויה 550 גרם רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Sushi Short Grain Rice": {
+      "shufersal": {
+        "item_code": "7290011996062",
+        "pinned_name": "אורז לסושי 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290100701157",
+        "pinned_name": "אורז סושי 1 ק\"ג סוגת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Sweet Cherry Tomatoes": {
+      "shufersal": {
+        "item_code": "7290000000916",
+        "pinned_name": "עגבניות שרי בודד",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290016270709",
+        "pinned_name": "עגבניות שרי קלמר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Sweet Corn Kernels": {
+      "rami-levy": {
+        "item_code": "721688438397",
+        "pinned_name": "גרעיני תירס 800 ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "shufersal": {
+        "item_code": "7290016087796",
+        "pinned_name": "גרעיני תירס מתוק 400 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Sweet Paprika": {
+      "shufersal": {
+        "item_code": "7296073216223",
+        "pinned_name": "פפריקה מתוקה בשקית80גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290011254117",
+        "pinned_name": "פפריקה מתוקה מיה 80 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Sweet Potatoes": {
+      "shufersal": {
+        "item_code": "7290000000428",
+        "pinned_name": "בטטה מובחרת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "138",
+        "pinned_name": "בטטה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Tilapia Fillets": {
+      "shufersal": {
+        "item_code": "7290008255523",
+        "pinned_name": "פילה אמנון טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "3361656",
+        "pinned_name": "פילה אמנון טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Toasted Pasta Pearls (Ptitim)": {
+      "shufersal": {
+        "item_code": "7290000060408",
+        "pinned_name": "פתיתים טבעות 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290015339568",
+        "pinned_name": "פתיתים אורז 500גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "White Quinoa": {
+      "shufersal": {
+        "item_code": "7290015395045",
+        "pinned_name": "קינואה 400 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290015395045",
+        "pinned_name": "קינואה 400גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "White Rice": {
+      "shufersal": {
+        "item_code": "7290013200389",
+        "pinned_name": "אורז פרסי 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290117907733",
+        "pinned_name": "אורז פרסי 1קג שקדיה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Whole Fresh Chicken": {
+      "shufersal": {
+        "item_code": "7290009802191",
+        "pinned_name": "עוף שלם טרי א.דיל ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "2681526",
+        "pinned_name": "עוף שלם טרי מחפוד",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Whole Grain Brown Rice": {
+      "rami-levy": {
+        "item_code": "7290000211312",
+        "pinned_name": "סוגת אורז מלא 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Whole Grain Granola": {
+      "shufersal": {
+        "item_code": "7290011131968",
+        "pinned_name": "גרנולה אגוזים 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290001343845",
+        "pinned_name": "גרנולה פירות 850 ג שקדיה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Whole Wheat Bread": {
+      "shufersal": {
+        "item_code": "7290013027399",
+        "pinned_name": "לחם מלא100%+שיפון-קל750ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290016967074",
+        "pinned_name": "לחם חיטה מלאה 750 ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Yellow Onions": {
+      "shufersal": {
+        "item_code": "7290000000480",
+        "pinned_name": "בצל יבש",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "108",
+        "pinned_name": "בצל יבש",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Za'atar Herb Blend": {
+      "shufersal": {
+        "item_code": "7290015324076",
+        "pinned_name": "זעתר בשקית 80 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290003681242",
+        "pinned_name": "זעתר מיה 50 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Strawberries": {
+      "rami-levy": {
+        "item_code": "7290013220561",
+        "pinned_name": "תות שדה 500גר רמילוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh or Frozen Blueberries": {
+      "shufersal": {
+        "item_code": "7290000101927",
+        "pinned_name": "אוכמניות כחולות קפוא300ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "236",
+        "pinned_name": "אוכמניות 125 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh or Ground Ginger": {
+      "shufersal": {
+        "item_code": "7290000961606",
+        "pinned_name": "שורש גינגר בתפזורת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "225",
+        "pinned_name": "ג'ינג'ר תפזורת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Sweet Challah": {
+      "shufersal": {
+        "item_code": "7290001902301",
+        "pinned_name": "חלה מתוקה קלועה 450 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290017947372",
+        "pinned_name": "חלה מתוקה ארוזה 500גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Artisan Sourdough Loaf": {
+      "shufersal": {
+        "item_code": "7290001598405",
+        "pinned_name": "לחם מחמצת טבעית 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "2608202",
+        "pinned_name": "לחם מחמצת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Caraway Rye Bread": {
+      "shufersal": {
+        "item_code": "7290000574370",
+        "pinned_name": "לחם שיפון קל 750 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290002065616",
+        "pinned_name": "לחם שיפון גרעינים פרוס אחדות 750 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Crispy Brown Rice Cakes": {
+      "shufersal": {
+        "item_code": "7296073441335",
+        "pinned_name": "פריכיות אורז מלא 110 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290004952792",
+        "pinned_name": "פריכיות אורז מלא דקות אורגני הרדוף 100גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Crunchy Garlic Croutons": {
+      "shufersal": {
+        "item_code": "7290000078212",
+        "pinned_name": "קרוטונים מתובלים 250גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290016273397",
+        "pinned_name": "קרוטונים אפויים לסלט 400 גר רמילוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Basil Pesto Spread": {
+      "shufersal": {
+        "item_code": "7296073451914",
+        "pinned_name": "פסטו בזיליקום 180 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290003438006",
+        "pinned_name": "ממרח פסטו איטלקי אוליביה 190 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Shawarma Seasoning": {
+      "shufersal": {
+        "item_code": "7296073728900",
+        "pinned_name": "תבלין שווארמה במיכל 100ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290010002290",
+        "pinned_name": "תבלין לשווארמה טורקית מימון 100 גרם*",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Flaky Cheese Bourekas": {
+      "shufersal": {
+        "item_code": "7290000238173",
+        "pinned_name": "בורקס גבינה 800 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290002735847",
+        "pinned_name": "בורקס גבינה רמי לוי 800 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Red Lentil Protein Pasta": {
+      "shufersal": {
+        "item_code": "8032804430471",
+        "pinned_name": "פסטה עדשים אדומות 250גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Frozen Peas & Diced Carrots": {
+      "shufersal": {
+        "item_code": "7290000104881",
+        "pinned_name": "אפונה וגזר 800 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290018564066",
+        "pinned_name": "אפונה וגזר רמילוי 800 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Leek or Yellow Onion": {
+      "shufersal": {
+        "item_code": "7290016334166",
+        "pinned_name": "לוף/ כרישה  (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "rami-levy": {
+        "item_code": "7290122182125",
+        "pinned_name": "לוף (כרישה ) רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Chicken Breast": {
+      "shufersal": {
+        "item_code": "7290009805291",
+        "pinned_name": "חזה עוף טרי ארוז עצמי",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh chicken only"
+      },
+      "rami-levy": {
+        "item_code": "2684206",
+        "pinned_name": "שניצל עוף טרי כשר",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh chicken only"
+      }
+    },
+    "Chicken Drumsticks": {
+      "shufersal": {
+        "item_code": "7290008455848",
+        "pinned_name": "שוקיים טרי לנדא",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh chicken only"
+      },
+      "rami-levy": {
+        "item_code": "2684183",
+        "pinned_name": "שוקיים עוף טרי כשר.",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh chicken only"
+      }
+    },
+    "Chicken Thighs & Drumsticks": {
+      "shufersal": {
+        "item_code": "7290008455824",
+        "pinned_name": "כרעיים טרי לנדא",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh chicken only"
+      },
+      "rami-levy": {
+        "item_code": "2610021",
+        "pinned_name": "כרעיים טרי",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh chicken only"
+      }
+    },
+    "Boneless Chicken Thighs (Pargiyot)": {
+      "shufersal": {
+        "item_code": "7290002804666",
+        "pinned_name": "סטייק פרגית טרי ארוז",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh chicken only"
+      },
+      "rami-levy": {
+        "item_code": "2681120",
+        "pinned_name": "סטייק פרגית פרמיום",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh chicken only"
+      }
+    },
+    "Fresh Ground Beef": {
+      "shufersal": {
+        "item_code": "7290000997704",
+        "pinned_name": "בקר טחון  טרי",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh ground beef only"
+      },
+      "rami-levy": {
+        "item_code": "1004746",
+        "pinned_name": "בשר בקר טחון טרי",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh ground beef only"
+      }
+    },
+    "Fresh Denis (Sea Bream) Fillets": {
+      "shufersal": {
+        "item_code": "7290000918983",
+        "pinned_name": "פילה דניס קג",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fillets, not whole"
+      },
+      "rami-levy": {
+        "item_code": "3361687",
+        "pinned_name": "פילה דניס טרי",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fillets, not whole"
+      }
+    },
+    "Sea Bass Fillets": {
+      "shufersal": {
+        "item_code": "7290009393385",
+        "pinned_name": "פילה לברק",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fillets, not whole"
+      },
+      "rami-levy": {
+        "item_code": "3361694",
+        "pinned_name": "פילה לברק טרי",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fillets, not whole"
+      }
+    },
+    "Cod / White Fish Fillets": {
+      "shufersal": {
+        "item_code": "7290008255523",
+        "pinned_name": "פילה אמנון טרי",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh tilapia fillet accepted as the white-fish substitute (no suitable cod match found)"
+      },
+      "rami-levy": {
+        "item_code": "3361656",
+        "pinned_name": "פילה אמנון טרי",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: fresh tilapia fillet accepted as the white-fish substitute (no suitable cod match found)"
+      }
+    },
+    "Mozzarella Cheese": {
+      "shufersal": {
+        "item_code": "7290009952988",
+        "pinned_name": "מוצרלה מגורדת במשקל",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: grated mozzarella"
+      },
+      "rami-levy": {
+        "item_code": "1794142",
+        "pinned_name": "מוצרלה תנובה מגורדת",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: grated mozzarella"
+      }
+    },
+    "Yellow Cheese Slices": {
+      "shufersal": {
+        "item_code": "7290014760448",
+        "pinned_name": "גבינה צהובה 22% 400 גרם",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: cheapest ordinary sliced yellow cheese"
+      },
+      "rami-levy": {
+        "item_code": "2083979",
+        "pinned_name": "גבינה צהובה 28% רמי לוי פרוס",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: cheapest ordinary sliced yellow cheese"
+      }
+    },
+    "Feta Cheese": {
+      "shufersal": {
+        "item_code": "7290004229740",
+        "pinned_name": "סגנון פטה 21% במשקל",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: Greek-style white cheese OK"
+      },
+      "rami-levy": {
+        "item_code": "7290002973218",
+        "pinned_name": "גבינת פטה בסגנון יווני 400 גרם",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: Greek-style white cheese OK"
+      }
+    },
+    "Canned Chunk Light Tuna": {
+      "shufersal": {
+        "item_code": "7290005287206",
+        "pinned_name": "טונה סטארקיסט בשמן4*160ג",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: canned tuna in oil, no pouch substitution"
+      },
+      "rami-levy": {
+        "item_code": "670604",
+        "pinned_name": "טונה בהירה בשמן 112 גרם רמי לוי",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: canned tuna in oil, no pouch substitution"
+      }
+    },
+    "Extra Virgin Olive Oil": {
+      "rami-levy": {
+        "item_code": "7290019603498",
+        "pinned_name": "שמן זית כתית מעולה 750 מ\"ל כשר לפסח",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: 750ml-1L bottle, not 3L tin"
+      }
+    },
+    "Farm Fresh Eggs": {
+      "shufersal": {
+        "item_code": "7290001201572",
+        "pinned_name": "ביצים ארוזות XL 12יחידות",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: ordinary 12-pack where available"
+      },
+      "rami-levy": {
+        "item_code": "723098308338",
+        "pinned_name": "ביצים 12 יח גדול L",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: ordinary 12-pack where available"
+      }
+    },
+    "Sliced Sandwich Bread": {
+      "shufersal": {
+        "item_code": "7290000574035",
+        "pinned_name": "לחם אחיד פרוס 750 גרם",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: standard sliced loaf"
+      },
+      "rami-levy": {
+        "item_code": "7290002079477",
+        "pinned_name": "לחם אחיד פרוס 750גר",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: standard sliced loaf"
+      }
+    },
+    "Bell Peppers": {
+      "shufersal": {
+        "item_code": "7290000000091",
+        "pinned_name": "פלפל אדום",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: red peppers accepted for the generic bell-pepper line"
+      },
+      "rami-levy": {
+        "item_code": "104",
+        "pinned_name": "פלפל אדום",
+        "approved_by_user": true,
+        "selected_by": "assistant",
+        "approval_note": "user rule: red peppers accepted for the generic bell-pepper line"
+      }
+    }
+  }
+}
