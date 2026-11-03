@@ -1,0 +1,91 @@
+name: Sync supermarket prices and deploy Pages
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Nightly at 03:00 UTC (as README.md describes)
+    - cron: '0 3 * * *'
+
+# Least necessary permissions are set per job below.
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write  # commit refreshed prices.json / mapping_candidates.json back to main
+    outputs:
+      sha: ${{ steps.head.outputs.sha }}
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run script contract tests (synthetic fixtures, no network)
+        run: python tests/test_script_contract.py
+
+      - name: Download both price feeds and rebuild prices.json
+        run: python scripts/fetch_prices.py
+
+      - name: Commit refreshed price data (if anything changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add prices.json mapping_candidates.json
+          if git diff --cached --quiet; then
+            echo "No price changes to commit."
+          else
+            git commit -m "Update supermarket prices ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+      - name: Record the post-sync HEAD for the deploy job
+        id: head
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: sync
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the exact synced commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.sync.outputs.sha }}
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Stage the public site (app shell + published prices only)
+        run: |
+          mkdir -p _site
+          cp index.html prices.json _site/
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
