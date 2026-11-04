@@ -62,17 +62,24 @@ with sync_playwright() as p:
         print(name, st)
         check(name + ": no JS errors", not errs, errs)
         agg = pg.evaluate("Object.entries(getAggregatedGroceryList()).filter(([k,i])=>/cucumber/i.test(i.name)).map(([k,i])=>[k,i.qty,i.unit])")
-        check(name + ": same ingredient in different unit families stays on separate lines (cucumbers)", len(agg) >= 2 and len({a[2] for a in agg}) == len(agg) and all(a[1] < 100 or a[2] == 'g' for a in agg), agg)
+        check(name + ": same ingredient in different unit families stays on separate lines (cucumbers; v10 converts approved one-unit rows to g, so one g line is expected)", len(agg) >= 1 and len({a[2] for a in agg}) == len(agg) and all(a[1] < 100 or a[2] == 'g' for a in agg), agg)
+        mix = pg.evaluate("""(()=>{const sv={a:state.activeSchedule,l:state.lunchSchedule,b:state.bfastSchedule,t:state.twoNightBatchDays};
+          RECIPES.push({id:'__mix',title:'mix test',ingredients:[{name:'Zz Mixed Item',qty:200,unit:'g',aisle:'produce',storePrice:1,isPantry:false},{name:'Zz Mixed Item',qty:2,unit:'units',aisle:'produce',storePrice:1,isPantry:false},{name:'Zz Mixed Item',qty:300,unit:'g',aisle:'produce',storePrice:1,isPantry:false}]});
+          state.activeSchedule=[{recipeId:'__mix'}];state.lunchSchedule=[];state.bfastSchedule=[];state.twoNightBatchDays={};
+          const l=Object.entries(getAggregatedGroceryList()).filter(([k,i])=>i.name==='Zz Mixed Item').map(([k,i])=>[i.qty,i.unit]);
+          RECIPES.pop();state.activeSchedule=sv.a;state.lunchSchedule=sv.l;state.bfastSchedule=sv.b;state.twoNightBatchDays=sv.t;return l})()""")
+        check(name + ": synthetic mixed unit families stay separate (g line and units line)", len(mix) == 2 and {m[1] for m in mix} == {"g", "units"} and [m[0] for m in mix if m[1] == "g"][0] > 0, mix)
         if name == "fresh":
             check("fresh: both chains published", st["rami"] and st["shuf"])
             check("fresh: feed badge says published", "Published online prices" in st["feed"])
-            check("fresh: coverage Rami 3/14 and Shufersal 3/14 (zucchini excluded: incompatible unit)", "Rami Levy (039): 3/14" in st["cov"] and "Shufersal (413): 3/14" in st["cov"], st["cov"])
+            nlines = pg.evaluate("Object.values(getAggregatedGroceryList()).filter(i => !i.isPantry).length")
+            check("fresh: coverage Rami and Shufersal 3 actual + estimates (denominator derived from the plan: non-pantry aggregated lines) (zucchini excluded: incompatible unit)", ("Rami Levy Online (039): 3 actual + %d est. / %d" % (nlines-3, nlines)) in st["cov"] and ("Shufersal Online (413): 3 actual + %d est. / %d" % (nlines-3, nlines)) in st["cov"], st["cov"])
             ex = pg.evaluate("(()=>{const l=getAggregatedGroceryList();const z=Object.values(l).find(i=>i.name==='Fresh Zucchini');const r=getIngredientPricing(z.name,z.qty,z.unit,1.0,'rami-levy');const c=getIngredientPricing('Fresh Chicken Breast',2500,'g',1.0,'rami-levy');return {z:r,c:c.purchaseCost,cm:c.matchedData&&c.matchedData.metadataSource}})()")
             check("fresh: incompatible unit excluded with reason", ex["z"]["isLiveMatch"] is False and "Incompatible" in (ex["z"].get("unpricedReason") or ""), ex["z"])
-            check("fresh: chicken 2500g @ NIS30/kg = 3 packs x 30 = 90", abs(ex["c"] - 90.0) < 0.01, ex["c"])
+            check("fresh: chicken 2500g weighted @ NIS30/kg = actual weight 2.5kg = 75", abs(ex["c"] - 75.0) < 0.01, ex["c"])
             check("fresh: citation shows source file", "SYNTHETIC-TEST-FIXTURE" in (ex["cm"] or ""), ex["cm"])
             txt = pg.evaluate("document.getElementById('supermarketPriceGrid').innerText")
-            check("fresh: comparison shows shared-item savings label", "shared items" in txt, txt[:300])
+            check("fresh: comparison shows same-basket line", "Same-basket" in txt, txt[:300])
         if name in ("stale", "missing"):
             check(name + ": estimates only", not st["fresh"] and "estimates" in st["feed"].lower(), st)
         if name in ("v1", "underscore"):
@@ -80,7 +87,7 @@ with sync_playwright() as p:
         if name == "empty":
             check("empty: not labelled published, reason explains review", not st["fresh"] and "reviewed" in (st["reason"] or ""), st)
         if name == "partial":
-            check("partial: rami published, shufersal estimates only", st["rami"] and not st["shuf"] and "estimates only" in st["cov"], st)
+            check("partial: rami published, shufersal estimates only", st["rami"] and not st["shuf"] and "all estimates" in st["cov"], st)
         pg.screenshot(path="/tmp/shot_%s.png" % name); pg.close(); srv.shutdown()
     b.close()
 print("FAILED: %s" % fails if fails else "ALL APP CONTRACT CHECKS PASSED")

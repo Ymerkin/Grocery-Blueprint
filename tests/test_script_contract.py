@@ -80,6 +80,34 @@ class T(unittest.TestCase):
             mp = os.path.join(d, "m.json"); open(mp, "w").write(json.dumps({"schema": "grocery-blueprint-mappings/1", "pins": {"X": {"rami_levy": {}}}}))
             with self.assertRaises(ValueError): fp.load_mappings(mp)
 
+    def test_unrequested_and_failed_chains_keep_entries_and_original_dates(self):
+        """v9 regression: refreshing a subset of chains erased the others. They must be kept with their OWN published_at."""
+        old_pub = "2026-01-01T03:00:00+02:00"
+        old = {"metadata": {"version": "2.1", "chains": {
+                   "shufersal": {"published_at": old_pub, "priced_count": 1, "source_file": "OLD-shufersal.gz"},
+                   "osher-ad": {"published_at": old_pub, "priced_count": 1, "source_file": "OLD-osher.gz"}}},
+               "ingredients": {"fragrant basmati rice": {"ingredient_name": "Fragrant Basmati Rice",
+                                                         "shufersal": {"packPrice": 1.0, "marker": "old-shufersal"},
+                                                         "osher-ad": {"packPrice": 2.0, "marker": "old-osher"}}}}
+        with tempfile.TemporaryDirectory() as d:
+            pp = os.path.join(d, "prices.json"); json.dump(old, open(pp, "w"))
+            mp = os.path.join(d, "m.json")
+            json.dump({"schema": "grocery-blueprint-mappings/1", "pins": self.pins()}, open(mp, "w", encoding="utf-8"))
+            feeds = self.feeds()
+            def fetch(chain, store):
+                if chain == "osher-ad": raise fp.FeedError("simulated outage")
+                return feeds[chain]
+            rc = fp.run(["rami-levy", "osher-ad"], prices_path=pp, cand_path=os.path.join(d, "c.json"), mappings_path=mp, fetch=fetch)
+            self.assertEqual(rc, 0)
+            new = json.load(open(pp))
+            e = new["ingredients"]["fragrant basmati rice"]
+            self.assertEqual(e["shufersal"]["marker"], "old-shufersal")   # not requested
+            self.assertEqual(e["osher-ad"]["marker"], "old-osher")        # requested but failed
+            self.assertEqual(new["metadata"]["chains"]["shufersal"]["published_at"], old_pub)
+            self.assertEqual(new["metadata"]["chains"]["osher-ad"]["published_at"], old_pub)
+            self.assertNotEqual(new["metadata"]["chains"]["rami-levy"]["published_at"], old_pub)
+            self.assertIn("rami-levy", e)
+
     def test_write_fixture_for_app(self):
         """Writes a SYNTHETIC prices.json (via the real build_prices) covering the default plan: 3 priceable items per chain,
         plus one deliberately incompatible-unit pin (zucchini sold by weight, recipe in units)."""

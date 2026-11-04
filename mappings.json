@@ -14,12 +14,42 @@
         "pinned_name": "קמח לבן רמי לוי 1 ק\"ג",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290013536327",
+        "pinned_name": "קמח לבן מנופה הנחתום",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290003107216",
+        "pinned_name": "קמח לבן בהיר ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290003107216",
+        "pinned_name": "קמח חיטה לבן",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Beef Pastrami Slices": {
       "rami-levy": {
         "item_code": "7290000318400",
         "pinned_name": "פסטרמה בקר סגנון רומני 250 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290109581682",
+        "pinned_name": "פסטרמה בקר מעושנת זו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000318400",
+        "pinned_name": "פסטרמה בקר בסגנון רו",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -33,6 +63,12 @@
       },
       "rami-levy": {
         "item_code": "8202046",
+        "pinned_name": "כתף בקר טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "403045",
         "pinned_name": "כתף בקר טרי",
         "approved_by_user": false,
         "selected_by": "assistant"
@@ -50,6 +86,24 @@
         "pinned_name": "בולגרית 5% 250 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290002133889",
+        "pinned_name": "גבינה בולגרית מעודנת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290005992575",
+        "pinned_name": "בולגרית למריחה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290110320591",
+        "pinned_name": "בולגרית מעודנת 16%",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Burger Buns": {
@@ -62,6 +116,18 @@
       "rami-levy": {
         "item_code": "7290018882979",
         "pinned_name": "לחמניות המבורגר 4יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000574462",
+        "pinned_name": "4 לחמניות המבורגר בט",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290017947921",
+        "pinned_name": "אנג'ל לחמניות המבורגר בסגנון אמריקה 6 יח'",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -77,7 +143,40 @@
         "item_code": "7290110559014",
         "pinned_name": "שעועית שחורה 380גר טעם הטבע",
         "approved_by_user": false,
-        "selected_by": "assistant"
+        "selected_by": "assistant",
+        "drained": {
+          "per_unit_g": 230,
+          "units": 1,
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290110559014/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        }
+      },
+      "osher-ad": {
+        "item_code": "7290110559014",
+        "pinned_name": "שעועית שחורה שטראוס",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "drained": {
+          "per_unit_g": 230,
+          "units": 1,
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290110559014/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        }
+      },
+      "yochananof": {
+        "item_code": "7290110559014",
+        "pinned_name": "שעועית שחורה ט. הטבע",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "drained": {
+          "per_unit_g": 230,
+          "units": 1,
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290110559014/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        }
       }
     },
     "Canned Chickpeas": {
@@ -88,10 +187,45 @@
         "selected_by": "assistant"
       },
       "rami-levy": {
-        "item_code": "7290100704974",
-        "pinned_name": "שימורי גרגירי חומוס 240 גר סוגת",
+        "item_code": "7290112357113",
+        "pinned_name": "גרגירי חומוס 230 גר קופסה",
         "approved_by_user": false,
-        "selected_by": "assistant"
+        "selected_by": "assistant",
+        "repin_note": "4 Nov: re-pinned from Sugat 7290100704974 (drained weight unverified) to the Strauss tin 7290112357113 sold in Osher, Yochananof and Rami, so all three chains price the same barcode with a label-verified drained weight.",
+        "drained": {
+          "per_unit_g": 230,
+          "units": 1,
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290112357113/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        }
+      },
+      "osher-ad": {
+        "item_code": "7290112357113",
+        "pinned_name": "גרגירי חומוס שטראוס",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "drained": {
+          "per_unit_g": 230,
+          "units": 1,
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290112357113/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        }
+      },
+      "yochananof": {
+        "item_code": "7290112357113",
+        "pinned_name": "גרגירי חומוס ט. הטבע",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "repin_note": "4 Nov: re-pinned from Sugat 7290100704974 (drained weight unverified) to the Strauss tin 7290112357113 sold in Osher, Yochananof and Rami, so all three chains price the same barcode with a label-verified drained weight.",
+        "drained": {
+          "per_unit_g": 230,
+          "units": 1,
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290112357113/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        }
       }
     },
     "Canned Red Kidney Beans": {
@@ -106,6 +240,24 @@
         "pinned_name": "שימורי שעועית אדומה 240 גר סוגת",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290112357106",
+        "pinned_name": "שעועית אדומה שטראוס",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290100704950",
+        "pinned_name": "שימורי שעועית אדומה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290003643813",
+        "pinned_name": "שעועית אדומה סוגת 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Canned White Cannellini Beans": {
@@ -113,7 +265,40 @@
         "item_code": "7290112348142",
         "pinned_name": "שעועית לבנה 230גר קופסה",
         "approved_by_user": false,
-        "selected_by": "assistant"
+        "selected_by": "assistant",
+        "drained": {
+          "per_unit_g": 230,
+          "units": 1,
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290112348142/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        }
+      },
+      "osher-ad": {
+        "item_code": "7290112348142",
+        "pinned_name": "שעועית לבנה שטראוס ב",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "drained": {
+          "per_unit_g": 230,
+          "units": 1,
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290112348142/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        }
+      },
+      "yochananof": {
+        "item_code": "7290112348142",
+        "pinned_name": "שעועית לבנה ט. הטבע",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "drained": {
+          "per_unit_g": 230,
+          "units": 1,
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290112348142/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        }
       }
     },
     "Chia Seeds": {
@@ -128,12 +313,36 @@
         "pinned_name": "תבלין מימון זרעי צ'יה 150 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290017477305",
+        "pinned_name": "זרעי צ'יה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Chickpea Falafel Mix": {
       "shufersal": {
         "item_code": "7290015809214",
         "pinned_name": "תערובת לפלאפל לל\"ג 180ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290004551926",
+        "pinned_name": "אבקת פלאפל דרומה 1 ק",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290006983206",
+        "pinned_name": "פלאפל בקלי קלות 180",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290006983206",
+        "pinned_name": "אסם פלאפל בקלי קלות 8*180גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -150,6 +359,24 @@
         "pinned_name": "ספגטי 500גר רמילוי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290000060880",
+        "pinned_name": "ספגטי אסם 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000060880",
+        "pinned_name": "ספגטי אסם 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "8008912010034",
+        "pinned_name": "ליגורי- ספגטי מספר 3 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Coconut Cream / Milk": {
@@ -162,6 +389,24 @@
       "rami-levy": {
         "item_code": "7290015603546",
         "pinned_name": "שימורי קרם קוקוס 400 מל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290015603546",
+        "pinned_name": "קרם קוקוס 17-19% מזר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290015603546",
+        "pinned_name": "קרם קוקוס 400 מ\"ל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290012911477",
+        "pinned_name": "קרם קוקוס",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -192,6 +437,24 @@
         "pinned_name": "שמנת לבישול 15% 250 מ\"ל",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290000522340",
+        "pinned_name": "שמנת לבישול 15% רמת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000056951",
+        "pinned_name": "שמנת לבישול 15% 500",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290004125721",
+        "pinned_name": "שמנת לבישול 15%",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Cottage Cheese 5%": {
@@ -204,6 +467,24 @@
       "rami-levy": {
         "item_code": "7290011194246",
         "pinned_name": "קוטג' 5% שומן 250 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290004127329",
+        "pinned_name": "קוטג 5% תנובה 250 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290011194246",
+        "pinned_name": "קוטג 5% 250 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290011194246",
+        "pinned_name": "קוטג' 5% 250 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -220,6 +501,24 @@
         "pinned_name": "גבינת שמנת 200 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290108502541",
+        "pinned_name": "גבינת שמנת טבעי 18%",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290019635369",
+        "pinned_name": "גבינת שמנת  16%",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290108502541",
+        "pinned_name": "גבינת שמנת טעם טבעי 18% 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Creamy Natural Peanut Butter": {
@@ -232,6 +531,24 @@
       "rami-levy": {
         "item_code": "7290113197169",
         "pinned_name": "חמאת בוטנים טבעית 510 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290113197169",
+        "pinned_name": "חמאת בוטנים טבעית  ש",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000446547",
+        "pinned_name": "חמאת בוטנים ממרח טבע",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000446547",
+        "pinned_name": "B&D חמאת בוטנים טבעית 350 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -248,6 +565,24 @@
         "pinned_name": "תפוח עץ גאלה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009007015",
+        "pinned_name": "תפוח עץ סמיט",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "594",
+        "pinned_name": "תפוח עץ  נאשי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.GOLDEN_APPLE",
+        "pinned_name": "תפוח עץ זהוב",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Crisp Lettuce Hearts": {
@@ -260,6 +595,12 @@
       "rami-levy": {
         "item_code": "7290010051373",
         "pinned_name": "לבבות חסה בשקית א.אדמה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290011725143",
+        "pinned_name": "לבבות חסה - מהדרין",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -276,6 +617,12 @@
         "pinned_name": "חסה רומית א.אדמה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000390512",
+        "pinned_name": "חסה עגולה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Crushed Canned Tomatoes": {
@@ -288,6 +635,24 @@
       "rami-levy": {
         "item_code": "7290112357045",
         "pinned_name": "מחית עגבניות מרוסקות 390 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290020244543",
+        "pinned_name": "עגבניות מרוסקות במיץ",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000208022",
+        "pinned_name": "עגבניות מרוסקות יכין",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000208022",
+        "pinned_name": "עגבניות מרוסקות יכין 800 ג' A2.5",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -304,12 +669,30 @@
         "pinned_name": "שעועית ירוקה שלמה טריה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290016584233",
+        "pinned_name": "שעועית ירוקה ארוזה 1",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Dry Brown Lentils": {
       "shufersal": {
         "item_code": "7290018989937",
         "pinned_name": "עדשים חומות יכין 2 *200ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290110571184",
+        "pinned_name": "עדשים חומות שטראוס ב",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290018989937",
+        "pinned_name": "עדשים חומות יכין זוג",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -326,6 +709,24 @@
         "pinned_name": "מיה עדשים ירוקות 500 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290014325401",
+        "pinned_name": "עדשים ירוקות אינדירה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290003643752",
+        "pinned_name": "עדשים ירוקות סוגת 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290003643752",
+        "pinned_name": "עדשים ירוקים 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Dry Red Lentils": {
@@ -338,6 +739,24 @@
       "rami-levy": {
         "item_code": "7290020238139",
         "pinned_name": "עדשים אדומות 1קג רמילוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290014325395",
+        "pinned_name": "עדשים אדומות אינדירה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290003643769",
+        "pinned_name": "עדשים אדומות סוגת 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290003643769",
+        "pinned_name": "עדשים אדומים 500 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -354,6 +773,18 @@
         "pinned_name": "אדממה קלוף קפוא 600 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290001354544",
+        "pinned_name": "פולי סויה אדממה שדה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290001354551",
+        "pinned_name": "פולי סויה אדממה 400",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Egg Stir-Fry Noodles": {
@@ -368,6 +799,24 @@
         "pinned_name": "אטריות ביצים דקות 400 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290018860984",
+        "pinned_name": "אטריות ביצים דקות נו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290018860984",
+        "pinned_name": "אטריות ביצים דקות 40",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290011996031",
+        "pinned_name": "אטריות ביצים, 454 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Farfalle (Bowtie) Pasta": {
@@ -378,6 +827,24 @@
         "selected_by": "assistant"
       },
       "rami-levy": {
+        "item_code": "8076809580144",
+        "pinned_name": "ברילה פרפלה חדש 500גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "8076809580144",
+        "pinned_name": "פרפלה ברילה מס 65 50",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "8004690106600",
+        "pinned_name": "פסטה פרפלה 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
         "item_code": "8076809580144",
         "pinned_name": "ברילה פרפלה חדש 500גרם",
         "approved_by_user": false,
@@ -396,6 +863,12 @@
         "pinned_name": "פטוציני 500ג לה מוליזנה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "8004690050507",
+        "pinned_name": "פסטה איטלקית מקמח דורום פטוצ'יני 500 גר'",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Firm Tofu": {
@@ -408,6 +881,30 @@
       "rami-levy": {
         "item_code": "7290011923303",
         "pinned_name": "טופו טבעי 300גרם ליב",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290003726615",
+        "pinned_name": "טופו הבית משק ויילר",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "pack_override": {
+          "qty": 300,
+          "unit": "g",
+          "status": "source-verified",
+          "evidence": "Same barcode 7290003726615 is listed at Shufersal and Yochananof as 'טופו ויילר 300 גרם' (feed names, 4 Nov); Osher's feed labels it 300 ml."
+        }
+      },
+      "yochananof": {
+        "item_code": "7290003726615",
+        "pinned_name": "טופו ויילר 300 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290110322014",
+        "pinned_name": "טופו טבעי אלטרנטיב",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -424,6 +921,24 @@
         "pinned_name": "טורטיה חיטה 450גר רמי לוי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290006342645",
+        "pinned_name": "טורטיות שקדיה 10*70",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290107974066",
+        "pinned_name": "מאסטר שף עלי טורטיה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290107974080",
+        "pinned_name": "עלי טורטיה קמח חיטה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fluffy Jasmine Rice": {
@@ -436,6 +951,24 @@
       "rami-levy": {
         "item_code": "7290020505521",
         "pinned_name": "אורז יסמין 1 ק\"ג רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290100700396",
+        "pinned_name": "אורז יסמין סוגת 1 ק\"",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "5011157730271",
+        "pinned_name": "*מבצע* אורז יסמין טי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290100704738",
+        "pinned_name": "אורז יסמין קמעונאי 5 קג",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -452,6 +985,24 @@
         "pinned_name": "אורז בסמטי סופר 1קג",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290113196414",
+        "pinned_name": "אורז בסמטי שקדיה 1 ק",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290113196414",
+        "pinned_name": "אורז בסמטי 1 ק\"ג שקד",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290003643004",
+        "pinned_name": "אורז בסמטי קלאסי סוגת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Baby Spinach": {
@@ -459,7 +1010,14 @@
         "item_code": "7290003996742",
         "pinned_name": "עלי תרד חסלט-מהדרין (ק)",
         "approved_by_user": false,
-        "selected_by": "assistant"
+        "selected_by": "assistant",
+        "pack_override": {
+          "qty": 200,
+          "unit": "g",
+          "allow_qty_change": true,
+          "status": "source-verified",
+          "evidence": "Shufersal feed lists barcode 7290003996742 as '1 unit'; Rami Levy's feed lists the same barcode (עלי תרד מגשית חסלט) as 200 g (4 Nov feeds). Same barcode = same tray, so the Shufersal unit is a 200 g tray."
+        }
       },
       "rami-levy": {
         "item_code": "7290003996742",
@@ -480,6 +1038,24 @@
         "pinned_name": "בננה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "623",
+        "pinned_name": "בננה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.BANANA_BUNCH",
+        "pinned_name": "בננות",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009005417",
+        "pinned_name": "בננות",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Basil Leaves": {
@@ -487,25 +1063,50 @@
         "item_code": "7290000001050",
         "pinned_name": "בזיליקום 50 גרם (ק)",
         "approved_by_user": false,
-        "selected_by": "assistant"
+        "selected_by": "assistant",
+        "pack_override": {
+          "qty": 50,
+          "unit": "g",
+          "allow_qty_change": true,
+          "status": "source-verified",
+          "evidence": "Shufersal feed name for barcode 7290000001050 is 'בזיליקום 50 גרם (ק)' (50 g) while the quantity field says 1 unit."
+        }
       },
       "rami-levy": {
         "item_code": "7290017487557",
         "pinned_name": "בזיליקום שדות בעמק",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290016823004",
+        "pinned_name": "בזיליקום יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Carrots": {
-      "shufersal": {
-        "item_code": "7290000099941",
-        "pinned_name": "מארז גזר  אורגני",
-        "approved_by_user": false,
-        "selected_by": "assistant"
-      },
       "rami-levy": {
         "item_code": "102",
         "pinned_name": "גזר ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "635",
+        "pinned_name": "גזר ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.CARROTS_LOOSE",
+        "pinned_name": "גזר ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009000313",
+        "pinned_name": "גזר",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -522,26 +1123,58 @@
         "pinned_name": "כרובית",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290018394342",
+        "pinned_name": "פרחי כרובית",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Celery": {
-      "shufersal": {
-        "item_code": "7290016334623",
-        "pinned_name": "סלרי עלים (ק)",
-        "approved_by_user": false,
-        "selected_by": "assistant"
-      },
       "rami-levy": {
         "item_code": "7290010051205",
         "pinned_name": "סלרי אמריקאי א.אדמה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290018795811",
+        "pinned_name": "סלרי ראש יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290003996094",
+        "pinned_name": "סלרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "shufersal": {
+        "item_code": "7290016334623",
+        "pinned_name": "סלרי עלים (ק)",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "form_flag": "Feed name says celery leaves; Rami's photo for its pin also shows a leaf bunch; Yochananof pin is a celery head. Recipe (Harira soup, 300 g 'celery') does not say stalk or leaves. Form mixed across chains, unverified."
       }
     },
     "Fresh Champignon Mushrooms": {
       "rami-levy": {
         "item_code": "7290003996209",
         "pinned_name": "פטריות שמפניון חסלט",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "pack_override": {
+          "qty": 250,
+          "unit": "g",
+          "allow_qty_change": true,
+          "status": "source-verified",
+          "evidence": "Rami Levy's product photo for barcode 7290003996209 (https://img.rami-levy.co.il/product/7290003996209/large.jpg, viewed 4 Nov) shows the Chasleet champignon tray label '250 גרם' with that barcode printed on it; the feed lists it as '1 unit'."
+        }
+      },
+      "yochananof": {
+        "item_code": "666",
+        "pinned_name": "פטריות  בתפזורת",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -558,6 +1191,24 @@
         "pinned_name": "כבד עוף טרי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290002069577",
+        "pinned_name": "כבד עוף טרי פרימה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "400761",
+        "pinned_name": "כבד עוף  טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290002206118",
+        "pinned_name": "כבד עוף לצליה טרי ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Chives": {
@@ -572,6 +1223,12 @@
         "pinned_name": "עירית א. אדמה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290016823028",
+        "pinned_name": "עירית יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Cucumbers": {
@@ -583,6 +1240,24 @@
       },
       "rami-levy": {
         "item_code": "101",
+        "pinned_name": "מלפפון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009000207",
+        "pinned_name": "מלפפון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000000695",
+        "pinned_name": "מלפפון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.ISRAELI_CUCUMBER",
         "pinned_name": "מלפפון",
         "approved_by_user": false,
         "selected_by": "assistant"
@@ -600,6 +1275,12 @@
         "pinned_name": "שמיר א.אדמה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290012724824",
+        "pinned_name": "שמיר יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Eggplant": {
@@ -614,18 +1295,36 @@
         "pinned_name": "חציל",
         "approved_by_user": false,
         "selected_by": "assistant"
-      }
-    },
-    "Fresh Garlic Bulbs": {
-      "shufersal": {
-        "item_code": "7290001970034",
-        "pinned_name": "שום גבישי במשקל",
+      },
+      "osher-ad": {
+        "item_code": "7290009001419",
+        "pinned_name": "חציל",
         "approved_by_user": false,
         "selected_by": "assistant"
       },
+      "yochananof": {
+        "item_code": "661",
+        "pinned_name": "חציל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.EGGPLANT1",
+        "pinned_name": "חציל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Garlic Bulbs": {
       "rami-levy": {
         "item_code": "612",
         "pinned_name": "שום טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "11462558",
+        "pinned_name": "שום טרי בתפזורת",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -642,6 +1341,12 @@
         "pinned_name": "אספרגוס א.אדמה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290010650866",
+        "pinned_name": "אספרגוס יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Hummus Tub": {
@@ -656,6 +1361,24 @@
         "pinned_name": "חומוס צבר 1 ק\"ג",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290003727667",
+        "pinned_name": "חומוס צבר 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290003727667",
+        "pinned_name": "צבר חומוס 1ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290005588983",
+        "pinned_name": "חומוס",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Lemons": {
@@ -667,6 +1390,24 @@
       },
       "rami-levy": {
         "item_code": "117",
+        "pinned_name": "לימון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009005301",
+        "pinned_name": "לימון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "691",
+        "pinned_name": "לימון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.LEMON1",
         "pinned_name": "לימון",
         "approved_by_user": false,
         "selected_by": "assistant"
@@ -684,6 +1425,18 @@
         "pinned_name": "מנגו",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009006551",
+        "pinned_name": "מנגו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "701",
+        "pinned_name": "מנגו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Milk 3%": {
@@ -698,18 +1451,48 @@
         "pinned_name": "חלב 3% טרה 2 ליטר",
         "approved_by_user": false,
         "selected_by": "assistant"
-      }
-    },
-    "Fresh Mushrooms": {
-      "shufersal": {
-        "item_code": "7290010650002",
-        "pinned_name": "פטריות יער מארז",
+      },
+      "osher-ad": {
+        "item_code": "7290010945306",
+        "pinned_name": "חלב 3% טרה 2 ליטר",
         "approved_by_user": false,
         "selected_by": "assistant"
       },
+      "yochananof": {
+        "item_code": "7290003029815",
+        "pinned_name": "חלב 3% בקבוק 2 ליטר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290004131074",
+        "pinned_name": "חלב 3% קרטון מהדרין",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      }
+    },
+    "Fresh Mushrooms": {
       "rami-levy": {
         "item_code": "333",
         "pinned_name": "פטריות במשקל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009003246",
+        "pinned_name": "פטריות במשקל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290112841919",
+        "pinned_name": "פטריות שמפניון 300 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "666",
+        "pinned_name": "פטריות  בתפזורת",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -726,6 +1509,12 @@
         "pinned_name": "פטרוזיליה א.אדמה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290012724848",
+        "pinned_name": "פטרוזיליה יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Pita Bread Pockets": {
@@ -738,6 +1527,31 @@
       "rami-levy": {
         "item_code": "7290005719844",
         "pinned_name": "פיתות 10יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290000497198",
+        "pinned_name": "פיתות ברמן 10 יח",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "pack_override": {
+          "qty": 1000,
+          "unit": "g",
+          "allow_qty_change": true,
+          "status": "source-verified",
+          "evidence": "Pack photo https://img.rami-levy.co.il/product/7290000497198/large.jpg (viewed 4 Nov 14:11, same barcode): Berman 'אסלי X10', 'עשר פיתות קלאסיות', 'משקל: 1 ק\"ג'. Feed lists 10 units."
+        }
+      },
+      "yochananof": {
+        "item_code": "7290018540329",
+        "pinned_name": "פיתות אנגל 8 יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290010777044",
+        "pinned_name": "פיתה ארטיזן",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -754,6 +1568,24 @@
         "pinned_name": "ריקוטה 250 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290014890176",
+        "pinned_name": "גבינת ריקוטה בסגנון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000554822",
+        "pinned_name": "ריקוטה קלאסית",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290017065137",
+        "pinned_name": "גד ריקוטה למריחה 5% שומן 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Salmon Fillet": {
@@ -768,6 +1600,24 @@
         "pinned_name": "פילה סלמון שלם טרי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290008545877",
+        "pinned_name": "פילה סלמון טרי אושר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290002332329",
+        "pinned_name": "מנות פילה סלמון טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP_Salmon_Fillet2",
+        "pinned_name": "פילה סלמון נורבגי שלם טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Tomatoes": {
@@ -779,6 +1629,24 @@
       },
       "rami-levy": {
         "item_code": "100",
+        "pinned_name": "עגבניה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009000122",
+        "pinned_name": "עגבניה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "725",
+        "pinned_name": "עגבניה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.TOMATO1",
         "pinned_name": "עגבניה",
         "approved_by_user": false,
         "selected_by": "assistant"
@@ -796,6 +1664,24 @@
         "pinned_name": "כרוב לבן",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009000504",
+        "pinned_name": "כרוב לבן",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "681",
+        "pinned_name": "כרוב לבן",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.CABBAGE_GRE",
+        "pinned_name": "כרוב לבן",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Zucchini": {
@@ -808,6 +1694,24 @@
       "rami-levy": {
         "item_code": "107",
         "pinned_name": "קישוא ירוק",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009001808",
+        "pinned_name": "קישוא",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "755",
+        "pinned_name": "קישואים",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP_ZUCCHINI1",
+        "pinned_name": "קישואים",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -824,6 +1728,24 @@
         "pinned_name": "ברוקולי 800גר רמי לוי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290019036951",
+        "pinned_name": "פרחי ברוקולי קפואים",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290018989555",
+        "pinned_name": "פרחי ברוקולי קפואים 21.90",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290019308867",
+        "pinned_name": "שדה בשקית, פרחי ברוקולי מוקפאים 700 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Frozen Cut Green Beans": {
@@ -836,6 +1758,24 @@
       "rami-levy": {
         "item_code": "7290018564196",
         "pinned_name": "שעועית ירוקה חתוכה 800 ג רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290017616605",
+        "pinned_name": "שעועית ירוקה חתוכה א",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000104720",
+        "pinned_name": "שעועית ירוקה חתוכה ס",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000104720",
+        "pinned_name": "שעועית ירוקה חתוכה 800 ג",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -852,12 +1792,42 @@
         "pinned_name": "אפונה עדינה 600ג רמילוי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290017616513",
+        "pinned_name": "אפונה עדינה אינדירה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000104201",
+        "pinned_name": "אפונה עדינה סנפרוסט",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000104201",
+        "pinned_name": "אפונה עדינה סנפרוסט",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Goat Cheese Log": {
       "rami-levy": {
         "item_code": "7290000045917",
         "pinned_name": "פרומעז גבינת עזים גליל 23%",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000045917",
+        "pinned_name": "פרומעז גבינת עזים גל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000045917",
+        "pinned_name": "פרומעז גבינת עזים",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -874,6 +1844,24 @@
         "pinned_name": "פתיתי פרמזן 100 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290019635000",
+        "pinned_name": "פתיתי פרמזן 23% המחל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290019635000",
+        "pinned_name": "פתיתי פרמזן 100 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290004122119",
+        "pinned_name": "פרמזן מגורדת 23% 100 ג'",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Greek Strained Yogurt": {
@@ -886,6 +1874,24 @@
       "rami-levy": {
         "item_code": "7290013771384",
         "pinned_name": "יוגורט יווני 400 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290014890589",
+        "pinned_name": "יוגורט יווני מחלב בק",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290017065588",
+        "pinned_name": "יוגורט יווני 600 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290019635840",
+        "pinned_name": "יוגורט יווני 6.5% חלבון בד\"ץ הרב רובין",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -902,6 +1908,24 @@
         "pinned_name": "קינמון טחון רמי לוי 100 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290015321242",
+        "pinned_name": "קינמון טחון פרג 250",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000134307",
+        "pinned_name": "קינמון טחון שקית 50",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000134307",
+        "pinned_name": "תבליני טעם וריח שקית 50 גר. קינמון טחון",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Ground Cumin": {
@@ -914,6 +1938,24 @@
       "rami-levy": {
         "item_code": "7290018711347",
         "pinned_name": "כמון טחון 200 גרם רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290019603351",
+        "pinned_name": "כמון מיה 80 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290015324090",
+        "pinned_name": "כמון טחון שקית 80 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "11463024",
+        "pinned_name": "תבליני טעם וריח שקית 80 גרם כמון טחון",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -930,6 +1972,24 @@
         "pinned_name": "כורכום טחון 200גר רמילוי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290002319450",
+        "pinned_name": "כורכום מיה 80 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000134840",
+        "pinned_name": "כורכום 100 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000134840",
+        "pinned_name": "תבליני טעם וריח מיכל גדול כורכום 100 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Halloumi Grilling Cheese": {
@@ -942,6 +2002,24 @@
       "rami-levy": {
         "item_code": "7290019790310",
         "pinned_name": "חלומי 24% 200 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290102393718",
+        "pinned_name": "גבינה חלומי 28% צורי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290102393718",
+        "pinned_name": "חלומי בקר 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290102393718",
+        "pinned_name": "חלומי 200 גרם משק צוריאל",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -958,6 +2036,24 @@
         "pinned_name": "פסטה קונכיות גדולות 500 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290002327066",
+        "pinned_name": "קונכיות בצק למילוי ש",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290002735212",
+        "pinned_name": "קונכיות בצק 750  גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "8008912010331",
+        "pinned_name": "פסטה ניוקטי סרדי  בצורת קונכיות 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Labneh Yogurt Cheese": {
@@ -972,6 +2068,30 @@
         "pinned_name": "לבנה בקר 250 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290005992735",
+        "pinned_name": "לאבנה 250 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "11463804",
+        "pinned_name": "לאבנה 9% 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290106663091",
+        "pinned_name": "לאבנה 9% שטראוס 500",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "pack_override": {
+          "qty": 500,
+          "unit": "g",
+          "status": "source-verified",
+          "evidence": "chp.co.il barcode listing for 7290106663091 gives 500 g; the feed labels it 500 ml and the name says 500. Victory lists the same product as 'לאבנה 9% 500 גרם'."
+        }
       }
     },
     "Lean Ground Turkey": {
@@ -979,11 +2099,18 @@
         "item_code": "7290003751242",
         "pinned_name": "הודו טחון גלאט 500 גרם",
         "approved_by_user": false,
-        "selected_by": "assistant"
+        "selected_by": "assistant",
+        "note": "glatt"
       },
       "rami-levy": {
         "item_code": "7290004323882",
         "pinned_name": "הודו אדום טחון 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290004257484",
+        "pinned_name": "הודו טחון 100% עטרה",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1000,6 +2127,24 @@
         "pinned_name": "קמח מצה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290014867666",
+        "pinned_name": "קמח מצה דרומה 900 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290015193665",
+        "pinned_name": "קמח מצה 500 גרם חמץ",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290008636650",
+        "pinned_name": "קמח מצה 500גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Mayonnaise": {
@@ -1014,6 +2159,24 @@
         "pinned_name": "מיונז תלמה 500 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290000111186",
+        "pinned_name": "מיונז תלמה 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000111186",
+        "pinned_name": "מיונז תלמה 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000111186",
+        "pinned_name": "מיונז אמיתי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Medjool Sweet Dates": {
@@ -1026,6 +2189,12 @@
       "rami-levy": {
         "item_code": "8719326034096",
         "pinned_name": "תמר מג'הול 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290017477596",
+        "pinned_name": "תמר מג'הול ענק",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1056,6 +2225,18 @@
         "pinned_name": "פפריקה מתוקה 100גר רמילוי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290002319429",
+        "pinned_name": "פפריקה מתוקה מיה 80",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000134857",
+        "pinned_name": "פפריקה מתוקה 100 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Penne Rigate Pasta": {
@@ -1068,6 +2249,24 @@
       "rami-levy": {
         "item_code": "8008912010423",
         "pinned_name": "ליגורי- פנה ריגטה מספר 42 500גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "8076802085738",
+        "pinned_name": "פסטה ברילה פנה רגטה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "8008912010423",
+        "pinned_name": "פסטה ליגורי פנה ריגט",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "8008912010423",
+        "pinned_name": "פסטה פנה ריגטה מספר 42 500 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1084,6 +2283,24 @@
         "pinned_name": "מלפפונים חמוצים ביתיים כבושים 500 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290113192539",
+        "pinned_name": "מלפפון במלח 7-9 בית",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290002057352",
+        "pinned_name": "מלפפון במלח 7-9 560",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "12917612",
+        "pinned_name": "מלפפונים במלח בינוני",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Pitted Kalamata Olives": {
@@ -1096,6 +2313,18 @@
       "rami-levy": {
         "item_code": "7290118484370",
         "pinned_name": "זיתים קלמטה 215 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290113194090",
+        "pinned_name": "טבעות קלמטה 626 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290113194090",
+        "pinned_name": "בית השיטה טבעות קלמטה 12*280גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1112,6 +2341,24 @@
         "pinned_name": "ניוקי 500 ג רמי לוי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290000909387",
+        "pinned_name": "ניוקי דרומי 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290013389114",
+        "pinned_name": "ניוקי תפו\"א",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290900010664",
+        "pinned_name": "ניוקי בטטה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Potatoes": {
@@ -1124,6 +2371,24 @@
       "rami-levy": {
         "item_code": "111",
         "pinned_name": "תפוח אדמה לבן ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009002997",
+        "pinned_name": "תפוח אדמה תפזורת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.WHITE_POTATO1",
+        "pinned_name": "תפוח אדמה לבן",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "345",
+        "pinned_name": "תפו\"א לבן בתפזורת",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1140,6 +2405,24 @@
         "pinned_name": "חמאה טרה 200 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290102394814",
+        "pinned_name": "חמאה טרה 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290019635147",
+        "pinned_name": "חמאה איטלקית",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290108503746",
+        "pinned_name": "חמאה מלוחה  200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Pure Date Syrup (Silan)": {
@@ -1152,6 +2435,24 @@
       "rami-levy": {
         "item_code": "7290012983276",
         "pinned_name": "סילאן כנרת 900 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290011154134",
+        "pinned_name": "סילאן טעמי הגליל 900",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290003143139",
+        "pinned_name": "סילאן 900 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290011498221",
+        "pinned_name": "סילאן טבעי",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1168,6 +2469,24 @@
         "pinned_name": "דבש טהור רמי לוי 1 ק\"ג",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290122590494",
+        "pinned_name": "דבש טהור מפרחי בר  ש",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290002703020",
+        "pinned_name": "דבש טהור לחיץ יוחננו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290002130581",
+        "pinned_name": "דבש טהור יד מרדכי מפרחי בר בצנצנת 1 קג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Quick Fluffy Couscous": {
@@ -1180,6 +2499,24 @@
       "rami-levy": {
         "item_code": "7290100702260",
         "pinned_name": "קוסקוס דק 350 גרם סוגת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290002040064",
+        "pinned_name": "קוסקוס דק מזון 350 ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290100702260",
+        "pinned_name": "קוסקוס דק 350 ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290002040064",
+        "pinned_name": "קוסקוס דק 350 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1196,6 +2533,24 @@
         "pinned_name": "טחינה גולמית 500 גרם רמי לוי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000572819",
+        "pinned_name": "*מבצע* טחינה גולמית",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000572819",
+        "pinned_name": "אחוה טחינה גולמית 1 קג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290002024019",
+        "pinned_name": "טחינה שמיר 3 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Raw Walnuts": {
@@ -1208,6 +2563,24 @@
       "rami-levy": {
         "item_code": "7290119673681",
         "pinned_name": "אגוזי מלך קלופים 500 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290117909843",
+        "pinned_name": "אגוזי מלך ענקיים שקד",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290006241191",
+        "pinned_name": "אגוזי מלך קלופים 150",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290016277562",
+        "pinned_name": "אגוז מלך קלוף 300 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1224,6 +2597,12 @@
         "pinned_name": "שקדים טבעיים קלופים 200",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290006241214",
+        "pinned_name": "שקדים טבעיים 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Ready Falafel Patties": {
@@ -1236,6 +2615,24 @@
       "rami-levy": {
         "item_code": "7290008343626",
         "pinned_name": "כדורי פלאפל שלושת האופים 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290002929512",
+        "pinned_name": "כדורי פלאפל ש. האופי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290002150077",
+        "pinned_name": "פלאפל קפוא 400 גרם ח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290001922231",
+        "pinned_name": "כדורי פלאפל 700 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1252,6 +2649,24 @@
         "pinned_name": "חומוס צבר 1 ק\"ג",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290003727667",
+        "pinned_name": "חומוס צבר 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290003727667",
+        "pinned_name": "צבר חומוס 1ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290005588983",
+        "pinned_name": "חומוס",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Red Bell Peppers": {
@@ -1263,6 +2678,24 @@
       },
       "rami-levy": {
         "item_code": "104",
+        "pinned_name": "פלפל אדום",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009001501",
+        "pinned_name": "פלפל אדום",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "742",
+        "pinned_name": "פלפל אדום",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.RED_PEPPER",
         "pinned_name": "פלפל אדום",
         "approved_by_user": false,
         "selected_by": "assistant"
@@ -1280,6 +2713,24 @@
         "pinned_name": "בצל אדום",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009000931",
+        "pinned_name": "בצל אדום",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "619",
+        "pinned_name": "בצל אדום",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.RED_ONION1",
+        "pinned_name": "בצל אדום",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Rice Vermicelli Noodles": {
@@ -1294,6 +2745,30 @@
         "pinned_name": "אטריות אורז דקות 400 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "308910525744",
+        "pinned_name": "אטריות אורז דקות מזר",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "pack_override": {
+          "qty": 454,
+          "unit": "g",
+          "status": "inferred",
+          "evidence": "Osher's feed labels the rice noodles '454 ml'; solid noodles are sold by weight and Shufersal lists a 454 g pack. Not confirmed from a label."
+        }
+      },
+      "yochananof": {
+        "item_code": "8856429000341",
+        "pinned_name": "אטריות אורז דקות ורמ",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "12471849",
+        "pinned_name": "מאסטר שף איטריות אורז ורמיצלי כשלפ 400גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Ripe Haas Avocado": {
@@ -1305,6 +2780,24 @@
       },
       "rami-levy": {
         "item_code": "135",
+        "pinned_name": "אבוקדו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009005615",
+        "pinned_name": "אבוקדו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "606",
+        "pinned_name": "אבוקדו",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.AVOCADO",
         "pinned_name": "אבוקדו",
         "approved_by_user": false,
         "selected_by": "assistant"
@@ -1322,6 +2815,24 @@
         "pinned_name": "שיבולת שועל עבה 400 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290014095960",
+        "pinned_name": "שיבולת שועל עבה 400",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "5000108478119",
+        "pinned_name": "שיבולת שועל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290015347952",
+        "pinned_name": "שיבולת שועל עבה אינד",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Seasoned Breadcrumbs": {
@@ -1334,6 +2845,24 @@
       "rami-levy": {
         "item_code": "7290001041635",
         "pinned_name": "פירורי לחם מיה 200 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290100680711",
+        "pinned_name": "פירורית זהב אסם 350",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290100700075",
+        "pinned_name": "פירורי לחם מוזהבים ס",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290100700075",
+        "pinned_name": "פירורי לחם מוזהבים סוגת 200 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1350,22 +2879,15 @@
         "pinned_name": "בייגלה 5 יח",
         "approved_by_user": false,
         "selected_by": "assistant"
-      }
-    },
-    "Shelled Roasted Pistachios": {
-      "shufersal": {
-        "item_code": "7290000976846",
-        "pinned_name": "פיסטוק מקולף שקיל",
-        "approved_by_user": false,
-        "selected_by": "assistant"
       },
-      "rami-levy": {
-        "item_code": "7290018566152",
-        "pinned_name": "פיסטוק * 150 גר בקופסא",
+      "yochananof": {
+        "item_code": "14098",
+        "pinned_name": "בייגלה מאפית",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
     },
+    "Shelled Roasted Pistachios": {},
     "Smoked Salmon Slices": {
       "shufersal": {
         "item_code": "7290008340618",
@@ -1376,6 +2898,24 @@
       "rami-levy": {
         "item_code": "7290002345275",
         "pinned_name": "פילה דג סלמון מעושן  100 גרם רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290008340618",
+        "pinned_name": "סלמון מעושן סטרלינג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290008340618",
+        "pinned_name": "סלמון מעושן 100 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290014435704",
+        "pinned_name": "סלמון מעושן פרוס בעישון טבעי",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1392,6 +2932,24 @@
         "pinned_name": "פסטרמה הודו מהמעשנת יחיעם 180 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290003031757",
+        "pinned_name": "פסטרמה הודו פפריקה ט",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290019138150",
+        "pinned_name": "פסטרמה הודו על גחלים",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290006742278",
+        "pinned_name": "פסטרמה גחלים",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Soft White Cheese 5%": {
@@ -1404,6 +2962,18 @@
       "rami-levy": {
         "item_code": "7290000474502",
         "pinned_name": "גבינה לבנה 5% טרה 250 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000047621",
+        "pinned_name": "גבינה לבנה 5% 250 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000474502",
+        "pinned_name": "גבינה לבנה 5% 250 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1420,6 +2990,24 @@
         "pinned_name": "רוטב סויה 550 גרם רמי לוי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290116534244",
+        "pinned_name": "רוטב סויה סגנון סיני",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "4903001904192",
+        "pinned_name": "רוטב סויה יאמאסה 500",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000116945",
+        "pinned_name": "רוטב סויה קלאסי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Sushi Short Grain Rice": {
@@ -1432,6 +3020,18 @@
       "rami-levy": {
         "item_code": "7290100701157",
         "pinned_name": "אורז סושי 1 ק\"ג סוגת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290100701157",
+        "pinned_name": "אורז סושי 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290100701157",
+        "pinned_name": "אורז סושי סוגת 1 ק\"ג",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1448,6 +3048,24 @@
         "pinned_name": "עגבניות שרי קלמר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009004793",
+        "pinned_name": "עגבניות שרי לובלו מש",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "728",
+        "pinned_name": "עגבניות שרי שקיל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290002766056",
+        "pinned_name": "עגבניות שרי תמר לב",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Sweet Corn Kernels": {
@@ -1460,6 +3078,18 @@
       "shufersal": {
         "item_code": "7290016087796",
         "pinned_name": "גרעיני תירס מתוק 400 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "6902412100412",
+        "pinned_name": "גרעיני תירס מתוק מונ",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290016370829",
+        "pinned_name": "גרעיני תירס מתוק 550",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1476,6 +3106,18 @@
         "pinned_name": "פפריקה מתוקה מיה 80 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290002319429",
+        "pinned_name": "פפריקה מתוקה מיה 80",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000134857",
+        "pinned_name": "פפריקה מתוקה 100 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Sweet Potatoes": {
@@ -1487,6 +3129,24 @@
       },
       "rami-levy": {
         "item_code": "138",
+        "pinned_name": "בטטה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009001105",
+        "pinned_name": "בטטה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "622",
+        "pinned_name": "בטטה.",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP.YAMS",
         "pinned_name": "בטטה",
         "approved_by_user": false,
         "selected_by": "assistant"
@@ -1504,6 +3164,24 @@
         "pinned_name": "פילה אמנון טרי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290000257112",
+        "pinned_name": "פילה אמנון טרי אושר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290002332350",
+        "pinned_name": "פילה אמנון טרי ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "11693070",
+        "pinned_name": "פילה אמנון טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Toasted Pasta Pearls (Ptitim)": {
@@ -1516,6 +3194,24 @@
       "rami-levy": {
         "item_code": "7290015339568",
         "pinned_name": "פתיתים אורז 500גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290000060408",
+        "pinned_name": "פתיתים טבעות אסם 500",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000060408",
+        "pinned_name": "פתיתים אפויים טבעות",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000060408",
+        "pinned_name": "אסם פתיתים אפויים טבעות 12*500גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1532,6 +3228,24 @@
         "pinned_name": "קינואה 400גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "835811001621",
+        "pinned_name": "קינואה הנמל 1.2 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290015395045",
+        "pinned_name": "קינואה 400 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "835811008743",
+        "pinned_name": "הנמל קינואה מקור לחלבון 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "White Rice": {
@@ -1544,6 +3258,24 @@
       "rami-levy": {
         "item_code": "7290117907733",
         "pinned_name": "אורז פרסי 1קג שקדיה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "8693374263588",
+        "pinned_name": "אורז לבן בסמטי ארוך",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290117907733",
+        "pinned_name": "אורז פרסי שקדיה 1 ק\"",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "16429153",
+        "pinned_name": "האופה - אורז פרסי 1 ק\"ג",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1560,12 +3292,30 @@
         "pinned_name": "עוף שלם טרי מחפוד",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290001209349",
+        "pinned_name": "עוף שלם טרי עטרה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Whole Grain Brown Rice": {
       "rami-levy": {
         "item_code": "7290000211312",
         "pinned_name": "סוגת אורז מלא 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000211312",
+        "pinned_name": "אורז מלא 1 ק\"ג.",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000211312",
+        "pinned_name": "אורז מלא ארוך סוגת 1 קג",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1582,6 +3332,18 @@
         "pinned_name": "גרנולה פירות 850 ג שקדיה",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290014471443",
+        "pinned_name": "גרנולה אגוזים שקדיה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290001343845",
+        "pinned_name": "*מבצע* גרנולה פירות",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Whole Wheat Bread": {
@@ -1596,6 +3358,12 @@
         "pinned_name": "לחם חיטה מלאה 750 ג",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290016967074",
+        "pinned_name": "לחם חיטה מלאה ודגנים",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Yellow Onions": {
@@ -1607,6 +3375,18 @@
       },
       "rami-levy": {
         "item_code": "108",
+        "pinned_name": "בצל יבש",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009000900",
+        "pinned_name": "בצל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "620",
         "pinned_name": "בצל יבש",
         "approved_by_user": false,
         "selected_by": "assistant"
@@ -1624,12 +3404,36 @@
         "pinned_name": "זעתר מיה 50 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290003681242",
+        "pinned_name": "זעתר מיה 50 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290015324076",
+        "pinned_name": "זעתר מעורב שקית 80",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290015324076",
+        "pinned_name": "תבליני טעם וריח שקית 80 גרם זעתר מעורב",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Strawberries": {
       "rami-levy": {
         "item_code": "7290013220561",
         "pinned_name": "תות שדה 500גר רמילוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290020187062",
+        "pinned_name": "תות שדה 500 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1646,6 +3450,18 @@
         "pinned_name": "אוכמניות 125 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290008268448",
+        "pinned_name": "אוכמניות יח",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000101927",
+        "pinned_name": "אוכמניות כחולות מוקפ",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh or Ground Ginger": {
@@ -1658,6 +3474,18 @@
       "rami-levy": {
         "item_code": "225",
         "pinned_name": "ג'ינג'ר תפזורת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290009069518",
+        "pinned_name": "גינגר במשקל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290010650194",
+        "pinned_name": "גינגר יח",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1674,6 +3502,24 @@
         "pinned_name": "חלה מתוקה ארוזה 500גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290000497358",
+        "pinned_name": "חלה מתוקה חלומית ברמ",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000379746",
+        "pinned_name": "חלה מתוקה אנגל 500",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290003268641",
+        "pinned_name": "חלה מתוקה מיוחדת 500 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Artisan Sourdough Loaf": {
@@ -1685,6 +3531,12 @@
       },
       "rami-levy": {
         "item_code": "2608202",
+        "pinned_name": "לחם מחמצת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290001461105",
         "pinned_name": "לחם מחמצת",
         "approved_by_user": false,
         "selected_by": "assistant"
@@ -1702,6 +3554,24 @@
         "pinned_name": "לחם שיפון גרעינים פרוס אחדות 750 גרם",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290003719259",
+        "pinned_name": "לחם שיפון ליבו 1 ק\"ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000574370",
+        "pinned_name": "לחם שיפון אמיתי קל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290002065616",
+        "pinned_name": "לחם שיפון בתוספת גרעינים 750 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Crispy Brown Rice Cakes": {
@@ -1714,6 +3584,24 @@
       "rami-levy": {
         "item_code": "7290004952792",
         "pinned_name": "פריכיות אורז מלא דקות אורגני הרדוף 100גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290000068343",
+        "pinned_name": "פריכונים מאורז מלא א",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290008989091",
+        "pinned_name": "פריכיות אורז 310 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290008989091",
+        "pinned_name": "פריכיות אורז",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1730,6 +3618,24 @@
         "pinned_name": "קרוטונים אפויים לסלט 400 גר רמילוי",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290013358462",
+        "pinned_name": "מיני קרוטונים למרק ש",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000078212",
+        "pinned_name": "קרוטונים מתובלים 250",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000078212",
+        "pinned_name": "אסם קרוטונים מתובלים 250 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Basil Pesto Spread": {
@@ -1742,6 +3648,18 @@
       "rami-levy": {
         "item_code": "7290003438006",
         "pinned_name": "ממרח פסטו איטלקי אוליביה 190 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290015858106",
+        "pinned_name": "פסטו ביתי עללחם 180",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290003438006",
+        "pinned_name": "אוליביה פסטו איטלקי",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1758,6 +3676,18 @@
         "pinned_name": "תבלין לשווארמה טורקית מימון 100 גרם*",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290015321310",
+        "pinned_name": "תבלין לשווארמה פרג 2",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290011964702",
+        "pinned_name": "תבלין לשווארמה 100 ג",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Flaky Cheese Bourekas": {
@@ -1770,6 +3700,18 @@
       "rami-levy": {
         "item_code": "7290002735847",
         "pinned_name": "בורקס גבינה רמי לוי 800 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000238173",
+        "pinned_name": "בורקס גבינה 800 גרם",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290006804051",
+        "pinned_name": "בורקס גבינה",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1794,6 +3736,24 @@
         "pinned_name": "אפונה וגזר רמילוי 800 גר",
         "approved_by_user": false,
         "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290000208114",
+        "pinned_name": "אפונה וגזר יכין 550",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000104881",
+        "pinned_name": "אפונה וגזר 800 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000104881",
+        "pinned_name": "אפונה וגזר 800 ג סנפרוסט",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Leek or Yellow Onion": {
@@ -1806,6 +3766,12 @@
       "rami-levy": {
         "item_code": "7290122182125",
         "pinned_name": "לוף (כרישה ) רמי לוי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290014079328",
+        "pinned_name": "פרסה - לוף  יח",
         "approved_by_user": false,
         "selected_by": "assistant"
       }
@@ -1824,6 +3790,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: fresh chicken only"
+      },
+      "osher-ad": {
+        "item_code": "7290002939108",
+        "pinned_name": "חזה עוף טרי עטרה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "407708",
+        "pinned_name": "חזה עוף ארוז טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290002206057",
+        "pinned_name": "חזה עוף טרי שלם ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Chicken Drumsticks": {
@@ -1840,6 +3824,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: fresh chicken only"
+      },
+      "osher-ad": {
+        "item_code": "7290001209387",
+        "pinned_name": "שוקיים עוף טרי עטרה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "400044",
+        "pinned_name": "שוקיים עוף טרי  פרימ",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290002206033",
+        "pinned_name": "שוקיים עוף טרי ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Chicken Thighs & Drumsticks": {
@@ -1856,6 +3858,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: fresh chicken only"
+      },
+      "osher-ad": {
+        "item_code": "7290001209356",
+        "pinned_name": "כרעיים עוף טרי עטרה",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "401317",
+        "pinned_name": "כרעיים טרי מקוצב",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290002206019",
+        "pinned_name": "כרעיים עוף טרי ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Boneless Chicken Thighs (Pargiyot)": {
@@ -1872,6 +3892,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: fresh chicken only"
+      },
+      "osher-ad": {
+        "item_code": "7290002804666",
+        "pinned_name": "סטייק פרגית עוף טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "40035",
+        "pinned_name": "פרגית עם עצם לתנור",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290002206101",
+        "pinned_name": "סטייק פרגית ללא עור",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Ground Beef": {
@@ -1888,6 +3926,12 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: fresh ground beef only"
+      },
+      "osher-ad": {
+        "item_code": "7290002292487",
+        "pinned_name": "בקר טחון 500 גרם אחד",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Fresh Denis (Sea Bream) Fillets": {
@@ -1904,6 +3948,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: fillets, not whole"
+      },
+      "yochananof": {
+        "item_code": "7290008618021",
+        "pinned_name": "פילה דניס טרי ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP_Sea_Bream_Fillet",
+        "pinned_name": "פילה דניס טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "osher-ad": {
+        "item_code": "7290004230548",
+        "pinned_name": "פילה דניס טרי אושר פ",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Sea Bass Fillets": {
@@ -1920,6 +3982,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: fillets, not whole"
+      },
+      "osher-ad": {
+        "item_code": "7290000257181",
+        "pinned_name": "פילה לברק ג'מבו טרי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290008255806",
+        "pinned_name": "פילה לברק טרי ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "SP_לברק",
+        "pinned_name": "דג לברק טרי נקי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Cod / White Fish Fillets": {
@@ -1936,6 +4016,12 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: fresh tilapia fillet accepted as the white-fish substitute (no suitable cod match found)"
+      },
+      "yochananof": {
+        "item_code": "7290002332350",
+        "pinned_name": "פילה אמנון טרי ארוז",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Mozzarella Cheese": {
@@ -1952,6 +4038,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: grated mozzarella"
+      },
+      "osher-ad": {
+        "item_code": "7290001258774",
+        "pinned_name": "גבינת מוצרלה בייבי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "729001234308",
+        "pinned_name": "מוצרלה  נקניק 22%",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290005079344",
+        "pinned_name": "גבינת נעם מוצרלה 22%",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Yellow Cheese Slices": {
@@ -1968,6 +4072,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: cheapest ordinary sliced yellow cheese"
+      },
+      "osher-ad": {
+        "item_code": "7290014763395",
+        "pinned_name": "גבינה עמק 28% 600 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "1022801",
+        "pinned_name": "גבינה צהובה קלאסית 2",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000057118",
+        "pinned_name": "גבינה צהובה עמק 28%",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Feta Cheese": {
@@ -1984,6 +4106,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: Greek-style white cheese OK"
+      },
+      "osher-ad": {
+        "item_code": "7290013771216",
+        "pinned_name": "גבינה פטאקי 16% רמת",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290005384899",
+        "pinned_name": "בסגנון פטה 19% שומן",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290005992964",
+        "pinned_name": "גבינת פטה כבשים 20%",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Canned Chunk Light Tuna": {
@@ -1992,7 +4132,14 @@
         "pinned_name": "טונה סטארקיסט בשמן4*160ג",
         "approved_by_user": true,
         "selected_by": "assistant",
-        "approval_note": "user rule: canned tuna in oil, no pouch substitution"
+        "approval_note": "user rule: canned tuna in oil, no pouch substitution",
+        "drained": {
+          "per_unit_g": 112,
+          "units": 4,
+          "gross_per_unit_g": 160,
+          "status": "source-verified",
+          "evidence": "Pack photo https://img.rami-levy.co.il/product/7290005287206/large.jpg (viewed 4 Nov, same barcode): 'בשמן 160 גר' ליחידה, 112 גר' מסונן', 4 יח''. 4 tins x 112 g drained = 448 g; gross 640 g."
+        }
       },
       "rami-levy": {
         "item_code": "670604",
@@ -2000,6 +4147,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: canned tuna in oil, no pouch substitution"
+      },
+      "osher-ad": {
+        "item_code": "7290017617831",
+        "pinned_name": "טונה בשמן סטארקיסט 4",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000551005",
+        "pinned_name": "טונה סטאר קיסט",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290002551003",
+        "pinned_name": "נתחי טונה בשמן",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Extra Virgin Olive Oil": {
@@ -2009,6 +4174,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: 750ml-1L bottle, not 3L tin"
+      },
+      "osher-ad": {
+        "item_code": "7290019603498",
+        "pinned_name": "שמן זית כתית מעולה מ",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290020396297",
+        "pinned_name": "שמן זית כתית מעולה 7",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "693493256971",
+        "pinned_name": "שמן זית כתית מעולה ויקטורי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Farm Fresh Eggs": {
@@ -2025,6 +4208,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: ordinary 12-pack where available"
+      },
+      "osher-ad": {
+        "item_code": "7290001201572",
+        "pinned_name": "ביצים 12 יח ענק XL ל",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "742259241901",
+        "pinned_name": "ביצים 12 יח  גדול",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290001201589",
+        "pinned_name": "ביצים L  - מחיר בפיקוח ממשלתי",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Sliced Sandwich Bread": {
@@ -2041,6 +4242,24 @@
         "approved_by_user": true,
         "selected_by": "assistant",
         "approval_note": "user rule: standard sliced loaf"
+      },
+      "osher-ad": {
+        "item_code": "7290002079477",
+        "pinned_name": "לחם אחיד פרוס דוידוב",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "yochananof": {
+        "item_code": "7290000574035",
+        "pinned_name": "לחם אחיד פרוס 750 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
+      },
+      "victory": {
+        "item_code": "7290000574035",
+        "pinned_name": "לחם אחיד פרוס 750 גר",
+        "approved_by_user": false,
+        "selected_by": "assistant"
       }
     },
     "Bell Peppers": {
@@ -2058,6 +4277,153 @@
         "selected_by": "assistant",
         "approval_note": "user rule: red peppers accepted for the generic bell-pepper line"
       }
+    },
+    "Light Coconut Milk 5-7%": {
+      "osher-ad": {
+        "item_code": "7290015603522",
+        "pinned_name": "נוזל קוקוס 5-7% מזרח",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "approval_note": "Recipe says 'light coconut milk'. Canned 'נוזל אגוזי קוקוס 5-7%' 400 ml, barcode 7290015603522 (Mizrach u'Maarav, Thailand); fat 5-7% in the feed name; the regular 17-19% can is the wrong fat level for a light-milk recipe."
+      },
+      "yochananof": {
+        "item_code": "7290015603522",
+        "pinned_name": "נוזל אגוזי קוקוס 400",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "approval_note": "Recipe says 'light coconut milk'. Canned 'נוזל אגוזי קוקוס 5-7%' 400 ml, barcode 7290015603522 (Mizrach u'Maarav, Thailand); fat 5-7% in the feed name; the regular 17-19% can is the wrong fat level for a light-milk recipe."
+      },
+      "rami-levy": {
+        "item_code": "7290015603522",
+        "pinned_name": "נוזל אגוזי קוקוס 5-7% 400 מ\"ל",
+        "approved_by_user": false,
+        "selected_by": "assistant",
+        "approval_note": "Recipe says 'light coconut milk'. Canned 'נוזל אגוזי קוקוס 5-7%' 400 ml, barcode 7290015603522 (Mizrach u'Maarav, Thailand); fat 5-7% in the feed name; the regular 17-19% can is the wrong fat level for a light-milk recipe. Shufersal and Victory not checked (Shufersal feed unreachable, Victory catalog not searched)."
+      }
     }
+  },
+  "conversions": {
+    "fresh milk 3%": {
+      "gPerMl": 1.0313,
+      "applied": true,
+      "status": "source-derived",
+      "source": "USDA FoodData Central SR Legacy 171265, whole milk 3.25%: 1 cup = 244 g (US cup 236.588 ml)",
+      "note": "Reference density; Israeli 3% milk may differ by about 1%.",
+      "approved_by": "user via main, 4 Nov 13:31 (reference density)"
+    },
+    "cooking cream 15%": {
+      "gPerMl": 1.0144,
+      "applied": true,
+      "status": "source-derived",
+      "source": "USDA FoodData Central SR Legacy 170857, light cream: 1 cup = 240 g (US cup 236.588 ml)",
+      "note": "Reference density for light cream; 15% cooking cream is close to it.",
+      "approved_by": "user via main, 4 Nov 13:31 (reference density)"
+    },
+    "coconut cream / milk": {
+      "gPerMl": 0.9553,
+      "applied": false,
+      "status": "proposed-not-applied",
+      "source": "USDA FoodData Central SR Legacy 170173, canned coconut milk: 1 cup = 226 g (US cup 236.588 ml)",
+      "note": "Unsweetened canned coconut milk; a thick 17-19% coconut cream can be denser (about 1.0), so treat as approximate. NOT APPLIED: coconut cream and coconut milk are different densities; awaiting scoped approval."
+    },
+    "extra virgin olive oil": {
+      "gPerMl": 0.9129,
+      "applied": true,
+      "status": "source-derived",
+      "source": "USDA FoodData Central SR Legacy 171413, olive oil: 1 cup = 216 g (US cup 236.588 ml)",
+      "note": "Reference density.",
+      "approved_by": "user via main, 4 Nov 13:31 (reference density)"
+    },
+    "fresh eggplant": {
+      "gramsPerUnit": 548,
+      "recipeUnits": [
+        "unit",
+        "units"
+      ],
+      "applied": true,
+      "status": "reference-estimate",
+      "approved_by": "user via main, 4 Nov 13:31 (reference sizes)",
+      "source": "USDA FoodData Central SR Legacy 169228 (dataset FoodData_Central_sr_legacy_food_json_2021-10-28.json), portion 'eggplant, unpeeled (approx 1-1/4 lb)' = 548 g. Standard US reference size; ESTIMATE, not the weight of the store item."
+    },
+    "fresh zucchini": {
+      "gramsPerUnit": 196,
+      "recipeUnits": [
+        "unit",
+        "units"
+      ],
+      "applied": true,
+      "status": "reference-estimate",
+      "approved_by": "user via main, 4 Nov 13:31 (reference sizes)",
+      "source": "USDA FoodData Central SR Legacy 169291 (dataset FoodData_Central_sr_legacy_food_json_2021-10-28.json), portion 'medium' = 196 g. Standard US reference size; ESTIMATE, not the weight of the store item."
+    },
+    "sweet potatoes": {
+      "gramsPerUnit": 130,
+      "recipeUnits": [
+        "unit",
+        "units"
+      ],
+      "applied": true,
+      "status": "reference-estimate",
+      "approved_by": "user via main, 4 Nov 13:31 (reference sizes)",
+      "source": "USDA FoodData Central SR Legacy 168482 (dataset FoodData_Central_sr_legacy_food_json_2021-10-28.json), portion 'sweetpotato, 5\" long' = 130 g. Standard US reference size; ESTIMATE, not the weight of the store item."
+    },
+    "crisp romaine lettuce": {
+      "gramsPerUnit": 626,
+      "recipeUnits": [
+        "head"
+      ],
+      "applied": true,
+      "status": "reference-estimate",
+      "approved_by": "user via main, 4 Nov 13:31 (reference sizes)",
+      "source": "USDA FoodData Central SR Legacy 169247 (dataset FoodData_Central_sr_legacy_food_json_2021-10-28.json), portion 'head' = 626 g. Standard US reference size; ESTIMATE, not the weight of the store item."
+    },
+    "fresh cauliflower head": {
+      "gramsPerUnit": 588,
+      "recipeUnits": [
+        "head"
+      ],
+      "applied": true,
+      "status": "reference-estimate",
+      "approved_by": "user via main, 4 Nov 13:31 (reference sizes)",
+      "source": "USDA FoodData Central SR Legacy 169986 (dataset FoodData_Central_sr_legacy_food_json_2021-10-28.json), portion 'head medium (5-6\" dia.)' = 588 g. Standard US reference size; ESTIMATE, not the weight of the store item."
+    },
+    "fresh pita bread pockets": {
+      "gramsPerUnit": 60,
+      "recipeUnits": [
+        "unit",
+        "units"
+      ],
+      "applied": true,
+      "status": "reference-estimate",
+      "approved_by": "user via main, 4 Nov 13:31 (reference sizes)",
+      "source": "USDA FoodData Central SR Legacy 172816 (dataset FoodData_Central_sr_legacy_food_json_2021-10-28.json), portion 'pita, large (6-1/2\" dia)' = 60 g. Standard US reference size; ESTIMATE, not the weight of the store item."
+    },
+    "light coconut milk 5-7%": {
+      "gPerMl": 0.9553,
+      "applied": true,
+      "status": "source-derived",
+      "source": "USDA FoodData Central SR Legacy 170173, canned coconut milk: 1 cup = 226 g (US cup 236.588 ml)",
+      "note": "Reference density of canned coconut milk (not light-specific; light is slightly less dense, estimate)."
+    },
+    "yellow cheese slices": {
+      "gramsPerUnit": 28,
+      "recipeUnits": [
+        "slice",
+        "slices"
+      ],
+      "applied": true,
+      "status": "reference-estimate",
+      "approved_by": "user via main, 4 Nov 13:31 (standard US reference sizes in general)",
+      "source": "USDA FoodData Central SR Legacy: natural semi-hard cheese slice (1 oz) = 28 g (cheddar 173414, Colby 173416, Swiss 171251, Monterey 170844). Applies to ordinary yellow cheese, not processed American slices (21 g). Standard US reference size; ESTIMATE of grams per recipe slice, not a pack slice count."
+    }
+  },
+  "capacity_basis": {
+    "ingredients": [
+      "Canned Black Beans",
+      "Canned Chickpeas",
+      "Canned White Cannellini Beans",
+      "Canned Chunk Light Tuna"
+    ],
+    "rule": "Recipe amounts for these are food amounts (drained). Pack capacity = source-verified drained weight x tins per exact item code. Pins without one are unpriced. Approved by the user 4 Nov 14:02:51 (reply 'Yeah' to the common-target question: 230 g drained per bean/chickpea can, 460 g for two, tortilla pack 450 g, 3 tuna cans 336 g drained)."
   }
 }
