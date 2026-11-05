@@ -502,10 +502,10 @@
             <span class="font-bold text-slate-800 flex items-center gap-1.5">
               <i class="fa-solid fa-scale-balanced text-emerald-600"></i> Food Law Feeds:
             </span>
-            <span id="feedStatusBadge" class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200 flex items-center gap-1.5">
+            <span id="feedStatusBadge" class="px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 max-w-full">
               <i class="fa-solid fa-chart-line text-slate-500 text-[10px]"></i> Checking feed status...
             </span>
-            <span id="planCoverageBadge" class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200 flex items-center gap-1.5">
+            <span id="planCoverageBadge" class="px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 max-w-full">
               <i class="fa-solid fa-barcode text-slate-500 text-[10px]"></i> Computing coverage...
             </span>
           </div>
@@ -1938,10 +1938,10 @@ let state = {
       const feedStatus = document.getElementById('feedStatusBadge');
       if (feedStatus) {
         if (state.isPricesFresh && state.livePricesDate) {
-          feedStatus.className = 'px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-100 text-emerald-800 flex items-center gap-1.5';
+          feedStatus.className = 'px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 max-w-full';
           feedStatus.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-600 text-[10px]"></i> Published online prices (feed published: ${escapeHtml(state.livePricesDate)})` + (state.hasAssistantSelected ? '<span class="text-amber-700"> - some matches assistant-selected, unconfirmed</span>' : '');
         } else {
-          feedStatus.className = 'px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-100 text-amber-800 border border-amber-200 flex items-center gap-1.5';
+          feedStatus.className = 'px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-amber-100 text-amber-800 border border-amber-200 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 max-w-full';
           feedStatus.innerHTML = '<i class="fa-solid fa-triangle-exclamation text-amber-600 text-[10px]"></i> Prices are estimates (' + escapeHtml(state.pricesRejectReason || 'no published feed prices') + ')';
         }
       }
@@ -1950,14 +1950,14 @@ let state = {
       const planCoverage = document.getElementById('planCoverageBadge');
       if (planCoverage) {
         if (state.isPricesFresh) {
-          planCoverage.className = 'px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200 flex items-center gap-1.5';
-          planCoverage.innerHTML = '<i class="fa-solid fa-barcode text-emerald-600 text-[10px]"></i> ' + PRICE_CHAINS.map(ck => {
+          planCoverage.className = 'px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 max-w-full';
+          planCoverage.innerHTML = '<i class="fa-solid fa-barcode text-emerald-600 text-[10px]"></i>' + PRICE_CHAINS.map(ck => {
             const nm = { 'rami-levy': 'Rami Levy Online (039)', 'shufersal': 'Shufersal Online (413)', 'osher-ad': 'Osher Ad Kiryat Ono (032)', 'yochananof': 'Yohananof Tel Aviv (035)', 'victory': 'Victory Online' }[ck] || ck;
             const st = calculateCartTotals(ck);
-            return `<span class="font-bold">${nm}:</span> ${isChainPublished(ck) ? st.actualCount + ' actual + ' + st.estimatedCount + ' est. / ' + st.totalItemsToBuy : 'stale or missing feed: all estimates'}`;
-          }).join(' &nbsp;|&nbsp; ');
+            return `<span class="inline-flex items-baseline gap-1 min-w-0"><span class="font-bold">${nm}:</span> <span>${isChainPublished(ck) ? st.actualCount + ' actual + ' + st.estimatedCount + ' est. / ' + st.totalItemsToBuy : 'stale or missing feed: all estimates'}</span></span>`;
+          }).join('');
         } else {
-          planCoverage.className = 'px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200 flex items-center gap-1.5';
+          planCoverage.className = 'px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 max-w-full';
           planCoverage.innerHTML = '<i class="fa-solid fa-calculator text-slate-500 text-[10px]"></i> Benchmark Multiplier Mode (0 items from feed)';
         }
       }
