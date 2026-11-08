@@ -279,6 +279,11 @@
           <span id="tabCountCart" class="ml-1 text-[11px] px-1.5 py-0.2 rounded-full bg-slate-200 text-slate-700 font-semibold">0</span>
         </button>
 
+        <button id="tabBtnMacros" class="nav-tab flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 text-xs sm:text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 border border-transparent whitespace-nowrap shrink-0">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          <span>Macros</span>
+        </button>
+
         <button id="tabBtnPantry" class="nav-tab flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 text-xs sm:text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 border border-transparent whitespace-nowrap shrink-0">
           <i class="fa-solid fa-box-archive"></i>
           <span>Pantry Staples</span>
@@ -513,6 +518,10 @@
             <button id="btnPrintCart" class="px-3 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg border border-slate-200 transition-all flex items-center gap-1.5">
               <i class="fa-solid fa-print"></i> Print
             </button>
+            <label class="flex items-center gap-1.5 text-xs font-medium text-slate-600 cursor-pointer ml-1" title="Adds the planned meals list to WhatsApp, Copy Text and Print exports">
+              <input type="checkbox" id="cartIncludeMealsExport" class="rounded text-emerald-600">
+              <span>Include meals in exports</span>
+            </label>
           </div>
         </div>
 
@@ -578,7 +587,7 @@
         </h4>
         <form id="addCustomItemForm" class="flex flex-wrap sm:flex-nowrap gap-2">
           <input type="text" id="customItemName" placeholder="Item name (e.g. Fresh Challah for Shabbat / חלה לשבת)" required class="flex-1 bg-slate-50 border border-slate-300 text-xs rounded-lg px-3 py-2 text-slate-900 focus:ring-emerald-500 focus:border-emerald-500">
-          <select id="customItemAisle" class="bg-slate-50 border border-slate-300 text-xs rounded-lg px-3 py-2 text-slate-900 focus:ring-emerald-500 focus:border-emerald-500">
+          <select id="customItemAisle" class="bg-slate-50 border border-slate-300 text-xs rounded-lg px-3 py-2 text-slate-900 focus:ring-emerald-500 focus:border-emerald-500 w-full sm:w-auto min-w-0 max-w-full">
             <option value="bakery">Bakery / מאפייה</option>
             <option value="produce">Produce / פירות וירקות</option>
             <option value="dairy">Dairy & Eggs / חלב וביצים</option>
@@ -587,16 +596,25 @@
             <option value="canned">Canned & Sauces / שימורים ורטבים</option>
             <option value="snacks">Snacks & Beverages / חטיפים ושתייה</option>
           </select>
-          <input type="number" id="customItemPrice" step="0.5" min="0" placeholder="Price ₪" value="12" class="w-24 bg-slate-50 border border-slate-300 text-xs rounded-lg px-3 py-2 text-slate-900 focus:ring-emerald-500 focus:border-emerald-500">
+          <input type="number" id="customItemQty" min="1" max="50" step="1" value="1" title="Quantity" class="w-16 bg-slate-50 border border-slate-300 text-xs rounded-lg px-3 py-2 text-slate-900 focus:ring-emerald-500 focus:border-emerald-500">
+          <input type="number" id="customItemPrice" step="0.5" min="0" placeholder="Price ₪ (optional)" class="w-24 bg-slate-50 border border-slate-300 text-xs rounded-lg px-3 py-2 text-slate-900 focus:ring-emerald-500 focus:border-emerald-500">
           <button type="submit" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-lg shadow-sm transition-all whitespace-nowrap">
             Add to List
           </button>
         </form>
       </div>
 
+      <div id="noPriceItemsNote" class="hidden px-3.5 py-2 bg-slate-50 border border-slate-200 rounded-xl text-[11px] font-semibold text-slate-600"></div>
+
       <!-- Grocery Aisles Categorized List -->
       <div id="groceryAislesContainer" class="space-y-4">
         <!-- Rendered by JavaScript grouped by supermarket department -->
+      </div>
+
+      <!-- Print-only planned meals (follows the Include-meals export setting) -->
+      <div id="printMealsSection" class="hidden print:block bg-white rounded-2xl p-4 border border-slate-200">
+        <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Planned Meals</h4>
+        <div id="printMealsContent" class="text-xs text-slate-700 space-y-1"></div>
       </div>
 
     </section>
@@ -604,6 +622,24 @@
     <!-- ========================================== -->
     <!-- VIEW 3: ISRAELI KITCHEN PANTRY             -->
     <!-- ========================================== -->
+    <!-- ========================================== -->
+    <!-- VIEW: MEAL MACROS                          -->
+    <!-- ========================================== -->
+    <section id="viewMacros" class="hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+          <i class="fa-solid fa-fire-flame-curved text-orange-500"></i> Macros of Your Planned Meals
+        </h3>
+        <p class="text-xs text-slate-500 mt-1">
+          Estimates computed from USDA FoodData Central reference data, per 100g of each raw/dry ingredient as bought.
+          Per-serving values assume the recipe's 4-portion base and hold at any people count. Meals marked PARTIAL have
+          ingredients with no reference data (never guessed) - their real values may be higher than shown (incomplete estimate).
+        </p>
+        <div id="macrosSummary"></div>
+      </div>
+      <div id="macrosDaysContainer" class="space-y-4"></div>
+    </section>
+
     <section id="viewPantry" class="hidden space-y-6">
       
       <!-- Pantry Deduction Banner -->
@@ -678,9 +714,9 @@
         </div>
 
         <div class="mt-4 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4">
-          <div class="flex items-center gap-3">
+          <div class="flex flex-wrap items-center gap-3 w-full">
             <label for="citySelect" class="text-xs font-semibold text-slate-600">Your Region / Branch Location:</label>
-            <select id="citySelect" class="bg-slate-50 border border-slate-300 text-xs rounded-lg px-3 py-2 text-slate-900">
+            <select id="citySelect" class="bg-slate-50 border border-slate-300 text-xs rounded-lg px-3 py-2 text-slate-900 max-w-full w-full sm:w-auto min-w-0">
               <option value="center">Center District (מרכז - Tel Aviv, Rishon, Petah Tikva)</option>
               <option value="jerusalem">Jerusalem & Surrounding (ירושלים וסביבתה)</option>
               <option value="sharon">Sharon District (השרון - Ra'anana, Herzliya, Netanya)</option>
@@ -902,6 +938,10 @@
         <label class="flex items-center gap-1.5 cursor-pointer text-slate-700 font-medium">
           <input type="checkbox" id="whatsappIncludePantry" class="rounded text-emerald-600">
           <span>Include pantry items</span>
+        </label>
+        <label class="flex items-center gap-1.5 cursor-pointer text-slate-700 font-medium">
+          <input type="checkbox" id="whatsappIncludeMeals" class="rounded text-emerald-600">
+          <span>Include planned meals</span>
         </label>
       </div>
 
@@ -1533,6 +1573,7 @@ let state = {
       appliances: ['Stovetop', 'Oven'],
       customItems: [],
       whatsappExcludedKeys: [],
+      exportIncludeMeals: false,
       onlineCartExcludedKeys: [],
       lastPriceSync: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       checkedCartItems: {},
@@ -1578,7 +1619,7 @@ let state = {
           state = Object.assign(state, parsed);
         }
         // Invalid custom items (missing / NaN / negative / absurd price) from older saved state are dropped, never priced by guess.
-        state.customItems = (state.customItems || []).filter(ci => ci && typeof ci.price === 'number' && isFinite(ci.price) && ci.price >= 0 && ci.price <= 2000);
+        state.customItems = (state.customItems || []).filter(ci => ci && (ci.price === null || ci.price === undefined || (typeof ci.price === 'number' && isFinite(ci.price) && ci.price >= 0 && ci.price <= 2000)));
         state.customRecipes = state.customRecipes || [];
         if (state.customRecipes.length > 0) {
           state.customRecipes.forEach(cr => {
@@ -1957,18 +1998,21 @@ let state = {
       processSchedule(state.bfastSchedule, false);
 
       (state.customItems || []).forEach(ci => {
-        if (!(ci && typeof ci.price === 'number' && isFinite(ci.price) && ci.price >= 0)) return; // invalid input is never turned into an invented item
+        if (!ci) return;
+        const hasTypedPrice = typeof ci.price === 'number' && isFinite(ci.price) && ci.price >= 0 && ci.price <= 2000;
+        if (ci.price !== null && ci.price !== undefined && !hasTypedPrice) return; // invalid stored value is never turned into an invented item
         const key = 'custom_' + ci.id;
         // The user's own price is used as typed at every store (no hand-set store multiplier on it).
-        // A typed price of 0 is a valid intentional free item and is kept as entered. A missing / NaN / negative price is invalid:
-        // it is never presented as the user's value (the line becomes a labelled baseline estimate of 10).
-        const customValid = typeof ci.price === 'number' && isFinite(ci.price) && ci.price >= 0;
-        const customPrice = customValid ? Math.round(ci.price * 100) / 100 : 10;
+        // A typed price of 0 is a valid intentional free item and is kept as entered. An item added without a price
+        // stays on the list marked 'no price' and is NOT counted in any total - an invented baseline is never shown.
+        const customValid = hasTypedPrice;
+        const ciQty = (Number.isInteger(ci.qty) && ci.qty >= 1 && ci.qty <= 50) ? ci.qty : 1;
+        const customPrice = customValid ? Math.round(ci.price * ciQty * 100) / 100 : 0;
         list[key] = {
           name: ci.name,
           searchHe: ci.name,
-          qty: 1,
-          unit: 'item',
+          qty: ciQty,
+          unit: ciQty === 1 ? 'item' : 'items',
           aisle: ci.aisle || 'produce',
           storePrice: customPrice,
           purchaseCost: customPrice,
@@ -1992,7 +2036,7 @@ let state = {
       Object.keys(list).forEach(k => {
         const item = list[k];
         item.key = item.key || k;
-        if (item.isCustom) { item.priceSource = item.customHasPrice ? 'user-entered' : 'estimate-baseline'; item.estimateChains = 0; return; }
+        if (item.isCustom) { item.priceSource = item.customHasPrice ? 'user-entered' : 'no-price'; item.estimateChains = 0; return; }
         if (item.isLiveMatch && storeLive) { item.priceSource = 'actual'; item.estimateChains = 0; return; }
         const hits = [];
         PRICE_CHAINS.forEach(ck => {
@@ -2057,7 +2101,7 @@ let state = {
 
       const groceryList = getAggregatedGroceryList(storeKey);
       // Integer cents per category so the rows always add up exactly to the headline.
-      let cActual = 0, cChains = 0, cBase = 0, cUser = 0, pantryCents = 0;
+      let cActual = 0, cChains = 0, cBase = 0, cUser = 0, pantryCents = 0, nNoPrice = 0;
       let nActual = 0, nChains = 0, nBase = 0, nUser = 0, totalItemsToBuy = 0;
       const c100 = v => Math.round(v * 100);
 
@@ -2071,6 +2115,7 @@ let state = {
         if (item.priceSource === 'actual') { cActual += c; nActual++; }
         else if (item.priceSource === 'estimate-chains') { cChains += c; nChains++; }
         else if (item.priceSource === 'user-entered') { cUser += c; nUser++; }
+        else if (item.priceSource === 'no-price') { nNoPrice++; }
         else { cBase += c; nBase++; }
       });
 
@@ -2086,6 +2131,7 @@ let state = {
         estimatedChainsTotal: cChains / 100,
         estimatedBaselineTotal: cBase / 100,
         userEnteredTotal: cUser / 100,
+        noPriceCount: nNoPrice,
         estimatedTotal: (cChains + cBase) / 100,
         actualCount: nActual,
         estimatedChainsCount: nChains,
@@ -3163,6 +3209,17 @@ let state = {
         snacks: { title: 'Snacks & Beverages (חטיפים ושתייה)', icon: 'fa-mug-hot', color: 'purple' }
       };
 
+      const noPriceNames = Object.values(groceryList).filter(i => i.priceSource === 'no-price').map(i => i.name);
+      const noPriceNote = document.getElementById('noPriceItemsNote');
+      if (noPriceNote) {
+        if (noPriceNames.length > 0) {
+          noPriceNote.classList.remove('hidden');
+          noPriceNote.textContent = `${noPriceNames.length} item(s) without a price are listed but not included in any total: ${noPriceNames.join(', ')}`;
+        } else {
+          noPriceNote.classList.add('hidden');
+        }
+      }
+
       const grouped = {};
       let totalItems = 0, checkedItems = 0;
 
@@ -3227,6 +3284,9 @@ let state = {
                   ${item.isPantry ? `
                     <div data-testid="pantry-price" class="text-xs font-bold text-slate-400 line-through whitespace-nowrap">₪${item.storePrice.toFixed(2)}</div>
                     <div class="text-[9px] font-semibold text-slate-500 mt-0.5 leading-tight">owned - not in total</div>
+                  ` : item.priceSource === 'no-price' ? `
+                    <div data-testid="no-price" class="text-xs font-bold text-slate-400 whitespace-nowrap">₪ -</div>
+                    <div class="text-[9px] font-semibold text-slate-500 mt-0.5 leading-tight">no price - not in total</div>
                   ` : (item.priceSource === 'estimate-chains' || item.priceSource === 'estimate-baseline') ? `
                     <div data-testid="estimated-price" class="text-xs font-bold text-amber-800 whitespace-nowrap">≈ ₪${item.storePrice.toFixed(2)}</div>
                     <div class="text-[9px] font-semibold text-amber-700 mt-0.5 leading-tight">ESTIMATE: ${item.priceSource === 'estimate-chains' ? 'average of the ' + item.estimateChains + ' other chain' + (item.estimateChains === 1 ? '' : 's') + ' that price it' : 'recipe baseline, no chain prices it'}</div>
@@ -3594,7 +3654,7 @@ let state = {
             </div>
           </div>
           <div class="flex items-center gap-3">
-            <span class="font-bold ${isExcluded ? 'text-slate-400' : (item.priceSource === 'estimate-chains' || item.priceSource === 'estimate-baseline') ? 'text-amber-700' : 'text-emerald-600'}">₪${item.storePrice.toFixed(2)}${(item.priceSource === 'estimate-chains' || item.priceSource === 'estimate-baseline') ? ' est.' : ''}</span>
+            <span class="font-bold ${isExcluded ? 'text-slate-400' : (item.priceSource === 'estimate-chains' || item.priceSource === 'estimate-baseline') ? 'text-amber-700' : 'text-emerald-600'}">${item.priceSource === 'no-price' ? 'no price' : '₪' + item.storePrice.toFixed(2)}${(item.priceSource === 'estimate-chains' || item.priceSource === 'estimate-baseline') ? ' est.' : ''}</span>
             <a href="${searchUrl}" target="_blank" class="min-h-[44px] px-3.5 py-2 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold inline-flex items-center justify-center">
               Search
             </a>
@@ -3626,6 +3686,9 @@ let state = {
     function updateWhatsAppPreview() {
       const format = document.getElementById('whatsappFormatSelect').value;
       const includePantry = document.getElementById('whatsappIncludePantry').checked;
+      const includeMealsEl = document.getElementById('whatsappIncludeMeals');
+      if (includeMealsEl) includeMealsEl.checked = !!state.exportIncludeMeals;
+      const includeMeals = !!(includeMealsEl && includeMealsEl.checked);
       const groceryList = getAggregatedGroceryList();
       const allKeys = Object.keys(groceryList);
       const store = SUPERMARKETS[state.currentStore] || SUPERMARKETS.rami_levy;
@@ -3673,20 +3736,23 @@ let state = {
       const activeKeys = allKeys.filter(k => !state.whatsappExcludedKeys.includes(k));
 
       // Message totals cover exactly the items included in this message (excluded items drop out; pantry staples are already owned)
-      let waActualC = 0, waEstC = 0, waActualN = 0, waEstN = 0;
+      let waActualC = 0, waEstC = 0, waActualN = 0, waEstN = 0, waNoPriceN = 0;
       activeKeys.forEach(k => {
         const item = groceryList[k];
         if (item.isPantry) return;
+        if (item.priceSource === 'no-price') { waNoPriceN++; return; }
         const c = Math.round(item.storePrice * 100);
         if (item.priceSource === 'actual') { waActualC += c; waActualN++; }
         else { waEstC += c; waEstN++; }
       });
       const waTotal = (waActualC + waEstC) / 100, waActual = waActualC / 100, waEst = waEstC / 100;
+      const waNoPriceNote = waNoPriceN > 0 ? ` (+ ${waNoPriceN} item(s) without a price, not counted)` : '';
 
       // FULL ENGLISH FORMAT FOR EXPORT - NO BRAND NAMES
       let text = `🛒 *Grocery Blueprint Shopping List (${store.name})*\n`;
       text += `📅 Planned Portions: ${stats.totalPortions} portions\n`;
       text += `💰 Total: ₪${waTotal.toFixed(2)} (actual ₪${waActual.toFixed(2)} for ${waActualN} items + estimated ₪${waEst.toFixed(2)} for ${waEstN} items without a verified price at this store)\n\n`;
+      if (waNoPriceNote) text = text.replace('\n\n', waNoPriceNote + '\n\n');
 
       if (format === 'checklist') {
         activeKeys.forEach(k => {
@@ -3725,6 +3791,7 @@ let state = {
         });
       }
 
+      if (includeMeals) text += buildPlannedMealsExportText();
       text += `_Sent from Grocery Blueprint • Smart Meal Planning & Supermarket Cart Optimizer_`;
       document.getElementById('whatsappPreviewText').value = text;
     }
@@ -4421,9 +4488,13 @@ let state = {
       keys.forEach(k => {
         const item = groceryList[k];
         if (!item.isPantry) {
-          text += `- ${item.name}: ${Math.round(item.qty * 10) / 10} ${item.unit} (${item.priceSource && item.priceSource.indexOf('estimate') === 0 ? 'est. ' : ''}₪${item.storePrice.toFixed(2)})\n`;
+          text += item.priceSource === 'no-price'
+            ? `- ${item.name} (no price - not in total)\n`
+            : `- ${item.name}: ${Math.round(item.qty * 10) / 10} ${item.unit} (${item.priceSource && item.priceSource.indexOf('estimate') === 0 ? 'est. ' : ''}₪${item.storePrice.toFixed(2)})\n`;
         }
       });
+      if (stats.noPriceCount > 0) text += `\n(${stats.noPriceCount} item(s) without a price are not included in the total)\n`;
+      if (state.exportIncludeMeals) text += buildPlannedMealsExportText();
 
       fallbackCopyText(text);
     }
@@ -4442,8 +4513,329 @@ let state = {
       document.body.removeChild(textArea);
     }
 
+// Nutrition reference per 100g, from USDA FoodData Central SR Legacy (2021-10-28) - fdcId in src.
+// u = grams per recipe unit bridge (FDC portion data or the repo approved unit weights).
+// approx = bought weight includes inedible bone/peel/pit while values are edible-portion reference: totals with these are approximate.
+// Ingredients absent here have no SR Legacy reference (Israeli blends etc.) and are counted as missing, never estimated.
+const NUTRITION_DB = {
+  "all-purpose flour": {kcal:364, p:10.3, c:76.3, f:1.0, src:"fdc:168894"},
+  "artisan sourdough loaf": {kcal:272, p:10.8, c:51.9, f:2.4, src:"fdc:172675"},
+  "baking powder": {kcal:53.0, p:0.0, c:27.7, f:0.0, src:"fdc:172803", u:{"tsp": 2.3}},
+  "basil pesto spread": {kcal:418, p:9.8, c:10.1, f:37.6, src:"fdc:171579"},
+  "beef pastrami slices": {kcal:147, p:21.8, c:0.4, f:5.8, src:"fdc:170204"},
+  "beef stew chuck cubes": {kcal:230, p:17.4, c:0.0, f:17.3, src:"fdc:168672"},
+  "bell peppers": {kcal:20.0, p:0.9, c:4.6, f:0.2, src:"fdc:170427"},
+  "boneless chicken thighs (pargiyot)": {kcal:121, p:19.7, c:0.0, f:4.1, src:"fdc:173627"},
+  "buckwheat soba noodles": {kcal:336, p:14.4, c:74.6, f:0.7, src:"fdc:168906", note:"dry weight"},
+  "bulgarian / feta salty cheese": {kcal:265, p:14.2, c:3.9, f:21.5, src:"fdc:173420"},
+  "burger buns": {kcal:279, p:9.8, c:50.1, f:3.9, src:"fdc:172796"},
+  "canned beans": {kcal:84.0, p:5.2, c:14.5, f:0.6, src:"fdc:173741"},
+  "canned black beans": {kcal:91.0, p:6.0, c:16.6, f:0.3, src:"fdc:175188"},
+  "canned chickpeas": {kcal:88.0, p:4.9, c:13.5, f:1.9, src:"fdc:175206"},
+  "canned chunk light tuna": {kcal:86.0, p:19.4, c:0.0, f:1.0, src:"fdc:173709", note:"drained"},
+  "canned red kidney beans": {kcal:81.0, p:5.2, c:14.8, f:0.4, src:"fdc:175195"},
+  "canned white cannellini beans": {kcal:114, p:7.3, c:21.2, f:0.3, src:"fdc:175204", note:"cannellini = white kidney bean"},
+  "canola oil": {kcal:884, p:0.0, c:0.0, f:100, src:"fdc:172336", u:{"ml": 0.92}},
+  "caraway rye bread": {kcal:259, p:8.5, c:48.3, f:3.3, src:"fdc:172684"},
+  "chia seeds": {kcal:486, p:16.5, c:42.1, f:30.7, src:"fdc:170554"},
+  "chicken drumsticks": {kcal:161, p:18.1, c:0.1, f:9.2, src:"fdc:172373", approx:"meat+skin reference on bought weight incl. bone"},
+  "chicken thighs & drumsticks": {kcal:221, p:16.5, c:0.2, f:16.6, src:"fdc:172385", note:"thigh w/ skin as mixed-parts proxy", approx:"meat+skin reference on bought weight incl. bone"},
+  "classic spaghetti pasta": {kcal:371, p:13.0, c:74.7, f:1.5, src:"fdc:169736", note:"dry weight"},
+  "cocoa powder": {kcal:228, p:19.6, c:57.9, f:13.7, src:"fdc:169593"},
+  "coconut cream / milk": {kcal:197, p:2.0, c:2.8, f:21.3, src:"fdc:170173", u:{"ml": 1.014}},
+  "cod / white fish fillets": {kcal:82.0, p:17.8, c:0.0, f:0.7, src:"fdc:171955"},
+  "cooked vacuum-packed beets": {kcal:44.0, p:1.7, c:10.0, f:0.2, src:"fdc:169146"},
+  "cooking cream 15%": {kcal:195, p:3.0, c:3.7, f:19.1, src:"fdc:170857", note:"~18% fat US light cream, closest SR entry to 15%", u:{"ml": 1.01}},
+  "cottage cheese 5%": {kcal:98.0, p:11.1, c:3.4, f:4.3, src:"fdc:172179", note:"~4.5% fat creamed cottage, closest to 5%"},
+  "cream cheese spread": {kcal:350, p:6.2, c:5.5, f:34.4, src:"fdc:173418"},
+  "creamy natural peanut butter": {kcal:598, p:22.2, c:22.3, f:51.4, src:"fdc:172470", u:{"tbsp": 16.0}},
+  "crisp fresh apples": {kcal:52.0, p:0.3, c:13.8, f:0.2, src:"fdc:171688"},
+  "crisp lettuce hearts": {kcal:17.0, p:1.2, c:3.3, f:0.3, src:"fdc:169247", note:"romaine hearts"},
+  "crisp romaine lettuce": {kcal:17.0, p:1.2, c:3.3, f:0.3, src:"fdc:169247", u:{"head": 626}},
+  "crispy brown rice cakes": {kcal:387, p:8.2, c:81.5, f:2.8, src:"fdc:170250"},
+  "crunchy garlic croutons": {kcal:465, p:10.8, c:63.5, f:18.3, src:"fdc:172752"},
+  "crushed canned tomatoes": {kcal:32.0, p:1.6, c:7.3, f:0.3, src:"fdc:170501"},
+  "cut green beans": {kcal:31.0, p:1.8, c:7.0, f:0.2, src:"fdc:169961"},
+  "dark chocolate": {kcal:598, p:7.8, c:45.9, f:42.6, src:"fdc:170273"},
+  "dark chocolate chips": {kcal:579, p:6.1, c:52.4, f:38.3, src:"fdc:170272", note:"chips typically 60-69%"},
+  "dry brown lentils": {kcal:352, p:24.6, c:63.4, f:1.1, src:"fdc:172420", note:"dry"},
+  "dry green lentils": {kcal:352, p:24.6, c:63.4, f:1.1, src:"fdc:172420", note:"dry"},
+  "dry red lentils": {kcal:352, p:24.6, c:63.4, f:1.1, src:"fdc:172420", note:"dry; red not split out in SR"},
+  "edamame (green soybeans)": {kcal:109, p:11.2, c:7.6, f:4.7, src:"fdc:168410"},
+  "egg stir-fry noodles": {kcal:384, p:14.2, c:71.3, f:4.4, src:"fdc:169731", note:"dry weight"},
+  "extra virgin olive oil": {kcal:884, p:0.0, c:0.0, f:100, src:"fdc:171413", u:{"tbsp": 13.5}},
+  "farfalle (bowtie) pasta": {kcal:371, p:13.0, c:74.7, f:1.5, src:"fdc:169736", note:"dry weight"},
+  "farm fresh eggs": {kcal:143, p:12.6, c:0.7, f:9.5, src:"fdc:171287", u:{"units": 50, "unit": 50}},
+  "feta cheese": {kcal:265, p:14.2, c:3.9, f:21.5, src:"fdc:173420"},
+  "fettuccine pasta": {kcal:371, p:13.0, c:74.7, f:1.5, src:"fdc:169736", note:"dry weight"},
+  "firm tofu": {kcal:144, p:17.3, c:2.8, f:8.7, src:"fdc:172475"},
+  "flour tortilla wraps": {kcal:297, p:8.0, c:49.3, f:7.6, src:"fdc:167535"},
+  "fluffy jasmine rice": {kcal:365, p:7.1, c:80.0, f:0.7, src:"fdc:168877", note:"dry weight"},
+  "fragrant basmati rice": {kcal:365, p:7.1, c:80.0, f:0.7, src:"fdc:168877", note:"dry weight"},
+  "fresh baby spinach": {kcal:23.0, p:2.9, c:3.6, f:0.4, src:"fdc:168462"},
+  "fresh bananas": {kcal:89.0, p:1.1, c:22.8, f:0.3, src:"fdc:173944", approx:"peeled-fruit reference on bought weight incl. peel"},
+  "fresh basil leaves": {kcal:23.0, p:3.1, c:2.6, f:0.6, src:"fdc:172232"},
+  "fresh carrots": {kcal:41.0, p:0.9, c:9.6, f:0.2, src:"fdc:170393"},
+  "fresh cauliflower head": {kcal:25.0, p:1.9, c:5.0, f:0.3, src:"fdc:169986", u:{"head": 588}},
+  "fresh celery": {kcal:14.0, p:0.7, c:3.0, f:0.2, src:"fdc:169988"},
+  "fresh champignon mushrooms": {kcal:22.0, p:3.1, c:3.3, f:0.3, src:"fdc:169251"},
+  "fresh chicken breast": {kcal:108, p:20.3, c:0.0, f:3.0, src:"fdc:171509", note:"plain raw breast not in SR; with-solution entry used"},
+  "fresh chicken livers": {kcal:119, p:16.9, c:0.7, f:4.8, src:"fdc:171060"},
+  "fresh chives": {kcal:30.0, p:3.3, c:4.3, f:0.7, src:"fdc:169994"},
+  "fresh cucumbers": {kcal:15.0, p:0.7, c:3.6, f:0.1, src:"fdc:168409"},
+  "fresh denis (sea bream) fillets": {kcal:100, p:20.5, c:0.0, f:1.3, src:"fdc:173698", note:"lean white fish proxy for sea bream"},
+  "fresh dill": {kcal:43.0, p:3.5, c:7.0, f:1.1, src:"fdc:172233"},
+  "fresh eggplant": {kcal:25.0, p:1.0, c:5.9, f:0.2, src:"fdc:169228", u:{"units": 548, "unit": 548}},
+  "fresh garlic bulbs": {kcal:149, p:6.4, c:33.1, f:0.5, src:"fdc:169230"},
+  "fresh green asparagus": {kcal:20.0, p:2.2, c:3.9, f:0.1, src:"fdc:168389"},
+  "fresh ground beef": {kcal:215, p:18.6, c:0.0, f:15.0, src:"fdc:171796"},
+  "fresh hummus tub": {kcal:237, p:7.8, c:15.0, f:17.8, src:"fdc:174289"},
+  "fresh lemons": {kcal:29.0, p:1.1, c:9.3, f:0.3, src:"fdc:167746"},
+  "fresh mango": {kcal:60.0, p:0.8, c:15.0, f:0.4, src:"fdc:169910", approx:"peeled-fruit reference on bought weight incl. peel/pit"},
+  "fresh milk 3%": {kcal:61.0, p:3.1, c:4.8, f:3.2, src:"fdc:171265"},
+  "fresh mushrooms": {kcal:22.0, p:3.1, c:3.3, f:0.3, src:"fdc:169251"},
+  "fresh parsley": {kcal:36.0, p:3.0, c:6.3, f:0.8, src:"fdc:170416"},
+  "fresh pita bread pockets": {kcal:275, p:9.1, c:55.7, f:1.2, src:"fdc:172816", u:{"units": 60, "unit": 60}},
+  "fresh ricotta cheese": {kcal:150, p:7.5, c:7.3, f:10.2, src:"fdc:170851"},
+  "fresh salmon fillet": {kcal:208, p:20.4, c:0.0, f:13.4, src:"fdc:175167"},
+  "fresh strawberries": {kcal:32.0, p:0.7, c:7.7, f:0.3, src:"fdc:167762"},
+  "fresh sweet challah": {kcal:287, p:9.5, c:47.8, f:6.0, src:"fdc:172673", note:"egg bread = challah-type"},
+  "fresh tomatoes": {kcal:18.0, p:0.9, c:3.9, f:0.2, src:"fdc:170457"},
+  "fresh white cabbage": {kcal:25.0, p:1.3, c:5.8, f:0.1, src:"fdc:169975"},
+  "fresh zucchini": {kcal:17.0, p:1.2, c:3.1, f:0.3, src:"fdc:169291", u:{"units": 196, "unit": 196}},
+  "fresh or frozen blueberries": {kcal:57.0, p:0.7, c:14.5, f:0.3, src:"fdc:171711"},
+  "fresh or ground ginger": {kcal:80.0, p:1.8, c:17.8, f:0.8, src:"fdc:169231"},
+  "frozen broccoli florets": {kcal:26.0, p:2.8, c:4.8, f:0.3, src:"fdc:169968"},
+  "frozen cut green beans": {kcal:33.0, p:1.8, c:7.5, f:0.2, src:"fdc:169962"},
+  "frozen peas & diced carrots": {kcal:53.0, p:3.4, c:11.2, f:0.5, src:"fdc:170425"},
+  "frozen sweet green peas": {kcal:77.0, p:5.2, c:13.6, f:0.4, src:"fdc:170016"},
+  "goat cheese log": {kcal:264, p:18.5, c:0.0, f:21.1, src:"fdc:173435"},
+  "grape juice": {kcal:60.0, p:0.4, c:14.8, f:0.1, src:"fdc:173041", u:{"ml": 1.04}},
+  "grated parmesan cheese": {kcal:420, p:28.4, c:13.9, f:27.8, src:"fdc:171247"},
+  "greek strained yogurt": {kcal:97.0, p:9.0, c:4.0, f:5.0, src:"fdc:171304"},
+  "ground cinnamon": {kcal:247, p:4.0, c:80.6, f:1.2, src:"fdc:171320"},
+  "ground cumin": {kcal:375, p:17.8, c:44.2, f:22.3, src:"fdc:170923", u:{"tbsp": 6.0}},
+  "ground turmeric": {kcal:312, p:9.7, c:67.1, f:3.2, src:"fdc:172231", u:{"tbsp": 9.4}},
+  "jumbo pasta shells": {kcal:371, p:13.0, c:74.7, f:1.5, src:"fdc:169736", note:"dry weight"},
+  "lean ground turkey": {kcal:150, p:18.7, c:0.0, f:8.3, src:"fdc:172850"},
+  "leek or yellow onion": {kcal:61.0, p:1.5, c:14.2, f:0.3, src:"fdc:169246", u:{"unit": 89, "units": 89}},
+  "matzo meal": {kcal:395, p:10.0, c:83.7, f:1.4, src:"fdc:172740", note:"ground plain matzo"},
+  "mayonnaise": {kcal:680, p:1.0, c:0.6, f:74.8, src:"fdc:171009"},
+  "medjool sweet dates": {kcal:277, p:1.8, c:75.0, f:0.1, src:"fdc:168191", approx:"pitted reference; bought dates may include pits"},
+  "mozzarella cheese": {kcal:318, p:21.6, c:2.5, f:24.6, src:"fdc:170846"},
+  "natural almond butter": {kcal:614, p:21.0, c:18.8, f:55.5, src:"fdc:168588"},
+  "paprika": {kcal:282, p:14.1, c:54.0, f:12.9, src:"fdc:171329", u:{"tbsp": 6.8}},
+  "pearl barley": {kcal:352, p:9.9, c:77.7, f:1.2, src:"fdc:170284", note:"dry"},
+  "penne rigate pasta": {kcal:371, p:13.0, c:74.7, f:1.5, src:"fdc:169736", note:"dry weight"},
+  "pickled cucumbers in brine": {kcal:11.0, p:0.3, c:2.3, f:0.2, src:"fdc:169379"},
+  "pitted kalamata olives": {kcal:116, p:0.8, c:6.0, f:10.9, src:"fdc:169094", note:"ripe black olives; kalamata not split out"},
+  "potatoes": {kcal:77.0, p:2.0, c:17.5, f:0.1, src:"fdc:170026"},
+  "pure butter": {kcal:717, p:0.8, c:0.1, f:81.1, src:"fdc:173430"},
+  "pure honey": {kcal:304, p:0.3, c:82.4, f:0.0, src:"fdc:169640", u:{"tbsp": 21.0}},
+  "pure honey & garlic": {kcal:304, p:0.3, c:82.4, f:0.0, src:"fdc:169640", note:"garlic share ignored in combined line", u:{"tbsp": 21.0}},
+  "quick fluffy couscous": {kcal:376, p:12.8, c:77.4, f:0.6, src:"fdc:169699", note:"dry weight"},
+  "raw sesame tahini": {kcal:595, p:17.0, c:21.2, f:53.8, src:"fdc:170189", u:{"tbsp": 15.0}},
+  "raw walnuts": {kcal:654, p:15.2, c:13.7, f:65.2, src:"fdc:170187"},
+  "raw whole almonds": {kcal:579, p:21.2, c:21.6, f:49.9, src:"fdc:170567"},
+  "ready falafel patties": {kcal:333, p:13.3, c:31.8, f:17.8, src:"fdc:172455"},
+  "ready-to-eat creamy hummus": {kcal:237, p:7.8, c:15.0, f:17.8, src:"fdc:174289"},
+  "red bell peppers": {kcal:26.0, p:1.0, c:6.0, f:0.3, src:"fdc:170108"},
+  "red onions": {kcal:40.0, p:1.1, c:9.3, f:0.1, src:"fdc:170000", note:"red not split out in SR"},
+  "red wine": {kcal:85.0, p:0.1, c:2.6, f:0.0, src:"fdc:173190", u:{"ml": 0.99}},
+  "rice vermicelli noodles": {kcal:364, p:6.0, c:80.2, f:0.6, src:"fdc:169742", note:"dry weight"},
+  "ripe haas avocado": {kcal:167, p:2.0, c:8.6, f:15.4, src:"fdc:171706", note:"haas = california variety", approx:"flesh reference on bought weight incl. skin/pit"},
+  "rolled oats (oatmeal)": {kcal:379, p:13.2, c:67.7, f:6.5, src:"fdc:173904", note:"dry"},
+  "sea bass fillets": {kcal:97.0, p:18.4, c:0.0, f:2.0, src:"fdc:175142"},
+  "seasoned breadcrumbs": {kcal:383, p:14.1, c:68.5, f:5.5, src:"fdc:172806"},
+  "sesame bagels": {kcal:264, p:10.6, c:52.4, f:1.3, src:"fdc:174899"},
+  "shelled roasted pistachios": {kcal:572, p:21.0, c:28.3, f:45.8, src:"fdc:170185"},
+  "sliced sandwich bread": {kcal:266, p:8.8, c:49.4, f:3.3, src:"fdc:174924"},
+  "smoked salmon slices": {kcal:117, p:18.3, c:0.0, f:4.3, src:"fdc:171985"},
+  "smoked turkey breast slices": {kcal:147, p:30.1, c:0.0, f:2.1, src:"fdc:171496", note:"roasted breast as proxy for smoked slices"},
+  "soft white cheese 5%": {kcal:98.0, p:11.1, c:3.4, f:4.3, src:"fdc:172179", note:"proxy for 5% white cheese (quark-style); similar macros"},
+  "soy sauce": {kcal:53.0, p:8.1, c:4.9, f:0.6, src:"fdc:174277", u:{"tbsp": 16.0}},
+  "soy sauce & ginger": {kcal:53.0, p:8.1, c:4.9, f:0.6, src:"fdc:174277", note:"ginger share ignored in combined line", u:{"tbsp": 16.0}},
+  "sushi short grain rice": {kcal:358, p:6.5, c:79.2, f:0.5, src:"fdc:168881", note:"dry weight"},
+  "sweet cherry tomatoes": {kcal:18.0, p:0.9, c:3.9, f:0.2, src:"fdc:170457", note:"cherry not split out in SR"},
+  "sweet corn kernels": {kcal:67.0, p:2.3, c:14.3, f:1.2, src:"fdc:169214", note:"drained", u:{"can": 211.0}},
+  "sweet paprika": {kcal:282, p:14.1, c:54.0, f:12.9, src:"fdc:171329", u:{"tbsp": 6.8}},
+  "sweet potatoes": {kcal:86.0, p:1.6, c:20.1, f:0.1, src:"fdc:168482", u:{"units": 130, "unit": 130}},
+  "tilapia fillets": {kcal:96.0, p:20.1, c:0.0, f:1.7, src:"fdc:175176"},
+  "toasted pasta pearls (ptitim)": {kcal:371, p:13.0, c:74.7, f:1.5, src:"fdc:169736", note:"ptitim = toasted pasta; dry weight"},
+  "white quinoa": {kcal:368, p:14.1, c:64.2, f:6.1, src:"fdc:168874", note:"dry"},
+  "white rice": {kcal:365, p:7.1, c:80.0, f:0.7, src:"fdc:168877", note:"dry weight"},
+  "white sugar": {kcal:387, p:0.0, c:100, f:0.0, src:"fdc:169655"},
+  "white wine": {kcal:82.0, p:0.1, c:2.6, f:0.0, src:"fdc:174837", u:{"ml": 0.99}},
+  "whole fresh chicken": {kcal:215, p:18.6, c:0.0, f:15.1, src:"fdc:171447", note:"whole bird meat+skin", approx:"meat+skin reference on bought weight incl. bone"},
+  "whole grain brown rice": {kcal:367, p:7.5, c:76.2, f:3.2, src:"fdc:169703", note:"dry weight"},
+  "whole wheat bread": {kcal:252, p:12.4, c:42.7, f:3.5, src:"fdc:172688"},
+  "whole wheat challah": {kcal:252, p:12.4, c:42.7, f:3.5, src:"fdc:172688", note:"ww bread as proxy for ww challah"},
+  "yellow cheese slices": {kcal:356, p:24.9, c:2.2, f:27.4, src:"fdc:171241", note:"israeli yellow cheese is gouda-type"},
+  "yellow onions": {kcal:40.0, p:1.1, c:9.3, f:0.1, src:"fdc:170000"},
+};
+const NUTRITION_MISSING_NOTE = "No reference data - excluded from totals below.";
+
+    // ===== Macros tab engine (estimates from NUTRITION_DB; never invented) =====
+    function ingredientGramsForMacros(qty, unit, entry) {
+      const u = String(unit || '').toLowerCase().trim();
+      const bridges = entry.u || {};
+      if (u === 'g') return qty;
+      if (u === 'kg') return qty * 1000;
+      if (u === 'ml') return bridges.ml ? qty * bridges.ml : null;
+      if (u === 'l') return bridges.ml ? qty * 1000 * bridges.ml : null;
+      const g = bridges[u] != null ? bridges[u] : (u === 'units' ? bridges['unit'] : (u === 'unit' ? bridges['units'] : undefined));
+      return g != null ? qty * g : null;
+    }
+
+    function computeRecipeMacros(recipeId) {
+      const recipe = RECIPES.find(r => r.id === recipeId);
+      if (!recipe) return null;
+      let kcal = 0, p = 0, c = 0, f = 0, covered = 0;
+      const missing = [];
+      const approx = [];
+      (recipe.ingredients || []).forEach(ing => {
+        const entry = NUTRITION_DB[String(ing.name || '').toLowerCase().trim()];
+        const grams = entry ? ingredientGramsForMacros(ing.qty, ing.unit, entry) : null;
+        if (grams == null) { missing.push(ing.name); return; }
+        if (entry.approx) approx.push(ing.name);
+        covered++;
+        kcal += entry.kcal * grams / 100;
+        p += entry.p * grams / 100;
+        c += entry.c * grams / 100;
+        f += entry.f * grams / 100;
+      });
+      return { kcal, p, c, f, covered, total: (recipe.ingredients || []).length, missing, approx };
+    }
+
+    function collectPlannedMeals() {
+      // One entry per scheduled slot: {day, label, recipe, people}
+      const daysOrder = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const meals = [];
+      const push = (slot, label) => {
+        if (!slot || !slot.recipeId || slot.recipeId === 'no_meal') return;
+        const recipe = RECIPES.find(r => r.id === slot.recipeId);
+        if (!recipe) return;
+        meals.push({ day: slot.day, label, recipe, people: slot.servings || state.servings });
+      };
+      (state.bfastSchedule || []).forEach(s => push(s, 'Breakfast'));
+      (state.lunchSchedule || []).forEach(s => push(s, 'Lunch'));
+      (state.activeSchedule || []).forEach(s => push(s, 'Dinner'));
+      meals.sort((a, b) => daysOrder.indexOf(a.day) - daysOrder.indexOf(b.day) ||
+        ({ Breakfast: 0, Lunch: 1, Dinner: 2 }[a.label] - { Breakfast: 0, Lunch: 1, Dinner: 2 }[b.label]));
+      return meals;
+    }
+
+    function buildPlannedMealsExportText() {
+      const meals = collectPlannedMeals();
+      if (meals.length === 0) return '';
+      const byDay = {};
+      meals.forEach(m => {
+        byDay[m.day] = byDay[m.day] || [];
+        byDay[m.day].push(`${m.label}: ${m.recipe.title} (${m.people} ${m.people === 1 ? 'person' : 'people'})`);
+      });
+      let text = `\n🍽️ *Planned Meals:*\n`;
+      Object.keys(byDay).forEach(d => { text += `• *${d}* - ${byDay[d].join(' | ')}\n`; });
+      return text;
+    }
+
+    function renderPrintMealsSection() {
+      const cb = document.getElementById('cartIncludeMealsExport');
+      if (cb) cb.checked = !!state.exportIncludeMeals;
+      const sec = document.getElementById('printMealsSection');
+      const content = document.getElementById('printMealsContent');
+      if (!sec || !content) return;
+      const meals = state.exportIncludeMeals ? collectPlannedMeals() : [];
+      content.innerHTML = meals.map(m => `<div>• <span class="font-semibold">${escapeHtml(m.day)}</span> - ${escapeHtml(m.label)}: ${escapeHtml(m.recipe.title)} (${m.people} ${m.people === 1 ? 'person' : 'people'})</div>`).join('');
+    }
+
+    function macroFmt(v) { return v >= 100 ? String(Math.round(v)) : String(Math.round(v * 10) / 10); }
+
+    function renderMacros() {
+      const container = document.getElementById('macrosDaysContainer');
+      const summary = document.getElementById('macrosSummary');
+      if (!container || !summary) return;
+      const meals = collectPlannedMeals();
+      container.innerHTML = '';
+      if (meals.length === 0) {
+        container.innerHTML = '<div class="bg-white rounded-2xl p-6 border border-slate-200 text-sm text-slate-500 text-center">No meals planned yet. Add meals in the Weekly Plan tab first.</div>';
+        summary.innerHTML = '';
+        return;
+      }
+      const daysOrder = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const byDay = {};
+      meals.forEach(m => { (byDay[m.day] = byDay[m.day] || []).push(m); });
+      let weekKcal = 0, weekP = 0, weekC = 0, weekF = 0, daysCounted = 0, anyPartial = false;
+
+      daysOrder.filter(d => byDay[d]).forEach(day => {
+        const dayMeals = byDay[day];
+        let dKcal = 0, dP = 0, dC = 0, dF = 0, dayPartial = false, dayApprox = false;
+        const rowsHtml = dayMeals.map(m => {
+          const r = computeRecipeMacros(m.recipe.id);
+          if (!r || r.covered === 0) {
+            anyPartial = true; dayPartial = true;
+            return `<div class="px-4 py-3 border-b border-slate-100 last:border-0">
+              <div class="flex items-center justify-between gap-2">
+                <div class="min-w-0"><span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">${m.label}</span>
+                <div class="text-xs font-bold text-slate-800 truncate">${escapeHtml(m.recipe.title)}</div></div>
+                <span class="text-[10px] font-semibold text-slate-500 bg-slate-100 rounded px-1.5 py-0.5 whitespace-nowrap">Not calculated</span>
+              </div>
+              <div class="text-[10px] text-slate-400 mt-1">No reference nutrition for: ${escapeHtml((r ? r.missing : []).join(', ') || 'this meal')}</div>
+            </div>`;
+          }
+          // per-serving: recipe base is 4 portions; scaling with people cancels out
+          const ps = { kcal: r.kcal / 4, p: r.p / 4, c: r.c / 4, f: r.f / 4 };
+          dKcal += ps.kcal; dP += ps.p; dC += ps.c; dF += ps.f;
+          const partial = r.missing.length > 0;
+          if (partial) { anyPartial = true; dayPartial = true; }
+          if (r.approx.length > 0) dayApprox = true;
+          return `<div class="px-4 py-3 border-b border-slate-100 last:border-0">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <div class="min-w-0"><span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">${m.label} · ${m.people} ${m.people === 1 ? 'person' : 'people'}</span>
+              <div class="text-xs font-bold text-slate-800">${escapeHtml(m.recipe.title)}</div></div>
+              <div class="text-right shrink-0">
+                <div class="text-xs font-extrabold text-slate-900">${macroFmt(ps.kcal)} kcal <span class="text-[10px] font-medium text-slate-400">/ serving</span></div>
+                <div class="text-[10px] text-slate-600">P ${macroFmt(ps.p)}g · C ${macroFmt(ps.c)}g · F ${macroFmt(ps.f)}g</div>
+              </div>
+            </div>
+            <div class="mt-1 flex items-center gap-2 flex-wrap">
+              ${partial
+                ? `<span class="text-[9px] font-semibold text-amber-800 bg-amber-50 border border-amber-200 rounded px-1.5 py-0.5">PARTIAL: ${r.covered} of ${r.total} ingredients covered - incomplete estimate, values may be higher</span>`
+                : `<span class="text-[9px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 rounded px-1.5 py-0.5">All ${r.total} ingredients covered</span>`}
+              <span class="text-[9px] text-slate-400">whole meal ×${m.people}: ${macroFmt(ps.kcal * m.people)} kcal</span>
+            </div>
+            ${partial ? `<div class="text-[10px] text-slate-400 mt-1">No reference data for: ${escapeHtml(r.missing.join(', '))}</div>` : ''}
+            ${r.approx.length > 0 ? `<div class="text-[10px] text-slate-400 mt-0.5">Approximate weight basis (bone/peel/pit as bought) for: ${escapeHtml(r.approx.join(', '))}</div>` : ''}
+          </div>`;
+        }).join('');
+
+        daysCounted++;
+        weekKcal += dKcal; weekP += dP; weekC += dC; weekF += dF;
+        const card = document.createElement('div');
+        card.className = 'bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm';
+        card.innerHTML = `
+          <div class="px-4 py-2.5 bg-slate-50 border-b border-slate-100 flex items-center justify-between gap-2 flex-wrap">
+            <span class="text-xs font-bold text-slate-700">${day}</span>
+            <span class="text-[11px] text-slate-600">Day total / serving${dayPartial ? ' (partial)' : dayApprox ? ' (approx.)' : ''}: <span class="font-extrabold text-slate-900">${macroFmt(dKcal)} kcal</span> · P ${macroFmt(dP)}g · C ${macroFmt(dC)}g · F ${macroFmt(dF)}g</span>
+          </div>
+          ${rowsHtml}`;
+        container.appendChild(card);
+      });
+
+      if (daysCounted > 0) {
+        summary.innerHTML = `
+          ${anyPartial ? '<p class="text-[11px] font-semibold text-amber-800 mt-3">Weekly averages below are INCOMPLETE estimates - some meals are only partially covered.</p>' : ''}
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-3">
+            <div class="bg-slate-50 rounded-xl p-3 text-center"><div class="text-lg font-extrabold text-slate-900">${macroFmt(weekKcal / daysCounted)}</div><div class="text-[10px] font-semibold text-slate-500 uppercase">avg kcal / day</div></div>
+            <div class="bg-slate-50 rounded-xl p-3 text-center"><div class="text-lg font-extrabold text-emerald-700">${macroFmt(weekP / daysCounted)}g</div><div class="text-[10px] font-semibold text-slate-500 uppercase">avg protein / day</div></div>
+            <div class="bg-slate-50 rounded-xl p-3 text-center"><div class="text-lg font-extrabold text-slate-900">${macroFmt(weekC / daysCounted)}g</div><div class="text-[10px] font-semibold text-slate-500 uppercase">avg carbs / day</div></div>
+            <div class="bg-slate-50 rounded-xl p-3 text-center"><div class="text-lg font-extrabold text-slate-900">${macroFmt(weekF / daysCounted)}g</div><div class="text-[10px] font-semibold text-slate-500 uppercase">avg fat / day</div></div>
+          </div>
+          ${anyPartial ? '<p class="text-[11px] text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-2.5 py-1.5 mt-3">Some meals are PARTIAL: ingredients without reference data (Israeli blends like za\'atar, silan, matbucha; halloumi; bourekas) are excluded, so the values shown may be lower or higher than the real ones - they are incomplete estimates.</p>' : ''}`;
+      } else { summary.innerHTML = ''; }
+    }
+
     function switchTab(tabId) {
-      const tabs = ['Plan', 'Cart', 'Pantry', 'Preferences'];
+      const tabs = ['Plan', 'Cart', 'Macros', 'Pantry', 'Preferences'];
       tabs.forEach(t => {
         const btn = document.getElementById(`tabBtn${t}`);
         const view = document.getElementById(`view${t}`);
@@ -4464,6 +4856,8 @@ let state = {
       renderMealPlan();
       renderSupermarketComparison();
       renderGroceryAisles();
+      renderMacros();
+      renderPrintMealsSection();
       renderPantryGrid();
       renderPreferences();
     }
@@ -4608,6 +5002,7 @@ let state = {
 
       document.getElementById('tabBtnPlan').addEventListener('click', () => switchTab('Plan'));
       document.getElementById('tabBtnCart').addEventListener('click', () => switchTab('Cart'));
+      document.getElementById('tabBtnMacros').addEventListener('click', () => switchTab('Macros'));
       document.getElementById('tabBtnPantry').addEventListener('click', () => switchTab('Pantry'));
       document.getElementById('tabBtnPreferences').addEventListener('click', () => switchTab('Preferences'));
 
@@ -4743,26 +5138,31 @@ let state = {
         e.preventDefault();
         const name = document.getElementById('customItemName').value.trim();
         const aisle = document.getElementById('customItemAisle').value;
-        const price = parseFloat(document.getElementById('customItemPrice').value);
+        const rawPrice = document.getElementById('customItemPrice').value.trim();
+        const price = rawPrice === '' ? null : parseFloat(rawPrice);
 
         if (!name) return;
-        if (isNaN(price) || price < 0 || price > 2000) {
-          showToast('Please enter a valid price between ₪0 and ₪2000', 'fa-triangle-exclamation', 'warning');
+        if (price !== null && (isNaN(price) || price < 0 || price > 2000)) {
+          showToast('Please enter a valid price between ₪0 and ₪2000 (or leave it empty)', 'fa-triangle-exclamation', 'warning');
           return;
         }
+        const qtyRaw = parseInt(document.getElementById('customItemQty').value, 10);
+        const qty = (Number.isInteger(qtyRaw) && qtyRaw >= 1 && qtyRaw <= 50) ? qtyRaw : 1;
 
         const newItem = {
           id: 'c_' + Date.now(),
           name: escapeHtml(name),
           aisle,
-          price
+          price,
+          qty
         };
         state.customItems.push(newItem);
         saveState();
         renderAll();
         document.getElementById('customItemName').value = '';
         document.getElementById('customItemPrice').value = '';
-        showToast(`Added "${name}" to shopping cart`);
+        document.getElementById('customItemQty').value = '1';
+        showToast(price === null ? `Added "${name}" to the list (no price - not in totals)` : `Added "${name}" to shopping cart`);
       });
 
       document.querySelectorAll('.online-store-tab').forEach(btn => {
@@ -4781,6 +5181,18 @@ let state = {
       document.getElementById('btnCloseWhatsAppModal').addEventListener('click', closeWhatsAppModal);
       document.getElementById('whatsappFormatSelect').addEventListener('change', updateWhatsAppPreview);
       document.getElementById('whatsappIncludePantry').addEventListener('change', updateWhatsAppPreview);
+      document.getElementById('whatsappIncludeMeals').addEventListener('change', (e) => {
+        state.exportIncludeMeals = e.target.checked;
+        saveState();
+        updateWhatsAppPreview();
+        renderPrintMealsSection();
+      });
+      document.getElementById('cartIncludeMealsExport').addEventListener('change', (e) => {
+        state.exportIncludeMeals = e.target.checked;
+        saveState();
+        renderPrintMealsSection();
+        showToast(e.target.checked ? 'Planned meals will be included in exports' : 'Planned meals removed from exports');
+      });
       document.getElementById('btnCopyWhatsAppModal').addEventListener('click', () => {
         const text = document.getElementById('whatsappPreviewText').value;
         fallbackCopyText(text);

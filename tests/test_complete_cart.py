@@ -20,7 +20,7 @@ srv = socketserver.TCPServer(("127.0.0.1", 0), H); threading.Thread(target=srv.s
 RECON = """(ck) => { const l = getAggregatedGroceryList(ck), t = calculateCartTotals(ck); const c = v => Math.round(v * 100);
   let sum = 0, cat = {actual: 0, 'estimate-chains': 0, 'estimate-baseline': 0, 'user-entered': 0}, n = 0, bad = [];
   Object.values(l).forEach(i => { if (i.isPantry) return; n++; sum += c(i.storePrice); cat[i.priceSource] = (cat[i.priceSource] || 0) + c(i.storePrice);
-    if (!isFinite(i.storePrice) || !(i.storePrice > 0 || (i.priceSource === 'user-entered' && i.storePrice === 0))) bad.push(i.name); if (!i.priceSource) bad.push('nosrc ' + i.name); });
+    if (!isFinite(i.storePrice) || !(i.storePrice > 0 || ((i.priceSource === 'user-entered' || i.priceSource === 'no-price') && i.storePrice === 0))) bad.push(i.name); if (!i.priceSource) bad.push('nosrc ' + i.name); });
   return {sum, n, t, cat, bad, ok: sum === Math.round(t.totalCart * 100) && n === t.totalItemsToBuy && cat.actual === Math.round(t.actualTotal * 100)
     && cat['estimate-chains'] === Math.round(t.estimatedChainsTotal * 100) && cat['estimate-baseline'] === Math.round(t.estimatedBaselineTotal * 100)
     && Math.round(t.actualTotal * 100) + Math.round(t.estimatedTotal * 100) + Math.round(t.userEnteredTotal * 100) === sum}; }"""
@@ -73,9 +73,9 @@ with sync_playwright() as p:
     check("recipe-baseline estimate is identical at every chain (%s)" % zz, len(set(zz)) == 1 and zz[0] > 0, zz)
     # 9 custom items: the user's price, same at every chain; no price -> labelled baseline
     r = pg.evaluate("""(() => { state.customItems = [{id: 'c1', name: 'Birthday candles', price: 12.5, aisle: 'pantry'}, {id: 'c2', name: 'Mystery', aisle: 'pantry'}];
-        const out = ['rami-levy','shufersal','carrefour'].map(ck => { const l = getAggregatedGroceryList(ck); const t = calculateCartTotals(ck); return [l.custom_c1.storePrice, l.custom_c1.priceSource, l.custom_c2 ? 'present' : 'absent', t.userEnteredTotal, t.totalCart]; });
+        const out = ['rami-levy','shufersal','carrefour'].map(ck => { const l = getAggregatedGroceryList(ck); const t = calculateCartTotals(ck); return [l.custom_c1.storePrice, l.custom_c1.priceSource, l.custom_c2 ? l.custom_c2.priceSource + '/' + l.custom_c2.storePrice : 'absent', t.userEnteredTotal, t.totalCart, t.noPriceCount]; });
         const rc = ['rami-levy','carrefour'].map(ck => (%s)(ck).ok); state.customItems = []; return {out, rc}; })()""" % RECON)
-    check("custom items: user price kept (12.5) at every chain, labelled user-entered; a priceless item is not created; totals reconcile", all(o[0] == 12.5 and o[1] == "user-entered" and o[2] == "absent" and o[3] == 12.5 for o in r["out"]) and all(r["rc"]), r)
+    check("custom items: user price kept (12.5) at every chain, labelled user-entered; a priceless item stays listed as no-price at 0 and is excluded from every total (counted in noPriceCount); totals reconcile", all(o[0] == 12.5 and o[1] == "user-entered" and o[2] == "no-price/0" and o[3] == 12.5 and o[5] == 1 for o in r["out"]) and all(r["rc"]), r)
     # 10 servings extremes and two-night batches
     r = pg.evaluate("""(() => { const bad = []; [1, 2, 8, 50].forEach(sv => { state.servings = sv; CH_ = ['shufersal','rami-levy','osher-ad','yochananof','victory','carrefour']; CH_.forEach(ck => { const x = (%s)(ck); if (!x.ok || x.bad.length) bad.push(sv + ' ' + ck); }); });
         state.servings = 4; state.twoNightBatchDays = {0: true, 2: true}; ['shufersal','carrefour'].forEach(ck => { const x = (%s)(ck); if (!x.ok) bad.push('batch ' + ck); }); state.twoNightBatchDays = {}; return bad; })()""" % (RECON, RECON))
@@ -136,7 +136,36 @@ with sync_playwright() as p:
     r = pg.evaluate("""(() => { const n0 = state.customItems.length; const res = []; ['-3', '', '2001', 'abc', '0'].forEach(v => { const before = state.customItems.length; document.getElementById('customItemName').value = 'Probe ' + v; document.getElementById('customItemPrice').value = v;
         document.getElementById('toastContainer') && (document.getElementById('toastContainer').innerHTML = ''); document.getElementById('addCustomItemForm').dispatchEvent(new Event('submit', {cancelable: true, bubbles: true}));
         res.push([v, state.customItems.length - before, (document.body.innerText.match(/valid price/g) || []).length > 0]); }); const added = state.customItems.slice(n0); state.customItems = state.customItems.slice(0, n0); return {res, added: added.map(i => i.price)}; })()""")
-    check("custom form: -3, empty, 2001, abc rejected with a visible 'valid price' message and no item; 0 accepted as free", all(x[1] == 0 and x[2] for x in r["res"][:4]) and r["res"][4][1] == 1 and r["added"] == [0], r)
+    check("custom form: -3 and 2001 rejected with a visible 'valid price' message and no item; empty accepted as a no-price line (null); 0 accepted as free ('abc' is sanitized to empty by the number input, so it also lands as a no-price line)", all(x[1] == 0 and x[2] for x in [r["res"][0], r["res"][2]]) and r["res"][1][1] == 1 and r["res"][3][1] == 1 and r["res"][4][1] == 1 and r["added"] == [None, None, 0], r)
+    # 13e (7 Nov) macros engine + meals export + no-price cart display
+    r = pg.evaluate("""(() => { const out = {};
+        state.customItems = [{id: 'np1', name: 'Paper towels', price: null, aisle: 'pantry'}, {id: 'p1', name: 'Dish soap', price: 15, aisle: 'pantry'}];
+        renderAll();
+        const l = getAggregatedGroceryList('rami-levy'); const t = calculateCartTotals('rami-levy');
+        out.noPriceLine = l.custom_np1.priceSource === 'no-price' && l.custom_np1.storePrice === 0 && t.noPriceCount === 1;
+        out.userLine = l.custom_p1.priceSource === 'user-entered' && t.userEnteredTotal === 15;
+        out.note = !document.getElementById('noPriceItemsNote').classList.contains('hidden') && document.getElementById('noPriceItemsNote').textContent.includes('Paper towels');
+        // meals export checkbox
+        state.exportIncludeMeals = true; openWhatsAppModal(); updateWhatsAppPreview();
+        const txt = document.getElementById('whatsappPreviewText').value;
+        out.mealsInExport = txt.includes('Planned Meals') && txt.indexOf('Planned Meals') < txt.indexOf('Sent from');
+        out.noPriceInExport = txt.includes('without a price');
+        state.exportIncludeMeals = false; updateWhatsAppPreview();
+        out.mealsOutByDefault = !document.getElementById('whatsappPreviewText').value.includes('Planned Meals');
+        closeWhatsAppModal();
+        // macros: known recipe fully covered vs custom unknown
+        const m1 = computeRecipeMacros(state.activeSchedule.find(s => s.recipeId && s.recipeId !== 'no_meal').recipeId);
+        out.macrosFinite = m1 && [m1.kcal, m1.p, m1.c, m1.f].every(isFinite) && m1.covered > 0;
+        RECIPES.push({id: '__nomac', title: 'nm', ingredients: [{name: 'Zz Unknown Thing', qty: 100, unit: 'g', aisle: 'produce', storePrice: 4, isPantry: false}]});
+        const m2 = computeRecipeMacros('__nomac');
+        out.macrosMissing = m2 && m2.covered === 0 && m2.missing.length === 1;
+        RECIPES.pop();
+        switchTab('Macros');
+        out.macrosView = !document.getElementById('viewMacros').classList.contains('hidden') && document.getElementById('macrosDaysContainer').children.length > 0;
+        state.customItems = []; renderAll(); switchTab('Plan');
+        return out; })()""")
+    check("macros tab renders with finite per-serving values and coverage badges; unknown-ingredient meal is not calculated; no-price extras listed at 0 outside totals with a visible note; meals checkbox toggles the planned-meals section in the export",
+        all(r.values()), r)
     # 13d lines with no verified pack/unit (unit gaps, Baharat, soba, composites) are never actual
     r = pg.evaluate("""(() => { const seen = {}; RECIPES.forEach(rc => (rc.ingredients || []).forEach(i => { seen[i.name + '|' + i.unit] = i; })); const ings = Object.values(seen).map(i => ({name: i.name, qty: i.qty, unit: i.unit, aisle: i.aisle, storePrice: i.storePrice, isPantry: false}));
         const sv = {a: state.activeSchedule, l: state.lunchSchedule, b: state.bfastSchedule, t: state.twoNightBatchDays}; RECIPES.push({id: '__all', title: 'all', ingredients: ings}); state.activeSchedule = [{recipeId: '__all'}]; state.lunchSchedule = []; state.bfastSchedule = []; state.twoNightBatchDays = {};
