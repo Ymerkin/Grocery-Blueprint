@@ -586,7 +586,7 @@
           <i class="fa-solid fa-plus-circle text-emerald-600"></i> Add Custom Grocery Item (e.g. Milk, Bamba, Challah, Tofu)
         </h4>
         <form id="addCustomItemForm" class="flex flex-wrap sm:flex-nowrap gap-2">
-          <input type="text" id="customItemName" placeholder="Item name (e.g. Fresh Challah for Shabbat / חלה לשבת)" required class="flex-1 bg-slate-50 border border-slate-300 text-xs rounded-lg px-3 py-2 text-slate-900 focus:ring-emerald-500 focus:border-emerald-500">
+          <input type="text" id="customItemName" autocomplete="off" placeholder="Item name (e.g. Fresh Challah for Shabbat / חלה לשבת)" required class="flex-1 bg-slate-50 border border-slate-300 text-xs rounded-lg px-3 py-2 text-slate-900 focus:ring-emerald-500 focus:border-emerald-500">
           <select id="customItemAisle" class="bg-slate-50 border border-slate-300 text-xs rounded-lg px-3 py-2 text-slate-900 focus:ring-emerald-500 focus:border-emerald-500 w-full sm:w-auto min-w-0 max-w-full">
             <option value="bakery">Bakery / מאפייה</option>
             <option value="produce">Produce / פירות וירקות</option>
@@ -602,6 +602,7 @@
             Add to List
           </button>
         </form>
+        <div id="customItemKnownHint" class="hidden mt-1.5 text-[11px] font-semibold text-emerald-700"></div>
       </div>
 
       <div id="noPriceItemsNote" class="hidden px-3.5 py-2 bg-slate-50 border border-slate-200 rounded-xl text-[11px] font-semibold text-slate-600"></div>
@@ -1095,9 +1096,9 @@
         </div>
 
         <div class="bg-slate-100/70 p-3 rounded-xl border border-slate-200 space-y-2">
-          <span class="text-[11px] font-bold text-slate-700">Or type custom ingredient:</span>
+          <span class="text-[11px] font-bold text-slate-700">Or type custom ingredient:</span> <span id="newIngKnownHint" class="hidden text-[11px] font-semibold text-emerald-700"></span>
           <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
-            <input type="text" id="newIngName" placeholder="Ingredient name (e.g. Avocado)" class="col-span-2 bg-white border border-slate-300 text-xs rounded-lg px-2.5 py-1.5 text-slate-900">
+            <input type="text" id="newIngName" autocomplete="off" placeholder="Ingredient name (e.g. Avocado)" class="col-span-2 bg-white border border-slate-300 text-xs rounded-lg px-2.5 py-1.5 text-slate-900">
             <div class="flex gap-1">
               <input type="number" id="newIngQty" min="0.1" step="0.5" value="100" placeholder="Qty" class="w-16 bg-white border border-slate-300 text-xs rounded-lg px-2 py-1.5 text-slate-900">
               <select id="newIngUnit" class="bg-white border border-slate-300 text-xs rounded-lg px-1.5 py-1.5 text-slate-900">
@@ -1192,7 +1193,7 @@
         <label class="block text-xs font-semibold">Dish name<input id="shabbatCustomName" maxlength="80" class="mt-1 w-full border rounded-lg p-2 text-base" placeholder="e.g. Lemon cake"></label>
         <label class="block text-xs font-semibold">Dish type<select id="shabbatCustomKosher" class="mt-1 w-full border rounded-lg p-2 text-base"><option value="">Choose type</option><option value="pareve">Pareve</option><option value="meat">Meat</option><option value="dairy">Dairy</option></select></label>
         <div><h4 class="text-sm font-bold">Ingredients</h4><p class="text-xs text-slate-500 mt-1">Choose an existing ingredient for its recipe estimate, or type your own. For a new ingredient, enter an estimated cost for the quantity shown. This is an estimate, not a verified store price.</p></div>
-        <datalist id="shabbatIngredientNames"></datalist>
+        
         <div id="shabbatCustomRows" class="space-y-3"></div>
         <button type="button" id="shabbatCustomAddIngredient" class="min-h-[44px] border rounded-lg px-3 text-xs font-semibold">+ Add ingredient</button>
         <p id="shabbatCustomError" class="text-xs text-rose-700" role="alert"></p>
@@ -2002,17 +2003,50 @@ let state = {
         const hasTypedPrice = typeof ci.price === 'number' && isFinite(ci.price) && ci.price >= 0 && ci.price <= 2000;
         if (ci.price !== null && ci.price !== undefined && !hasTypedPrice) return; // invalid stored value is never turned into an invented item
         const key = 'custom_' + ci.id;
+        const ciQty = (Number.isInteger(ci.qty) && ci.qty >= 1 && ci.qty <= 50) ? ci.qty : 1;
+        const rec = ci.recognized || null;
+        // Recognized ingredient, no typed price: price it through the same store-specific pathway as recipe
+        // ingredients - actual published price at this chain when one exists, estimate (marked as one) otherwise.
+        if (rec && !hasTypedPrice) {
+          let recQty = rec.qty * ciQty, recUnit = rec.unit;
+          const uLow = String(recUnit || '').toLowerCase().trim();
+          if (uLow === 'kg') { recQty = recQty * 1000; recUnit = 'g'; }
+          else if (uLow === 'l') { recQty = recQty * 1000; recUnit = 'ml'; }
+          const pricing = getIngredientPricing(ci.name, recQty, recUnit, 1.0, storeKey, rec.baseline);
+          list[key] = {
+            name: ci.name,
+            searchHe: ci.searchHe || ci.name,
+            qty: recQty,
+            unit: recUnit,
+            aisle: ci.aisle || 'produce',
+            storePrice: pricing.storePrice,
+            purchaseCost: pricing.purchaseCost,
+            recipeCost: pricing.recipeCost,
+            isLiveMatch: pricing.isLiveMatch,
+            matchedData: pricing.matchedData,
+            packsNeeded: pricing.packsNeeded,
+            isConvertible: pricing.isConvertible,
+            estimateBasis: pricing.estimateBasis || null,
+            unpricedReason: pricing.unpricedReason || null,
+            isPantry: false,
+            isCustom: true,
+            customStorePriced: true,
+            customHasPrice: true,
+            id: ci.id,
+            mealSources: ['Direct Cart Addition']
+          };
+          return;
+        }
         // The user's own price is used as typed at every store (no hand-set store multiplier on it).
         // A typed price of 0 is a valid intentional free item and is kept as entered. An item added without a price
         // stays on the list marked 'no price' and is NOT counted in any total - an invented baseline is never shown.
         const customValid = hasTypedPrice;
-        const ciQty = (Number.isInteger(ci.qty) && ci.qty >= 1 && ci.qty <= 50) ? ci.qty : 1;
         const customPrice = customValid ? Math.round(ci.price * ciQty * 100) / 100 : 0;
         list[key] = {
           name: ci.name,
-          searchHe: ci.name,
-          qty: ciQty,
-          unit: ciQty === 1 ? 'item' : 'items',
+          searchHe: (rec && ci.searchHe) || ci.name,
+          qty: rec ? Math.round(rec.qty * ciQty * 100) / 100 : ciQty,
+          unit: rec ? rec.unit : (ciQty === 1 ? 'item' : 'items'),
           aisle: ci.aisle || 'produce',
           storePrice: customPrice,
           purchaseCost: customPrice,
@@ -2036,7 +2070,7 @@ let state = {
       Object.keys(list).forEach(k => {
         const item = list[k];
         item.key = item.key || k;
-        if (item.isCustom) { item.priceSource = item.customHasPrice ? 'user-entered' : 'no-price'; item.estimateChains = 0; return; }
+        if (item.isCustom && !item.customStorePriced) { item.priceSource = item.customHasPrice ? 'user-entered' : 'no-price'; item.estimateChains = 0; return; }
         if (item.isLiveMatch && storeLive) { item.priceSource = 'actual'; item.estimateChains = 0; return; }
         const hits = [];
         PRICE_CHAINS.forEach(ck => {
@@ -2671,6 +2705,163 @@ let state = {
         showToast(`Assigned to ${slot.day} ${label} (replaced ${prevRecipe.title})`);
       } else {
         showToast(`Added "${newRecipe ? newRecipe.title : 'meal'}" to ${slot.day} ${label}!`);
+      }
+    }
+
+
+    // ===== Recognized-ingredient typeahead (Custom Dish modal + extras form) =====
+    // Union of every ingredient the app already knows: planned recipes, Shabbat builder options
+    // and the quick-add catalog. Picking one reuses its exact name (so the NUTRITION_DB macro
+    // lookup can hit), its Hebrew store-search term and its recipe-estimate price as defaults.
+    // No match: the forms stay fully manual, exactly as before.
+    const RECOGNIZED_UNIT_MAP = { g: 'g', kg: 'kg', units: 'units', unit: 'units', pack: 'pack', can: 'can', cans: 'can', tbsp: 'tbsp', ml: 'ml' };
+    let newIngRecognized = null;  // recognized pick behind the custom-dish form, if any
+    let newIngAutoPrice = null;   // estimate the app filled in; scales with qty until the user edits it
+
+    function recognizedIngredientsIndex() {
+      const out = new Map();
+      shabbatKnownIngredients().forEach((ing, key) => {
+        out.set(key, { name: ing.name, searchHe: ing.searchHe || ing.name, qty: ing.qty, unit: ing.unit, aisle: ing.aisle || 'pantry', storePrice: ing.storePrice, isPantry: !!ing.isPantry, hasMacros: !!NUTRITION_DB[String(ing.name || '').toLowerCase().trim()] });
+      });
+      ISRAELI_INGREDIENTS_CATALOG.forEach(c => {
+        const key = c.name.toLowerCase();
+        if (!out.has(key)) out.set(key, { name: c.name, searchHe: c.searchHe || c.name, qty: c.defaultQty, unit: c.unit, aisle: c.aisle || 'pantry', storePrice: c.defaultPrice, isPantry: false, hasMacros: !!NUTRITION_DB[key] });
+      });
+      return out;
+    }
+
+    // App-rendered suggestion dropdown attached to ingredient name inputs. Shows recognized
+    // ingredients (name, standard amount, price estimate, macro coverage) while typing, in English
+    // or Hebrew; tapping/clicking or ArrowDown+Enter picks one. Native <datalist> was avoided on
+    // purpose: its popup is unreliable on iOS Safari, which is the phone this app is used on.
+    function attachIngredientTypeahead(input, opts) {
+      opts = opts || {};
+      const wrap = document.createElement('div');
+      wrap.className = 'relative min-w-0 ' + (opts.wrapClass || '');
+      input.parentNode.insertBefore(wrap, input);
+      wrap.appendChild(input);
+      input.classList.add('w-full');
+      const panel = document.createElement('div');
+      panel.className = 'hidden absolute left-0 right-0 top-full mt-1 z-40 bg-white border border-slate-300 rounded-xl shadow-lg max-h-56 overflow-y-auto text-xs';
+      wrap.appendChild(panel);
+      let items = [], hi = -1;
+      const close = () => { panel.classList.add('hidden'); hi = -1; };
+      const mark = () => { [...panel.children].forEach((c, i) => { c.classList.toggle('bg-emerald-100', i === hi); }); };
+      const pick = (i) => {
+        const k = items[i]; if (!k) return;
+        input.value = k.name;
+        input.dispatchEvent(new Event('input', { bubbles: true }));
+        input.dispatchEvent(new Event('change', { bubbles: true }));
+        close();
+        if (opts.onPick) opts.onPick(k);
+      };
+      const render = () => {
+        const q = input.value.trim().toLowerCase();
+        panel.innerHTML = ''; items = []; hi = -1;
+        if (!q) { close(); return; }
+        const starts = [], contains = [];
+        recognizedIngredientsIndex().forEach(k => {
+          const n = k.name.toLowerCase(), he = k.searchHe || '';
+          if (n.startsWith(q) || he.startsWith(q)) starts.push(k);
+          else if (n.includes(q) || (he && he.includes(q))) contains.push(k);
+        });
+        items = starts.concat(contains).slice(0, 8);
+        if (!items.length) { close(); return; }
+        items.forEach((k, i) => {
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'typeahead-option w-full text-left px-3 py-2 hover:bg-emerald-50 flex items-center justify-between gap-2 border-b border-slate-100 last:border-0';
+          b.innerHTML = '<span class="font-semibold text-slate-800 truncate">' + escapeHtml(k.name) + '</span>' +
+            '<span class="text-slate-500 whitespace-nowrap">' + k.qty + ' ' + k.unit + ' \u00B7 ~\u20AA' + (Math.round(Number(k.storePrice) * 100) / 100) +
+            (k.hasMacros ? ' \u00B7 <span class="text-emerald-700 font-semibold">macros</span>' : '') + '</span>';
+          b.addEventListener('mousedown', (e) => { e.preventDefault(); pick(i); });
+          panel.appendChild(b);
+        });
+        panel.classList.remove('hidden');
+      };
+      input.addEventListener('input', render);
+      input.addEventListener('focus', render);
+      input.addEventListener('blur', () => setTimeout(close, 120));
+      input.addEventListener('keydown', (e) => {
+        if (panel.classList.contains('hidden')) return;
+        if (e.key === 'ArrowDown') { e.preventDefault(); hi = Math.min(hi + 1, items.length - 1); mark(); }
+        else if (e.key === 'ArrowUp') { e.preventDefault(); hi = Math.max(hi - 1, 0); mark(); }
+        else if (e.key === 'Enter' && hi >= 0) { e.preventDefault(); pick(hi); }
+        else if (e.key === 'Escape') { e.preventDefault(); close(); }
+      });
+    }
+
+    function applyRecognizedToCustomIng(commit) {
+      const hint = document.getElementById('newIngKnownHint');
+      const raw = document.getElementById('newIngName').value.trim().toLowerCase();
+      const known = raw ? recognizedIngredientsIndex().get(raw) : null;
+      newIngRecognized = known || null;
+      if (!known) { newIngAutoPrice = null; if (hint) hint.classList.add('hidden'); return; }
+      const aisleSel = document.getElementById('newIngAisle');
+      if ([...aisleSel.options].some(o => o.value === known.aisle)) aisleSel.value = known.aisle;
+      const mapped = RECOGNIZED_UNIT_MAP[known.unit];
+      if (mapped) {
+        document.getElementById('newIngUnit').value = mapped;
+        document.getElementById('newIngQty').value = known.qty;
+        const p = Math.round(Number(known.storePrice) * 100) / 100;
+        document.getElementById('newIngPrice').value = p;
+        newIngAutoPrice = p;
+      } else {
+        newIngAutoPrice = null;
+      }
+      if (hint) {
+        hint.textContent = mapped
+          ? 'Recognized: amount, unit, aisle and price estimate filled - adjust the amount and tap Add' + (known.hasMacros ? ' (macros counted)' : ' (no macro data - counts as missing)')
+          : 'Recognized ingredient - its unit is not offered here, set amount and unit yourself';
+        hint.classList.remove('hidden');
+      }
+      if (commit && mapped) { const q = document.getElementById('newIngQty'); q.focus(); q.select(); }
+    }
+
+    function rescaleRecognizedPrice() {
+      if (!newIngRecognized || newIngAutoPrice === null) return;
+      const priceEl = document.getElementById('newIngPrice');
+      if (parseFloat(priceEl.value) !== newIngAutoPrice) { newIngRecognized = null; newIngAutoPrice = null; return; }
+      const qty = parseFloat(document.getElementById('newIngQty').value);
+      const unit = document.getElementById('newIngUnit').value;
+      const ku = RECOGNIZED_UNIT_MAP[newIngRecognized.unit];
+      const factor = u => (u === 'kg' ? 1000 : 1);
+      const mass = u => u === 'g' || u === 'kg';
+      const compatible = (mass(unit) && mass(ku)) || unit === ku;
+      if (!qty || qty <= 0 || !compatible) return;
+      const p = Math.round(newIngRecognized.storePrice * (qty * factor(unit)) / (newIngRecognized.qty * factor(ku)) * 100) / 100;
+      priceEl.value = p;
+      newIngAutoPrice = p;
+    }
+
+    function applyRecognizedToExtra() {
+      const hint = document.getElementById('customItemKnownHint');
+      const raw = document.getElementById('customItemName').value.trim().toLowerCase();
+      const known = raw ? recognizedIngredientsIndex().get(raw) : null;
+      if (!known) { if (hint) hint.classList.add('hidden'); return; }
+      const aisleSel = document.getElementById('customItemAisle');
+      if ([...aisleSel.options].some(o => o.value === known.aisle)) aisleSel.value = known.aisle;
+      if (hint) {
+        hint.textContent = 'Recognized - priced from live store prices where available, marked estimate otherwise (standard amount: ' + known.qty + ' ' + known.unit + ' each, est. \u20AA' + (Math.round(Number(known.storePrice) * 100) / 100) + '). Type a price to override with your own.';
+        hint.classList.remove('hidden');
+      }
+    }
+
+    function wireRecognizedIngredientInputs() {
+      const nameEl = document.getElementById('newIngName');
+      if (nameEl && !nameEl.dataset.knownWired) {
+        nameEl.dataset.knownWired = '1';
+        attachIngredientTypeahead(nameEl, { wrapClass: 'col-span-2' });
+        nameEl.addEventListener('input', () => applyRecognizedToCustomIng(false));
+        nameEl.addEventListener('change', () => applyRecognizedToCustomIng(true));
+        document.getElementById('newIngQty').addEventListener('input', rescaleRecognizedPrice);
+        document.getElementById('newIngUnit').addEventListener('change', rescaleRecognizedPrice);
+      }
+      const extraEl = document.getElementById('customItemName');
+      if (extraEl && !extraEl.dataset.knownWired) {
+        extraEl.dataset.knownWired = '1';
+        attachIngredientTypeahead(extraEl, { wrapClass: 'flex-1', onPick: () => { const q = document.getElementById('customItemQty'); if (q) { q.focus(); q.select(); } } });
+        extraEl.addEventListener('input', applyRecognizedToExtra);
       }
     }
 
@@ -4153,8 +4344,6 @@ let state = {
       document.getElementById('shabbatCustomName').value = opt ? opt.label : '';
       document.getElementById('shabbatCustomKosher').value = opt ? opt.kosher : '';
       document.getElementById('shabbatCustomError').textContent = '';
-      const list = document.getElementById('shabbatIngredientNames'); list.innerHTML = '';
-      shabbatKnownIngredients().forEach(i => { const o = document.createElement('option'); o.value=i.name; list.appendChild(o); });
       document.getElementById('shabbatCustomRows').innerHTML = '';
       (opt ? opt.ingredients : [{}]).forEach(i => addShabbatCustomRow(i));
       document.getElementById('shabbatCustomModal').classList.remove('hidden');
@@ -4162,7 +4351,7 @@ let state = {
     function closeShabbatCustom() { document.getElementById('shabbatCustomModal').classList.add('hidden'); }
     function addShabbatCustomRow(ing = {}) {
       const row=document.createElement('div'); row.className='shabbat-custom-row border rounded-xl p-3 space-y-2 min-w-0';
-      row.innerHTML='<label class="block text-xs font-semibold">Ingredient<input data-field="name" list="shabbatIngredientNames" maxlength="100" class="mt-1 w-full min-w-0 border rounded-lg p-2 text-base" placeholder="e.g. All-Purpose Flour"></label>' +
+      row.innerHTML='<label class="block text-xs font-semibold">Ingredient<input data-field="name" autocomplete="off" maxlength="100" class="mt-1 w-full min-w-0 border rounded-lg p-2 text-base" placeholder="e.g. All-Purpose Flour"></label>' +
         '<div class="grid grid-cols-2 gap-2"><label class="block text-xs font-semibold">Quantity<input data-field="qty" type="number" min="0.01" step="any" class="mt-1 w-full min-w-0 border rounded-lg p-2 text-base"></label>' +
         '<label class="block text-xs font-semibold">Unit<select data-field="unit" class="mt-1 w-full min-w-0 border rounded-lg p-2 text-base"><option value="g">g</option><option value="kg">kg</option><option value="ml">ml</option><option value="l">litres</option><option value="units">units</option><option value="tbsp">tbsp</option><option value="tsp">tsp</option></select></label></div>' +
         '<label class="block text-xs font-semibold">Estimated cost for this quantity (₪)<input data-field="price" type="number" min="0.01" step="0.01" class="mt-1 w-full min-w-0 border rounded-lg p-2 text-base" placeholder="Your estimate"></label>' +
@@ -4182,6 +4371,7 @@ let state = {
       ['name','qty','unit'].forEach(f=>row.querySelector('[data-field="'+f+'"]').addEventListener('change',autoPrice));
       row.querySelector('[data-action="remove"]').onclick=()=>row.remove();
       document.getElementById('shabbatCustomRows').appendChild(row);
+      attachIngredientTypeahead(row.querySelector('[data-field="name"]'), { onPick: () => { const q = row.querySelector('[data-field="qty"]'); q.focus(); } });
     }
     function saveShabbatCustom() {
       const error=document.getElementById('shabbatCustomError');
@@ -4971,16 +5161,19 @@ const NUTRITION_MISSING_NOTE = "No reference data - excluded from totals below."
           return;
         }
 
+        const knownIng = recognizedIngredientsIndex().get(name.toLowerCase());
         state.tempCustomIngredients.push({
           id: 'custom_ing_' + Date.now(),
-          name: escapeHtml(name),
-          searchHe: escapeHtml(name.replace(/\(.*\)/, '').trim()),
+          name: knownIng ? knownIng.name : name,
+          searchHe: knownIng ? knownIng.searchHe : name.replace(/\(.*\)/, '').trim(),
           qty: qtyVal,
           unit: unitVal,
           aisle,
           storePrice: priceVal,
-          isPantry: false
+          isPantry: knownIng ? knownIng.isPantry : false
         });
+        newIngRecognized = null; newIngAutoPrice = null;
+        const ingHint = document.getElementById('newIngKnownHint'); if (ingHint) ingHint.classList.add('hidden');
         document.getElementById('newIngName').value = '';
         renderCustomMealIngredientsList();
       });
@@ -5149,12 +5342,17 @@ const NUTRITION_MISSING_NOTE = "No reference data - excluded from totals below."
         const qtyRaw = parseInt(document.getElementById('customItemQty').value, 10);
         const qty = (Number.isInteger(qtyRaw) && qtyRaw >= 1 && qtyRaw <= 50) ? qtyRaw : 1;
 
+        const knownItem = recognizedIngredientsIndex().get(name.toLowerCase());
         const newItem = {
           id: 'c_' + Date.now(),
-          name: escapeHtml(name),
+          name: knownItem ? knownItem.name : name,
+          searchHe: knownItem ? knownItem.searchHe : name,
           aisle,
           price,
-          qty
+          qty,
+          // recognized + no typed price -> priced from live store data where available (estimate otherwise);
+          // recognized + typed price -> the typed price is a fixed per-standard-amount override at every store
+          recognized: knownItem ? { qty: knownItem.qty, unit: knownItem.unit, baseline: knownItem.storePrice, isPantry: knownItem.isPantry } : null
         };
         state.customItems.push(newItem);
         saveState();
@@ -5162,8 +5360,10 @@ const NUTRITION_MISSING_NOTE = "No reference data - excluded from totals below."
         document.getElementById('customItemName').value = '';
         document.getElementById('customItemPrice').value = '';
         document.getElementById('customItemQty').value = '1';
-        showToast(price === null ? `Added "${name}" to the list (no price - not in totals)` : `Added "${name}" to shopping cart`);
+        showToast(price === null && !newItem.recognized ? `Added "${name}" to the list (no price - not in totals)` : (price === null ? `Added "${name}" - will use store prices where available` : `Added "${name}" to shopping cart`));
       });
+
+      wireRecognizedIngredientInputs();
 
       document.querySelectorAll('.online-store-tab').forEach(btn => {
         btn.addEventListener('click', () => {
