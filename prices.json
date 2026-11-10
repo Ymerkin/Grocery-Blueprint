@@ -5,23 +5,23 @@
       "rami-levy": {
         "store_id": "039",
         "store_name": "מרלוג אינטרנט",
-        "source_file": "pricefull7290058140886-039-202611090518.gz",
-        "published_at": "2026-11-09T05:18:00+02:00",
+        "source_file": "pricefull7290058140886-039-202611100517.gz",
+        "published_at": "2026-11-10T05:17:00+02:00",
         "published_at_assumed_tz": "Asia/Jerusalem",
-        "retrieved_at": "2026-11-09T03:53:28.909976+00:00",
-        "sha256": "874fca24e75ce7be4a1d8c5d296e3b96ad2ed90e2d4406f99be4e965be96ac0b",
-        "item_count": 15499,
-        "priced_count": 142
+        "retrieved_at": "2026-11-10T03:48:36.879345+00:00",
+        "sha256": "053e5a4234f7a284deaef73dcb333ee173e92cf75029d3800403f645ea63d67f",
+        "item_count": 15480,
+        "priced_count": 141
       },
       "yochananof": {
         "store_id": "035",
         "store_name": "יוחננוף תל אביב נחלת יצחק",
-        "source_file": "PriceFull7290803800003-000-035-20261109-004031.gz",
-        "published_at": "2026-11-09T00:40:31+02:00",
+        "source_file": "PriceFull7290803800003-000-035-20261110-004031.gz",
+        "published_at": "2026-11-10T00:40:31+02:00",
         "published_at_assumed_tz": "Asia/Jerusalem",
-        "retrieved_at": "2026-11-09T03:53:55.275413+00:00",
-        "sha256": "b8b2a702531344ad5502b6db40cc4d0510c79d8b731e90c6444bd7beb8411c54",
-        "item_count": 8462,
+        "retrieved_at": "2026-11-10T03:49:01.974092+00:00",
+        "sha256": "2963fc1105b237c5229a0d9eeb03997a6f0e0331c2f86c919a09164874bc6a96",
+        "item_count": 8473,
         "priced_count": 135
       },
       "victory": {
@@ -59,9 +59,10 @@
       }
     },
     "pin_warnings": [
-      "rami-levy | Chicken Thighs & Drumsticks: pinned code 2610021 not in pricefull7290058140886-039-202611090518.gz",
-      "rami-levy | Potato Gnocchi: pinned code 7290112191328 not in pricefull7290058140886-039-202611090518.gz",
-      "rami-levy | Raw Whole Almonds: pinned code 522 not in pricefull7290058140886-039-202611090518.gz"
+      "rami-levy | Chicken Thighs & Drumsticks: pinned code 2610021 not in pricefull7290058140886-039-202611100517.gz",
+      "rami-levy | Potato Gnocchi: pinned code 7290112191328 not in pricefull7290058140886-039-202611100517.gz",
+      "rami-levy | Raw Whole Almonds: pinned code 522 not in pricefull7290058140886-039-202611100517.gz",
+      "rami-levy | Whole Fresh Chicken: pinned code 2681526 not in pricefull7290058140886-039-202611100517.gz"
     ],
     "drained_unpriced": [
       "rami-levy | Canned Chunk Light Tuna: no source-verified drained weight for code 670604",
@@ -86,7 +87,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0038,
         "priceUpdateTime": "2025-06-20T14:06:24",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290015834162, price=3.8, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290015834162, price=3.8, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290003107216",
@@ -103,7 +104,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0059,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290003107216, price=5.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290003107216, price=5.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11464201",
@@ -172,8 +173,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.142,
-        "priceUpdateTime": "2026-10-04T10:06:59",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290000318400, price=35.5, pack=250.0 g"
+        "priceUpdateTime": "2026-11-09T19:05:17",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290000318400, price=35.5, pack=250.0 g"
       },
       "yochananof": {
         "item_code": "7290000318400",
@@ -190,7 +191,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1116,
         "priceUpdateTime": "2026-10-04T10:25:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000318400, price=27.9, pack=250.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000318400, price=27.9, pack=250.0 g"
       },
       "osher-ad": {
         "item_code": "7290109581682",
@@ -227,7 +228,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0814,
         "priceUpdateTime": "2026-10-14T18:06:33",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=8202046, price=81.4, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=8202046, price=81.4, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "403045",
@@ -244,7 +245,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0749,
         "priceUpdateTime": "2026-07-15T12:48:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=403045, price=74.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=403045, price=74.9, pack=1000.0 g"
       },
       "shufersal": {
         "item_code": "7290000916118",
@@ -281,7 +282,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1056,
         "priceUpdateTime": "2026-11-04T16:02:57",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290102397334, price=26.4, pack=250.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290102397334, price=26.4, pack=250.0 g"
       },
       "yochananof": {
         "item_code": "7290005992575",
@@ -298,7 +299,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0836,
         "priceUpdateTime": "2026-08-10T09:58:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290005992575, price=20.9, pack=250.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290005992575, price=20.9, pack=250.0 g"
       },
       "victory": {
         "item_code": "11411305",
@@ -368,7 +369,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03725,
         "priceUpdateTime": "2026-06-29T12:26:37",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290018882979, price=14.9, pack=400.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290018882979, price=14.9, pack=400.0 g"
       },
       "yochananof": {
         "item_code": "7290000574462",
@@ -385,7 +386,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03725,
         "priceUpdateTime": "2025-10-14T21:18:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000574462, price=14.9, pack=400.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000574462, price=14.9, pack=400.0 g"
       },
       "victory": {
         "item_code": "11463457",
@@ -437,8 +438,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.03261,
-        "priceUpdateTime": "2026-10-15T09:02:46",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290110559014, price=7.5, pack=380.0 g",
+        "priceUpdateTime": "2026-11-09T12:02:58",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290110559014, price=7.5, pack=380.0 g",
         "grossPackQty": 380.0,
         "grossPackUnit": "g",
         "drained": {
@@ -465,7 +466,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03261,
         "priceUpdateTime": "2025-10-21T22:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290110559014, price=7.5, pack=380.0 g",
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290110559014, price=7.5, pack=380.0 g",
         "grossPackQty": 380.0,
         "grossPackUnit": "g",
         "drained": {
@@ -521,8 +522,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.03261,
-        "priceUpdateTime": "2026-10-14T09:02:44",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290112357113, price=7.5, pack=230.0 g",
+        "priceUpdateTime": "2026-11-09T12:02:58",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290112357113, price=7.5, pack=230.0 g",
         "grossPackQty": 230.0,
         "grossPackUnit": "g",
         "drained": {
@@ -549,7 +550,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03261,
         "priceUpdateTime": "2025-11-14T23:01:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290112357113, price=7.5, pack=380.0 g",
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290112357113, price=7.5, pack=380.0 g",
         "grossPackQty": 380.0,
         "grossPackUnit": "g",
         "drained": {
@@ -596,7 +597,7 @@
         "gtin": "07290100704950",
         "nameHe": "שימורי שעועית אדומה 240 גר סוגת",
         "brand": "לא ידוע",
-        "packPrice": 5.5,
+        "packPrice": 6.1,
         "packQty": 240.0,
         "packUnit": "g",
         "packBasis": "feed quantity and product name agree",
@@ -604,9 +605,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.02292,
-        "priceUpdateTime": "2026-11-01T09:03:30",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290100704950, price=5.5, pack=240.0 g"
+        "unitPriceNorm": 0.02542,
+        "priceUpdateTime": "2026-11-09T16:02:46",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290100704950, price=6.1, pack=240.0 g"
       },
       "yochananof": {
         "item_code": "7290100704950",
@@ -623,7 +624,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01975,
         "priceUpdateTime": "2025-11-02T18:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290100704950, price=7.9, pack=400.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290100704950, price=7.9, pack=400.0 g"
       },
       "victory": {
         "item_code": "11464243",
@@ -692,8 +693,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.03261,
-        "priceUpdateTime": "2026-10-20T14:02:37",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290112348142, price=7.5, pack=230.0 g",
+        "priceUpdateTime": "2026-11-09T12:02:57",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290112348142, price=7.5, pack=230.0 g",
         "grossPackQty": 230.0,
         "grossPackUnit": "g",
         "drained": {
@@ -720,7 +721,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03261,
         "priceUpdateTime": "2025-10-21T22:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290112348142, price=7.5, pack=380.0 g",
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290112348142, price=7.5, pack=380.0 g",
         "grossPackQty": 380.0,
         "grossPackUnit": "g",
         "drained": {
@@ -777,7 +778,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.108,
         "priceUpdateTime": "2026-11-01T09:10:00",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290008101264, price=16.2, pack=150.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290008101264, price=16.2, pack=150.0 g"
       },
       "victory": {
         "item_code": "11495188",
@@ -830,7 +831,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.06611,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290006983206, price=11.9, pack=180.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290006983206, price=11.9, pack=180.0 g"
       },
       "victory": {
         "item_code": "11506055",
@@ -900,7 +901,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.008,
         "priceUpdateTime": "2026-05-14T10:52:51",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290119673537, price=4.0, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290119673537, price=4.0, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290000060880",
@@ -917,7 +918,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.013,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000060880, price=6.5, pack=500.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000060880, price=6.5, pack=500.0 g"
       },
       "victory": {
         "item_code": "11410923",
@@ -987,7 +988,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01825,
         "priceUpdateTime": "2026-07-09T16:04:41",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290015603546, price=7.3, pack=400.0 ml"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290015603546, price=7.3, pack=400.0 ml"
       },
       "yochananof": {
         "item_code": "7290015603546",
@@ -1004,7 +1005,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02225,
         "priceUpdateTime": "2025-10-21T22:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290015603546, price=8.9, pack=400.0 ml"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290015603546, price=8.9, pack=400.0 ml"
       },
       "victory": {
         "item_code": "11406122",
@@ -1074,7 +1075,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01,
         "priceUpdateTime": "2026-10-04T16:02:10",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290016733259, price=5.0, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290016733259, price=5.0, pack=500.0 g"
       },
       "shufersal": {
         "item_code": "7290003996575",
@@ -1111,7 +1112,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0296,
         "priceUpdateTime": "2026-10-18T21:02:11",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290000522340, price=7.4, pack=250.0 ml"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290000522340, price=7.4, pack=250.0 ml"
       },
       "yochananof": {
         "item_code": "7290000056951",
@@ -1128,7 +1129,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0392,
         "priceUpdateTime": "2025-10-27T20:09:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000056951, price=19.6, pack=500.0 ml"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000056951, price=19.6, pack=500.0 ml"
       },
       "victory": {
         "item_code": "11464292",
@@ -1198,7 +1199,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0264,
         "priceUpdateTime": "2026-10-04T09:05:39",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290011194246, price=6.6, pack=250.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290011194246, price=6.6, pack=250.0 g"
       },
       "yochananof": {
         "item_code": "7290011194246",
@@ -1215,7 +1216,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0268,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290011194246, price=6.7, pack=250.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290011194246, price=6.7, pack=250.0 g"
       },
       "victory": {
         "item_code": "11462673",
@@ -1285,7 +1286,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0535,
         "priceUpdateTime": "2026-11-01T09:06:25",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290108502541, price=10.7, pack=200.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290108502541, price=10.7, pack=200.0 g"
       },
       "yochananof": {
         "item_code": "7290019635369",
@@ -1302,7 +1303,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0845,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290019635369, price=16.9, pack=200.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290019635369, price=16.9, pack=200.0 g"
       },
       "victory": {
         "item_code": "11410628",
@@ -1362,7 +1363,7 @@
         "gtin": "07290113197169",
         "nameHe": "חמאת בוטנים טבעית 510 גר",
         "brand": "לא ידוע",
-        "packPrice": 13.7,
+        "packPrice": 15.7,
         "packQty": 510.0,
         "packUnit": "g",
         "packBasis": "feed quantity and product name agree",
@@ -1370,9 +1371,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.02686,
-        "priceUpdateTime": "2026-11-02T09:03:21",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290113197169, price=13.7, pack=510.0 g"
+        "unitPriceNorm": 0.03078,
+        "priceUpdateTime": "2026-11-09T09:03:44",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290113197169, price=15.7, pack=510.0 g"
       },
       "yochananof": {
         "item_code": "7290000446547",
@@ -1389,7 +1390,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.04257,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000446547, price=14.9, pack=350.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000446547, price=14.9, pack=350.0 g"
       },
       "victory": {
         "item_code": "11494394",
@@ -1459,7 +1460,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0111,
         "priceUpdateTime": "2026-11-08T13:03:58",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=219, price=11.1, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=219, price=11.1, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "594",
@@ -1476,7 +1477,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0149,
         "priceUpdateTime": "2025-10-27T20:09:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=594, price=14.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=594, price=14.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11461565",
@@ -1546,7 +1547,7 @@
         "packOverride": null,
         "unitPriceNorm": 10.7,
         "priceUpdateTime": "2026-11-04T09:02:38",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290010051373, price=10.7, pack=1.0 units"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290010051373, price=10.7, pack=1.0 units"
       },
       "yochananof": {
         "item_code": "7290011725143",
@@ -1563,7 +1564,7 @@
         "packOverride": null,
         "unitPriceNorm": 12.9,
         "priceUpdateTime": "2025-10-21T22:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290011725143, price=12.9, pack=1.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290011725143, price=12.9, pack=1.0 units"
       },
       "shufersal": {
         "item_code": "7296073592891",
@@ -1600,7 +1601,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0176,
         "priceUpdateTime": "2026-02-11T17:03:33",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290010051151, price=8.8, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290010051151, price=8.8, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290000390512",
@@ -1617,7 +1618,7 @@
         "packOverride": null,
         "unitPriceNorm": 5.9,
         "priceUpdateTime": "2026-10-29T09:38:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000390512, price=5.9, pack=1.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000390512, price=5.9, pack=1.0 units"
       },
       "shufersal": {
         "item_code": "7290000000978",
@@ -1644,7 +1645,7 @@
         "gtin": "07290112357045",
         "nameHe": "מחית עגבניות מרוסקות 390 גר",
         "brand": "לא ידוע",
-        "packPrice": 8.1,
+        "packPrice": 7.3,
         "packQty": 390.0,
         "packUnit": "g",
         "packBasis": "feed quantity and product name agree",
@@ -1652,9 +1653,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.02077,
-        "priceUpdateTime": "2026-10-05T09:03:16",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290112357045, price=8.1, pack=390.0 g"
+        "unitPriceNorm": 0.01872,
+        "priceUpdateTime": "2026-11-09T09:24:03",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290112357045, price=7.3, pack=390.0 g"
       },
       "yochananof": {
         "item_code": "7290000208022",
@@ -1671,7 +1672,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01362,
         "priceUpdateTime": "2025-11-12T22:00:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000208022, price=10.9, pack=800.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000208022, price=10.9, pack=800.0 g"
       },
       "victory": {
         "item_code": "11463558",
@@ -1741,7 +1742,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.04561,
         "priceUpdateTime": "2026-07-27T09:05:51",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290016584219, price=18.7, pack=410.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290016584219, price=18.7, pack=410.0 g"
       },
       "yochananof": {
         "item_code": "7290016584233",
@@ -1758,7 +1759,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0299,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290016584233, price=29.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290016584233, price=29.9, pack=1000.0 g"
       },
       "shufersal": {
         "item_code": "7296073422211",
@@ -1795,7 +1796,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02725,
         "priceUpdateTime": "2026-02-24T12:42:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290018989937, price=10.9, pack=400.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290018989937, price=10.9, pack=400.0 g"
       },
       "osher-ad": {
         "item_code": "7290110571184",
@@ -1849,7 +1850,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0156,
         "priceUpdateTime": "2026-06-05T09:02:21",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290013677037, price=7.8, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290013677037, price=7.8, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290003643752",
@@ -1866,7 +1867,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0178,
         "priceUpdateTime": "2026-07-13T11:38:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290003643752, price=8.9, pack=500.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290003643752, price=8.9, pack=500.0 g"
       },
       "victory": {
         "item_code": "11464241",
@@ -1936,7 +1937,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0129,
         "priceUpdateTime": "2026-10-04T11:17:51",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290020238139, price=12.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290020238139, price=12.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290003643769",
@@ -1953,7 +1954,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0178,
         "priceUpdateTime": "2026-07-13T11:39:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290003643769, price=8.9, pack=500.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290003643769, price=8.9, pack=500.0 g"
       },
       "victory": {
         "item_code": "11464242",
@@ -2023,7 +2024,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01983,
         "priceUpdateTime": "2026-02-03T09:36:10",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290119672608, price=11.9, pack=600.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290119672608, price=11.9, pack=600.0 g"
       },
       "yochananof": {
         "item_code": "7290001354551",
@@ -2040,7 +2041,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0175,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290001354551, price=7.0, pack=400.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290001354551, price=7.0, pack=400.0 g"
       },
       "osher-ad": {
         "item_code": "7290001354544",
@@ -2094,7 +2095,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0185,
         "priceUpdateTime": "2026-10-21T13:02:54",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290018860984, price=7.4, pack=400.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290018860984, price=7.4, pack=400.0 g"
       },
       "yochananof": {
         "item_code": "7290018860984",
@@ -2111,7 +2112,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02475,
         "priceUpdateTime": "2025-11-12T22:00:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290018860984, price=9.9, pack=400.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290018860984, price=9.9, pack=400.0 g"
       },
       "victory": {
         "item_code": "11462730",
@@ -2181,7 +2182,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.014,
         "priceUpdateTime": "2026-11-01T09:04:08",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=8076809580144, price=7.0, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=8076809580144, price=7.0, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "8004690106600",
@@ -2198,7 +2199,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0138,
         "priceUpdateTime": "2026-11-01T08:22:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=8004690106600, price=6.9, pack=500.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=8004690106600, price=6.9, pack=500.0 g"
       },
       "victory": {
         "item_code": "18488020",
@@ -2268,7 +2269,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0146,
         "priceUpdateTime": "2026-11-08T10:16:16",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290006653765, price=7.3, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290006653765, price=7.3, pack=500.0 g"
       },
       "victory": {
         "item_code": "15374309",
@@ -2321,7 +2322,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.034,
         "priceUpdateTime": "2026-10-04T09:08:30",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290011923303, price=10.2, pack=300.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290011923303, price=10.2, pack=300.0 g"
       },
       "yochananof": {
         "item_code": "7290003726615",
@@ -2338,7 +2339,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.043,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290003726615, price=12.9, pack=300.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290003726615, price=12.9, pack=300.0 g"
       },
       "victory": {
         "item_code": "11411314",
@@ -2413,7 +2414,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02222,
         "priceUpdateTime": "2025-11-18T08:23:24",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290112194510, price=10.0, pack=450.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290112194510, price=10.0, pack=450.0 g"
       },
       "yochananof": {
         "item_code": "7290107974066",
@@ -2430,7 +2431,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03094,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290107974066, price=9.9, pack=320.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290107974066, price=9.9, pack=320.0 g"
       },
       "victory": {
         "item_code": "11463874",
@@ -2500,7 +2501,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0089,
         "priceUpdateTime": "2026-10-21T11:57:08",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290020505521, price=8.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290020505521, price=8.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "5011157730271",
@@ -2517,7 +2518,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0139,
         "priceUpdateTime": "2026-11-01T11:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=5011157730271, price=13.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=5011157730271, price=13.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "15716049",
@@ -2570,7 +2571,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0139,
         "priceUpdateTime": "2026-09-23T14:12:53",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=8904498502492, price=13.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=8904498502492, price=13.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290113196414",
@@ -2587,7 +2588,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-11-01T08:21:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290113196414, price=9.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290113196414, price=9.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11410476",
@@ -2657,7 +2658,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0685,
         "priceUpdateTime": "2026-07-23T12:05:20",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290003996742, price=13.7, pack=200.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290003996742, price=13.7, pack=200.0 g"
       },
       "shufersal": {
         "item_code": "7290003996742",
@@ -2689,7 +2690,7 @@
         "gtin": null,
         "nameHe": "בננה",
         "brand": "ביכורי השקמה",
-        "packPrice": 11.0,
+        "packPrice": 4.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -2697,9 +2698,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.011,
-        "priceUpdateTime": "2026-11-04T09:02:42",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=134, price=11.0, pack=1000.0 g"
+        "unitPriceNorm": 0.0049,
+        "priceUpdateTime": "2026-11-09T13:02:59",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=134, price=4.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "623",
@@ -2716,7 +2717,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-07-06T07:42:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=623, price=9.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=623, price=9.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11461564",
@@ -2786,7 +2787,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1875,
         "priceUpdateTime": "2026-03-31T11:22:28",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290017487557, price=7.5, pack=40.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290017487557, price=7.5, pack=40.0 g"
       },
       "yochananof": {
         "item_code": "7290016823004",
@@ -2803,7 +2804,7 @@
         "packOverride": null,
         "unitPriceNorm": 4.9,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290016823004, price=4.9, pack=1.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290016823004, price=4.9, pack=1.0 units"
       },
       "shufersal": {
         "item_code": "7290000001050",
@@ -2835,7 +2836,7 @@
         "gtin": null,
         "nameHe": "גזר ארוז",
         "brand": "ביכורי השקמה",
-        "packPrice": 5.9,
+        "packPrice": 2.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -2843,9 +2844,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0059,
-        "priceUpdateTime": "2026-11-04T09:02:19",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=102, price=5.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0029,
+        "priceUpdateTime": "2026-11-09T13:02:53",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=102, price=2.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "635",
@@ -2862,7 +2863,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0049,
         "priceUpdateTime": "2026-10-05T10:35:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=635, price=4.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=635, price=4.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404240",
@@ -2915,7 +2916,7 @@
         "packOverride": null,
         "unitPriceNorm": 11.6,
         "priceUpdateTime": "2025-06-22T14:02:57",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=1092, price=11.6, pack=1.0 units"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=1092, price=11.6, pack=1.0 units"
       },
       "yochananof": {
         "item_code": "7290018394342",
@@ -2932,7 +2933,7 @@
         "packOverride": null,
         "unitPriceNorm": 13.9,
         "priceUpdateTime": "2025-10-21T22:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290018394342, price=13.9, pack=1.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290018394342, price=13.9, pack=1.0 units"
       },
       "shufersal": {
         "item_code": "7290000000176",
@@ -2959,7 +2960,7 @@
         "gtin": "07290010051205",
         "nameHe": "סלרי אמריקאי א.אדמה",
         "brand": "אדמה",
-        "packPrice": 5.8,
+        "packPrice": 3.2,
         "packQty": 1.0,
         "packUnit": "units",
         "packBasis": "feed quantity",
@@ -2967,9 +2968,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 5.8,
-        "priceUpdateTime": "2026-11-05T13:02:15",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290010051205, price=5.8, pack=1.0 units"
+        "unitPriceNorm": 3.2,
+        "priceUpdateTime": "2026-11-09T15:02:40",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290010051205, price=3.2, pack=1.0 units"
       },
       "yochananof": {
         "item_code": "7290018795811",
@@ -2986,7 +2987,7 @@
         "packOverride": null,
         "unitPriceNorm": 6.9,
         "priceUpdateTime": "2026-07-30T05:33:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290018795811, price=6.9, pack=1.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290018795811, price=6.9, pack=1.0 units"
       },
       "victory": {
         "item_code": "11502389",
@@ -3044,7 +3045,7 @@
         },
         "unitPriceNorm": 0.0428,
         "priceUpdateTime": "2026-07-24T09:04:16",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290003996209, price=10.7, pack=250.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290003996209, price=10.7, pack=250.0 g"
       },
       "yochananof": {
         "item_code": "666",
@@ -3061,7 +3062,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0329,
         "priceUpdateTime": "2026-04-20T10:53:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=666, price=32.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=666, price=32.9, pack=1000.0 g"
       }
     },
     "fresh chicken livers": {
@@ -3081,7 +3082,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0226,
         "priceUpdateTime": "2026-10-20T09:03:42",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=2680451, price=22.6, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=2680451, price=22.6, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "400761",
@@ -3098,7 +3099,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0249,
         "priceUpdateTime": "2025-10-21T22:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=400761, price=24.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=400761, price=24.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11462635",
@@ -3168,7 +3169,7 @@
         "packOverride": null,
         "unitPriceNorm": 4.8,
         "priceUpdateTime": "2026-11-04T09:02:15",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290010050109, price=4.8, pack=1.0 units"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290010050109, price=4.8, pack=1.0 units"
       },
       "yochananof": {
         "item_code": "7290016823028",
@@ -3185,7 +3186,7 @@
         "packOverride": null,
         "unitPriceNorm": 4.9,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290016823028, price=4.9, pack=1.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290016823028, price=4.9, pack=1.0 units"
       },
       "shufersal": {
         "item_code": "7290000000633",
@@ -3212,7 +3213,7 @@
         "gtin": null,
         "nameHe": "מלפפון",
         "brand": "ביכורי השקמה",
-        "packPrice": 7.9,
+        "packPrice": 4.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -3220,9 +3221,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0079,
-        "priceUpdateTime": "2026-11-04T12:03:49",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=101, price=7.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0049,
+        "priceUpdateTime": "2026-11-09T13:02:59",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=101, price=4.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290000000695",
@@ -3239,7 +3240,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0069,
         "priceUpdateTime": "2026-11-03T09:06:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000000695, price=6.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000000695, price=6.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11462501",
@@ -3299,7 +3300,7 @@
         "gtin": "07290010051175",
         "nameHe": "שמיר א.אדמה",
         "brand": "אדמה",
-        "packPrice": 3.8,
+        "packPrice": 3.2,
         "packQty": 1.0,
         "packUnit": "units",
         "packBasis": "feed quantity",
@@ -3307,9 +3308,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 3.8,
-        "priceUpdateTime": "2026-11-04T09:02:10",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290010051175, price=3.8, pack=1.0 units"
+        "unitPriceNorm": 3.2,
+        "priceUpdateTime": "2026-11-09T15:02:41",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290010051175, price=3.2, pack=1.0 units"
       },
       "yochananof": {
         "item_code": "7290012724824",
@@ -3326,7 +3327,7 @@
         "packOverride": null,
         "unitPriceNorm": 3.9,
         "priceUpdateTime": "2025-10-21T22:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290012724824, price=3.9, pack=1.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290012724824, price=3.9, pack=1.0 units"
       },
       "shufersal": {
         "item_code": "7290016334593",
@@ -3353,7 +3354,7 @@
         "gtin": null,
         "nameHe": "חציל",
         "brand": "ביכורי השקמה",
-        "packPrice": 8.9,
+        "packPrice": 4.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -3361,9 +3362,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0089,
-        "priceUpdateTime": "2026-11-04T09:02:32",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=106, price=8.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0049,
+        "priceUpdateTime": "2026-11-09T13:03:00",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=106, price=4.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "661",
@@ -3380,7 +3381,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0079,
         "priceUpdateTime": "2026-08-25T12:37:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=661, price=7.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=661, price=7.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404286",
@@ -3450,7 +3451,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0249,
         "priceUpdateTime": "2026-10-12T10:07:13",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=612, price=24.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=612, price=24.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11462558",
@@ -3486,7 +3487,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.12,
         "priceUpdateTime": "2026-07-09T16:06:03",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290015855228, price=27.6, pack=230.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290015855228, price=27.6, pack=230.0 g"
       },
       "yochananof": {
         "item_code": "7290010650866",
@@ -3503,7 +3504,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.093,
         "priceUpdateTime": "2026-07-30T05:33:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290010650866, price=27.9, pack=300.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290010650866, price=27.9, pack=300.0 g"
       },
       "shufersal": {
         "item_code": "7290016334975",
@@ -3540,7 +3541,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0172,
         "priceUpdateTime": "2026-11-08T13:04:26",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290003727667, price=17.2, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290003727667, price=17.2, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290003727667",
@@ -3557,7 +3558,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0169,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290003727667, price=16.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290003727667, price=16.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "20061034",
@@ -3617,7 +3618,7 @@
         "gtin": null,
         "nameHe": "לימון",
         "brand": "ביכורי השקמה",
-        "packPrice": 8.9,
+        "packPrice": 3.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -3625,9 +3626,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0089,
-        "priceUpdateTime": "2026-11-04T09:02:32",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=117, price=8.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0039,
+        "priceUpdateTime": "2026-11-09T13:02:57",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=117, price=3.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "691",
@@ -3644,7 +3645,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0089,
         "priceUpdateTime": "2026-07-28T07:16:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=691, price=8.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=691, price=8.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404338",
@@ -3714,7 +3715,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0249,
         "priceUpdateTime": "2026-11-05T10:04:10",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=118, price=24.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=118, price=24.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "701",
@@ -3731,7 +3732,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0119,
         "priceUpdateTime": "2026-10-05T09:33:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=701, price=11.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=701, price=11.9, pack=1000.0 g"
       },
       "osher-ad": {
         "item_code": "7290009006551",
@@ -3768,7 +3769,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.00725,
         "priceUpdateTime": "2026-08-20T19:58:50",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290010945306, price=14.5, pack=2000.0 ml"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290010945306, price=14.5, pack=2000.0 ml"
       },
       "yochananof": {
         "item_code": "7290003029815",
@@ -3785,7 +3786,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0092,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290003029815, price=18.4, pack=2000.0 ml"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290003029815, price=18.4, pack=2000.0 ml"
       },
       "victory": {
         "item_code": "11504051",
@@ -3838,7 +3839,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0325,
         "priceUpdateTime": "2026-04-21T11:02:08",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=333, price=32.5, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=333, price=32.5, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "666",
@@ -3855,7 +3856,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0329,
         "priceUpdateTime": "2026-04-20T10:53:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=666, price=32.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=666, price=32.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "20829857",
@@ -3898,7 +3899,7 @@
         "gtin": "07290010051052",
         "nameHe": "פטרוזיליה א.אדמה",
         "brand": "אדמה",
-        "packPrice": 3.6,
+        "packPrice": 3.2,
         "packQty": 1.0,
         "packUnit": "units",
         "packBasis": "feed quantity",
@@ -3906,9 +3907,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 3.6,
-        "priceUpdateTime": "2026-11-07T21:02:37",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290010051052, price=3.6, pack=1.0 units"
+        "unitPriceNorm": 3.2,
+        "priceUpdateTime": "2026-11-09T15:02:40",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290010051052, price=3.2, pack=1.0 units"
       },
       "yochananof": {
         "item_code": "7290012724848",
@@ -3925,7 +3926,7 @@
         "packOverride": null,
         "unitPriceNorm": 3.9,
         "priceUpdateTime": "2025-10-27T20:09:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290012724848, price=3.9, pack=1.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290012724848, price=3.9, pack=1.0 units"
       },
       "shufersal": {
         "item_code": "7290016334579",
@@ -3962,7 +3963,7 @@
         "packOverride": null,
         "unitPriceNorm": 1.57,
         "priceUpdateTime": "2026-10-23T09:02:50",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290005719844, price=15.7, pack=10.0 units"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290005719844, price=15.7, pack=10.0 units"
       },
       "yochananof": {
         "item_code": "7290018540329",
@@ -3979,7 +3980,7 @@
         "packOverride": null,
         "unitPriceNorm": 1.7375,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290018540329, price=13.9, pack=8.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290018540329, price=13.9, pack=8.0 units"
       },
       "victory": {
         "item_code": "18793801",
@@ -4054,7 +4055,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0432,
         "priceUpdateTime": "2026-11-03T14:02:26",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290014890176, price=10.8, pack=250.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290014890176, price=10.8, pack=250.0 g"
       },
       "yochananof": {
         "item_code": "7290000554822",
@@ -4071,7 +4072,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0716,
         "priceUpdateTime": "2026-08-10T09:58:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000554822, price=17.9, pack=250.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000554822, price=17.9, pack=250.0 g"
       },
       "victory": {
         "item_code": "11463331",
@@ -4141,7 +4142,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1199,
         "priceUpdateTime": "2026-11-08T09:24:33",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=1750247, price=119.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=1750247, price=119.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290002332329",
@@ -4158,7 +4159,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1499,
         "priceUpdateTime": "2026-03-25T10:00:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290002332329, price=149.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290002332329, price=149.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11407405",
@@ -4218,7 +4219,7 @@
         "gtin": null,
         "nameHe": "עגבניה",
         "brand": "לא ידוע",
-        "packPrice": 7.9,
+        "packPrice": 4.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -4226,9 +4227,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0079,
-        "priceUpdateTime": "2026-11-04T09:02:25",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=100, price=7.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0049,
+        "priceUpdateTime": "2026-11-09T13:02:58",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=100, price=4.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "725",
@@ -4245,7 +4246,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0089,
         "priceUpdateTime": "2026-10-13T11:08:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=725, price=8.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=725, price=8.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404377",
@@ -4305,7 +4306,7 @@
         "gtin": null,
         "nameHe": "כרוב לבן",
         "brand": "ביכורי השקמה",
-        "packPrice": 4.9,
+        "packPrice": 2.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -4313,9 +4314,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0049,
-        "priceUpdateTime": "2026-11-04T09:02:16",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=109, price=4.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0029,
+        "priceUpdateTime": "2026-11-09T13:02:52",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=109, price=2.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "681",
@@ -4332,7 +4333,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0049,
         "priceUpdateTime": "2026-10-05T10:35:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=681, price=4.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=681, price=4.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404320",
@@ -4402,7 +4403,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.011,
         "priceUpdateTime": "2026-11-08T13:03:58",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=107, price=11.0, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=107, price=11.0, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "755",
@@ -4419,7 +4420,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-09-16T13:48:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=755, price=9.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=755, price=9.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404447",
@@ -4489,7 +4490,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01738,
         "priceUpdateTime": "2026-03-05T12:13:22",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290018564172, price=13.9, pack=800.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290018564172, price=13.9, pack=800.0 g"
       },
       "yochananof": {
         "item_code": "7290018989555",
@@ -4506,7 +4507,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03129,
         "priceUpdateTime": "2025-11-02T18:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290018989555, price=21.9, pack=700.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290018989555, price=21.9, pack=700.0 g"
       },
       "victory": {
         "item_code": "16537159",
@@ -4576,7 +4577,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01312,
         "priceUpdateTime": "2025-03-02T17:00:25",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290018564196, price=10.5, pack=800.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290018564196, price=10.5, pack=800.0 g"
       },
       "yochananof": {
         "item_code": "7290000104720",
@@ -4593,7 +4594,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02487,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000104720, price=19.9, pack=800.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000104720, price=19.9, pack=800.0 g"
       },
       "victory": {
         "item_code": "11406698",
@@ -4663,7 +4664,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0175,
         "priceUpdateTime": "2025-03-02T17:00:27",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290018564028, price=10.5, pack=600.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290018564028, price=10.5, pack=600.0 g"
       },
       "yochananof": {
         "item_code": "7290000104201",
@@ -4680,7 +4681,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03317,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000104201, price=19.9, pack=600.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000104201, price=19.9, pack=600.0 g"
       },
       "victory": {
         "item_code": "11406636",
@@ -4749,8 +4750,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.1725,
-        "priceUpdateTime": "2026-11-07T21:03:24",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290000045917, price=34.5, pack=200.0 g"
+        "priceUpdateTime": "2026-11-09T15:03:29",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290000045917, price=34.5, pack=200.0 g"
       },
       "yochananof": {
         "item_code": "7290000045917",
@@ -4767,7 +4768,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1545,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000045917, price=30.9, pack=200.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000045917, price=30.9, pack=200.0 g"
       },
       "victory": {
         "item_code": "11463353",
@@ -4803,7 +4804,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.141,
         "priceUpdateTime": "2026-10-29T09:02:43",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290019635000, price=14.1, pack=100.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290019635000, price=14.1, pack=100.0 g"
       },
       "yochananof": {
         "item_code": "7290019635000",
@@ -4820,7 +4821,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.149,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290019635000, price=14.9, pack=100.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290019635000, price=14.9, pack=100.0 g"
       },
       "victory": {
         "item_code": "11410986",
@@ -4890,7 +4891,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02675,
         "priceUpdateTime": "2026-10-05T12:02:06",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290013771384, price=10.7, pack=400.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290013771384, price=10.7, pack=400.0 g"
       },
       "yochananof": {
         "item_code": "7290017065588",
@@ -4907,7 +4908,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03483,
         "priceUpdateTime": "2026-08-10T09:58:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290017065588, price=20.9, pack=600.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290017065588, price=20.9, pack=600.0 g"
       },
       "victory": {
         "item_code": "20147078",
@@ -4977,7 +4978,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.089,
         "priceUpdateTime": "2026-02-25T10:33:25",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290022005258, price=8.9, pack=100.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290022005258, price=8.9, pack=100.0 g"
       },
       "yochananof": {
         "item_code": "7290000134307",
@@ -4994,7 +4995,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.138,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000134307, price=6.9, pack=50.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000134307, price=6.9, pack=50.0 g"
       },
       "victory": {
         "item_code": "11502495",
@@ -5064,7 +5065,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0295,
         "priceUpdateTime": "2026-04-26T10:20:59",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290018711347, price=5.9, pack=200.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290018711347, price=5.9, pack=200.0 g"
       },
       "yochananof": {
         "item_code": "7290015324090",
@@ -5081,7 +5082,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.08625,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290015324090, price=6.9, pack=80.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290015324090, price=6.9, pack=80.0 g"
       },
       "victory": {
         "item_code": "11463024",
@@ -5151,7 +5152,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0395,
         "priceUpdateTime": "2026-10-25T14:03:48",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290018711354, price=7.9, pack=200.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290018711354, price=7.9, pack=200.0 g"
       },
       "yochananof": {
         "item_code": "7290000134840",
@@ -5168,7 +5169,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.119,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000134840, price=11.9, pack=100.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000134840, price=11.9, pack=100.0 g"
       },
       "victory": {
         "item_code": "11408396",
@@ -5238,7 +5239,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.103,
         "priceUpdateTime": "2026-09-06T14:06:48",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290019790310, price=20.6, pack=200.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290019790310, price=20.6, pack=200.0 g"
       },
       "yochananof": {
         "item_code": "7290102393718",
@@ -5255,7 +5256,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1245,
         "priceUpdateTime": "2026-10-05T10:35:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290102393718, price=24.9, pack=200.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290102393718, price=24.9, pack=200.0 g"
       },
       "victory": {
         "item_code": "11463583",
@@ -5325,7 +5326,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0338,
         "priceUpdateTime": "2026-04-15T15:45:02",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=8004350005861, price=16.9, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=8004350005861, price=16.9, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290002735212",
@@ -5342,7 +5343,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02413,
         "priceUpdateTime": "2025-10-21T22:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290002735212, price=18.1, pack=750.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290002735212, price=18.1, pack=750.0 g"
       },
       "victory": {
         "item_code": "11410944",
@@ -5395,7 +5396,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0428,
         "priceUpdateTime": "2026-10-04T09:08:56",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290001258552, price=10.7, pack=250.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290001258552, price=10.7, pack=250.0 g"
       },
       "yochananof": {
         "item_code": "7290005992735",
@@ -5412,7 +5413,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0636,
         "priceUpdateTime": "2026-07-05T11:28:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290005992735, price=15.9, pack=250.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290005992735, price=15.9, pack=250.0 g"
       },
       "victory": {
         "item_code": "11463804",
@@ -5487,7 +5488,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0318,
         "priceUpdateTime": "2026-11-06T10:09:39",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290004323882, price=15.9, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290004323882, price=15.9, pack=500.0 g"
       },
       "osher-ad": {
         "item_code": "7290004257484",
@@ -5541,7 +5542,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0214,
         "priceUpdateTime": "2026-10-14T18:03:21",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290008636650, price=10.7, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290008636650, price=10.7, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290015193665",
@@ -5558,7 +5559,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0138,
         "priceUpdateTime": "2025-11-02T18:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290015193665, price=6.9, pack=500.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290015193665, price=6.9, pack=500.0 g"
       },
       "victory": {
         "item_code": "11494741",
@@ -5628,7 +5629,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0222,
         "priceUpdateTime": "2026-11-02T09:02:59",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290000111186, price=11.1, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290000111186, price=11.1, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290000111186",
@@ -5645,7 +5646,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0238,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000111186, price=11.9, pack=500.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000111186, price=11.9, pack=500.0 g"
       },
       "victory": {
         "item_code": "11463508",
@@ -5715,7 +5716,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.025,
         "priceUpdateTime": "2026-08-20T09:25:55",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=8719326034096, price=12.5, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=8719326034096, price=12.5, pack=500.0 g"
       },
       "victory": {
         "item_code": "11495377",
@@ -5767,8 +5768,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.116,
-        "priceUpdateTime": "2026-11-01T10:04:37",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=8010024006010, price=40.6, pack=350.0 g"
+        "priceUpdateTime": "2026-11-09T19:05:21",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=8010024006010, price=40.6, pack=350.0 g"
       },
       "shufersal": {
         "item_code": "8010024006010",
@@ -5805,7 +5806,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.081,
         "priceUpdateTime": "2025-03-28T14:01:41",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290010002467, price=8.1, pack=100.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290010002467, price=8.1, pack=100.0 g"
       },
       "yochananof": {
         "item_code": "7290000134857",
@@ -5822,7 +5823,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.119,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000134857, price=11.9, pack=100.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000134857, price=11.9, pack=100.0 g"
       },
       "osher-ad": {
         "item_code": "7290002319429",
@@ -5876,7 +5877,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0126,
         "priceUpdateTime": "2026-11-08T15:03:12",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=8008912010423, price=6.3, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=8008912010423, price=6.3, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "8008912010423",
@@ -5893,7 +5894,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0178,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=8008912010423, price=8.9, pack=500.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=8008912010423, price=8.9, pack=500.0 g"
       },
       "victory": {
         "item_code": "11410947",
@@ -5963,7 +5964,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0532,
         "priceUpdateTime": "2025-06-20T15:03:14",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290018564554, price=26.6, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290018564554, price=26.6, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290002057352",
@@ -5980,7 +5981,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01411,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290002057352, price=7.9, pack=560.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290002057352, price=7.9, pack=560.0 g"
       },
       "victory": {
         "item_code": "12917612",
@@ -6050,7 +6051,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.05628,
         "priceUpdateTime": "2026-11-02T09:03:08",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290118484370, price=12.1, pack=215.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290118484370, price=12.1, pack=215.0 g"
       },
       "yochananof": {
         "item_code": "7290113194090",
@@ -6067,7 +6068,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0254,
         "priceUpdateTime": "2025-11-19T08:39:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290113194090, price=15.9, pack=626.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290113194090, price=15.9, pack=626.0 g"
       },
       "victory": {
         "item_code": "11512457",
@@ -6120,7 +6121,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0178,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290013389114, price=8.9, pack=500.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290013389114, price=8.9, pack=500.0 g"
       },
       "victory": {
         "item_code": "11462168",
@@ -6180,7 +6181,7 @@
         "gtin": null,
         "nameHe": "תפוח אדמה לבן ארוז",
         "brand": "ביכורי השקמה",
-        "packPrice": 5.9,
+        "packPrice": 3.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -6188,9 +6189,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0059,
-        "priceUpdateTime": "2026-11-04T09:02:19",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=111, price=5.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0039,
+        "priceUpdateTime": "2026-11-09T13:02:56",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=111, price=3.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "345",
@@ -6207,7 +6208,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0059,
         "priceUpdateTime": "2026-10-05T15:50:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=345, price=5.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=345, price=5.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404471",
@@ -6277,7 +6278,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.049,
         "priceUpdateTime": "2026-10-18T08:39:15",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290102394814, price=9.8, pack=200.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290102394814, price=9.8, pack=200.0 g"
       },
       "yochananof": {
         "item_code": "7290019635147",
@@ -6294,7 +6295,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.109,
         "priceUpdateTime": "2026-05-03T08:10:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290019635147, price=10.9, pack=100.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290019635147, price=10.9, pack=100.0 g"
       },
       "victory": {
         "item_code": "11410682",
@@ -6364,7 +6365,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01444,
         "priceUpdateTime": "2026-08-06T09:12:49",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290012983276, price=13.0, pack=900.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290012983276, price=13.0, pack=900.0 g"
       },
       "yochananof": {
         "item_code": "7290003143139",
@@ -6381,7 +6382,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01656,
         "priceUpdateTime": "2025-10-21T22:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290003143139, price=14.9, pack=900.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290003143139, price=14.9, pack=900.0 g"
       },
       "victory": {
         "item_code": "18875207",
@@ -6451,7 +6452,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0379,
         "priceUpdateTime": "2026-08-17T14:00:25",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290015834315, price=37.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290015834315, price=37.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290002703020",
@@ -6468,7 +6469,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0465,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290002703020, price=27.9, pack=600.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290002703020, price=27.9, pack=600.0 g"
       },
       "victory": {
         "item_code": "11464079",
@@ -6537,8 +6538,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.01571,
-        "priceUpdateTime": "2026-11-01T09:03:30",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290100702260, price=5.5, pack=350.0 g"
+        "priceUpdateTime": "2026-11-09T19:03:14",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290100702260, price=5.5, pack=350.0 g"
       },
       "yochananof": {
         "item_code": "7290100702260",
@@ -6555,7 +6556,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01857,
         "priceUpdateTime": "2025-10-27T20:09:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290100702260, price=6.5, pack=350.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290100702260, price=6.5, pack=350.0 g"
       },
       "victory": {
         "item_code": "11410130",
@@ -6625,24 +6626,24 @@
         "packOverride": null,
         "unitPriceNorm": 0.0198,
         "priceUpdateTime": "2026-07-01T12:25:34",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290020030290, price=9.9, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290020030290, price=9.9, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290000572819",
         "gtin": "07290000572819",
-        "nameHe": "טחינה גולמית 1 ק\"ג ב",
+        "nameHe": "*מבצע* טחינה גולמית",
         "brand": "אחדות ביח\"ר לטחינה חלבה וממתקים בע\"מ",
         "packPrice": 19.9,
         "packQty": 1000.0,
         "packUnit": "g",
-        "packBasis": "feed quantity and product name agree",
+        "packBasis": "feed quantity",
         "isWeighted": false,
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.0199,
         "priceUpdateTime": "2026-11-01T11:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000572819, price=19.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000572819, price=19.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11407685",
@@ -6712,7 +6713,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.05,
         "priceUpdateTime": "2026-03-02T10:02:49",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290119673681, price=25.0, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290119673681, price=25.0, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290006241191",
@@ -6729,7 +6730,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.11933,
         "priceUpdateTime": "2026-03-11T10:39:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290006241191, price=17.9, pack=150.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290006241191, price=17.9, pack=150.0 g"
       },
       "victory": {
         "item_code": "11506086",
@@ -6799,7 +6800,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1045,
         "priceUpdateTime": "2026-03-11T10:36:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290006241214, price=20.9, pack=200.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290006241214, price=20.9, pack=200.0 g"
       },
       "shufersal": {
         "item_code": "7296073705949",
@@ -6836,7 +6837,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0219,
         "priceUpdateTime": "2026-10-20T09:03:39",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290008343626, price=21.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290008343626, price=21.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290002150077",
@@ -6853,7 +6854,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.04225,
         "priceUpdateTime": "2025-10-27T20:09:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290002150077, price=16.9, pack=400.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290002150077, price=16.9, pack=400.0 g"
       },
       "victory": {
         "item_code": "11495346",
@@ -6923,7 +6924,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0172,
         "priceUpdateTime": "2026-11-08T13:04:26",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290003727667, price=17.2, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290003727667, price=17.2, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290003727667",
@@ -6940,7 +6941,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0169,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290003727667, price=16.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290003727667, price=16.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "20061034",
@@ -7000,7 +7001,7 @@
         "gtin": null,
         "nameHe": "פלפל אדום",
         "brand": "ביכורי השקמה",
-        "packPrice": 8.9,
+        "packPrice": 4.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -7008,9 +7009,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0089,
-        "priceUpdateTime": "2026-11-08T13:03:42",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=104, price=8.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0049,
+        "priceUpdateTime": "2026-11-09T13:02:59",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=104, price=4.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "742",
@@ -7027,7 +7028,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-09-09T10:39:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=742, price=9.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=742, price=9.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404497",
@@ -7087,7 +7088,7 @@
         "gtin": null,
         "nameHe": "בצל אדום",
         "brand": "ביכורי השקמה",
-        "packPrice": 6.9,
+        "packPrice": 4.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -7095,9 +7096,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0069,
-        "priceUpdateTime": "2026-11-04T09:02:22",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=289, price=6.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0049,
+        "priceUpdateTime": "2026-11-09T13:02:59",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=289, price=4.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "619",
@@ -7114,7 +7115,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0059,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=619, price=5.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=619, price=5.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404553",
@@ -7184,7 +7185,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0185,
         "priceUpdateTime": "2026-10-21T13:02:54",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=8856429000341, price=7.4, pack=400.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=8856429000341, price=7.4, pack=400.0 g"
       },
       "yochananof": {
         "item_code": "8856429000341",
@@ -7201,7 +7202,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02475,
         "priceUpdateTime": "2025-11-12T22:00:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=8856429000341, price=9.9, pack=400.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=8856429000341, price=9.9, pack=400.0 g"
       },
       "victory": {
         "item_code": "12471849",
@@ -7266,7 +7267,7 @@
         "gtin": null,
         "nameHe": "אבוקדו",
         "brand": "ביכורי השקמה",
-        "packPrice": 4.9,
+        "packPrice": 1.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -7274,9 +7275,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0049,
-        "priceUpdateTime": "2026-11-04T09:02:16",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=135, price=4.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0019,
+        "priceUpdateTime": "2026-11-09T14:02:25",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=135, price=1.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "606",
@@ -7293,7 +7294,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0069,
         "priceUpdateTime": "2026-10-26T12:18:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=606, price=6.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=606, price=6.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11462476",
@@ -7363,7 +7364,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01425,
         "priceUpdateTime": "2026-09-07T15:05:46",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290014095960, price=5.7, pack=400.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290014095960, price=5.7, pack=400.0 g"
       },
       "yochananof": {
         "item_code": "7290014095960",
@@ -7380,7 +7381,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01625,
         "priceUpdateTime": "2025-10-27T20:09:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290014095960, price=6.5, pack=400.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290014095960, price=6.5, pack=400.0 g"
       },
       "victory": {
         "item_code": "11493478",
@@ -7450,7 +7451,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.015,
         "priceUpdateTime": "2026-07-13T11:00:28",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290001041635, price=3.0, pack=200.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290001041635, price=3.0, pack=200.0 g"
       },
       "yochananof": {
         "item_code": "7290100700075",
@@ -7467,7 +7468,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0245,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290100700075, price=4.9, pack=200.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290100700075, price=4.9, pack=200.0 g"
       },
       "victory": {
         "item_code": "11409575",
@@ -7537,7 +7538,7 @@
         "packOverride": null,
         "unitPriceNorm": 3.2,
         "priceUpdateTime": "2025-11-18T08:23:34",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=8504133, price=16.0, pack=5.0 units"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=8504133, price=16.0, pack=5.0 units"
       },
       "yochananof": {
         "item_code": "14098",
@@ -7554,7 +7555,7 @@
         "packOverride": null,
         "unitPriceNorm": 5.2,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=14098, price=5.2, pack=1.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=14098, price=5.2, pack=1.0 units"
       },
       "shufersal": {
         "item_code": "7290002020868",
@@ -7591,7 +7592,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.199,
         "priceUpdateTime": "2025-07-16T16:19:52",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290002345275, price=19.9, pack=100.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290002345275, price=19.9, pack=100.0 g"
       },
       "yochananof": {
         "item_code": "7290008340618",
@@ -7608,7 +7609,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.24,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290008340618, price=24.0, pack=100.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290008340618, price=24.0, pack=100.0 g"
       },
       "victory": {
         "item_code": "11495351",
@@ -7678,7 +7679,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.15778,
         "priceUpdateTime": "2026-10-21T11:03:06",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290000318950, price=28.4, pack=180.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290000318950, price=28.4, pack=180.0 g"
       },
       "yochananof": {
         "item_code": "7290019138150",
@@ -7695,7 +7696,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.08633,
         "priceUpdateTime": "2026-07-23T13:22:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290019138150, price=25.9, pack=300.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290019138150, price=25.9, pack=300.0 g"
       },
       "victory": {
         "item_code": "11411335",
@@ -7765,7 +7766,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0236,
         "priceUpdateTime": "2026-09-02T11:22:52",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290000474502, price=5.9, pack=250.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290000474502, price=5.9, pack=250.0 g"
       },
       "yochananof": {
         "item_code": "7290000047621",
@@ -7782,7 +7783,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02348,
         "priceUpdateTime": "2026-06-08T12:06:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000047621, price=5.87, pack=250.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000047621, price=5.87, pack=250.0 g"
       },
       "victory": {
         "item_code": "11463784",
@@ -7835,7 +7836,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01818,
         "priceUpdateTime": "2025-06-20T15:00:41",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290112011930, price=10.0, pack=550.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290112011930, price=10.0, pack=550.0 g"
       },
       "yochananof": {
         "item_code": "4903001904192",
@@ -7852,7 +7853,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0398,
         "priceUpdateTime": "2025-11-02T18:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=4903001904192, price=19.9, pack=500.0 ml"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=4903001904192, price=19.9, pack=500.0 ml"
       },
       "victory": {
         "item_code": "11408222",
@@ -7921,15 +7922,15 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.0141,
-        "priceUpdateTime": "2026-10-07T14:09:15",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290100701157, price=14.1, pack=1000.0 g"
+        "priceUpdateTime": "2026-11-09T19:04:07",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290100701157, price=14.1, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290100701157",
         "gtin": "07290100701157",
         "nameHe": "אורז סושי 1 ק\"ג",
         "brand": "סוגת תעשיות בעמ",
-        "packPrice": 13.9,
+        "packPrice": 14.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "feed quantity and product name agree",
@@ -7937,9 +7938,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0139,
-        "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290100701157, price=13.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0149,
+        "priceUpdateTime": "2026-11-09T09:13:00",
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290100701157, price=14.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11463507",
@@ -7992,7 +7993,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.035,
         "priceUpdateTime": "2026-10-30T09:02:49",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290016270709, price=16.1, pack=460.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290016270709, price=16.1, pack=460.0 g"
       },
       "yochananof": {
         "item_code": "728",
@@ -8009,7 +8010,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0229,
         "priceUpdateTime": "2026-10-26T12:17:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=728, price=22.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=728, price=22.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11407765",
@@ -8079,7 +8080,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01362,
         "priceUpdateTime": "2026-10-21T14:02:22",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=721688438397, price=10.9, pack=800.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=721688438397, price=10.9, pack=800.0 g"
       },
       "yochananof": {
         "item_code": "7290016370829",
@@ -8096,7 +8097,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01618,
         "priceUpdateTime": "2025-10-27T20:09:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290016370829, price=8.9, pack=550.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290016370829, price=8.9, pack=550.0 g"
       },
       "osher-ad": {
         "item_code": "6902412100412",
@@ -8150,7 +8151,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.05,
         "priceUpdateTime": "2026-09-17T09:06:08",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290011254117, price=4.0, pack=80.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290011254117, price=4.0, pack=80.0 g"
       },
       "yochananof": {
         "item_code": "7290000134857",
@@ -8167,7 +8168,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.119,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000134857, price=11.9, pack=100.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000134857, price=11.9, pack=100.0 g"
       },
       "osher-ad": {
         "item_code": "7290002319429",
@@ -8211,7 +8212,7 @@
         "gtin": null,
         "nameHe": "בטטה",
         "brand": "ביכורי השקמה",
-        "packPrice": 9.9,
+        "packPrice": 4.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -8219,9 +8220,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0099,
-        "priceUpdateTime": "2026-11-04T09:02:35",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=138, price=9.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0049,
+        "priceUpdateTime": "2026-11-09T13:03:00",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=138, price=4.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "622",
@@ -8238,7 +8239,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0079,
         "priceUpdateTime": "2026-08-18T05:55:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=622, price=7.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=622, price=7.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404138",
@@ -8308,7 +8309,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0814,
         "priceUpdateTime": "2026-11-03T09:03:59",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=3361656, price=81.4, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=3361656, price=81.4, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290002332350",
@@ -8325,7 +8326,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0899,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290002332350, price=89.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290002332350, price=89.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11693070",
@@ -8395,7 +8396,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0068,
         "priceUpdateTime": "2026-11-03T15:03:02",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290015339568, price=3.4, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290015339568, price=3.4, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290000060408",
@@ -8412,7 +8413,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0138,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000060408, price=6.9, pack=500.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000060408, price=6.9, pack=500.0 g"
       },
       "victory": {
         "item_code": "11404402",
@@ -8482,7 +8483,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0245,
         "priceUpdateTime": "2026-06-09T14:05:08",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290015395045, price=9.8, pack=400.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290015395045, price=9.8, pack=400.0 g"
       },
       "yochananof": {
         "item_code": "7290015395045",
@@ -8499,7 +8500,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02725,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290015395045, price=10.9, pack=400.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290015395045, price=10.9, pack=400.0 g"
       },
       "victory": {
         "item_code": "11411266",
@@ -8569,7 +8570,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0059,
         "priceUpdateTime": "2026-10-08T09:01:58",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290117907733, price=5.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290117907733, price=5.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290117907733",
@@ -8586,7 +8587,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290117907733, price=9.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290117907733, price=9.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "16429153",
@@ -8639,60 +8640,6 @@
         "metadataSource": "PriceFull7290027600007-002-413-20261108-034000.gz (published 2026-11-08T03:40:00+02:00, store 413): ItemCode=7290013200389, price=10.9, pack=1000.0 g"
       }
     },
-    "whole fresh chicken": {
-      "ingredient_name": "Whole Fresh Chicken",
-      "rami-levy": {
-        "item_code": "2681526",
-        "gtin": null,
-        "nameHe": "עוף שלם טרי מחפוד",
-        "brand": "לא ידוע",
-        "packPrice": 23.6,
-        "packQty": 1000.0,
-        "packUnit": "g",
-        "packBasis": "sold loose by weight, price per kg",
-        "isWeighted": true,
-        "selectionSource": "assistant",
-        "selectionNote": null,
-        "packOverride": null,
-        "unitPriceNorm": 0.0236,
-        "priceUpdateTime": "2026-10-13T15:02:29",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=2681526, price=23.6, pack=1000.0 g"
-      },
-      "osher-ad": {
-        "item_code": "7290001209349",
-        "gtin": "07290001209349",
-        "nameHe": "עוף שלם טרי עטרה הרב",
-        "brand": "יסכה",
-        "packPrice": 24.9,
-        "packQty": 1000.0,
-        "packUnit": "g",
-        "packBasis": "sold loose by weight, price per kg",
-        "isWeighted": true,
-        "selectionSource": "assistant",
-        "selectionNote": null,
-        "packOverride": null,
-        "unitPriceNorm": 0.0249,
-        "priceUpdateTime": "2025-06-03T14:48:33",
-        "metadataSource": "PriceFull7290103152017-001-032-20261108-080015.gz (published 2026-11-08T08:00:15+02:00, store 032): ItemCode=7290001209349, price=24.9, pack=1000.0 g"
-      },
-      "shufersal": {
-        "item_code": "7290009802191",
-        "gtin": "07290009802191",
-        "nameHe": "עוף שלם טרי א.דיל ארוז",
-        "brand": "כללי",
-        "packPrice": 19.9,
-        "packQty": 1000.0,
-        "packUnit": "g",
-        "packBasis": "sold loose by weight, price per kg",
-        "isWeighted": true,
-        "selectionSource": "assistant",
-        "selectionNote": null,
-        "packOverride": null,
-        "unitPriceNorm": 0.0199,
-        "priceUpdateTime": "2026-03-25T06:21:00",
-        "metadataSource": "PriceFull7290027600007-002-413-20261108-034000.gz (published 2026-11-08T03:40:00+02:00, store 413): ItemCode=7290009802191, price=19.9, pack=1000.0 g"
-      }
-    },
     "whole grain brown rice": {
       "ingredient_name": "Whole Grain Brown Rice",
       "rami-levy": {
@@ -8710,7 +8657,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-10-30T09:02:34",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290000211312, price=9.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290000211312, price=9.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290000211312",
@@ -8727,7 +8674,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000211312, price=9.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000211312, price=9.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404601",
@@ -8763,7 +8710,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02318,
         "priceUpdateTime": "2026-11-01T13:02:31",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290001343845, price=19.7, pack=850.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290001343845, price=19.7, pack=850.0 g"
       },
       "yochananof": {
         "item_code": "7290001343845",
@@ -8780,7 +8727,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02341,
         "priceUpdateTime": "2026-11-01T08:20:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290001343845, price=19.9, pack=850.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290001343845, price=19.9, pack=850.0 g"
       },
       "osher-ad": {
         "item_code": "7290014471443",
@@ -8834,7 +8781,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02387,
         "priceUpdateTime": "2026-10-05T09:06:47",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290016967074, price=17.9, pack=750.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290016967074, price=17.9, pack=750.0 g"
       },
       "osher-ad": {
         "item_code": "7290016967074",
@@ -8878,7 +8825,7 @@
         "gtin": null,
         "nameHe": "בצל יבש",
         "brand": "ביכורי השקמה",
-        "packPrice": 5.9,
+        "packPrice": 3.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -8886,9 +8833,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.0059,
-        "priceUpdateTime": "2026-11-04T09:02:20",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=108, price=5.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0039,
+        "priceUpdateTime": "2026-11-09T13:02:56",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=108, price=3.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "620",
@@ -8905,7 +8852,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0059,
         "priceUpdateTime": "2026-10-13T11:08:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=620, price=5.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=620, price=5.9, pack=1000.0 g"
       },
       "osher-ad": {
         "item_code": "7290009000900",
@@ -8959,7 +8906,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.12,
         "priceUpdateTime": "2026-09-23T09:05:36",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290003681242, price=6.0, pack=50.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290003681242, price=6.0, pack=50.0 g"
       },
       "yochananof": {
         "item_code": "7290015324076",
@@ -8976,7 +8923,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.08625,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290015324076, price=6.9, pack=80.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290015324076, price=6.9, pack=80.0 g"
       },
       "victory": {
         "item_code": "11463021",
@@ -9046,7 +8993,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0398,
         "priceUpdateTime": "2025-12-22T11:50:29",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290013220561, price=19.9, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290013220561, price=19.9, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290020187062",
@@ -9063,7 +9010,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0218,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290020187062, price=10.9, pack=500.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290020187062, price=10.9, pack=500.0 g"
       }
     },
     "fresh or frozen blueberries": {
@@ -9073,7 +9020,7 @@
         "gtin": null,
         "nameHe": "אוכמניות 125 גרם",
         "brand": "לא ידוע",
-        "packPrice": 15.1,
+        "packPrice": 15.3,
         "packQty": 125.0,
         "packUnit": "g",
         "packBasis": "feed quantity and product name agree",
@@ -9081,9 +9028,9 @@
         "selectionSource": "assistant",
         "selectionNote": null,
         "packOverride": null,
-        "unitPriceNorm": 0.1208,
-        "priceUpdateTime": "2026-11-01T14:04:09",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=236, price=15.1, pack=125.0 g"
+        "unitPriceNorm": 0.1224,
+        "priceUpdateTime": "2026-11-09T19:04:19",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=236, price=15.3, pack=125.0 g"
       },
       "yochananof": {
         "item_code": "7290000101927",
@@ -9100,7 +9047,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.04967,
         "priceUpdateTime": "2026-07-13T11:39:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000101927, price=14.9, pack=300.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000101927, price=14.9, pack=300.0 g"
       },
       "osher-ad": {
         "item_code": "7290008268448",
@@ -9137,7 +9084,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0299,
         "priceUpdateTime": "2026-10-27T09:03:47",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=225, price=29.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=225, price=29.9, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290010650194",
@@ -9154,7 +9101,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0396,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290010650194, price=9.9, pack=250.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290010650194, price=9.9, pack=250.0 g"
       },
       "osher-ad": {
         "item_code": "7290009069518",
@@ -9208,7 +9155,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0278,
         "priceUpdateTime": "2026-06-04T14:03:23",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290017947372, price=13.9, pack=500.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290017947372, price=13.9, pack=500.0 g"
       },
       "yochananof": {
         "item_code": "7290000379746",
@@ -9225,7 +9172,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0318,
         "priceUpdateTime": "2026-02-09T12:57:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000379746, price=15.9, pack=500.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000379746, price=15.9, pack=500.0 g"
       },
       "victory": {
         "item_code": "11500999",
@@ -9295,7 +9242,7 @@
         "packOverride": null,
         "unitPriceNorm": 19.8,
         "priceUpdateTime": "2025-04-20T14:07:39",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=2608202, price=19.8, pack=1.0 units"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=2608202, price=19.8, pack=1.0 units"
       },
       "yochananof": {
         "item_code": "7290001461105",
@@ -9312,7 +9259,7 @@
         "packOverride": null,
         "unitPriceNorm": 18.9,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290001461105, price=18.9, pack=1.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290001461105, price=18.9, pack=1.0 units"
       },
       "shufersal": {
         "item_code": "7290001598405",
@@ -9349,7 +9296,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01853,
         "priceUpdateTime": "2026-11-01T09:08:47",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290002065616, price=13.9, pack=750.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290002065616, price=13.9, pack=750.0 g"
       },
       "yochananof": {
         "item_code": "7290000574370",
@@ -9366,7 +9313,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01987,
         "priceUpdateTime": "2025-10-27T20:09:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000574370, price=14.9, pack=750.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000574370, price=14.9, pack=750.0 g"
       },
       "victory": {
         "item_code": "11464066",
@@ -9436,7 +9383,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.122,
         "priceUpdateTime": "2026-11-01T09:07:28",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290004952792, price=12.2, pack=100.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290004952792, price=12.2, pack=100.0 g"
       },
       "yochananof": {
         "item_code": "7290008989091",
@@ -9453,7 +9400,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.04806,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290008989091, price=14.9, pack=310.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290008989091, price=14.9, pack=310.0 g"
       },
       "victory": {
         "item_code": "11496543",
@@ -9523,7 +9470,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03475,
         "priceUpdateTime": "2025-12-02T16:02:18",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290016273397, price=13.9, pack=400.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290016273397, price=13.9, pack=400.0 g"
       },
       "yochananof": {
         "item_code": "7290000078212",
@@ -9540,7 +9487,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.06,
         "priceUpdateTime": "2025-10-21T22:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000078212, price=15.0, pack=250.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000078212, price=15.0, pack=250.0 g"
       },
       "victory": {
         "item_code": "11505569",
@@ -9609,8 +9556,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.07316,
-        "priceUpdateTime": "2026-11-01T09:08:45",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290003438006, price=13.9, pack=190.0 g"
+        "priceUpdateTime": "2026-11-09T15:03:11",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290003438006, price=13.9, pack=190.0 g"
       },
       "yochananof": {
         "item_code": "7290003438006",
@@ -9627,7 +9574,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.08368,
         "priceUpdateTime": "2025-10-21T22:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290003438006, price=15.9, pack=190.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290003438006, price=15.9, pack=190.0 g"
       },
       "osher-ad": {
         "item_code": "7290015858106",
@@ -9664,7 +9611,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.122,
         "priceUpdateTime": "2026-10-31T21:04:23",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290010002290, price=12.2, pack=100.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290010002290, price=12.2, pack=100.0 g"
       },
       "yochananof": {
         "item_code": "7290011964702",
@@ -9681,7 +9628,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.119,
         "priceUpdateTime": "2026-02-12T08:47:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290011964702, price=11.9, pack=100.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290011964702, price=11.9, pack=100.0 g"
       },
       "osher-ad": {
         "item_code": "7290015321310",
@@ -9735,7 +9682,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01762,
         "priceUpdateTime": "2025-06-20T14:07:01",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290002735847, price=14.1, pack=800.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290002735847, price=14.1, pack=800.0 g"
       },
       "yochananof": {
         "item_code": "7290000238173",
@@ -9752,7 +9699,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02987,
         "priceUpdateTime": "2026-08-30T08:12:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000238173, price=23.9, pack=800.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000238173, price=23.9, pack=800.0 g"
       },
       "victory": {
         "item_code": "11503857",
@@ -9805,7 +9752,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01362,
         "priceUpdateTime": "2026-08-11T12:28:33",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290018564066, price=10.9, pack=800.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290018564066, price=10.9, pack=800.0 g"
       },
       "yochananof": {
         "item_code": "7290000104881",
@@ -9822,7 +9769,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02487,
         "priceUpdateTime": "2026-08-03T16:03:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000104881, price=19.9, pack=800.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000104881, price=19.9, pack=800.0 g"
       },
       "victory": {
         "item_code": "11406784",
@@ -9892,7 +9839,7 @@
         "packOverride": null,
         "unitPriceNorm": 9.0,
         "priceUpdateTime": "2026-02-20T14:00:32",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290122182125, price=9.0, pack=1.0 units"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290122182125, price=9.0, pack=1.0 units"
       },
       "yochananof": {
         "item_code": "7290014079328",
@@ -9909,7 +9856,7 @@
         "packOverride": null,
         "unitPriceNorm": 8.9,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290014079328, price=8.9, pack=1.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290014079328, price=8.9, pack=1.0 units"
       },
       "shufersal": {
         "item_code": "7290016334166",
@@ -9946,7 +9893,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0345,
         "priceUpdateTime": "2026-10-13T15:02:36",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=2684206, price=34.5, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=2684206, price=34.5, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "407708",
@@ -9963,7 +9910,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0349,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=407708, price=34.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=407708, price=34.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404983",
@@ -10033,7 +9980,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0197,
         "priceUpdateTime": "2026-11-07T21:03:14",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=2684183, price=19.7, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=2684183, price=19.7, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "400044",
@@ -10050,7 +9997,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0399,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=400044, price=39.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=400044, price=39.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11455032",
@@ -10120,7 +10067,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0359,
         "priceUpdateTime": "2026-05-28T11:12:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=401317, price=35.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=401317, price=35.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11404910",
@@ -10190,7 +10137,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0692,
         "priceUpdateTime": "2026-10-28T09:03:19",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=2681120, price=69.2, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=2681120, price=69.2, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "40035",
@@ -10207,7 +10154,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0499,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=40035, price=49.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=40035, price=49.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11405057",
@@ -10277,7 +10224,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0599,
         "priceUpdateTime": "2026-06-29T14:46:30",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=1004746, price=59.9, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=1004746, price=59.9, pack=1000.0 g"
       },
       "osher-ad": {
         "item_code": "7290002292487",
@@ -10331,7 +10278,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1122,
         "priceUpdateTime": "2026-10-19T12:11:10",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=3361687, price=112.2, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=3361687, price=112.2, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290008618021",
@@ -10348,7 +10295,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1499,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290008618021, price=149.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290008618021, price=149.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11589023",
@@ -10417,8 +10364,8 @@
         "selectionNote": "user rule: fillets, not whole",
         "packOverride": null,
         "unitPriceNorm": 0.1426,
-        "priceUpdateTime": "2026-10-26T10:03:26",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=3361694, price=142.6, pack=1000.0 g"
+        "priceUpdateTime": "2026-11-09T19:05:25",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=3361694, price=142.6, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290008255806",
@@ -10435,7 +10382,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1649,
         "priceUpdateTime": "2026-03-25T10:00:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290008255806, price=164.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290008255806, price=164.9, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11405762",
@@ -10505,7 +10452,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0814,
         "priceUpdateTime": "2026-11-03T09:03:59",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=3361656, price=81.4, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=3361656, price=81.4, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "7290002332350",
@@ -10522,7 +10469,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0899,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290002332350, price=89.9, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290002332350, price=89.9, pack=1000.0 g"
       },
       "shufersal": {
         "item_code": "7290008255523",
@@ -10559,7 +10506,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.082,
         "priceUpdateTime": "2026-08-18T10:29:49",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=1794142, price=82.0, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=1794142, price=82.0, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "729001234308",
@@ -10576,7 +10523,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.07,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=729001234308, price=70.0, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=729001234308, price=70.0, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11498173",
@@ -10646,7 +10593,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.031,
         "priceUpdateTime": "2026-10-07T12:33:36",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=2083979, price=31.0, pack=1000.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=2083979, price=31.0, pack=1000.0 g"
       },
       "yochananof": {
         "item_code": "1022801",
@@ -10663,7 +10610,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.031,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=1022801, price=31.0, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=1022801, price=31.0, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11463416",
@@ -10733,7 +10680,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0505,
         "priceUpdateTime": "2026-07-09T17:59:34",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290002973218, price=20.2, pack=400.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290002973218, price=20.2, pack=400.0 g"
       },
       "yochananof": {
         "item_code": "7290005384899",
@@ -10750,7 +10697,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.035,
         "priceUpdateTime": "2026-10-05T10:35:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290005384899, price=35.0, pack=1000.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290005384899, price=35.0, pack=1000.0 g"
       },
       "victory": {
         "item_code": "11498239",
@@ -10850,7 +10797,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0372,
         "priceUpdateTime": "2026-11-01T10:03:30",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290019603498, price=27.9, pack=750.0 ml"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290019603498, price=27.9, pack=750.0 ml"
       },
       "yochananof": {
         "item_code": "7290020396297",
@@ -10867,7 +10814,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03587,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290020396297, price=26.9, pack=750.0 ml"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290020396297, price=26.9, pack=750.0 ml"
       },
       "victory": {
         "item_code": "16258598",
@@ -10920,7 +10867,7 @@
         "packOverride": null,
         "unitPriceNorm": 1.18333,
         "priceUpdateTime": "2026-08-14T12:31:10",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=723098308338, price=14.2, pack=12.0 units"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=723098308338, price=14.2, pack=12.0 units"
       },
       "yochananof": {
         "item_code": "742259241901",
@@ -10937,7 +10884,7 @@
         "packOverride": null,
         "unitPriceNorm": 1.21167,
         "priceUpdateTime": "2026-11-01T11:11:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=742259241901, price=14.54, pack=12.0 units"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=742259241901, price=14.54, pack=12.0 units"
       },
       "victory": {
         "item_code": "11463950",
@@ -10990,7 +10937,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01053,
         "priceUpdateTime": "2026-09-09T13:19:34",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290002079477, price=7.9, pack=750.0 g"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290002079477, price=7.9, pack=750.0 g"
       },
       "yochananof": {
         "item_code": "7290000574035",
@@ -11007,7 +10954,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01013,
         "priceUpdateTime": "2026-02-05T12:49:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290000574035, price=7.6, pack=750.0 g"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290000574035, price=7.6, pack=750.0 g"
       },
       "victory": {
         "item_code": "11463892",
@@ -11067,7 +11014,7 @@
         "gtin": null,
         "nameHe": "פלפל אדום",
         "brand": "ביכורי השקמה",
-        "packPrice": 8.9,
+        "packPrice": 4.9,
         "packQty": 1000.0,
         "packUnit": "g",
         "packBasis": "sold loose by weight, price per kg",
@@ -11075,9 +11022,9 @@
         "selectionSource": "assistant",
         "selectionNote": "user rule: red peppers accepted for the generic bell-pepper line",
         "packOverride": null,
-        "unitPriceNorm": 0.0089,
-        "priceUpdateTime": "2026-11-08T13:03:42",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=104, price=8.9, pack=1000.0 g"
+        "unitPriceNorm": 0.0049,
+        "priceUpdateTime": "2026-11-09T13:02:59",
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=104, price=4.9, pack=1000.0 g"
       },
       "shufersal": {
         "item_code": "7290000000091",
@@ -11114,7 +11061,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01725,
         "priceUpdateTime": "2026-08-03T16:04:00",
-        "metadataSource": "PriceFull7290803800003-000-035-20261109-004031.gz (published 2026-11-09T00:40:31+02:00, store 035): ItemCode=7290015603522, price=6.9, pack=400.0 ml"
+        "metadataSource": "PriceFull7290803800003-000-035-20261110-004031.gz (published 2026-11-10T00:40:31+02:00, store 035): ItemCode=7290015603522, price=6.9, pack=400.0 ml"
       },
       "rami-levy": {
         "item_code": "7290015603522",
@@ -11131,7 +11078,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0145,
         "priceUpdateTime": "2026-10-09T09:02:03",
-        "metadataSource": "pricefull7290058140886-039-202611090518.gz (published 2026-11-09T05:18:00+02:00, store 039): ItemCode=7290015603522, price=5.8, pack=400.0 ml"
+        "metadataSource": "pricefull7290058140886-039-202611100517.gz (published 2026-11-10T05:17:00+02:00, store 039): ItemCode=7290015603522, price=5.8, pack=400.0 ml"
       },
       "osher-ad": {
         "item_code": "7290015603522",
@@ -11149,6 +11096,43 @@
         "unitPriceNorm": 0.01475,
         "priceUpdateTime": "2024-08-19T15:52:46",
         "metadataSource": "PriceFull7290103152017-001-032-20261108-080015.gz (published 2026-11-08T08:00:15+02:00, store 032): ItemCode=7290015603522, price=5.9, pack=400.0 ml"
+      }
+    },
+    "whole fresh chicken": {
+      "ingredient_name": "Whole Fresh Chicken",
+      "osher-ad": {
+        "item_code": "7290001209349",
+        "gtin": "07290001209349",
+        "nameHe": "עוף שלם טרי עטרה הרב",
+        "brand": "יסכה",
+        "packPrice": 24.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "sold loose by weight, price per kg",
+        "isWeighted": true,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0249,
+        "priceUpdateTime": "2025-06-03T14:48:33",
+        "metadataSource": "PriceFull7290103152017-001-032-20261108-080015.gz (published 2026-11-08T08:00:15+02:00, store 032): ItemCode=7290001209349, price=24.9, pack=1000.0 g"
+      },
+      "shufersal": {
+        "item_code": "7290009802191",
+        "gtin": "07290009802191",
+        "nameHe": "עוף שלם טרי א.דיל ארוז",
+        "brand": "כללי",
+        "packPrice": 19.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "sold loose by weight, price per kg",
+        "isWeighted": true,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0199,
+        "priceUpdateTime": "2026-03-25T06:21:00",
+        "metadataSource": "PriceFull7290027600007-002-413-20261108-034000.gz (published 2026-11-08T03:40:00+02:00, store 413): ItemCode=7290009802191, price=19.9, pack=1000.0 g"
       }
     },
     "red lentil protein pasta": {
