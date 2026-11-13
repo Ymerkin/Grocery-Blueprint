@@ -3,25 +3,25 @@
   "note": "Real products from the downloaded feeds. NOTHING here is pinned or priced. To use one, copy its item_code and name_he into mappings.json with approved_by_user true.",
   "sources": {
     "shufersal": {
-      "source_file": "PriceFull7290027600007-002-413-20261112-034000.gz",
-      "published_at": "2026-11-12T03:40:00+02:00",
-      "retrieved_at": "2026-11-12T03:45:08.908826+00:00",
-      "sha256": "2f739cedc68e1b5fb69bc6858219f644ad5bbf4953bdafbd546756704f6d4e8c",
-      "item_count": 15853
+      "source_file": "PriceFull7290027600007-002-413-20261113-034000.gz",
+      "published_at": "2026-11-13T03:40:00+02:00",
+      "retrieved_at": "2026-11-13T03:45:01.822955+00:00",
+      "sha256": "587bd93efc1be49574d6a9b2b949e862c97e544d6a07f9cb4f04808a06d27eab",
+      "item_count": 15863
     },
     "rami-levy": {
-      "source_file": "pricefull7290058140886-039-202611120517.gz",
-      "published_at": "2026-11-12T05:17:00+02:00",
-      "retrieved_at": "2026-11-12T03:45:13.674908+00:00",
-      "sha256": "71c9f6dfe420279d9f4d12674ebfb05cc6d9ba2264ef076015d50810112e8d95",
-      "item_count": 15414
+      "source_file": "pricefull7290058140886-039-202611130522.gz",
+      "published_at": "2026-11-13T05:22:00+02:00",
+      "retrieved_at": "2026-11-13T03:45:08.063058+00:00",
+      "sha256": "a520eee8678d2efa2e07bc3b68334fbf906d4c82c3c3daa58f90b7124e71c329",
+      "item_count": 15393
     },
     "yochananof": {
-      "source_file": "PriceFull7290803800003-000-035-20261112-004031.gz",
-      "published_at": "2026-11-12T00:40:31+02:00",
-      "retrieved_at": "2026-11-12T03:45:38.435690+00:00",
-      "sha256": "ffff7aeefde0dc005bc6dad5189aef545a5200f48211e168ed49e73d9bf83d78",
-      "item_count": 8484
+      "source_file": "PriceFull7290803800003-000-035-20261113-004031.gz",
+      "published_at": "2026-11-13T00:40:31+02:00",
+      "retrieved_at": "2026-11-13T03:45:35.475517+00:00",
+      "sha256": "26aa04d9fe9fb58791a8811d5c97374ecf12d3d14df5c59ff57d8f639b45e22b",
+      "item_count": 8494
     }
   },
   "ingredients": {
@@ -2032,6 +2032,21 @@
           "flags": []
         },
         {
+          "item_code": "8719308",
+          "gtin": null,
+          "name_he": "כתף בקר מרכזי מוכשר",
+          "manufacturer": "לא ידוע",
+          "price": 50.8,
+          "unit_price": 50.8,
+          "unit_of_measure": "1 ק\"ג",
+          "is_weighted": true,
+          "pack_qty": 1000.0,
+          "pack_unit": "g",
+          "pack_basis": "sold loose by weight, price per kg",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
           "item_code": "7290001567807",
           "gtin": "07290001567807",
           "name_he": "כתף בקר מעושן 250 גר",
@@ -2117,8 +2132,8 @@
           "gtin": "07290003229192",
           "name_he": "כתף בקר מעושן 2% 400 ג (12) טירת צבי",
           "manufacturer": "טירת צבי",
-          "price": 35.5,
-          "unit_price": 0.355,
+          "price": 36.6,
+          "unit_price": 0.366,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 400.0,
@@ -2130,23 +2145,6 @@
           "flags": [
             "size from feed quantity only (not in name)"
           ]
-        },
-        {
-          "item_code": "7290109581231",
-          "gtin": "07290109581231",
-          "name_he": "זוגלובק פרימיום כתף בקר מפולפל 160 גרם",
-          "manufacturer": "לא ידוע",
-          "price": 29.9,
-          "unit_price": 0.299,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 160.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [
-            "premium"
-          ],
-          "flags": []
         }
       ],
       "yochananof": [
@@ -2589,21 +2587,6 @@
           "flags": []
         },
         {
-          "item_code": "2680482",
-          "gtin": null,
-          "name_he": "פרגיות עוף טרי",
-          "manufacturer": "לא ידוע",
-          "price": 59.9,
-          "unit_price": 59.9,
-          "unit_of_measure": "1 ק\"ג",
-          "is_weighted": true,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "sold loose by weight, price per kg",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
           "item_code": "2684244",
           "gtin": null,
           "name_he": "פרגיות עוף טרי כשר",
@@ -2675,6 +2658,21 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 120.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290000318592",
+          "gtin": "07290000318592",
+          "name_he": "נקניקיות ביס פרגיות 380 גר",
+          "manufacturer": "מעדני  יחיעם",
+          "price": 17.2,
+          "unit_price": 0.172,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 380.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -3195,6 +3193,21 @@
           "flags": []
         },
         {
+          "item_code": "8866248",
+          "gtin": null,
+          "name_he": "בולגרית מעודנת במשקל",
+          "manufacturer": "לא ידוע",
+          "price": 44.1,
+          "unit_price": 44.1,
+          "unit_of_measure": "1 ק\"ג",
+          "is_weighted": true,
+          "pack_qty": 1000.0,
+          "pack_unit": "g",
+          "pack_basis": "sold loose by weight, price per kg",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
           "item_code": "7290011499112",
           "gtin": "07290011499112",
           "name_he": "גד בולגרית 16% 250 גרם",
@@ -3335,21 +3348,6 @@
           "item_code": "7290004120566",
           "gtin": "07290004120566",
           "name_he": "בולגרית פיראוס 24% שומן 250 גרם",
-          "manufacturer": "תנובה",
-          "price": 26.4,
-          "unit_price": 0.264,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 250.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
-          "item_code": "7290004120573",
-          "gtin": "07290004120573",
-          "name_he": "בולגרית פיראוס 16% שומן 250 גרם",
           "manufacturer": "תנובה",
           "price": 26.4,
           "unit_price": 0.264,
@@ -4110,23 +4108,6 @@
           "flags": []
         },
         {
-          "item_code": "7290006439482",
-          "gtin": "07290006439482",
-          "name_he": "שעועית לבנה 1ק'ג",
-          "manufacturer": "לא ידוע",
-          "price": 14.7,
-          "unit_price": 14.7,
-          "unit_of_measure": "1 ק\"ג",
-          "is_weighted": false,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
-        },
-        {
           "item_code": "7290006439710",
           "gtin": "07290006439710",
           "name_he": "שעועית אדומה 1ק'ג",
@@ -4266,6 +4247,21 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 500.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290112348142",
+          "gtin": "07290112348142",
+          "name_he": "שעועית לבנה 230גר קופסה",
+          "manufacturer": "לא ידוע",
+          "price": 7.5,
+          "unit_price": 0.075,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 230.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -5012,6 +5008,23 @@
           ]
         },
         {
+          "item_code": "7290020505590",
+          "gtin": "07290020505590",
+          "name_he": "גרגירי חומוס יוחננוף",
+          "manufacturer": "Unknown",
+          "price": 7.9,
+          "unit_price": 1.58,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 500.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
           "item_code": "7290112357113",
           "gtin": "07290112357113",
           "name_he": "גרגירי חומוס ט. הטבע",
@@ -5105,21 +5118,6 @@
           "manufacturer": "אן האי פישרי לימטד",
           "price": 49.9,
           "unit_price": 49.9,
-          "unit_of_measure": "1קילוגרם",
-          "is_weighted": true,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "sold loose by weight, price per kg",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
-          "item_code": "7290002080848",
-          "gtin": "07290002080848",
-          "name_he": "פילה טונה פרוס טרי",
-          "manufacturer": "מאסטרפוד מענית",
-          "price": 249.0,
-          "unit_price": 249.0,
           "unit_of_measure": "1קילוגרם",
           "is_weighted": true,
           "pack_qty": 1000.0,
@@ -5268,6 +5266,23 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 160.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
+          "item_code": "8595657306558",
+          "gtin": "08595657306558",
+          "name_he": "שלוק טונה 60ג פיין קט",
+          "manufacturer": "---",
+          "price": 13.9,
+          "unit_price": 23.17,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 60.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity",
           "variant_flags": [],
@@ -5646,8 +5661,8 @@
           ]
         },
         {
-          "item_code": "7290017617688",
-          "gtin": "07290017617688",
+          "item_code": "7290017617695",
+          "gtin": "07290017617695",
           "name_he": "נתחי פילה טונה בשמן",
           "manufacturer": "לא ידוע",
           "price": 15.9,
@@ -5663,8 +5678,8 @@
           ]
         },
         {
-          "item_code": "7290017617695",
-          "gtin": "07290017617695",
+          "item_code": "7290017617701",
+          "gtin": "07290017617701",
           "name_he": "נתחי פילה טונה בשמן",
           "manufacturer": "לא ידוע",
           "price": 15.9,
@@ -6199,23 +6214,6 @@
       ],
       "rami-levy": [
         {
-          "item_code": "7290006439482",
-          "gtin": "07290006439482",
-          "name_he": "שעועית לבנה 1ק'ג",
-          "manufacturer": "לא ידוע",
-          "price": 14.7,
-          "unit_price": 14.7,
-          "unit_of_measure": "1 ק\"ג",
-          "is_weighted": false,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
-        },
-        {
           "item_code": "7290013677020",
           "gtin": "07290013677020",
           "name_he": "מיה שעועית לבנה 500 גרם",
@@ -6384,6 +6382,23 @@
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290018989616",
+          "gtin": "07290018989616",
+          "name_he": "שעועית לבנה קפואה 600 גר יכין",
+          "manufacturer": "לא ידוע",
+          "price": 9.8,
+          "unit_price": 0.098,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 600.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [
+            "frozen"
+          ],
           "flags": []
         }
       ],
@@ -6919,27 +6934,7 @@
       ]
     },
     "Chia Seeds": {
-      "shufersal": [
-        {
-          "item_code": "7296073381693",
-          "gtin": "07296073381693",
-          "name_he": "זרעי צ'יה אורגניים 300 ג",
-          "manufacturer": "---",
-          "price": 21.9,
-          "unit_price": 7.3,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 300.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [
-            "organic"
-          ],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
-        }
-      ],
+      "shufersal": [],
       "rami-levy": [
         {
           "item_code": "7290110573713",
@@ -7133,23 +7128,6 @@
           "flags": []
         },
         {
-          "item_code": "632704",
-          "gtin": null,
-          "name_he": "שוקיים עוף קפוא",
-          "manufacturer": "תנובה",
-          "price": 21.9,
-          "unit_price": 21.9,
-          "unit_of_measure": "1 ק\"ג",
-          "is_weighted": true,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "sold loose by weight, price per kg",
-          "variant_flags": [
-            "frozen"
-          ],
-          "flags": []
-        },
-        {
           "item_code": "2684183",
           "gtin": null,
           "name_he": "שוקיים עוף טרי כשר.",
@@ -7194,21 +7172,6 @@
           "variant_flags": [
             "frozen"
           ],
-          "flags": []
-        },
-        {
-          "item_code": "2680130",
-          "gtin": null,
-          "name_he": "שוקיים עוף טרי ארוז ארוז-קורנישחן",
-          "manufacturer": "לא ידוע",
-          "price": 29.8,
-          "unit_price": 29.8,
-          "unit_of_measure": "1 ק\"ג",
-          "is_weighted": true,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "sold loose by weight, price per kg",
-          "variant_flags": [],
           "flags": []
         }
       ],
@@ -7437,6 +7400,23 @@
           "pack_unit": "g",
           "pack_basis": "sold loose by weight, price per kg",
           "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "2748229",
+          "gtin": null,
+          "name_he": "כרעיים עוף ארוז קפוא שקיל",
+          "manufacturer": "עוף ירושלים מהדרין",
+          "price": 23.6,
+          "unit_price": 23.6,
+          "unit_of_measure": "1 ק\"ג",
+          "is_weighted": true,
+          "pack_qty": 1000.0,
+          "pack_unit": "g",
+          "pack_basis": "sold loose by weight, price per kg",
+          "variant_flags": [
+            "frozen"
+          ],
           "flags": []
         },
         {
@@ -8780,8 +8760,8 @@
           "gtin": "07290013358493",
           "name_he": "מאסטר שף אסייאתי קרם קוקוס פחית 400 מל",
           "manufacturer": "מאסטר שף",
-          "price": 10.0,
-          "unit_price": 0.1,
+          "price": 10.2,
+          "unit_price": 0.102,
           "unit_of_measure": "100 מ\"ל",
           "is_weighted": false,
           "pack_qty": 400.0,
@@ -10399,21 +10379,6 @@
           ]
         },
         {
-          "item_code": "5992889",
-          "gtin": null,
-          "name_he": "גבינת שמנת שום שמיר",
-          "manufacturer": "מחלבות גד",
-          "price": 57.0,
-          "unit_price": 57.0,
-          "unit_of_measure": "1קילוגרם",
-          "is_weighted": true,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "sold loose by weight, price per kg",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
           "item_code": "6448293",
           "gtin": null,
           "name_he": "גבינת שמנת שום שמיר",
@@ -10548,6 +10513,21 @@
           "manufacturer": "מחלבות גד",
           "price": 58.0,
           "unit_price": 58.0,
+          "unit_of_measure": "1קילוגרם",
+          "is_weighted": true,
+          "pack_qty": 1000.0,
+          "pack_unit": "g",
+          "pack_basis": "sold loose by weight, price per kg",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "369297",
+          "gtin": null,
+          "name_he": "גבינת שמנת בטעמים 25",
+          "manufacturer": "גבינות ניצן",
+          "price": 49.0,
+          "unit_price": 49.0,
           "unit_of_measure": "1קילוגרם",
           "is_weighted": true,
           "pack_qty": 1000.0,
@@ -13552,8 +13532,8 @@
           "gtin": "07290107875820",
           "name_he": "קרוטונים אפויים בתיבול ביתי 180גר",
           "manufacturer": "אסם",
-          "price": 12.9,
-          "unit_price": 0.129,
+          "price": 13.1,
+          "unit_price": 0.131,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 180.0,
@@ -13931,21 +13911,6 @@
       ],
       "rami-levy": [
         {
-          "item_code": "7290112357045",
-          "gtin": "07290112357045",
-          "name_he": "מחית עגבניות מרוסקות 390 גר",
-          "manufacturer": "לא ידוע",
-          "price": 7.3,
-          "unit_price": 0.073,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 390.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
           "item_code": "7290000208947",
           "gtin": "07290000208947",
           "name_he": "עגבניות מרוסקות 180 גרם יכין",
@@ -13982,8 +13947,8 @@
           "gtin": "07290000209906",
           "name_he": "עגבניות מרוסקות בצל 180 גרם יכין",
           "manufacturer": "יכין",
-          "price": 4.4,
-          "unit_price": 0.044,
+          "price": 4.8,
+          "unit_price": 0.048,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 180.0,
@@ -14107,6 +14072,21 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 180.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290000208343",
+          "gtin": "07290000208343",
+          "name_he": "עגבניות מרוסקות שום 600 גרם A2.5 בד\"ץ יכין",
+          "manufacturer": "יכין",
+          "price": 9.8,
+          "unit_price": 0.098,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 600.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -15733,6 +15713,23 @@
           ]
         },
         {
+          "item_code": "7290020505576",
+          "gtin": "07290020505576",
+          "name_he": "עדשים ירוקות יוחננוף",
+          "manufacturer": "Unknown",
+          "price": 5.9,
+          "unit_price": 1.18,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 500.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
           "item_code": "7290117908259",
           "gtin": "07290117908259",
           "name_he": "עדשים ירוקות יוחננוף",
@@ -15876,23 +15873,6 @@
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
           "flags": []
-        },
-        {
-          "item_code": "7290006660596",
-          "gtin": "07290006660596",
-          "name_he": "דגש קמח עדשים אדומות",
-          "manufacturer": "לא ידוע",
-          "price": 17.9,
-          "unit_price": 3.58,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 500.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
         }
       ]
     },
@@ -16323,6 +16303,23 @@
           ]
         },
         {
+          "item_code": "7290020505613",
+          "gtin": "07290020505613",
+          "name_he": "עדשים אדומות יוחננוף",
+          "manufacturer": "Unknown",
+          "price": 5.9,
+          "unit_price": 1.18,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 500.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
           "item_code": "7290117908266",
           "gtin": "07290117908266",
           "name_he": "עדשים כתומות יוחננוף",
@@ -16470,21 +16467,6 @@
           "flags": [
             "size from feed quantity only (not in name)"
           ]
-        },
-        {
-          "item_code": "7290003643752",
-          "gtin": "07290003643752",
-          "name_he": "עדשים ירוקים 500 גרם",
-          "manufacturer": "סוגת תעשיות בע\"מ",
-          "price": 8.9,
-          "unit_price": 1.78,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 500.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
         }
       ]
     },
@@ -17926,21 +17908,6 @@
     "Farfalle (Bowtie) Pasta": {
       "shufersal": [
         {
-          "item_code": "7296073011248",
-          "gtin": "07296073011248",
-          "name_he": "פסטה פרפלה 500 גרם",
-          "manufacturer": "פסטה ברוטו",
-          "price": 7.9,
-          "unit_price": 1.58,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 500.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
           "item_code": "8008912010300",
           "gtin": "08008912010300",
           "name_he": "פסטה פרפלה 500 גרם",
@@ -18011,8 +17978,8 @@
           "gtin": "08076809580144",
           "name_he": "ברילה פרפלה חדש 500גרם",
           "manufacturer": "לא ידוע",
-          "price": 7.6,
-          "unit_price": 0.076,
+          "price": 7.0,
+          "unit_price": 0.07,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 500.0,
@@ -18425,21 +18392,6 @@
           "flags": []
         },
         {
-          "item_code": "723098308352",
-          "gtin": "00723098308352",
-          "name_he": "ביצים 12 יח בינוני M",
-          "manufacturer": "לא ידוע",
-          "price": 13.1,
-          "unit_price": 13.1,
-          "unit_of_measure": "1 יח'",
-          "is_weighted": false,
-          "pack_qty": 12.0,
-          "pack_unit": "units",
-          "pack_basis": "count in product name",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
           "item_code": "742259241895",
           "gtin": "00742259241895",
           "name_he": "ביצים 12 יח בינוני M",
@@ -18453,6 +18405,23 @@
           "pack_basis": "count in product name",
           "variant_flags": [],
           "flags": []
+        },
+        {
+          "item_code": "7290016865943",
+          "gtin": "07290016865943",
+          "name_he": "אטריות ביצים פטוצ'יני",
+          "manufacturer": "לא ידוע",
+          "price": 10.8,
+          "unit_price": 0.108,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 400.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
         }
       ],
       "yochananof": [
@@ -18572,6 +18541,21 @@
           ]
         },
         {
+          "item_code": "742259241895",
+          "gtin": "00742259241895",
+          "name_he": "ביצים 12 יח בינוני",
+          "manufacturer": "לא ידוע",
+          "price": 13.4,
+          "unit_price": 13.4,
+          "unit_of_measure": "יחידות",
+          "is_weighted": false,
+          "pack_qty": 12.0,
+          "pack_unit": "units",
+          "pack_basis": "count in product name",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
           "item_code": "7290002053088",
           "gtin": "07290002053088",
           "name_he": "אטריות ביצים דקות 8",
@@ -18638,21 +18622,6 @@
           "flags": [
             "size from feed quantity only (not in name)"
           ]
-        },
-        {
-          "item_code": "7290015603188",
-          "gtin": "07290015603188",
-          "name_he": "אטריות ביצים 454 גרם",
-          "manufacturer": "xiamen zhongshi import and export",
-          "price": 10.9,
-          "unit_price": 2.4,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 454.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
         }
       ]
     },
@@ -19656,8 +19625,8 @@
           "gtin": "07290020215208",
           "name_he": "סופר טופו מעושן 230 גר",
           "manufacturer": "לא ידוע",
-          "price": 14.1,
-          "unit_price": 0.141,
+          "price": 13.9,
+          "unit_price": 0.139,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 230.0,
@@ -19673,8 +19642,8 @@
           "gtin": "07290020215222",
           "name_he": "סופר טופו טמאגו 230 גר",
           "manufacturer": "לא ידוע",
-          "price": 14.1,
-          "unit_price": 0.141,
+          "price": 13.9,
+          "unit_price": 0.139,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 230.0,
@@ -21619,8 +21588,8 @@
           "gtin": "07290012309366",
           "name_he": "אורז בסמטי שקדיה 5 ק\"ג",
           "manufacturer": "שקדיה",
-          "price": 42.4,
-          "unit_price": 42.4,
+          "price": 49.4,
+          "unit_price": 49.4,
           "unit_of_measure": "1 יח'",
           "is_weighted": false,
           "pack_qty": 5.0,
@@ -21764,7 +21733,7 @@
         {
           "item_code": "5011157630281",
           "gtin": "05011157630281",
-          "name_he": "אורז בסמטי טילדה 1 ק",
+          "name_he": "*מבצע* אורז בסמטי טי",
           "manufacturer": "TILDA",
           "price": 15.9,
           "unit_price": 15.9,
@@ -21980,6 +21949,23 @@
           "variant_flags": [],
           "flags": [
             "count not stated, assumed 1 unit(s)"
+          ]
+        },
+        {
+          "item_code": "7290117264430",
+          "gtin": "07290117264430",
+          "name_he": "מעטפות פילו+פטה+תרד 300ג",
+          "manufacturer": "הלניק קוואלטי פודס אס.אי",
+          "price": 19.9,
+          "unit_price": 6.63,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 300.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
           ]
         },
         {
@@ -22814,8 +22800,8 @@
           "gtin": null,
           "name_he": "בננה",
           "manufacturer": "משתנה",
-          "price": 9.9,
-          "unit_price": 9.9,
+          "price": 8.9,
+          "unit_price": 8.9,
           "unit_of_measure": "1קילוגרם",
           "is_weighted": true,
           "pack_qty": 1000.0,
@@ -24407,6 +24393,21 @@
           ]
         },
         {
+          "item_code": "7290000100272",
+          "gtin": "07290000100272",
+          "name_he": "כרובית בדצ 600 גר",
+          "manufacturer": "סנפרוסט",
+          "price": 27.4,
+          "unit_price": 0.274,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 600.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
           "item_code": "7290018863886",
           "gtin": "07290018863886",
           "name_he": "כרובית קפוא 600גרם",
@@ -24471,6 +24472,23 @@
           "flags": []
         },
         {
+          "item_code": "7290018394397",
+          "gtin": "07290018394397",
+          "name_he": "פרחי כרובית וברוקולי",
+          "manufacturer": "חוות פטריות תקוע",
+          "price": 16.7,
+          "unit_price": 16.7,
+          "unit_of_measure": "1 יח'",
+          "is_weighted": false,
+          "pack_qty": 1.0,
+          "pack_unit": "units",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "count not stated, assumed 1 unit(s)"
+          ]
+        },
+        {
           "item_code": "7290018394342",
           "gtin": "07290018394342",
           "name_he": "פרחי כרובית חוות תקוע",
@@ -24516,40 +24534,6 @@
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
           "flags": []
-        },
-        {
-          "item_code": "7290003569021",
-          "gtin": "07290003569021",
-          "name_he": "כרובית ארוזה יח' רמי לוי",
-          "manufacturer": "לא ידוע",
-          "price": 9.9,
-          "unit_price": 9.9,
-          "unit_of_measure": "1 יח'",
-          "is_weighted": false,
-          "pack_qty": 1.0,
-          "pack_unit": "units",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "count not stated, assumed 1 unit(s)"
-          ]
-        },
-        {
-          "item_code": "7290000103457",
-          "gtin": "07290000103457",
-          "name_he": "מיני כרובית סנפרוסט 600 ג",
-          "manufacturer": "סנפרוסט",
-          "price": 20.2,
-          "unit_price": 0.202,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 600.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
         }
       ],
       "yochananof": [
@@ -24669,6 +24653,23 @@
           "flags": []
         },
         {
+          "item_code": "7290018394397",
+          "gtin": "07290018394397",
+          "name_he": "תפרחות כרובית וברוקו",
+          "manufacturer": "לא ידוע",
+          "price": 16.9,
+          "unit_price": 2.82,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 600.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
           "item_code": "7290018989562",
           "gtin": "07290018989562",
           "name_he": "פרחי כרובית קפואים 7",
@@ -24733,21 +24734,6 @@
           "flags": [
             "size from feed quantity only (not in name)"
           ]
-        },
-        {
-          "item_code": "7290109581781",
-          "gtin": "07290109581781",
-          "name_he": "חטיפי כרובית 400 גרם",
-          "manufacturer": "Unknown",
-          "price": 26.9,
-          "unit_price": 6.73,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 400.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
         }
       ]
     },
@@ -25047,8 +25033,8 @@
           "gtin": "07290010051205",
           "name_he": "סלרי אמריקאי א.אדמה",
           "manufacturer": "אדמה",
-          "price": 5.8,
-          "unit_price": 5.8,
+          "price": 6.8,
+          "unit_price": 6.8,
           "unit_of_measure": "1 יח'",
           "is_weighted": false,
           "pack_qty": 1.0,
@@ -25098,8 +25084,8 @@
           "gtin": "07290122182057",
           "name_he": "סלרי אמריקאי רמי לוי",
           "manufacturer": "לא ידוע",
-          "price": 4.5,
-          "unit_price": 4.5,
+          "price": 4.9,
+          "unit_price": 4.9,
           "unit_of_measure": "1 יח'",
           "is_weighted": false,
           "pack_qty": 1.0,
@@ -25277,8 +25263,8 @@
           "gtin": "07290010650088",
           "name_he": "פטריות שמפיניון מיובשות 25 גרם",
           "manufacturer": "תקוע",
-          "price": 7.8,
-          "unit_price": 0.078,
+          "price": 9.8,
+          "unit_price": 0.098,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 25.0,
@@ -25307,8 +25293,8 @@
           "gtin": "07290013625458",
           "name_he": "פטריות שמפיניון שלמות טעמן 400 גרם",
           "manufacturer": "לא ידוע",
-          "price": 7.8,
-          "unit_price": 0.078,
+          "price": 8.8,
+          "unit_price": 0.088,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": null,
@@ -25714,8 +25700,8 @@
           "gtin": "07290011876494",
           "name_he": "שניצל עוף ותירס מאמא עוף 750 גרם",
           "manufacturer": "מאמא עוף",
-          "price": 39.9,
-          "unit_price": 0.399,
+          "price": 40.6,
+          "unit_price": 0.406,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 750.0,
@@ -26034,8 +26020,8 @@
           "gtin": null,
           "name_he": "כבד עוף טרי ארוז מחפוד",
           "manufacturer": "עוף ירושלים מהדרין",
-          "price": 34.5,
-          "unit_price": 34.5,
+          "price": 36.5,
+          "unit_price": 36.5,
           "unit_of_measure": "1 ק\"ג",
           "is_weighted": true,
           "pack_qty": 1000.0,
@@ -26545,23 +26531,6 @@
           "flags": []
         },
         {
-          "item_code": "7290011424534",
-          "gtin": "07290011424534",
-          "name_he": "זרעים מלפפון",
-          "manufacturer": "לא ידוע",
-          "price": 6.3,
-          "unit_price": 6.3,
-          "unit_of_measure": "1 יח'",
-          "is_weighted": false,
-          "pack_qty": 1.0,
-          "pack_unit": "units",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "count not stated, assumed 1 unit(s)"
-          ]
-        },
-        {
           "item_code": "7290013284143",
           "gtin": "07290013284143",
           "name_he": "מלפפון במלח 10-12 320 גר",
@@ -26656,21 +26625,6 @@
           "flags": []
         },
         {
-          "item_code": "8712561611411",
-          "gtin": "08712561611411",
-          "name_he": "דאב תחליב רחצה 750 מ\"ל מלפפון",
-          "manufacturer": "דאב",
-          "price": 17.8,
-          "unit_price": 0.178,
-          "unit_of_measure": "100 מ\"ל",
-          "is_weighted": false,
-          "pack_qty": 750.0,
-          "pack_unit": "ml",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
           "item_code": "8720181885648",
           "gtin": "08720181885648",
           "name_he": "דאב תחליב רחצה מלפפון 750 מ\"ל",
@@ -26690,8 +26644,8 @@
           "gtin": "07290020498373",
           "name_he": "מלפפון בחומץ גדולים 7-9 290 גר",
           "manufacturer": "לא ידוע",
-          "price": 6.0,
-          "unit_price": 0.06,
+          "price": 7.8,
+          "unit_price": 0.078,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 290.0,
@@ -26705,11 +26659,41 @@
           "gtin": "04800888219510",
           "name_he": "דאב סטיק מלפפון ותה ירוק 50 גרם",
           "manufacturer": "לא ידוע",
-          "price": 16.3,
-          "unit_price": 0.163,
+          "price": 16.2,
+          "unit_price": 0.162,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 50.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290018554005",
+          "gtin": "07290018554005",
+          "name_he": "מלפפון במלח 7-9 רמי לוי 348 גרם",
+          "manufacturer": "פרי",
+          "price": 7.2,
+          "unit_price": 0.072,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 348.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290020498342",
+          "gtin": "07290020498342",
+          "name_he": "מלפפון במלח בינוני 10-12 320 גר",
+          "manufacturer": "לא ידוע",
+          "price": 8.8,
+          "unit_price": 0.088,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 320.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -26971,21 +26955,6 @@
           "flags": []
         },
         {
-          "item_code": "7290002725787",
-          "gtin": "07290002725787",
-          "name_he": "דניס שלם טרי",
-          "manufacturer": "קיליץ",
-          "price": 99.9,
-          "unit_price": 99.9,
-          "unit_of_measure": "1קילוגרם",
-          "is_weighted": true,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "sold loose by weight, price per kg",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
           "item_code": "7290002823056",
           "gtin": "07290002823056",
           "name_he": "דניס נקי טרי",
@@ -27097,6 +27066,21 @@
           "manufacturer": "נטו מלינדה סחר-דגים טריי",
           "price": 99.9,
           "unit_price": 99.9,
+          "unit_of_measure": "1קילוגרם",
+          "is_weighted": true,
+          "pack_qty": 1000.0,
+          "pack_unit": "g",
+          "pack_basis": "sold loose by weight, price per kg",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290009013023",
+          "gtin": "07290009013023",
+          "name_he": "פילה דג דניס טרי",
+          "manufacturer": "דגת הארץ",
+          "price": 139.9,
+          "unit_price": 139.9,
           "unit_of_measure": "1קילוגרם",
           "is_weighted": true,
           "pack_qty": 1000.0,
@@ -27676,21 +27660,6 @@
           ]
         },
         {
-          "item_code": "5992889",
-          "gtin": null,
-          "name_he": "גבינת שמנת שום שמיר",
-          "manufacturer": "מחלבות גד",
-          "price": 57.0,
-          "unit_price": 57.0,
-          "unit_of_measure": "1קילוגרם",
-          "is_weighted": true,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "sold loose by weight, price per kg",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
           "item_code": "6448293",
           "gtin": null,
           "name_he": "גבינת שמנת שום שמיר",
@@ -27823,27 +27792,10 @@
           "flags": []
         },
         {
-          "item_code": "7296073725497",
-          "gtin": "07296073725497",
-          "name_he": "חצילים על האש 400ג",
-          "manufacturer": "סלטי שמיר",
-          "price": 14.9,
-          "unit_price": 3.73,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 400.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
-        },
-        {
           "item_code": "7290115207484",
           "gtin": "07290115207484",
           "name_he": "חציל על האש 400 גרם",
-          "manufacturer": "מפעל צבר",
+          "manufacturer": "צבר",
           "price": 18.5,
           "unit_price": 4.63,
           "unit_of_measure": "100 גרם",
@@ -27903,7 +27855,7 @@
           "item_code": "7290122780277",
           "gtin": "07290122780277",
           "name_he": "חציל פיקנטי 225ג צבר",
-          "manufacturer": "סלטי צבר",
+          "manufacturer": "צבר",
           "price": 10.9,
           "unit_price": 4.84,
           "unit_of_measure": "100 גרם",
@@ -27962,6 +27914,21 @@
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
           "flags": []
+        },
+        {
+          "item_code": "7290106577503",
+          "gtin": "07290106577503",
+          "name_he": "חציל במיונז 400 גרם צבר",
+          "manufacturer": "צבר",
+          "price": 15.5,
+          "unit_price": 3.88,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 400.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
         }
       ],
       "rami-levy": [
@@ -27996,19 +27963,21 @@
           "flags": []
         },
         {
-          "item_code": "446",
-          "gtin": null,
-          "name_he": "חציל מנומר",
-          "manufacturer": "ביכורי השקמה",
-          "price": 9.9,
-          "unit_price": 9.9,
-          "unit_of_measure": "1 ק\"ג",
-          "is_weighted": true,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "sold loose by weight, price per kg",
+          "item_code": "7290011424435",
+          "gtin": "07290011424435",
+          "name_he": "זרעים חציל",
+          "manufacturer": "לא ידוע",
+          "price": 6.3,
+          "unit_price": 6.3,
+          "unit_of_measure": "1 יח'",
+          "is_weighted": false,
+          "pack_qty": 1.0,
+          "pack_unit": "units",
+          "pack_basis": "feed quantity",
           "variant_flags": [],
-          "flags": []
+          "flags": [
+            "count not stated, assumed 1 unit(s)"
+          ]
         },
         {
           "item_code": "244",
@@ -28092,8 +28061,8 @@
           "gtin": "07290015282741",
           "name_he": "חציל תאילנדי 200 גר",
           "manufacturer": "לא ידוע",
-          "price": 14.1,
-          "unit_price": 0.141,
+          "price": 12.9,
+          "unit_price": 0.129,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 200.0,
@@ -28530,8 +28499,8 @@
           "gtin": null,
           "name_he": "שום טרי",
           "manufacturer": "ביכורי שדה",
-          "price": 24.9,
-          "unit_price": 24.9,
+          "price": 9.9,
+          "unit_price": 9.9,
           "unit_of_measure": "1 ק\"ג",
           "is_weighted": true,
           "pack_qty": 1000.0,
@@ -29509,7 +29478,7 @@
           "item_code": "7290106576513",
           "gtin": "07290106576513",
           "name_he": "חומוס מסעדה 400 גרם",
-          "manufacturer": "סלטי צבר",
+          "manufacturer": "צבר",
           "price": 12.5,
           "unit_price": 3.13,
           "unit_of_measure": "100 גרם",
@@ -29522,23 +29491,6 @@
         }
       ],
       "rami-levy": [
-        {
-          "item_code": "7290018338629",
-          "gtin": "07290018338629",
-          "name_he": "פנה חומוס 250ג",
-          "manufacturer": "לא ידוע",
-          "price": 16.7,
-          "unit_price": 0.167,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 250.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
-        },
         {
           "item_code": "7290011473280",
           "gtin": "07290011473280",
@@ -29709,6 +29661,21 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 200.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290110579319",
+          "gtin": "07290110579319",
+          "name_he": "חומוס גלילי 400 גר",
+          "manufacturer": "שטראוס",
+          "price": 11.7,
+          "unit_price": 0.117,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 400.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -29990,21 +29957,6 @@
           "flags": []
         },
         {
-          "item_code": "7290010154012",
-          "gtin": "07290010154012",
-          "name_he": "לימון בלאדי 250 גרם",
-          "manufacturer": "נטו",
-          "price": 16.5,
-          "unit_price": 6.6,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 250.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
           "item_code": "7296073379379",
           "gtin": "07296073379379",
           "name_he": "רוטב לימון+נענע (ק)",
@@ -30096,6 +30048,23 @@
           "is_weighted": false,
           "pack_qty": 750.0,
           "pack_unit": "ml",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
+          "item_code": "4009300525684",
+          "gtin": "04009300525684",
+          "name_he": "חליטת לימון גינגר20שק",
+          "manufacturer": "טיקנה גי.אם.בי.אייג",
+          "price": 16.5,
+          "unit_price": 47.14,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 35.0,
+          "pack_unit": "g",
           "pack_basis": "feed quantity",
           "variant_flags": [],
           "flags": [
@@ -30880,8 +30849,8 @@
           "gtin": "00839762000641",
           "name_he": "נקטר מנגו איילנד 1 ל'",
           "manufacturer": "טמפו",
-          "price": 10.2,
-          "unit_price": 10.2,
+          "price": 10.0,
+          "unit_price": 10.0,
           "unit_of_measure": "1 ליטר",
           "is_weighted": false,
           "pack_qty": 1000.0,
@@ -31225,6 +31194,23 @@
           "flags": [
             "size from feed quantity only (not in name)"
           ]
+        },
+        {
+          "item_code": "7290116936291",
+          "gtin": "07290116936291",
+          "name_he": "חלב 3% עדה חרדית תנו",
+          "manufacturer": "תנובה",
+          "price": 14.7,
+          "unit_price": 7.35,
+          "unit_of_measure": "1ליטר",
+          "is_weighted": false,
+          "pack_qty": 2000.0,
+          "pack_unit": "ml",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
         }
       ]
     },
@@ -31245,6 +31231,23 @@
           "variant_flags": [],
           "flags": [
             "size from feed quantity only (not in name)"
+          ]
+        },
+        {
+          "item_code": "7290019462552",
+          "gtin": "07290019462552",
+          "name_he": "פטריות מלך היער",
+          "manufacturer": "מרינה",
+          "price": 11.9,
+          "unit_price": 11.9,
+          "unit_of_measure": "יחידות",
+          "is_weighted": false,
+          "pack_qty": 1.0,
+          "pack_unit": "units",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "count not stated, assumed 1 unit(s)"
           ]
         },
         {
@@ -31412,23 +31415,6 @@
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
           "flags": []
-        },
-        {
-          "item_code": "4810168062187",
-          "gtin": "04810168062187",
-          "name_he": "בלינצס תפו\"א+פטריות420ג",
-          "manufacturer": "---",
-          "price": 16.9,
-          "unit_price": 4.02,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 420.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
         }
       ],
       "rami-levy": [
@@ -31571,8 +31557,8 @@
           "gtin": "07290010650002",
           "name_he": "פטריות יער חוות תקוע",
           "manufacturer": "תקוע",
-          "price": 11.7,
-          "unit_price": 11.7,
+          "price": 9.8,
+          "unit_price": 9.8,
           "unit_of_measure": "1 יח'",
           "is_weighted": false,
           "pack_qty": 1.0,
@@ -32068,8 +32054,8 @@
           "gtin": "07290010051052",
           "name_he": "פטרוזיליה א.אדמה",
           "manufacturer": "אדמה",
-          "price": 3.4,
-          "unit_price": 3.4,
+          "price": 3.9,
+          "unit_price": 3.9,
           "unit_of_measure": "1 יח'",
           "is_weighted": false,
           "pack_qty": 1.0,
@@ -33603,12 +33589,12 @@
           "flags": []
         },
         {
-          "item_code": "7290008350327",
-          "gtin": "07290008350327",
-          "name_he": "פילה סלמון טרי פרוס שקיל",
-          "manufacturer": "דלידג",
-          "price": 132.9,
-          "unit_price": 132.9,
+          "item_code": "7290001249383",
+          "gtin": "07290001249383",
+          "name_he": "פילה סלמון טרי שלם במשקל",
+          "manufacturer": "מרין פארמס",
+          "price": 119.9,
+          "unit_price": 119.9,
           "unit_of_measure": "1קילוגרם",
           "is_weighted": true,
           "pack_qty": 1000.0,
@@ -33618,12 +33604,12 @@
           "flags": []
         },
         {
-          "item_code": "7290009011128",
-          "gtin": "07290009011128",
-          "name_he": "נתחי סלמון טרי שופרסל לק",
-          "manufacturer": "דגת הארץ",
-          "price": 159.9,
-          "unit_price": 159.9,
+          "item_code": "7290008350327",
+          "gtin": "07290008350327",
+          "name_he": "פילה סלמון טרי פרוס שקיל",
+          "manufacturer": "דלידג",
+          "price": 132.9,
+          "unit_price": 132.9,
           "unit_of_measure": "1קילוגרם",
           "is_weighted": true,
           "pack_qty": 1000.0,
@@ -35022,23 +35008,6 @@
           "flags": []
         },
         {
-          "item_code": "7290011424589",
-          "gtin": "07290011424589",
-          "name_he": "זרעים עגבניה שרי",
-          "manufacturer": "לא ידוע",
-          "price": 6.3,
-          "unit_price": 6.3,
-          "unit_of_measure": "1 יח'",
-          "is_weighted": false,
-          "pack_qty": 1.0,
-          "pack_unit": "units",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "count not stated, assumed 1 unit(s)"
-          ]
-        },
-        {
           "item_code": "641",
           "gtin": null,
           "name_he": "עגבניות מגי",
@@ -35103,6 +35072,21 @@
           "flags": [
             "count not stated, assumed 1 unit(s)"
           ]
+        },
+        {
+          "item_code": "7290000969367",
+          "gtin": "07290000969367",
+          "name_he": "עגבניות שרי לובלו",
+          "manufacturer": "לא ידוע",
+          "price": 29.9,
+          "unit_price": 29.9,
+          "unit_of_measure": "1 ק\"ג",
+          "is_weighted": true,
+          "pack_qty": 1000.0,
+          "pack_unit": "g",
+          "pack_basis": "sold loose by weight, price per kg",
+          "variant_flags": [],
+          "flags": []
         },
         {
           "item_code": "7290013128867",
@@ -36639,27 +36623,12 @@
           "gtin": "04740098079309",
           "name_he": "סיידר אוכמניות 4.5% 500מ\"ל",
           "manufacturer": "לא ידוע",
-          "price": 7.3,
-          "unit_price": 0.073,
+          "price": 6.8,
+          "unit_price": 0.068,
           "unit_of_measure": "100 מ\"ל",
           "is_weighted": false,
           "pack_qty": 500.0,
           "pack_unit": "ml",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
-          "item_code": "7290000101927",
-          "gtin": "07290000101927",
-          "name_he": "אוכמניות כחולות מוקפא 300 גר",
-          "manufacturer": "סנפרוסט",
-          "price": 18.5,
-          "unit_price": 0.185,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 300.0,
-          "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
           "flags": []
@@ -36674,6 +36643,21 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 400.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "4610028073472",
+          "gtin": "04610028073472",
+          "name_he": "מקרון טעם אוכמניות לל\"ג 48 גר",
+          "manufacturer": "לא ידוע",
+          "price": 8.0,
+          "unit_price": 0.08,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 48.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -37277,8 +37261,8 @@
           "gtin": "07290006251374",
           "name_he": "תה ירוק לימונית וג'ינג'ר ויסוצקי 25 יחידות",
           "manufacturer": "ויסוצקי",
-          "price": 22.4,
-          "unit_price": 22.4,
+          "price": 21.0,
+          "unit_price": 21.0,
           "unit_of_measure": "1 יח'",
           "is_weighted": false,
           "pack_qty": 25.0,
@@ -37771,6 +37755,23 @@
           "flags": []
         },
         {
+          "item_code": "7290018394397",
+          "gtin": "07290018394397",
+          "name_he": "פרחי כרובית וברוקולי",
+          "manufacturer": "חוות פטריות תקוע",
+          "price": 16.7,
+          "unit_price": 16.7,
+          "unit_of_measure": "1 יח'",
+          "is_weighted": false,
+          "pack_qty": 1.0,
+          "pack_unit": "units",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "count not stated, assumed 1 unit(s)"
+          ]
+        },
+        {
           "item_code": "7290018863893",
           "gtin": "07290018863893",
           "name_he": "ברוקולי קפוא 600 גרם",
@@ -37869,21 +37870,6 @@
           "flags": [
             "size from feed quantity only (not in name)"
           ]
-        },
-        {
-          "item_code": "7290111566226",
-          "gtin": "07290111566226",
-          "name_he": "טבעול שניצל ברוקולי 6*664גרם",
-          "manufacturer": "טבעול",
-          "price": 30.6,
-          "unit_price": 0.306,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 667.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
         }
       ],
       "yochananof": [
@@ -38828,6 +38814,23 @@
           "flags": []
         },
         {
+          "item_code": "7290020505620",
+          "gtin": "07290020505620",
+          "name_he": "אפונה ירוקה יוחננוף",
+          "manufacturer": "Unknown",
+          "price": 4.5,
+          "unit_price": 0.9,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 500.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
           "item_code": "7290100705001",
           "gtin": "07290100705001",
           "name_he": "שימורי אפונה ירוקה ס",
@@ -38972,8 +38975,8 @@
           "gtin": "07290116932828",
           "name_he": "פיראוס עזים טבעי 225 גרם",
           "manufacturer": "תנובה",
-          "price": 20.7,
-          "unit_price": 0.207,
+          "price": 18.2,
+          "unit_price": 0.182,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 225.0,
@@ -39601,6 +39604,23 @@
           "flags": []
         },
         {
+          "item_code": "7290114313377",
+          "gtin": "07290114313377",
+          "name_he": "יוגורט יווני6.5% 8י*130ג",
+          "manufacturer": "---",
+          "price": 28.9,
+          "unit_price": 2.78,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 1040.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
           "item_code": "7290116936635",
           "gtin": "07290116936635",
           "name_he": "יוגורט יווני8*140ג יופלה",
@@ -39682,21 +39702,6 @@
           "flags": [
             "size from feed quantity only (not in name)"
           ]
-        },
-        {
-          "item_code": "7290001258682",
-          "gtin": "07290001258682",
-          "name_he": "יוגורט עיזים 500 מ\"ל",
-          "manufacturer": "משק יעקבס",
-          "price": 15.9,
-          "unit_price": 3.18,
-          "unit_of_measure": "100 מיליליטר",
-          "is_weighted": false,
-          "pack_qty": 500.0,
-          "pack_unit": "ml",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
         }
       ],
       "rami-levy": [
@@ -39737,8 +39742,8 @@
           "gtin": "07290019635819",
           "name_he": "יוגורט יווני צזיקי 10% 600 גרם",
           "manufacturer": "לא ידוע",
-          "price": 16.3,
-          "unit_price": 0.163,
+          "price": 22.3,
+          "unit_price": 0.223,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 600.0,
@@ -40456,15 +40461,15 @@
           ]
         },
         {
-          "item_code": "7290010129720",
-          "gtin": "07290010129720",
-          "name_he": "עוגיות רוגלך קינמון 400גר",
+          "item_code": "6979314800030",
+          "gtin": "06979314800030",
+          "name_he": "תפוחונים עם קינמון 88 גר",
           "manufacturer": "לא ידוע",
-          "price": 12.2,
-          "unit_price": 0.122,
+          "price": 14.7,
+          "unit_price": 0.147,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
-          "pack_qty": 400.0,
+          "pack_qty": 88.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -41030,6 +41035,21 @@
           "flags": []
         },
         {
+          "item_code": "6511706",
+          "gtin": null,
+          "name_he": "גאודה עם כמון במשקל",
+          "manufacturer": "רובין הולנד",
+          "price": 140.0,
+          "unit_price": 140.0,
+          "unit_of_measure": "1קילוגרם",
+          "is_weighted": true,
+          "pack_qty": 1000.0,
+          "pack_unit": "g",
+          "pack_basis": "sold loose by weight, price per kg",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
           "item_code": "1258323",
           "gtin": null,
           "name_he": "גבינת גאודה כמון 28%",
@@ -41051,21 +41071,6 @@
           "manufacturer": "מחלבה בית יצחק",
           "price": 110.0,
           "unit_price": 110.0,
-          "unit_of_measure": "1קילוגרם",
-          "is_weighted": true,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "sold loose by weight, price per kg",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
-          "item_code": "6511706",
-          "gtin": null,
-          "name_he": "*מבצע* גאודה עם כמון",
-          "manufacturer": "רובין הולנד",
-          "price": 140.0,
-          "unit_price": 140.0,
           "unit_of_measure": "1קילוגרם",
           "is_weighted": true,
           "pack_qty": 1000.0,
@@ -41712,8 +41717,8 @@
           "gtin": "07290000497358",
           "name_he": "חלומית ארוזה ברמן",
           "manufacturer": "לא ידוע",
-          "price": 13.7,
-          "unit_price": 0.137,
+          "price": 14.7,
+          "unit_price": 0.147,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 500.0,
@@ -42049,8 +42054,8 @@
           "gtin": "07290002327066",
           "name_he": "קונכיות בצק למילוי שלושת האופים 625 גרם",
           "manufacturer": "שלושת האופים",
-          "price": 17.3,
-          "unit_price": 0.173,
+          "price": 17.9,
+          "unit_price": 0.179,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 625.0,
@@ -42352,23 +42357,6 @@
           ]
         },
         {
-          "item_code": "7290006439482",
-          "gtin": "07290006439482",
-          "name_he": "שעועית לבנה 1ק'ג",
-          "manufacturer": "לא ידוע",
-          "price": 14.7,
-          "unit_price": 14.7,
-          "unit_of_measure": "1 ק\"ג",
-          "is_weighted": false,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
-        },
-        {
           "item_code": "7290015282024",
           "gtin": "07290015282024",
           "name_he": "איקרה לבנה 200גר",
@@ -42470,6 +42458,21 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 350.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290112006219",
+          "gtin": "07290112006219",
+          "name_he": "וניש אבקה לבנה 1.8 קג",
+          "manufacturer": "לא ידוע",
+          "price": 39.9,
+          "unit_price": 39.9,
+          "unit_of_measure": "1 ק\"ג",
+          "is_weighted": false,
+          "pack_qty": 1800.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -43011,23 +43014,6 @@
           ]
         },
         {
-          "item_code": "7290018989401",
-          "gtin": "07290018989401",
-          "name_he": "כרישה קפוא בריאבוע 145 גר",
-          "manufacturer": "לא ידוע",
-          "price": 15.3,
-          "unit_price": 0.153,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 145.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [
-            "frozen"
-          ],
-          "flags": []
-        },
-        {
           "item_code": "7290019759959",
           "gtin": "07290019759959",
           "name_he": "סלוף",
@@ -43150,6 +43136,21 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 170.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290018338803",
+          "gtin": "07290018338803",
+          "name_he": "קמח שקדים קלוף 250 גר",
+          "manufacturer": "לא ידוע",
+          "price": 24.9,
+          "unit_price": 0.249,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 250.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -43513,7 +43514,7 @@
           "item_code": "7290106577503",
           "gtin": "07290106577503",
           "name_he": "חציל במיונז 400 גרם צבר",
-          "manufacturer": "סלטי צבר",
+          "manufacturer": "צבר",
           "price": 15.5,
           "unit_price": 3.88,
           "unit_of_measure": "100 גרם",
@@ -44727,23 +44728,6 @@
           "flags": []
         },
         {
-          "item_code": "7290018677339",
-          "gtin": "07290018677339",
-          "name_he": "מחית אורגנית תפוח בננה וחמאת שקדים 100גר",
-          "manufacturer": "לא ידוע",
-          "price": 8.4,
-          "unit_price": 0.084,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 100.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [
-            "organic"
-          ],
-          "flags": []
-        },
-        {
           "item_code": "7290018677353",
           "gtin": "07290018677353",
           "name_he": "מחית אורגנית אפרסק מנגו וחמאת שקדים 100גר",
@@ -45591,23 +45575,6 @@
           "flags": []
         },
         {
-          "item_code": "7290018338629",
-          "gtin": "07290018338629",
-          "name_he": "פנה חומוס 250ג",
-          "manufacturer": "לא ידוע",
-          "price": 16.7,
-          "unit_price": 0.167,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 250.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
-        },
-        {
           "item_code": "7290011474591",
           "gtin": "07290011474591",
           "name_he": "פנהכוסמיןמלא500",
@@ -45736,6 +45703,21 @@
           "flags": [
             "count not stated, assumed 1 unit(s)"
           ]
+        },
+        {
+          "item_code": "7290117769683",
+          "gtin": "07290117769683",
+          "name_he": "פסטה פנה 500גר רמי לוי",
+          "manufacturer": "לא ידוע",
+          "price": 4.2,
+          "unit_price": 0.042,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 500.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
         }
       ],
       "yochananof": [
@@ -46438,6 +46420,23 @@
           "flags": []
         },
         {
+          "item_code": "7296073776826",
+          "gtin": "07296073776826",
+          "name_he": "טפנד זית קלמטה180ג שדה",
+          "manufacturer": "פרסקו חצבה 2006 בע\"מ",
+          "price": 14.5,
+          "unit_price": 8.06,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 180.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
           "item_code": "7290019333203",
           "gtin": "07290019333203",
           "name_he": "זית שחור שלמים קלמטה340",
@@ -46464,21 +46463,6 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 454.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
-          "item_code": "7290011947798",
-          "gtin": "07290011947798",
-          "name_he": "זית קלמטה ללא גלעין190גר",
-          "manufacturer": "---",
-          "price": 16.9,
-          "unit_price": 8.89,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 190.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -46936,21 +46920,6 @@
           "variant_flags": [
             "gluten free"
           ],
-          "flags": []
-        },
-        {
-          "item_code": "7290120871311",
-          "gtin": "07290120871311",
-          "name_he": "ניוקי תפוא עם עגבניות 500 גרם",
-          "manufacturer": "לא ידוע",
-          "price": 8.4,
-          "unit_price": 0.084,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 500.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
           "flags": []
         },
         {
@@ -48871,7 +48840,7 @@
         {
           "item_code": "7290000185590",
           "gtin": "07290000185590",
-          "name_he": "*מבצע* סילאן טבעי בב",
+          "name_he": "סילאן טבעי בבקבוק לח",
           "manufacturer": "חצר כינרת מוצרי תמר",
           "price": 19.9,
           "unit_price": 3.13,
@@ -49200,23 +49169,6 @@
           "flags": []
         },
         {
-          "item_code": "7290019932628",
-          "gtin": "07290019932628",
-          "name_he": "דבש אורגני 500 גר",
-          "manufacturer": "לא ידוע",
-          "price": 40.4,
-          "unit_price": 0.404,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 500.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [
-            "organic"
-          ],
-          "flags": []
-        },
-        {
           "item_code": "7290002130581",
           "gtin": "07290002130581",
           "name_he": "דבש יד מרדכי 1 ק\"ג",
@@ -49260,6 +49212,23 @@
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
           "flags": []
+        },
+        {
+          "item_code": "4045787068498",
+          "gtin": "04045787068498",
+          "name_he": "פרוטאין קולור 7.3 דבש",
+          "manufacturer": "הנקל",
+          "price": 9.9,
+          "unit_price": 0.099,
+          "unit_of_measure": "100 מ\"ל",
+          "is_weighted": false,
+          "pack_qty": 60.0,
+          "pack_unit": "ml",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
         }
       ],
       "yochananof": [
@@ -51973,7 +51942,7 @@
           "item_code": "7290106576513",
           "gtin": "07290106576513",
           "name_he": "חומוס מסעדה 400 גרם",
-          "manufacturer": "סלטי צבר",
+          "manufacturer": "צבר",
           "price": 12.5,
           "unit_price": 3.13,
           "unit_of_measure": "100 גרם",
@@ -51986,23 +51955,6 @@
         }
       ],
       "rami-levy": [
-        {
-          "item_code": "7290018338629",
-          "gtin": "07290018338629",
-          "name_he": "פנה חומוס 250ג",
-          "manufacturer": "לא ידוע",
-          "price": 16.7,
-          "unit_price": 0.167,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 250.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
-        },
         {
           "item_code": "7290011473280",
           "gtin": "07290011473280",
@@ -52173,6 +52125,21 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 200.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290110579319",
+          "gtin": "07290110579319",
+          "name_he": "חומוס גלילי 400 גר",
+          "manufacturer": "שטראוס",
+          "price": 11.7,
+          "unit_price": 0.117,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 400.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -53458,6 +53425,25 @@
           "flags": []
         },
         {
+          "item_code": "7290004460167",
+          "gtin": "07290004460167",
+          "name_he": "מחית אבוקדו קפוא 10/1",
+          "manufacturer": "לא ידוע",
+          "price": 31.8,
+          "unit_price": 31.8,
+          "unit_of_measure": "1 יח'",
+          "is_weighted": false,
+          "pack_qty": 1.0,
+          "pack_unit": "units",
+          "pack_basis": "feed quantity",
+          "variant_flags": [
+            "frozen"
+          ],
+          "flags": [
+            "count not stated, assumed 1 unit(s)"
+          ]
+        },
+        {
           "item_code": "7290018769324",
           "gtin": "07290018769324",
           "name_he": "שמן אבוקדו בכבישה קרה 500 מל",
@@ -54415,8 +54401,8 @@
           "gtin": null,
           "name_he": "פילה לברק טרי",
           "manufacturer": "לא ידוע",
-          "price": 142.6,
-          "unit_price": 142.6,
+          "price": 117.3,
+          "unit_price": 117.3,
           "unit_of_measure": "1 ק\"ג",
           "is_weighted": true,
           "pack_qty": 1000.0,
@@ -54490,8 +54476,8 @@
           "gtin": null,
           "name_he": "פילה לברק טרי פרמיום ארוז",
           "manufacturer": "לא ידוע",
-          "price": 142.6,
-          "unit_price": 142.6,
+          "price": 117.3,
+          "unit_price": 117.3,
           "unit_of_measure": "1 ק\"ג",
           "is_weighted": true,
           "pack_qty": 1000.0,
@@ -55252,23 +55238,6 @@
           "flags": []
         },
         {
-          "item_code": "7290020297082",
-          "gtin": "07290020297082",
-          "name_he": "בייגלה חלבון עם צדר 50",
-          "manufacturer": null,
-          "price": 12.9,
-          "unit_price": 12.9,
-          "unit_of_measure": "יחידות",
-          "is_weighted": false,
-          "pack_qty": 1.0,
-          "pack_unit": "units",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "count not stated, assumed 1 unit(s)"
-          ]
-        },
-        {
           "item_code": "7296073746638",
           "gtin": "07296073746638",
           "name_he": "בייגלה שטוח שומשום 300",
@@ -55312,6 +55281,23 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 60.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
+          "item_code": "7290000461656",
+          "gtin": "07290000461656",
+          "name_he": "מקלות בייגלה עם מלח 400",
+          "manufacturer": "בייגל את בייגל מזון",
+          "price": 11.9,
+          "unit_price": 2.98,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 400.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity",
           "variant_flags": [],
@@ -56926,8 +56912,8 @@
           "gtin": "07290000318950",
           "name_he": "פסטרמה הודו מהמעשנת יחיעם 180 גר",
           "manufacturer": "מעדני  יחיעם",
-          "price": 28.4,
-          "unit_price": 0.284,
+          "price": 27.9,
+          "unit_price": 0.279,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 180.0,
@@ -57432,21 +57418,6 @@
           "flags": []
         },
         {
-          "item_code": "7290010945481",
-          "gtin": "07290010945481",
-          "name_he": "גבינה לבנה 5% טרה 500 גרם",
-          "manufacturer": "טרה",
-          "price": 11.7,
-          "unit_price": 0.117,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 500.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
           "item_code": "7290102393268",
           "gtin": "07290102393268",
           "name_he": "גבינה לבנה 5% טרה 750 גרם",
@@ -57593,6 +57564,21 @@
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 750.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
+          "item_code": "7290004129545",
+          "gtin": "07290004129545",
+          "name_he": "גבינה לבנה תנובה 3% שומן 250 גרם",
+          "manufacturer": "תנובה",
+          "price": 6.0,
+          "unit_price": 0.06,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 250.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -57945,6 +57931,21 @@
           "flags": []
         },
         {
+          "item_code": "7290114606608",
+          "gtin": "07290114606608",
+          "name_he": "רוטב סויה דל נתרן 620מ\"ל",
+          "manufacturer": "מסוונג רונרוג בעמ",
+          "price": 17.9,
+          "unit_price": 2.89,
+          "unit_of_measure": "100 מיליליטר",
+          "is_weighted": false,
+          "pack_qty": 620.0,
+          "pack_unit": "ml",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
           "item_code": "7290116534244",
           "gtin": "07290116534244",
           "name_he": "רוטב סויה סגנון סיני300מ",
@@ -57954,23 +57955,6 @@
           "unit_of_measure": "100 מיליליטר",
           "is_weighted": false,
           "pack_qty": 300.0,
-          "pack_unit": "ml",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
-        },
-        {
-          "item_code": "7290118425526",
-          "gtin": "07290118425526",
-          "name_he": "רוטב סויה קלאסי אסם 290מ",
-          "manufacturer": "אסם תעשיות מזון בע\"מ",
-          "price": 17.5,
-          "unit_price": 6.03,
-          "unit_of_measure": "100 מיליליטר",
-          "is_weighted": false,
-          "pack_qty": 290.0,
           "pack_unit": "ml",
           "pack_basis": "feed quantity",
           "variant_flags": [],
@@ -58222,23 +58206,6 @@
           ]
         },
         {
-          "item_code": "8858271005451",
-          "gtin": "08858271005451",
-          "name_he": "רוטב סויה פורמולה 1",
-          "manufacturer": "yan wal yun corpara on group",
-          "price": 12.9,
-          "unit_price": 5.16,
-          "unit_of_measure": "100 מיליליטר",
-          "is_weighted": false,
-          "pack_qty": 250.0,
-          "pack_unit": "ml",
-          "pack_basis": "feed quantity",
-          "variant_flags": [],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
-        },
-        {
           "item_code": "4903001904192",
           "gtin": "04903001904192",
           "name_he": "רוטב סויה יאמאסה 500",
@@ -58367,6 +58334,23 @@
           "unit_of_measure": "100 מיליליטר",
           "is_weighted": false,
           "pack_qty": 300.0,
+          "pack_unit": "ml",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
+          "item_code": "78895153453",
+          "gtin": null,
+          "name_he": "רוטב סויה בהיר 250 מ",
+          "manufacturer": "לי קום קי פוד קו",
+          "price": 12.9,
+          "unit_price": 5.16,
+          "unit_of_measure": "100 מיליליטר",
+          "is_weighted": false,
+          "pack_qty": 250.0,
           "pack_unit": "ml",
           "pack_basis": "feed quantity",
           "variant_flags": [],
@@ -58722,6 +58706,21 @@
           ]
         },
         {
+          "item_code": "7290000969367",
+          "gtin": "07290000969367",
+          "name_he": "עגבניות שרי לובלו",
+          "manufacturer": "לא ידוע",
+          "price": 29.9,
+          "unit_price": 29.9,
+          "unit_of_measure": "1 ק\"ג",
+          "is_weighted": true,
+          "pack_qty": 1000.0,
+          "pack_unit": "g",
+          "pack_basis": "sold loose by weight, price per kg",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
           "item_code": "7290013128867",
           "gtin": "07290013128867",
           "name_he": "עגבניות שרי לובלו",
@@ -58865,21 +58864,6 @@
           "flags": [
             "count not stated, assumed 1 unit(s)"
           ]
-        },
-        {
-          "item_code": "315",
-          "gtin": null,
-          "name_he": "שרי מנומר",
-          "manufacturer": "ביכורי השקמה",
-          "price": 30.6,
-          "unit_price": 30.6,
-          "unit_of_measure": "1 ק\"ג",
-          "is_weighted": true,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "sold loose by weight, price per kg",
-          "variant_flags": [],
-          "flags": []
         }
       ],
       "yochananof": [
@@ -59498,6 +59482,23 @@
           ]
         },
         {
+          "item_code": "7290020505729",
+          "gtin": "07290020505729",
+          "name_he": "גרעיני תירס להכנת פו",
+          "manufacturer": "Unknown",
+          "price": 4.5,
+          "unit_price": 0.9,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 500.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity",
+          "variant_flags": [],
+          "flags": [
+            "size from feed quantity only (not in name)"
+          ]
+        },
+        {
           "item_code": "7290100704882",
           "gtin": "07290100704882",
           "name_he": "גרעיני תירס מתוק פחי",
@@ -59647,25 +59648,6 @@
           "pack_basis": "sold loose by weight, price per kg",
           "variant_flags": [],
           "flags": []
-        },
-        {
-          "item_code": "7290000104690",
-          "gtin": "07290000104690",
-          "name_he": "תירס קפוא",
-          "manufacturer": "סנפרוסט בע\"מ",
-          "price": 19.9,
-          "unit_price": 2.49,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 800.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity",
-          "variant_flags": [
-            "frozen"
-          ],
-          "flags": [
-            "size from feed quantity only (not in name)"
-          ]
         }
       ]
     },
@@ -60033,15 +60015,15 @@
           "flags": []
         },
         {
-          "item_code": "7290010004348",
-          "gtin": "07290010004348",
-          "name_he": "פפריקה מתוקה 220 גרם תבליני מימון",
-          "manufacturer": "שיוך למחסן 17",
-          "price": 19.7,
-          "unit_price": 0.197,
+          "item_code": "7290002862352",
+          "gtin": "07290002862352",
+          "name_he": "פפריקה מתוקה בשמן 400 גרם בשקית",
+          "manufacturer": "הררית",
+          "price": 15.9,
+          "unit_price": 0.159,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
-          "pack_qty": 220.0,
+          "pack_qty": 400.0,
           "pack_unit": "g",
           "pack_basis": "feed quantity and product name agree",
           "variant_flags": [],
@@ -60734,8 +60716,8 @@
           "gtin": "07290015172028",
           "name_he": "*מבצע* גיוזה בטטה די",
           "manufacturer": "דים סאם להבות חביבה",
-          "price": 32.2,
-          "unit_price": 11.93,
+          "price": 25.9,
+          "unit_price": 9.59,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 270.0,
@@ -60818,6 +60800,21 @@
     },
     "Tilapia Fillets": {
       "shufersal": [
+        {
+          "item_code": "7290008255127",
+          "gtin": "07290008255127",
+          "name_he": "אמנון נקי טרי",
+          "manufacturer": "דגת הארץ",
+          "price": 39.9,
+          "unit_price": 39.9,
+          "unit_of_measure": "1קילוגרם",
+          "is_weighted": true,
+          "pack_qty": 1000.0,
+          "pack_unit": "g",
+          "pack_basis": "sold loose by weight, price per kg",
+          "variant_flags": [],
+          "flags": []
+        },
         {
           "item_code": "7290008255332",
           "gtin": "07290008255332",
@@ -60984,21 +60981,6 @@
           "pack_basis": "sold loose by weight, price per kg",
           "variant_flags": [],
           "flags": []
-        },
-        {
-          "item_code": "7290001126820",
-          "gtin": "07290001126820",
-          "name_he": "אמנון שלם נקי טרי קג",
-          "manufacturer": "נטו מלינדה סחר-דגים טריי",
-          "price": 39.9,
-          "unit_price": 39.9,
-          "unit_of_measure": "1קילוגרם",
-          "is_weighted": true,
-          "pack_qty": 1000.0,
-          "pack_unit": "g",
-          "pack_basis": "sold loose by weight, price per kg",
-          "variant_flags": [],
-          "flags": []
         }
       ],
       "rami-levy": [
@@ -61155,24 +61137,26 @@
           "flags": []
         },
         {
-          "item_code": "1811344",
+          "item_code": "1254103",
           "gtin": null,
-          "name_he": "פילה אמנון 7-9 עם עור 100% דג רמי לוי",
+          "name_he": "פילה אמנון 7-9 קפוא פס עור בד\"ץ",
           "manufacturer": "לא ידוע",
-          "price": 24.9,
-          "unit_price": 24.9,
+          "price": 13.7,
+          "unit_price": 13.7,
           "unit_of_measure": "1 ק\"ג",
           "is_weighted": true,
           "pack_qty": 1000.0,
           "pack_unit": "g",
           "pack_basis": "sold loose by weight, price per kg",
-          "variant_flags": [],
+          "variant_flags": [
+            "frozen"
+          ],
           "flags": []
         },
         {
-          "item_code": "1811399",
+          "item_code": "1811344",
           "gtin": null,
-          "name_he": "פילה אמנון 5-7 עם עור 100% דג רמי לוי",
+          "name_he": "פילה אמנון 7-9 עם עור 100% דג רמי לוי",
           "manufacturer": "לא ידוע",
           "price": 24.9,
           "unit_price": 24.9,
@@ -62200,8 +62184,8 @@
           "gtin": "07290011473006",
           "name_he": "קינואה אורג500ג",
           "manufacturer": "תבואות",
-          "price": 20.6,
-          "unit_price": 0.206,
+          "price": 17.7,
+          "unit_price": 0.177,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 500.0,
@@ -62292,6 +62276,21 @@
           "flags": []
         },
         {
+          "item_code": "7297488098213",
+          "gtin": "07297488098213",
+          "name_he": "קמח קינואה 500 גרם דגש",
+          "manufacturer": "דגש",
+          "price": 29.4,
+          "unit_price": 0.294,
+          "unit_of_measure": "100 גרם",
+          "is_weighted": false,
+          "pack_qty": 500.0,
+          "pack_unit": "g",
+          "pack_basis": "feed quantity and product name agree",
+          "variant_flags": [],
+          "flags": []
+        },
+        {
           "item_code": "7290100701300",
           "gtin": "07290100701300",
           "name_he": "קינואה אדומה 500גר סוגת",
@@ -62343,21 +62342,6 @@
           "manufacturer": "מיה",
           "price": 15.4,
           "unit_price": 0.154,
-          "unit_of_measure": "100 גרם",
-          "is_weighted": false,
-          "pack_qty": 400.0,
-          "pack_unit": "g",
-          "pack_basis": "feed quantity and product name agree",
-          "variant_flags": [],
-          "flags": []
-        },
-        {
-          "item_code": "7290015347464",
-          "gtin": "07290015347464",
-          "name_he": "מיה קינואה מעורבת 400 גרם",
-          "manufacturer": "מיה",
-          "price": 15.9,
-          "unit_price": 0.159,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 400.0,
@@ -63314,8 +63298,8 @@
           "gtin": "07290000211312",
           "name_he": "סוגת אורז מלא 1 ק\"ג",
           "manufacturer": "סוגת",
-          "price": 10.0,
-          "unit_price": 10.0,
+          "price": 9.9,
+          "unit_price": 9.9,
           "unit_of_measure": "1 ק\"ג",
           "is_weighted": false,
           "pack_qty": 1000.0,
@@ -63986,8 +63970,8 @@
           "gtin": "07290019644378",
           "name_he": "גרנולה מוזלי ללס 850 גרם",
           "manufacturer": "כרמית",
-          "price": 22.6,
-          "unit_price": 0.226,
+          "price": 21.6,
+          "unit_price": 0.216,
           "unit_of_measure": "100 גרם",
           "is_weighted": false,
           "pack_qty": 850.0,
@@ -65243,8 +65227,8 @@
           "gtin": "07290010051335",
           "name_he": "בצל ירוק א.אדמה",
           "manufacturer": "אדמה",
-          "price": 4.5,
-          "unit_price": 4.5,
+          "price": 6.8,
+          "unit_price": 6.8,
           "unit_of_measure": "1 יח'",
           "is_weighted": false,
           "pack_qty": 1.0,
@@ -65275,8 +65259,8 @@
           "gtin": "07290122182040",
           "name_he": "בצל ירוק רמי לוי",
           "manufacturer": "לא ידוע",
-          "price": 4.5,
-          "unit_price": 4.5,
+          "price": 4.8,
+          "unit_price": 4.8,
           "unit_of_measure": "1 יח'",
           "is_weighted": false,
           "pack_qty": 1.0,
@@ -65602,7 +65586,7 @@
           "item_code": "7290115202434",
           "gtin": "07290115202434",
           "name_he": "חומוס עם זעתר 375ג צבר",
-          "manufacturer": "סלטי צבר",
+          "manufacturer": "צבר",
           "price": 13.9,
           "unit_price": 3.71,
           "unit_of_measure": "100 גרם",
