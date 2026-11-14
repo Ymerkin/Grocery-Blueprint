@@ -9,7 +9,7 @@
     "super-bareket::065",
     "shufersal::645"
   ],
-  "checked_at": "2026-11-14T16:51:23.314265+00:00",
+  "checked_at": "2026-11-14T17:34:27.898434+00:00",
   "stores": {
     "shufersal::756": {
       "key": "shufersal::756",
@@ -14881,14 +14881,14 @@
       "name": "Carrefour Israel",
       "nameHe": "קרפור",
       "status": "unavailable",
-      "reason": "Live discovery failed; no verified directory",
+      "reason": "Command '['/opt/hostedtoolcache/Python/3.12.16/x64/bin/python', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/scripts/sync_stores.py', '--directory-worker', 'carrefour', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/data/directories/carrefour.json']' timed out after 75 seconds",
       "source": "https://prices.carrefour.co.il"
     },
     "hatzi-hinam": {
       "name": "Hatzi Hinam",
       "nameHe": "חצי חינם",
       "status": "unavailable",
-      "reason": "Live discovery failed; no verified directory",
+      "reason": "(\n           ^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/israeli_prices/core/http.py\", line 38, in get\n    return self._request(\"GET\", url, params=params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/israeli_prices/core/http.py\", line 55, in _request\n    raise PortalError(\nisraeli_prices.exceptions.PortalError: GET https://shop.hazi-hinam.co.il/Prices -> HTTP 403\n",
       "source": "https://shop.hazi-hinam.co.il/Prices"
     },
     "rami-levy": {
@@ -15009,21 +15009,21 @@
       "name": "Victory",
       "nameHe": "ויקטורי",
       "status": "unavailable",
-      "reason": "Live discovery failed; no verified directory",
+      "reason": "Command '['/opt/hostedtoolcache/Python/3.12.16/x64/bin/python', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/scripts/sync_stores.py', '--directory-worker', 'victory', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/data/directories/victory.json']' timed out after 75 seconds",
       "source": "https://laibcatalog.co.il/victory/index.html"
     },
     "mahsanei-hashuk": {
       "name": "Mahsanei HaShuk",
       "nameHe": "מחסני השוק",
       "status": "unavailable",
-      "reason": "Live discovery failed; no verified directory",
+      "reason": "Command '['/opt/hostedtoolcache/Python/3.12.16/x64/bin/python', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/scripts/sync_stores.py', '--directory-worker', 'mahsanei-hashuk', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/data/directories/mahsanei-hashuk.json']' timed out after 75 seconds",
       "source": "https://laibcatalog.co.il/mshuk/index.html"
     },
     "het-cohen": {
       "name": "Het Cohen",
       "nameHe": "ח. כהן",
       "status": "unavailable",
-      "reason": "Live discovery failed; no verified directory",
+      "reason": "Command '['/opt/hostedtoolcache/Python/3.12.16/x64/bin/python', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/scripts/sync_stores.py', '--directory-worker', 'het-cohen', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/data/directories/het-cohen.json']' timed out after 75 seconds",
       "source": "https://laibcatalog.co.il/hcohen/index.html"
     }
   }
