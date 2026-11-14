@@ -1,0 +1,23 @@
+{
+  "refresh_stores": [
+    "shufersal::413",
+    "rami-levy::039",
+    "rami-levy::712",
+    "fresh-market::047",
+    "super-bareket::009",
+    "super-bareket::065",
+    "shufersal::645"
+  ],
+  "workers": 4,
+  "store_timeout_seconds": 75,
+  "note": "User requested Givat Shmuel branches. All unambiguous city-681 branches from connected supermarket directories, including Be pharmacy separately labeled; plus both established online stores.",
+  "default_compare_stores": [
+    "shufersal::413",
+    "rami-levy::039",
+    "rami-levy::712",
+    "fresh-market::047",
+    "super-bareket::009",
+    "super-bareket::065",
+    "shufersal::645"
+  ]
+}

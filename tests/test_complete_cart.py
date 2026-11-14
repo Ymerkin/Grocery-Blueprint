@@ -11,7 +11,7 @@ def check(name, ok, info=""):
     if not ok: fails.append(name)
 d = json.load(open(os.path.join(ROOT, "prices.json")))
 for c in d["metadata"]["chains"].values(): c["published_at"] = (datetime.now(timezone.utc) - timedelta(hours=3)).isoformat()
-tmp = tempfile.mkdtemp(); shutil.copy(os.path.join(ROOT, "index.html"), tmp); json.dump(d, open(os.path.join(tmp, "prices.json"), "w"))
+tmp = tempfile.mkdtemp(); shutil.copy(os.path.join(ROOT, "index.html"), tmp); shutil.copy(os.path.join(ROOT, "stores.json"), tmp); json.dump(d, open(os.path.join(tmp, "prices.json"), "w"))
 class H(http.server.SimpleHTTPRequestHandler):
     def __init__(s, *a, **k): super().__init__(*a, directory=tmp, **k)
     def log_message(s, *a): pass
@@ -83,13 +83,13 @@ with sync_playwright() as p:
     # 11 stale feeds, one fresh chain, zero overlap, all missing
     sc = pg.evaluate("""(() => { const out = {}; const ing = state.livePrices.ingredients; const save = {fresh: {...state.chainFresh}, priced: {...state.chainPriced}, pf: state.isPricesFresh};
         // a) only Rami fresh
-        PRICE_CHAINS.forEach(c => { state.chainFresh[c] = (c === 'rami-levy'); }); out.oneFresh = ['shufersal','rami-levy','carrefour'].map(ck => { const x = (%s)(ck); const t = x.t; return [ck, x.ok, t.actualCount, t.estimatedChainsCount, t.estimatedBaselineCount]; });
+        PRICE_CHAINS.forEach(c => { state.chainFresh[c] = (c === normChainKey('rami-levy')); }); out.oneFresh = ['shufersal','rami-levy','carrefour'].map(ck => { const x = (%s)(ck); const t = x.t; return [ck, x.ok, t.actualCount, t.estimatedChainsCount, t.estimatedBaselineCount]; });
         // b) all stale
         PRICE_CHAINS.forEach(c => { state.chainFresh[c] = false; }); state.isPricesFresh = false; out.allStale = CH_.map(ck => { const x = (%s)(ck); return [ck, x.ok, x.t.actualCount, x.t.estimatedChainsCount, x.t.estimatedBaselineCount, x.t.totalItemsToBuy, x.t.totalCart]; });
         Object.assign(state.chainFresh, save.fresh); state.isPricesFresh = save.pf;
         // c) zero overlap: Rami prices only even ingredients, Shufersal only odd ones
-        const keys = Object.keys(ing); const backup = {}; keys.forEach((k, i) => { backup[k] = {...ing[k]}; if (i %% 2 === 0) delete ing[k]['shufersal']; else delete ing[k]['rami-levy']; });
-        PRICE_CHAINS.forEach(c => { state.chainFresh[c] = (c === 'rami-levy' || c === 'shufersal'); }); out.disjoint = ['shufersal','rami-levy','carrefour'].map(ck => { const x = (%s)(ck); return [ck, x.ok, x.t.actualCount, x.t.estimatedChainsCount, x.t.estimatedBaselineCount]; });
+        const keys = Object.keys(ing); const backup = {}; keys.forEach((k, i) => { backup[k] = {...ing[k]}; if (i %% 2 === 0) delete ing[k][normChainKey('shufersal')]; else delete ing[k][normChainKey('rami-levy')]; });
+        PRICE_CHAINS.forEach(c => { state.chainFresh[c] = (c === normChainKey('rami-levy') || c === normChainKey('shufersal')); }); out.disjoint = ['shufersal','rami-levy','carrefour'].map(ck => { const x = (%s)(ck); return [ck, x.ok, x.t.actualCount, x.t.estimatedChainsCount, x.t.estimatedBaselineCount]; });
         keys.forEach(k => { ing[k] = backup[k]; }); Object.assign(state.chainFresh, save.fresh);
         // d) no price data at all
         const lp = state.livePrices; state.livePrices = null; state.isPricesFresh = false; PRICE_CHAINS.forEach(c => { state.chainFresh[c] = false; }); out.none = CH_.map(ck => { const x = (%s)(ck); return [ck, x.ok, x.t.actualCount, x.t.estimatedBaselineCount, x.t.totalItemsToBuy]; });
@@ -179,7 +179,7 @@ with sync_playwright() as p:
         return {est: document.querySelectorAll('[data-testid=estimated-price]').length, act: document.querySelectorAll('[data-testid=actual-price]').length, t: [t.estimatedCount, t.actualCount + t.userEnteredCount],
                 cards: document.querySelectorAll('[data-testid=card-breakdown]').length, head: txt.includes('₪' + t.totalCart.toFixed(2)), brk: txt.includes('actual ₪' + t.actualTotal.toFixed(2)) && txt.includes('estimated ₪' + t.estimatedTotal.toFixed(2)),
                 old: /Matched items only|not in total/.test(document.body.innerText)}; })()""")
-    check("UI: estimated rows = estimated count, actual rows = actual count, six card breakdowns, headline and split shown, old 'matched only' wording gone", ui["est"] == ui["t"][0] and ui["act"] == ui["t"][1] and ui["cards"] == 6 and ui["head"] and ui["brk"] and not ui["old"], ui)
+    check("UI: estimated rows = estimated count, actual rows = actual count, configured default card breakdowns, headline and split shown, old 'matched only' wording gone", ui["est"] == ui["t"][0] and ui["act"] == ui["t"][1] and ui["cards"] == 7 and ui["head"] and ui["brk"] and not ui["old"], ui)
     pg.screenshot(path="/tmp/shot_complete_cart.png", full_page=False)
     check("no page errors", not errs, errs)
     b.close()

@@ -19,7 +19,7 @@ What it does
 Exit codes: 0 ok, 1 download/provenance failure, 2 pin validation failure, 3 bad inputs.
 On any failure the previous prices.json is left untouched.
 """
-import argparse, hashlib, json, os, re, sys, tempfile, time
+import argparse, hashlib, json, os, re, sys, tempfile, time, math
 from datetime import datetime, timezone
 from decimal import Decimal
 
@@ -217,7 +217,8 @@ def dnum(v):
     if v is None:
         return None
     try:
-        return float(Decimal(str(v)))
+        number=float(Decimal(str(v)))
+        return number if math.isfinite(number) else None
     except Exception:
         return None
 
@@ -257,6 +258,12 @@ def fetch_chain(chain, store_id, retries=3):
                 raise FeedError("parsed file for %s has no items" % ref.name)
             if str(getattr(pf, "store_id", "")).lstrip("0") != store_id.lstrip("0"):
                 raise FeedError("parsed store_id %r != requested %s (%s)" % (getattr(pf, "store_id", None), store_id, ref.name))
+            from israeli_prices import list_chains
+            expected = next((c.chain_id for c in list_chains() if c.slug == chain), None)
+            if expected and getattr(pf, "chain_id", None) and str(pf.chain_id) != str(expected):
+                raise FeedError("parsed chain_id does not match requested retailer")
+            if ref.chain != chain:
+                raise FeedError("FileRef retailer does not match requested retailer")
             raw = data if isinstance(data, (bytes, bytearray)) else str(data).encode()
             return {"ref": ref, "items": pf.items, "sha256": hashlib.sha256(raw).hexdigest(),
                     "retrieved_at": datetime.now(timezone.utc).isoformat()}
@@ -464,7 +471,7 @@ def build_prices(feeds, pins):
         ref = f["ref"]
         chains_meta[chain] = {
             "store_id": CHAINS[chain]["store_id"], "store_name": CHAINS[chain]["store_name"],
-            "source_file": ref.name, "published_at": iso_with_tz(ref.published_at),
+            "source_file": ref.name, "source_url": ref.url, "published_at": iso_with_tz(ref.published_at),
             "published_at_assumed_tz": FEED_TZ, "retrieved_at": f["retrieved_at"],
             "sha256": f["sha256"], "item_count": len(f["items"]), "priced_count": 0}
         lk = {}

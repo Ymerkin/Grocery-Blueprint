@@ -1,6 +1,6 @@
 ()=>{
  let seed=20261104; const rnd=()=>{seed=(seed*1664525+1013904223)%4294967296;return seed/4294967296;}; Math.random=rnd;
- const CH=['shufersal','rami-levy','osher-ad','yochananof','victory','carrefour'], REAL=CH.slice(0,5);
+ const REAL=PRICE_CHAINS.slice(), CH=REAL.concat(['carrefour']);
  const pick=(a)=>a[Math.floor(rnd()*a.length)];
  const lunches=RECIPES.filter(r=>r.mealType==='lunch'), bf=RECIPES.filter(r=>r.mealType==='breakfast');
  const fails=[]; let checks=0; const F=(w,m)=>{ if(fails.length<60) fails.push(w+': '+m); };

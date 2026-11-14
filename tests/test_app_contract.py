@@ -71,7 +71,7 @@ with sync_playwright() as p:
         check(name + ": synthetic mixed unit families stay separate (g line and units line)", len(mix) == 2 and {m[1] for m in mix} == {"g", "units"} and [m[0] for m in mix if m[1] == "g"][0] > 0, mix)
         if name == "fresh":
             check("fresh: both chains published", st["rami"] and st["shuf"])
-            check("fresh: feed badge says published", "Published online prices" in st["feed"])
+            check("fresh: feed badge says published", "Published store prices" in st["feed"])
             nlines = pg.evaluate("Object.values(getAggregatedGroceryList()).filter(i => !i.isPantry).length")
             check("fresh: coverage Rami and Shufersal 3 actual + estimates (denominator derived from the plan: non-pantry aggregated lines) (zucchini excluded: incompatible unit)", ("Rami Levy Online (039): 3 actual + %d est. / %d" % (nlines-3, nlines)) in st["cov"] and ("Shufersal Online (413): 3 actual + %d est. / %d" % (nlines-3, nlines)) in st["cov"], st["cov"])
             ex = pg.evaluate("(()=>{const l=getAggregatedGroceryList();const z=Object.values(l).find(i=>i.name==='Fresh Zucchini');const r=getIngredientPricing(z.name,z.qty,z.unit,1.0,'rami-levy');const c=getIngredientPricing('Fresh Chicken Breast',2500,'g',1.0,'rami-levy');return {z:r,c:c.purchaseCost,cm:c.matchedData&&c.matchedData.metadataSource}})()")

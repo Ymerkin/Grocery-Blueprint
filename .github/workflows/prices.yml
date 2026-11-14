@@ -3,8 +3,8 @@ name: Sync supermarket prices and deploy Pages
 on:
   workflow_dispatch:
   schedule:
-    # Nightly at 03:00 UTC (as README.md describes)
-    - cron: '0 3 * * *'
+    # Four refresh attempts daily, off the busy top of the hour (UTC).
+    - cron: '17 0,6,12,18 * * *'
 
 # Least necessary permissions are set per job below.
 permissions:
@@ -37,14 +37,20 @@ jobs:
       - name: Run script contract tests (synthetic fixtures, no network)
         run: python tests/test_script_contract.py
 
-      - name: Download both price feeds and rebuild prices.json
-        run: python scripts/fetch_prices.py
+      - name: Test exact-barcode and store-isolation rules
+        run: python tests/test_store_sync.py
+
+      - name: Refresh the branch directory
+        run: python scripts/sync_stores.py --catalog
+
+      - name: Refresh configured branch prices and promotions
+        run: python scripts/sync_stores.py
 
       - name: Commit refreshed price data (if anything changed)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add prices.json mapping_candidates.json
+          git add prices.json stores.json data/directories
           if git diff --cached --quiet; then
             echo "No price changes to commit."
           else
@@ -79,7 +85,7 @@ jobs:
       - name: Stage the public site (app shell + published prices only)
         run: |
           mkdir -p _site
-          cp index.html prices.json _site/
+          cp index.html prices.json stores.json _site/
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4

@@ -1,7 +1,19 @@
 """Checks for pack_override and conversions (v10). Run: python3 tests/test_v10_overrides.py"""
 import json, pathlib, sys, importlib.util
 root = pathlib.Path(__file__).resolve().parent.parent
-M = json.load(open(root/"mappings.json")); P = json.load(open(root/"prices.json"))
+M = json.load(open(root/"mappings.json")); P = json.load(open(root/"data"/"matching_reference.json"))
+# Historical per-chain pin assertions inspect the default branches only.
+# Store-wide GTIN and isolation tests are in test_store_sync.py / test_stores_ui.py.
+if str(P['metadata']['version'])=='3':
+    import copy
+    P=copy.deepcopy(P)
+    defaults={'shufersal':'413','rami-levy':'039','osher-ad':'032','yochananof':'035','victory':'2331'}
+    for e in P['ingredients'].values():
+        for key in list(e):
+            if key=='ingredient_name':continue
+            chain,sid=key.split('::')
+            item=e.pop(key)
+            if defaults.get(chain)==sid:e[chain]=item
 fails = []
 def check(name, ok):
     print(("PASS " if ok else "FAIL ")+name)

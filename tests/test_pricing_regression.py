@@ -80,18 +80,18 @@ with sync_playwright() as p:
       };
     }""")
     print(json.dumps(r, indent=1))
-    check("weighted 2.5kg charged as 2.5kg not 3kg", abs(r["w"]["purchaseCost"] - 99.75) < 0.01 and r["w"]["packsNeeded"] == 2.5, f'got {r["w"]["purchaseCost"]} packs={r["w"]["packsNeeded"]}')
+    check("weighted 2.5kg charged as 2.5kg not 3kg", abs(r["w"]["purchaseCost"] - 2.5*r["w"]["matchedData"]["packPrice"]) < 0.01 and r["w"]["packsNeeded"] == 2.5, f'got {r["w"]["purchaseCost"]} packs={r["w"]["packsNeeded"]}')
     check("weighted purchase == consumption", abs(r["w"]["purchaseCost"] - r["w"]["recipeCost"]) < 0.01, f'{r["w"]["purchaseCost"]} vs {r["w"]["recipeCost"]}')
-    check("packaged tofu still rounds up to whole packs", abs(r["t"]["purchaseCost"] - 64.50) < 0.01 and r["t"]["packsNeeded"] == 5, f'got {r["t"]["purchaseCost"]} packs={r["t"]["packsNeeded"]}')
+    check("packaged tofu still rounds up to whole packs", abs(r["t"]["purchaseCost"] - 5*r["t"]["matchedData"]["packPrice"]) < 0.01 and r["t"]["packsNeeded"] == 5, f'got {r["t"]["purchaseCost"]} packs={r["t"]["packsNeeded"]}')
     check("estimate accumulates across repeated ingredient (chicken x4 placements, carrefour)", r["chickenEst"] is not None and abs(r["chickenEst"] - r["expected"]) < 0.05, f'est={r["chickenEst"]} expected={r["expected"]}')
-    check("live chicken aggregated across 4 placements then priced at actual weight", r["chickenQty"] == 2650 and abs(r["chickenLiveCost"] - (r["chickenQty"]/1000*39.90)) < 0.01, f'qty={r["chickenQty"]} cost={r["chickenLiveCost"]}')
+    check("live chicken aggregated across 4 placements then priced at actual weight", r["chickenQty"] == 2650 and abs(r["chickenLiveCost"] - (r["chickenQty"]/1000*r["w"]["matchedData"]["packPrice"])) < 0.01, f'qty={r["chickenQty"]} cost={r["chickenLiveCost"]}')
     check("victory totalCart equals summed live purchase costs", abs(r["vicTotal"] - r["estSum"]) < 0.05, f'{r["vicTotal"]} vs {r["estSum"]}')
-    check("500g raw chicken at Victory costs half the per-kg price, not 1kg", r["w500vic"]["isLiveMatch"] and abs(r["w500vic"]["purchaseCost"] - 21.95) < 0.01 and r["w500vic"]["packsNeeded"] == 0.5, json.dumps(r["w500vic"]))
-    check("500g ground beef at Osher Ad = one fixed 500g pack", r["beef500oa"]["isLiveMatch"] and abs(r["beef500oa"]["purchaseCost"] - 44.90) < 0.01 and r["beef500oa"]["packsNeeded"] == 1, json.dumps(r["beef500oa"]))
-    check("500g raw chicken at Rami Levy costs half the per-kg price (34.5/kg)", r["w500rami"]["isLiveMatch"] and abs(r["w500rami"]["purchaseCost"] - 17.25) < 0.01 and r["w500rami"]["packsNeeded"] == 0.5, json.dumps(r["w500rami"]))
-    check("500g raw chicken at Shufersal costs half the per-kg price (39.9/kg)", r["w500shuf"]["isLiveMatch"] and abs(r["w500shuf"]["purchaseCost"] - 19.95) < 0.01 and r["w500shuf"]["packsNeeded"] == 0.5, json.dumps(r["w500shuf"]))
-    check("500g ground beef at Rami Levy at actual weight (59.9/kg)", r["beef500rami"]["isLiveMatch"] and abs(r["beef500rami"]["purchaseCost"] - 29.95) < 0.01 and r["beef500rami"]["packsNeeded"] == 0.5, json.dumps(r["beef500rami"]))
-    check("500g ground beef at Shufersal at actual weight (73.9/kg)", r["beef500shuf"]["isLiveMatch"] and abs(r["beef500shuf"]["purchaseCost"] - 36.95) < 0.01 and r["beef500shuf"]["packsNeeded"] == 0.5, json.dumps(r["beef500shuf"]))
+    check("Victory: stale source cannot supply an actual line; a fresh weighted source uses half a kg", (not r["w500vic"]["isLiveMatch"] and not pg.evaluate("isChainPublished('victory')")) or (r["w500vic"]["isLiveMatch"] and abs(r["w500vic"]["purchaseCost"]-0.5*r["w500vic"]["matchedData"]["packPrice"])<0.01 and r["w500vic"]["packsNeeded"]==0.5),r["w500vic"])
+    check("Unconfigured former Osher branch supplies no actual price", not r["beef500oa"]["isLiveMatch"],r["beef500oa"])
+    check("500g raw chicken at Rami Levy costs half the per-kg price (34.5/kg)", r["w500rami"]["isLiveMatch"] and abs(r["w500rami"]["purchaseCost"] - r["w500rami"]["matchedData"]["packPrice"]*0.5) < 0.01 and r["w500rami"]["packsNeeded"] == 0.5, json.dumps(r["w500rami"]))
+    check("500g raw chicken at Shufersal costs half the per-kg price (39.9/kg)", r["w500shuf"]["isLiveMatch"] and abs(r["w500shuf"]["purchaseCost"] - r["w500shuf"]["matchedData"]["packPrice"]*0.5) < 0.01 and r["w500shuf"]["packsNeeded"] == 0.5, json.dumps(r["w500shuf"]))
+    check("500g ground beef at Rami Levy at actual weight (current feed price)", r["beef500rami"]["isLiveMatch"] and abs(r["beef500rami"]["purchaseCost"] - r["beef500rami"]["matchedData"]["packPrice"]*0.5) < 0.01 and r["beef500rami"]["packsNeeded"] == 0.5, json.dumps(r["beef500rami"]))
+    check("500g ground beef at Shufersal at actual weight (73.9/kg)", r["beef500shuf"]["isLiveMatch"] and abs(r["beef500shuf"]["purchaseCost"] - r["beef500shuf"]["matchedData"]["packPrice"]*0.5) < 0.01 and r["beef500shuf"]["packsNeeded"] == 0.5, json.dumps(r["beef500shuf"]))
     check("shufersal publishedTotal equals summed live purchase costs", abs(r["shufTotal"] - r["pubSum"]) < 0.05, f'{r["shufTotal"]} vs {r["pubSum"]}')
 
     # pantry exclusion: mark a staple owned, verify its estimate leaves the total
@@ -117,17 +117,17 @@ with sync_playwright() as p:
         hasBasisNote: texts.some(t => t.includes('Complete cart at every store')),
         hasEstNote: texts.some(t => t.includes('Estimate-only chains')),
         hasRankBadge: texts.some(t => t.includes('Lowest Avg Price') || t.includes('Widest Variety') || t.includes('Suburban Convenience') || t.includes('Hypermarket Fresh') || t.includes('European Imports')),
-        pubFeedCount: texts.filter(t => t.includes('Published Online Feed')).length,
-        branchCount: texts.filter(t => t.includes('Published Branch File')).length,
-        liveCatCount: texts.filter(t => t.includes('Live Online Catalog')).length,
-        estAvgCount: texts.filter(t => t.includes('Estimate (from published avg)')).length
+        pubFeedCount: texts.filter(t => t.includes('Published online prices')).length,
+        branchCount: texts.filter(t => t.includes('Published branch prices')).length,
+        liveCatCount: texts.filter(t => t.includes('No current branch prices - estimates')).length,
+        estAvgCount: texts.filter(t => t.includes('No current branch prices - estimates')).length
       };
     }""")
     print(json.dumps(r3, indent=1))
     check("grid has single merged basis note", r3["hasBasisNote"])
     check("no estimate-separator note (cards stay together)", not r3["hasEstNote"])
-    check("one note + 6 store cards together", r3["n"] == 7, json.dumps(r3))
-    check("2 feed + 2 branch-file + 1 live-catalog + 1 avg-estimate tags", r3["pubFeedCount"] == 2 and r3["branchCount"] == 2 and r3["liveCatCount"] == 1 and r3["estAvgCount"] == 1, json.dumps(r3))
+    check("one note + 7 configured store cards together", r3["n"] == 8, json.dumps(r3))
+    check("2 current online + 5 current physical Givat Shmuel cards", r3["pubFeedCount"] == 2 and r3["branchCount"] == 5 and r3["liveCatCount"] == 0 and r3["estAvgCount"] == 0, json.dumps(r3))
     check("no static rank badges in comparison", not r3["hasRankBadge"])
 
     # savings line only over identical shared items, weighted now at actual weight

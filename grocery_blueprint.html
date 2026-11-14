@@ -488,6 +488,20 @@
     <!-- ========================================== -->
     <section id="viewCart" class="hidden space-y-6">
       
+      <section id="branchPicker" class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-3">
+        <div class="flex flex-wrap items-baseline justify-between gap-2"><h3 class="text-base font-bold text-slate-900">Choose your stores</h3><span class="text-xs text-slate-500">Online + local branches</span></div>
+        <p class="text-xs text-slate-600">Compare your actual branches, not a chain average. Search in Hebrew or English by chain, branch or address. Only connected snapshots show actual prices. Adding a directory-only branch does not start its price connection.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <label class="text-xs text-slate-600">Chain<select id="branchChainFilter" class="block w-full border rounded-lg p-2 mt-1 bg-white text-base"><option value="">All chains</option></select></label>
+          <label class="text-xs text-slate-600">Store type<select id="branchKindFilter" class="block w-full border rounded-lg p-2 mt-1 bg-white text-base"><option value="">Online + local</option><option value="online">Online only</option><option value="physical">Local branches only</option></select></label>
+          <label class="text-xs text-slate-600">Branch / address<input id="branchSearch" placeholder="e.g. בוגרשוב" class="block w-full border rounded-lg p-2 mt-1 text-base"></label>
+        </div>
+        <p id="branchDirectoryStatus" class="text-xs text-slate-500" role="status">Loading branch directory...</p>
+        <div id="branchCompared" class="flex flex-wrap gap-2"></div>
+        <div id="branchResults" class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-80 overflow-y-auto"></div>
+        <details class="text-xs text-slate-500"><summary class="cursor-pointer">Connections and coverage</summary><div id="branchConnectionStatus" class="mt-2 space-y-1"></div></details>
+      </section>
+      <section id="storeDeals" class="bg-amber-50 rounded-2xl p-5 border border-amber-200 space-y-3"></section>
       <!-- Store Pricing Comparison Card -->
       <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
         <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-slate-100">
@@ -542,7 +556,7 @@
           <!-- Verified Online Stores -->
           <div class="flex items-center gap-2 text-xs flex-wrap">
             <span class="font-bold text-slate-700 flex items-center gap-1">
-              <i class="fa-solid fa-truck text-emerald-600"></i> Feed source stores (online branches):
+              <i class="fa-solid fa-truck text-emerald-600"></i> Original online source branches:
             </span>
             <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-100 text-emerald-800">
               Rami Levy Store 039 (מרלוג אינטרנט)
@@ -554,7 +568,7 @@
         </div>
 
         <!-- Supermarket Comparison Bar -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mt-3" id="supermarketPriceGrid">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-3" id="supermarketPriceGrid">
           <!-- Populated by JS -->
         </div>
       </div>
@@ -1420,8 +1434,8 @@ function escapeHtml(str) {
     "sourceDetails": "Published price-transparency file, branch 035 Tel Aviv Nachalat Yitzhak",
     "color": "teal",
     "onlineUrl": "https://yochananof.co.il/",
-    "searchUrl": "https://yochananof.co.il/search?q=",
-    "inStoreOnly": false,
+    "searchUrl": null,
+    "inStoreOnly": true,
     "description": "Hypermarket discount chain known for extensive fresh produce departments."
   },
   "carrefour": {
@@ -1434,8 +1448,8 @@ function escapeHtml(str) {
     "sourceDetails": "Estimated per item as the average of the published chains (portal geo-blocked; no feed connected)",
     "color": "sky",
     "onlineUrl": "https://www.carrefour.co.il/",
-    "searchUrl": "https://www.carrefour.co.il/search?q=",
-    "inStoreOnly": false,
+    "searchUrl": null,
+    "inStoreOnly": true,
     "description": "International retail brand offering private-label pantry staples."
   }
 };
@@ -1685,8 +1699,11 @@ let state = {
     }
 
     function normChainKey(k) {
+      if (SUPERMARKETS[k] && SUPERMARKETS[k].priceKey) return SUPERMARKETS[k].priceKey;
       const m = { 'rami_levy': 'rami-levy', 'rami-levy': 'rami-levy', 'osher_ad': 'osher-ad', 'osher-ad': 'osher-ad', 'yohananof': 'yochananof', 'yochananof': 'yochananof' };
-      return m[k] || k;
+      const resolved=m[k] || k;
+      const legacy=Object.keys(DEFAULT_BRANCH_KEYS).find(id=>id===k || ({rami_levy:'rami-levy',osher_ad:'osher-ad',yohananof:'yochananof'}[id] || id)===resolved);
+      return legacy && SUPERMARKETS[legacy]?.priceKey ? SUPERMARKETS[legacy].priceKey : resolved;
     }
 
     function getStoreMultiplier(storeKey = state.currentStore) {
@@ -2199,7 +2216,7 @@ let state = {
       if (feedStatus) {
         if (state.isPricesFresh && state.livePricesDate) {
           feedStatus.className = 'px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 max-w-full';
-          feedStatus.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-600 text-[10px]"></i> Published online prices (feed published: ${escapeHtml(state.livePricesDate)})` + (state.hasAssistantSelected ? '<span class="text-amber-700"> - some matches assistant-selected, unconfirmed</span>' : '');
+          feedStatus.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-600 text-[10px]"></i> Published store prices (feed published: ${escapeHtml(state.livePricesDate)})` + (state.hasAssistantSelected ? '<span class="text-amber-700"> - some matches assistant-selected, unconfirmed</span>' : '');
         } else {
           feedStatus.className = 'px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-amber-100 text-amber-800 border border-amber-200 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 max-w-full';
           feedStatus.innerHTML = '<i class="fa-solid fa-triangle-exclamation text-amber-600 text-[10px]"></i> Prices are estimates (' + escapeHtml(state.pricesRejectReason || 'no published feed prices') + ')';
@@ -2212,7 +2229,7 @@ let state = {
         if (state.isPricesFresh) {
           planCoverage.className = 'px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 max-w-full';
           planCoverage.innerHTML = '<i class="fa-solid fa-barcode text-emerald-600 text-[10px]"></i>' + PRICE_CHAINS.map(ck => {
-            const nm = { 'rami-levy': 'Rami Levy Online (039)', 'shufersal': 'Shufersal Online (413)', 'osher-ad': 'Osher Ad Kiryat Ono (032)', 'yochananof': 'Yohananof Tel Aviv (035)', 'victory': 'Victory Online' }[ck] || ck;
+            const nm = { 'rami-levy': 'Rami Levy Online (039)', 'shufersal': 'Shufersal Online (413)', 'osher-ad': 'Osher Ad Kiryat Ono (032)', 'yochananof': 'Yohananof Tel Aviv (035)', 'victory': 'Victory Online' }[ck] || dataStoreLabel(ck);
             const st = calculateCartTotals(ck);
             return `<span class="inline-flex items-baseline gap-1 min-w-0"><span class="font-bold">${nm}:</span> <span>${isChainPublished(ck) ? st.actualCount + ' actual + ' + st.estimatedCount + ' est. / ' + st.totalItemsToBuy : 'stale or missing feed: all estimates'}</span></span>`;
           }).join('');
@@ -2225,7 +2242,7 @@ let state = {
       const syncBadge = document.getElementById('liveSyncBadge');
       if (syncBadge) {
         syncBadge.innerHTML = (state.isPricesFresh && state.livePricesDate)
-          ? `<i class="fa-solid fa-scale-balanced text-emerald-600 text-[9px]"></i> Published Online Feeds (${escapeHtml(state.livePricesDate)})`
+          ? `<i class="fa-solid fa-scale-balanced text-emerald-600 text-[9px]"></i> Published Store Feeds (${escapeHtml(state.livePricesDate)})`
           : `<i class="fa-solid fa-chart-line text-[9px] text-slate-500"></i> Benchmark Index (Estimated)`;
       }
 
@@ -2233,7 +2250,7 @@ let state = {
       // deductions) that EVERY real-price chain prices. Shown on every card so totals are
       // compared like-for-like; the per-card big number stays the chain's own cart total.
       const activeList = getAggregatedGroceryList();
-      const REAL_CHAINS = PRICE_CHAINS.slice();
+      const REAL_CHAINS = [...new Set(comparedStoreConfigs().map(s=>normChainKey(s.id)))].filter(k=>PRICE_CHAINS.includes(k));
       const commonTotals = {};
       REAL_CHAINS.concat(['carrefour']).forEach(ck => { commonTotals[ck] = 0; });
       let commonCount = 0;
@@ -2262,7 +2279,7 @@ let state = {
         'carrefour': ['Estimate (from published avg)', 'bg-slate-200 text-slate-700']
       };
       const allCards = [];
-      Object.values(SUPERMARKETS).forEach(store => {
+      comparedStoreConfigs().forEach(store => {
         const stats = calculateCartTotals(store.id);
         const isSelected = store.id === state.currentStore;
         const normKey = normChainKey(store.id);
@@ -2274,14 +2291,17 @@ let state = {
         else if (normKey === 'yochananof') storeDisplayTitle = 'יוחננוף (סניף ת"א נחלת יצחק 035)';
         else if (normKey === 'victory') storeDisplayTitle = 'ויקטורי אונליין';
         else if (normKey === 'carrefour') storeDisplayTitle = 'קרפור ישראל';
-        const tag = TAGS[normKey] || ['Estimate', 'bg-slate-200 text-slate-700'];
+        const cm = state.livePrices && state.livePrices.metadata.chains[normKey];
+        if (cm && cm.store_name) storeDisplayTitle = `${store.directoryStore?.chain_name_he==='Be פארם' ? 'Be פארם / ' : ''}${cm.store_name} (${cm.store_id})`;
+        else if (store.directoryStore) storeDisplayTitle = `${store.nameHe} (${store.directoryStore.store_id})`;
+        const tag = String((state.livePrices || {}).metadata?.version) === '3' ? [isChainPublished(normKey) ? (store.inStoreOnly ? 'Published branch prices' : 'Published online prices') : 'No current branch prices - estimates', isChainPublished(normKey) ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'] : (TAGS[normKey] || ['Estimate', 'bg-slate-200 text-slate-700']);
         const pricingModelTag = tag[0];
         const tagColorClass = tag[1];
         let comparisonHtml = '';
         if (commonCount > 0 && commonTotals[normKey] !== undefined) {
           comparisonHtml = `
                 <div class="text-[10px] font-semibold mt-2 pt-1 border-t border-slate-200/60 text-slate-600">
-                  Same-basket (${commonCount} items priced by all chains): ₪${commonTotals[normKey].toFixed(2)}
+                  Same-basket (${commonCount} items priced by all compared stores): ₪${commonTotals[normKey].toFixed(2)}
                 </div>
               `;
         }
@@ -2292,8 +2312,8 @@ let state = {
         }`;
         card.innerHTML = `
           <div>
-            <div class="flex items-center justify-between text-xs font-bold text-slate-800">
-              <span class="truncate">${escapeHtml(storeDisplayTitle)}</span>
+            <div class="flex items-start justify-between gap-2 text-xs font-bold text-slate-800">
+              <span class="break-words min-w-0">${escapeHtml(storeDisplayTitle)}</span>
               ${isSelected ? '<i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i>' : ''}
             </div>
             <div class="mt-1 flex items-center justify-between gap-1">
@@ -2301,8 +2321,9 @@ let state = {
                 ${pricingModelTag}
               </span>
             </div>
+            <div class="text-[10px] text-slate-500 mt-1 break-words">${state.livePrices?.sync_status?.[normKey]?.status==='failed' ? 'Last refresh failed; keeping the dated snapshot. ' : ''}${escapeHtml(cm?.published_at ? 'Source: ' + new Date(cm.published_at).toLocaleString('en-GB') : 'No branch snapshot available')}</div>
             <div class="text-sm font-extrabold text-slate-900 mt-2">₪${stats.totalCart.toFixed(2)}</div>
-            <div data-testid="card-breakdown" class="text-[9px] text-slate-600 font-medium leading-snug">Complete cart, ${stats.totalItemsToBuy} items: <span class="text-emerald-700 font-semibold">actual ₪${stats.actualTotal.toFixed(2)} (${stats.actualCount})</span> + <span class="text-amber-700 font-semibold">estimated ₪${stats.estimatedTotal.toFixed(2)} (${stats.estimatedCount}: ${stats.estimatedChainsCount} from other chains, ${stats.estimatedBaselineCount} recipe baseline)</span>${stats.userEnteredCount ? ` + your own prices ₪${stats.userEnteredTotal.toFixed(2)} (${stats.userEnteredCount})` : ''}</div>
+            <div data-testid="card-breakdown" class="text-[11px] text-slate-600 font-medium leading-snug break-words">Complete cart, ${stats.totalItemsToBuy} items: <span class="text-emerald-700 font-semibold">actual ₪${stats.actualTotal.toFixed(2)} (${stats.actualCount})</span> + <span class="text-amber-700 font-semibold">estimated ₪${stats.estimatedTotal.toFixed(2)} (${stats.estimatedCount}: ${stats.estimatedChainsCount} from other stores, ${stats.estimatedBaselineCount} recipe baseline)</span>${stats.userEnteredCount ? ` + your own prices ₪${stats.userEnteredTotal.toFixed(2)} (${stats.userEnteredCount})` : ''}</div>
           </div>
           ${comparisonHtml}
         `;
@@ -2321,28 +2342,187 @@ let state = {
 
       const basisNote = document.createElement('div');
       basisNote.className = 'col-span-full p-2.5 rounded-lg bg-emerald-50 border border-emerald-200 text-[11px] text-emerald-900';
-      basisNote.innerHTML = '<i class="fa-solid fa-receipt text-emerald-500"></i> <b>Complete cart at every store.</b> Every card prices the same items and quantities. A line with a valid price at that chain keeps its <b>actual</b> price (whole packages round up; loose by-weight items are priced at actual weight). Only a line the chain cannot price (no verified product or size, incompatible unit, or an outdated feed) is filled with an <b>estimate</b>, marked “est.” in terracotta on the row: the average of the other chains that do price that exact quantity, or, when no chain prices it, the recipe baseline. Nothing else is adjusted. Your own custom prices are used as typed. <b>Carrefour</b> has no reachable price source, so all of its lines are estimates. The Same-basket line is the subtotal of items priced by every chain.';
+      basisNote.innerHTML = '<i class="fa-solid fa-receipt text-emerald-500"></i> <b>Complete cart at every store.</b> Every card prices the same items and quantities. A line with a valid price at that store keeps its <b>actual</b> price (whole packages round up; loose by-weight items are priced at actual weight). Only a line the store cannot price (no verified product or size, incompatible unit, or an outdated feed) is filled with an <b>estimate</b>, marked “est.” in terracotta on the row: the average of the other connected stores that do price that exact quantity, or, when no store prices it, the recipe baseline. Nothing else is adjusted. Your own custom prices are used as typed. <b>Carrefour</b> has no reachable price source, so all of its lines are estimates. The Same-basket line is the subtotal of items priced by every compared store.';
       container.appendChild(basisNote);
       allCards.forEach(c => container.appendChild(c));
     }
 
-    const SUPPORTED_PRICE_SCHEMA = '2.1';
-    const PRICE_CHAINS = ['shufersal', 'rami-levy', 'osher-ad', 'yochananof', 'victory'];
+    // Store directory and snapshot adapter. Directory records are NOT price connections.
+    let STORE_DIRECTORY = {stores:{}, chains:{}};
+    const DEFAULT_BRANCH_KEYS = {shufersal:'shufersal::413',rami_levy:'rami-levy::039',victory:'victory::2331',osher_ad:'osher-ad::032',yohananof:'yochananof::035'};
+    function dataStoreLabel(key) {
+      const m=state.livePrices?.metadata?.chains?.[key];
+      return m ? `${m.store_name} (${m.store_id})` : key;
+    }
+    async function configureStoreDirectory(data) {
+      if (String(data.metadata.version) !== '3') {
+        PRICE_CHAINS=['shufersal','rami-levy','osher-ad','yochananof','victory'];
+        Object.values(SUPERMARKETS).forEach(s=>{delete s.priceKey;});
+        return;
+      }
+      PRICE_CHAINS=Object.keys(data.metadata.chains);
+      try { const r=await fetch('./stores.json', {cache:'no-store'}); if(r.ok) STORE_DIRECTORY=await r.json(); } catch(e) { /* snapshots still usable offline */ }
+      if (!STORE_DIRECTORY.stores) STORE_DIRECTORY={stores:{},chains:{}};
+      for(const [key,m] of Object.entries(data.metadata.chains)) {
+        if(!STORE_DIRECTORY.stores[key]) STORE_DIRECTORY.stores[key]={key,chain:key.split('::')[0],chain_name:key.split('::')[0],chain_name_he:key.split('::')[0],store_id:m.store_id,name:m.store_name,kind:m.kind || 'physical',address:m.address || '',city:m.city || ''};
+      }
+      for(const [legacy,key] of Object.entries(DEFAULT_BRANCH_KEYS)) {
+        if(SUPERMARKETS[legacy]) {
+          SUPERMARKETS[legacy].priceKey=key;
+          SUPERMARKETS[legacy].directoryStore=STORE_DIRECTORY.stores[key];
+          if(STORE_DIRECTORY.stores[key]) SUPERMARKETS[legacy].inStoreOnly=STORE_DIRECTORY.stores[key].kind!=='online';
+        }
+      }
+      state.defaultBranchKeys=(STORE_DIRECTORY.default_compare_stores || []).filter(k=>STORE_DIRECTORY.stores[k]);
+      state.defaultBranchKeys.forEach(registerDirectoryStore);
+      state.comparedBranches=Array.isArray(state.comparedBranches) ? state.comparedBranches.filter(k=>typeof k==='string' && STORE_DIRECTORY.stores[k]) : [];
+      if(STORE_DIRECTORY.stores[state.currentStore] && !state.comparedBranches.includes(state.currentStore)) state.comparedBranches.push(state.currentStore);
+      state.comparedBranches=state.comparedBranches.filter(k=>!Object.values(DEFAULT_BRANCH_KEYS).includes(k) && !state.defaultBranchKeys.includes(k));
+      state.comparedBranches.forEach(registerDirectoryStore);
+      if(!SUPERMARKETS[state.currentStore]) state.currentStore='rami_levy';
+      const filter=document.getElementById('branchChainFilter');
+      if(filter && filter.options.length===1) {
+        const seen=new Map();Object.values(STORE_DIRECTORY.stores).forEach(s=>seen.set(s.chain,`${s.chain_name} / ${s.chain_name_he}`));
+        [...seen].sort((a,b)=>a[1].localeCompare(b[1])).forEach(([key,label])=>filter.add(new Option(label,key)));
+        ['branchChainFilter','branchKindFilter','branchSearch'].forEach(id=>document.getElementById(id).addEventListener('input',renderBranchResults));
+      }
+      const cs=document.getElementById('branchConnectionStatus');
+      if(cs) {
+        cs.replaceChildren();
+        for(const [chain,c] of Object.entries(STORE_DIRECTORY.chains || {})) {
+          const p=document.createElement('p');p.textContent=`${c.name}: ${c.status==='ok'?'directory connected; prices only for synced branches':'connection unavailable - no verified current feed'}`;cs.appendChild(p);
+        }
+      }
+      renderBranchResults();
+    }
+    function comparedStoreConfigs() {
+      if(!state.defaultBranchKeys?.length) return Object.values(SUPERMARKETS);
+      const keys=new Set([...state.defaultBranchKeys,...(state.comparedBranches || [])]);
+      return [...keys].map(key=>SUPERMARKETS[Object.keys(DEFAULT_BRANCH_KEYS).find(id=>DEFAULT_BRANCH_KEYS[id]===key)] || SUPERMARKETS[key]).filter(Boolean);
+    }
+    function registerDirectoryStore(key) {
+      const s=STORE_DIRECTORY.stores[key];if(!s || (SUPERMARKETS[key] && !SUPERMARKETS[key]._pending)) return;
+      // Online launch URLs are allowlisted from the existing working integrations, not constructed from branch names.
+      const legacy=Object.keys(DEFAULT_BRANCH_KEYS).find(k=>DEFAULT_BRANCH_KEYS[k]===key);
+      const base=legacy && SUPERMARKETS[legacy];
+      SUPERMARKETS[key]={id:key,name:`${s.chain_name} - ${s.name}`,nameHe:`${s.chain_name_he} - ${s.name}`,priceKey:key,indexMultiplier:1,color:'emerald',inStoreOnly:s.kind!=='online',onlineUrl:base?.onlineUrl || null,searchUrl:base?.searchUrl || null,sourceDetails:`Store ${s.store_id} / ${s.kind==='online'?'online':'physical branch'}`,description:s.address || 'Store-specific published prices when a snapshot is connected.',directoryStore:s};
+    }
+    function chooseDirectoryStore(key) {
+      const existing=Object.keys(DEFAULT_BRANCH_KEYS).find(k=>DEFAULT_BRANCH_KEYS[k]===key);
+      registerDirectoryStore(key);
+      // Keep a single comparison card for each branch, even when it has a legacy ID.
+      if(existing) delete SUPERMARKETS[key];
+      state.comparedBranches=state.comparedBranches || [];
+      if(!existing && !(state.defaultBranchKeys || []).includes(key) && !state.comparedBranches.includes(key)) state.comparedBranches.push(key);
+      state.currentStore=existing || key;state.onlineStoreSelected=state.currentStore;
+      saveState();renderAll();renderBranchResults();
+    }
+    function renderBranchResults() {
+      const box=document.getElementById('branchResults');if(!box) return;
+      const compared=document.getElementById('branchCompared');if(compared){compared.replaceChildren();for(const key of state.comparedBranches || []){const c=STORE_DIRECTORY.stores[key];if(!c)continue;const b=document.createElement('button');b.className='text-xs rounded-full px-3 py-2 bg-emerald-50 border border-emerald-200 min-h-[44px]';b.textContent=`${c.name} ×`;b.title='Remove from comparison';b.onclick=()=>{state.comparedBranches=state.comparedBranches.filter(k=>k!==key);delete SUPERMARKETS[key];if(state.currentStore===key)state.currentStore='rami_levy';saveState();renderAll();renderBranchResults();};compared.appendChild(b);}}
+      const q=(document.getElementById('branchSearch').value || '').toLowerCase().trim();
+      const chain=document.getElementById('branchChainFilter').value,kind=document.getElementById('branchKindFilter').value;
+      const rows=Object.values(STORE_DIRECTORY.stores).filter(s=>(!chain || chain===s.chain)&&(!kind || kind===s.kind)&&(!q || `${s.chain_name} ${s.chain_name_he} ${s.name} ${s.address} ${s.city} ${s.store_id}`.toLowerCase().includes(q)));
+      rows.sort((a,b)=>(Number(!!state.livePrices?.metadata?.chains?.[b.key])-Number(!!state.livePrices?.metadata?.chains?.[a.key]))||a.name.localeCompare(b.name));
+      box.replaceChildren();
+      const status=document.getElementById('branchDirectoryStatus');if(status)status.textContent=`${rows.length} branches found${rows.length>60?' - showing 60; narrow your search':''}. Refresh schedule: 4 times/day. Directory-only branches need a snapshot connection before actual prices are available.`;
+      for(const s of rows.slice(0,60)) {
+        const button=document.createElement('button');button.type='button';button.dataset.branchKey=s.key;
+        button.className='text-left border border-slate-200 bg-slate-50 hover:bg-emerald-50 rounded-xl p-3 min-w-0 min-h-[44px]';
+        const priced=isChainPublished(s.key),chosen=normChainKey(state.currentStore)===s.key;
+        const title=document.createElement('div');title.className='text-xs font-bold text-slate-900 break-words';title.textContent=`${chosen?'✓ ':''}${s.chain_name_he} - ${s.name} (${s.store_id})`;
+        const detail=document.createElement('div');detail.className='text-xs text-slate-500 mt-1 break-words';detail.textContent=`${s.kind==='online'?'Online':'Local branch'}${s.address&&s.address!=='unknown'?' / '+s.address:''}`;
+        const badge=document.createElement('div');badge.className='text-xs mt-1 '+(priced?'text-emerald-700':'text-amber-800');badge.textContent=priced?'Current branch prices connected':'No current branch prices - estimates only';
+        button.append(title,detail,badge);button.onclick=()=>chooseDirectoryStore(s.key);box.appendChild(button);
+      }
+      if(!rows.length)box.textContent='No matching branches. Try the branch name or address in Hebrew.';
+    }
+    function updateStoreControls() {
+      // Saved branch selections are restored before the directory finishes loading.
+      if(!SUPERMARKETS[state.currentStore]) {
+        const key=String(state.currentStore || '');
+        if(/^[a-z0-9-]+::[0-9]+$/.test(key)) SUPERMARKETS[key]={id:key,priceKey:key,name:key,nameHe:key,indexMultiplier:1,inStoreOnly:true,onlineUrl:null,searchUrl:null,description:'Loading branch details...',sourceDetails:'No branch source verified yet',_pending:true};
+        else state.currentStore='rami_levy';
+      }
+      const select=document.getElementById('quickStoreSelect');
+      if(select) {
+        const options=comparedStoreConfigs();
+        if(select.options.length!==options.length || ![...select.options].some(o=>o.value===state.currentStore)) {
+          select.replaceChildren();options.forEach(s=>select.add(new Option(s.nameHe,s.id)));
+        }
+        select.value=state.currentStore;
+      }
+      const online=SUPERMARKETS[state.currentStore] && !SUPERMARKETS[state.currentStore].inStoreOnly && !!SUPERMARKETS[state.currentStore].onlineUrl;
+      ['btnQuickOnlineCart','btnOpenOnlineCartModal'].forEach(id=>{const b=document.getElementById(id);if(b){b.hidden=!online;b.style.display=online?'':'none';}});
+      if(!online) document.getElementById('onlineCartModal')?.classList.add('hidden');
+    }
+    function activeStoreOffers(key, now=Date.now()) {
+      const promos=state.livePrices?.promotions?.[key];
+      const pub=Date.parse(promos?.published_at || '');
+      if(!isChainPublished(key) || promos?.status!=='ok' || !Number.isFinite(pub) || now-pub>48*3600000 || pub-now>3600000) return [];
+      const parseDate=v=>v && /(Z|[+-]\d\d:\d\d)$/.test(v) ? Date.parse(v) : NaN; // explicit offsets required; never guess summer/winter time
+      return (promos.offers || []).filter(p=>parseDate(p.start_time)<=now && parseDate(p.end_time)>=now);
+    }
+    function renderStoreDeals() {
+      const box=document.getElementById('storeDeals');if(!box)return;
+      const key=normChainKey(state.currentStore),store=SUPERMARKETS[state.currentStore];
+      const title=document.createElement('h3');title.className='text-base font-bold text-slate-900';title.textContent=`Deals at ${store?.nameHe || 'selected store'}`;
+      const note=document.createElement('p');note.className='text-xs text-amber-900';note.textContent='Published offers, not automatically deducted from your basket. Club, coupon, quantity and minimum-spend conditions may apply. Confirm the final price with the store.';
+      box.replaceChildren(title,note);
+      const codes=new Set(Object.values(getAggregatedGroceryList()).filter(i=>!i.isPantry).map(i=>i.matchedData?.item_code).filter(Boolean).map(String));
+      const offers=activeStoreOffers(key).filter(p=>(p.items || []).some(i=>codes.has(String(i.item_code))));
+      if(!offers.length) {const p=document.createElement('p');p.className='text-xs text-slate-600';p.textContent=activeStoreOffers(key).length?'No published offers match the products in this basket.':(state.livePrices?.promotions?.[key]?.status==='ok' && isChainPublished(key)?'No current verified offers for your matched products.':'Deals unavailable for this branch. No discounts have been assumed.');box.appendChild(p);return;}
+      const info=document.createElement('p');info.className='text-xs text-slate-600';info.textContent=`${offers.length} matching offers. Source: ${state.livePrices.promotions[key].source_file}`;box.appendChild(info);
+      const list=document.createElement('div');list.className='grid grid-cols-1 sm:grid-cols-2 gap-2';box.appendChild(list);
+      for(const p of offers) {
+        const el=document.createElement('details');el.className='rounded-xl border border-amber-200 p-3 bg-white min-w-0';
+        const summary=document.createElement('summary');summary.className='text-xs font-semibold text-slate-900 cursor-pointer break-words';summary.textContent=p.description || `Offer ${p.promotion_id}`;el.appendChild(summary);
+        const body=document.createElement('div');body.className='text-xs text-slate-600 mt-2 space-y-1 break-words';
+        const lines=[`Valid: ${p.start_time} to ${p.end_time}`,p.club_id?`Club / eligibility: ${p.club_id}`:null,p.is_coupon?'Coupon required':null,p.min_qty?`Minimum quantity: ${p.min_qty}`:null,p.min_items_offered?`Minimum offered items: ${p.min_items_offered}`:null,p.offer_group_item_count?`Products in the full offer group: ${p.offer_group_item_count}`:null,p.allow_multiple_discounts===false?'Cannot combine discounts':null,p.min_purchase_amount?`Minimum spend: ₪${p.min_purchase_amount}`:null,p.discounted_price?`Published offer price: ₪${p.discounted_price} (check offer unit and conditions)`:null,p.discount_rate?`Published discount rate: ${p.discount_rate}`:null,p.remarks,p.additional_restrictions,'Offer may include a larger product group. No savings are assumed.'];
+        for(const line of lines.filter(Boolean)){if(line.length>240){const more=document.createElement('details');const summary=document.createElement('summary');summary.textContent=line.startsWith('Club / eligibility:')?'Club / eligibility: expand full retailer conditions':'Expand full retailer conditions';summary.className='cursor-pointer text-amber-900 font-semibold';const full=document.createElement('p');full.className='max-h-48 overflow-y-auto mt-2';full.textContent=line;more.append(summary,full);body.appendChild(more);}else{const row=document.createElement('p');row.textContent=line;body.appendChild(row);}}
+        for(const i of p.items || []) if(codes.has(String(i.item_code))) {
+          const row=document.createElement('p');const product=Object.values(state.livePrices.ingredients).map(e=>e[key]).find(e=>e && String(e.item_code)===String(i.item_code));row.textContent=`${product?.nameHe || 'Product'} / ${i.item_code}${i.discounted_price?' - offer price ₪'+i.discounted_price:''}${i.min_qty?' - minimum quantity '+i.min_qty:''}${i.max_qty?' - maximum quantity '+i.max_qty:''}${i.min_purchase_amount?' - minimum spend ₪'+i.min_purchase_amount:''}${i.is_gift_item?' - gift item':''}`;body.appendChild(row);
+        }
+        el.appendChild(body);list.appendChild(el);
+      }
+    }
+
+    const SUPPORTED_PRICE_SCHEMA = '3';
+    let PRICE_CHAINS = ['shufersal', 'rami-levy', 'osher-ad', 'yochananof', 'victory'];
 
     // A chain counts as "published" only if its own source file is fresh AND at least one reviewed product is priced from it.
     function isChainPublished(chainKey) {
+      chainKey=normChainKey(chainKey);
+      const source=state.livePrices?.metadata?.chains?.[chainKey];
+      if(source) { const published=Date.parse(source.published_at || ''); const age=Date.now()-published; if(!Number.isFinite(published) || age>48*3600000 || age < -3600000) return false; }
       return !!(state.chainFresh && state.chainFresh[chainKey] && (state.chainPriced[chainKey] || 0) > 0);
     }
 
     function validatePricesFile(data) {
       if (!data || typeof data !== 'object' || !data.metadata || typeof data.ingredients !== 'object') return { ok: false, reason: 'prices.json is malformed' };
-      if (String(data.metadata.version) !== SUPPORTED_PRICE_SCHEMA) return { ok: false, reason: `unsupported prices.json schema version ${data.metadata.version} (expected ${SUPPORTED_PRICE_SCHEMA})` };
+      if (!['2.1', SUPPORTED_PRICE_SCHEMA].includes(String(data.metadata.version))) return { ok: false, reason: `unsupported prices.json schema version ${data.metadata.version} (expected ${SUPPORTED_PRICE_SCHEMA})` };
       if (!data.metadata.chains || typeof data.metadata.chains !== 'object') return { ok: false, reason: 'prices.json has no chain metadata' };
-      for (const k of Object.keys(data.metadata.chains)) if (!PRICE_CHAINS.includes(k)) return { ok: false, reason: `unknown chain key "${k}" in prices.json` };
+      for (const k of Object.keys(data.metadata.chains)) {
+        const cm=data.metadata.chains[k];
+        if (!(String(data.metadata.version) === '3' ? /^[a-z0-9-]+::[0-9]+$/.test(k) : ['shufersal','rami-levy','osher-ad','yochananof','victory'].includes(k))) return { ok: false, reason: `unknown chain key "${k}" in prices.json` };
+        if(!cm || typeof cm!=='object') return {ok:false,reason:'invalid store metadata'};
+        if(String(data.metadata.version)==='3' && (Number(k.split('::')[1])!==Number(cm.store_id) || (cm.chain && cm.chain!==k.split('::')[0]))) return {ok:false,reason:'store identity mismatch'};
+      }
+      for(const entry of Object.values(data.ingredients)) {
+        if(!entry || typeof entry!=='object') return {ok:false,reason:'invalid ingredient record'};
+        for(const [key,item] of Object.entries(entry)) {
+          if(key==='ingredient_name') continue;
+          if(!data.metadata.chains[key] || !item || typeof item!=='object' || !Number.isFinite(item.packPrice) || item.packPrice<=0 || !Number.isFinite(item.packQty) || item.packQty<=0 || !['g','ml','units'].includes(item.packUnit)) return {ok:false,reason:'invalid priced product or missing store source'};
+        }
+      }
       return { ok: true };
     }
 
+    let snapshotRequestInFlight=false;
+    let lastSnapshotCheck=0;
     async function fetchLiveSupermarketPrices(isManual = false) {
+      if(snapshotRequestInFlight) return;
+      snapshotRequestInFlight=true;lastSnapshotCheck=Date.now();
       state.isPricesFresh = false; state.livePrices = null; state.chainFresh = {}; state.chainDates = {}; state.chainPriced = {}; state.pricesRejectReason = null;
       try {
         const res = await fetch('./prices.json', { cache: 'no-store' });
@@ -2354,6 +2534,7 @@ let state = {
           if (!v.ok) {
             state.pricesRejectReason = v.reason;
           } else {
+            await configureStoreDirectory(data);
             // Freshness is judged per chain from that chain's own source-file publication time. Never from generation or retrieval time.
             PRICE_CHAINS.forEach(ck => {
               const cm = data.metadata.chains[ck];
@@ -2382,6 +2563,8 @@ let state = {
         state.pricesRejectReason = 'published price file could not be read';
       }
 
+      snapshotRequestInFlight=false;
+      renderBranchResults();
       renderSupermarketComparison();
       renderAll();
 
@@ -3480,7 +3663,7 @@ let state = {
                     <div class="text-[9px] font-semibold text-slate-500 mt-0.5 leading-tight">no price - not in total</div>
                   ` : (item.priceSource === 'estimate-chains' || item.priceSource === 'estimate-baseline') ? `
                     <div data-testid="estimated-price" class="text-xs font-bold text-amber-800 whitespace-nowrap">≈ ₪${item.storePrice.toFixed(2)}</div>
-                    <div class="text-[9px] font-semibold text-amber-700 mt-0.5 leading-tight">ESTIMATE: ${item.priceSource === 'estimate-chains' ? 'average of the ' + item.estimateChains + ' other chain' + (item.estimateChains === 1 ? '' : 's') + ' that price it' : 'recipe baseline, no chain prices it'}</div>
+                    <div class="text-[9px] font-semibold text-amber-700 mt-0.5 leading-tight">ESTIMATE: ${item.priceSource === 'estimate-chains' ? 'average of the ' + item.estimateChains + ' other store' + (item.estimateChains === 1 ? '' : 's') + ' that price it' : 'recipe baseline, no store prices it'}</div>
                   ` : `<div data-testid="actual-price" class="text-xs font-bold text-slate-900 whitespace-nowrap">₪${item.storePrice.toFixed(2)}</div>
                     <div class="text-[9px] font-semibold ${item.priceSource === 'user-entered' ? 'text-slate-500' : 'text-emerald-700'} mt-0.5 leading-tight">${item.priceSource === 'user-entered' ? 'your price' : 'actual store price'}</div>`}
                   ${item.isLiveMatch ? `<button type="button" onclick="toggleItemDetails('${item.key}')" class="text-[9px] font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 px-1.5 py-0.5 rounded border border-emerald-200 transition-colors inline-flex items-center gap-1 mt-0.5">
@@ -3488,9 +3671,9 @@ let state = {
                   </button>` : ''}
                 </div>
                 
-                <a href="${searchUrl}" target="_blank" title="Search in ${SUPERMARKETS[state.currentStore].nameHe}" class="px-2 py-1 rounded bg-blue-50 hover:bg-blue-100 text-blue-700 text-[11px] font-semibold border border-blue-200 transition-all flex items-center gap-1">
+                ${!SUPERMARKETS[state.currentStore].inStoreOnly && SUPERMARKETS[state.currentStore].onlineUrl ? `<a href="${searchUrl}" target="_blank" title="Search in ${escapeHtml(SUPERMARKETS[state.currentStore].nameHe)}" class="px-2 py-1 rounded bg-blue-50 hover:bg-blue-100 text-blue-700 text-[11px] font-semibold border border-blue-200 transition-all flex items-center gap-1">
                   <i class="fa-solid fa-cart-arrow-down text-[10px]"></i> Online
-                </a>
+                </a>` : ''}
 
                 ${item.isCustom ? `
                   <button data-id="${item.id}" class="btn-delete-custom text-slate-400 hover:text-red-500 text-xs p-1">
@@ -3524,7 +3707,7 @@ let state = {
                   </div>
                 </div>
                 <div class="text-[10px] text-slate-500 pt-1 border-t border-slate-200/60 font-mono">
-                  <span class="font-semibold text-slate-600">Feed Citation:</span> ${escapeHtml(item.matchedData.metadataSource)}
+                  ${item.matchedData.matchMethod === 'exact-gtin' ? '<div class="text-emerald-800 font-semibold">Exact barcode match from a previously selected product</div>' : ''}<span class="font-semibold text-slate-600">Feed Citation:</span> ${escapeHtml(item.matchedData.metadataSource)}
                   ${item.matchedData.selectionNote ? `<div class="mt-1"><span class="font-semibold text-amber-700">Selection note:</span> <span class="text-amber-700">${escapeHtml(item.matchedData.selectionNote)}</span></div>` : ''}
                 </div>
               </div>
@@ -3652,7 +3835,7 @@ let state = {
       const storeContainer = document.getElementById('storeRadioGrid');
       storeContainer.innerHTML = '';
 
-      Object.values(SUPERMARKETS).forEach(store => {
+      comparedStoreConfigs().forEach(store => {
         const isSelected = store.id === state.currentStore;
         const div = document.createElement('label');
         div.className = `p-3.5 rounded-xl border cursor-pointer transition-all flex flex-col justify-between ${
@@ -3661,18 +3844,18 @@ let state = {
         div.innerHTML = `
           <div>
             <div class="flex items-center justify-between">
-              <span class="text-xs font-bold text-slate-900">${store.name}</span>
+              <span class="text-xs font-bold text-slate-900">${escapeHtml(store.name)}</span>
               <input type="radio" name="storePref" value="${store.id}" ${isSelected ? 'checked' : ''} class="text-emerald-600 focus:ring-emerald-500">
             </div>
             <div class="flex items-center justify-between mt-1">
-              <span class="text-[11px] text-slate-600 font-medium">${store.nameHe}</span>
+              <span class="text-[11px] text-slate-600 font-medium">${escapeHtml(store.nameHe)}</span>
               ${store.isLive ? 
                 '<span class="text-[9px] font-bold px-1.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>Live Price Feed</span>' : 
                 '<span class="text-[9px] font-semibold px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-800 inline-flex items-center gap-1"><i class="fa-solid fa-chart-line text-[9px]"></i> Estimated Benchmark</span>'}
             </div>
-            <p class="text-[10px] text-slate-500 mt-2 leading-relaxed">${store.description}</p>
+            <p class="text-[10px] text-slate-500 mt-2 leading-relaxed">${escapeHtml(store.description)}</p>
           </div>
-          <div class="text-[9px] text-slate-400 mt-2 pt-2 border-t border-slate-100 font-mono">${store.sourceDetails}</div>
+          <div class="text-[9px] text-slate-400 mt-2 pt-2 border-t border-slate-100 font-mono">${escapeHtml(store.sourceDetails)}</div>
         `;
         div.querySelector('input').addEventListener('change', () => {
           state.currentStore = store.id;
@@ -3739,6 +3922,9 @@ let state = {
     }
 
     function openOnlineCartModal() {
+      const selected = SUPERMARKETS[state.currentStore];
+      if (!selected || selected.inStoreOnly || !selected.onlineUrl) { showToast('Choose an online store first.', 'fa-store', 'warning'); return; }
+      state.onlineStoreSelected = state.currentStore;
       renderOnlineCartContent();
       document.getElementById('onlineCartModal').classList.remove('hidden');
     }
@@ -3749,7 +3935,8 @@ let state = {
 
     function renderOnlineCartContent() {
       const storeKey = state.onlineStoreSelected || state.currentStore;
-      const groceryList = getAggregatedGroceryList();
+      if (!SUPERMARKETS[storeKey] || SUPERMARKETS[storeKey].inStoreOnly || !SUPERMARKETS[storeKey].onlineUrl) return;
+      const groceryList = getAggregatedGroceryList(storeKey);
       state.onlineCartExcludedKeys = state.onlineCartExcludedKeys || [];
 
       const allItemsToBuy = Object.values(groceryList).filter(i => !i.isPantry);
@@ -4193,7 +4380,7 @@ let state = {
           </div>
           <div class="flex items-center gap-3">
             <span class="text-slate-600 font-semibold">${Math.round(ing.qty * scale * 10) / 10} ${ing.unit}</span>
-            <a href="${searchUrl}" target="_blank" class="text-blue-600 hover:text-blue-800 text-[11px] underline">Online Search</a>
+            ${!SUPERMARKETS[state.currentStore].inStoreOnly && SUPERMARKETS[state.currentStore].onlineUrl ? `<a href="${searchUrl}" target="_blank" class="text-blue-600 hover:text-blue-800 text-[11px] underline">Online Search</a>` : ''}
           </div>
         `;
         ingContainer.appendChild(row);
@@ -5040,6 +5227,7 @@ const NUTRITION_MISSING_NOTE = "No reference data - excluded from totals below."
     }
 
     function renderAll() {
+      updateStoreControls();
       updateExplorerCounts();
       renderStatsAndHeader();
       updateShabbatBanner();
@@ -5050,10 +5238,14 @@ const NUTRITION_MISSING_NOTE = "No reference data - excluded from totals below."
       renderPrintMealsSection();
       renderPantryGrid();
       renderPreferences();
+      renderStoreDeals();
     }
 
     window.addEventListener('DOMContentLoaded', () => {
       fetchLiveSupermarketPrices(false);
+      // Re-read our small static snapshots, never retailer endpoints, while the app stays open.
+      setInterval(()=>{if(!document.hidden)fetchLiveSupermarketPrices(false);},60*60*1000);
+      document.addEventListener('visibilitychange',()=>{if(!document.hidden && Date.now()-lastSnapshotCheck>60*60*1000)fetchLiveSupermarketPrices(false);});
       // Startup Integrity Check
       ['activeSchedule', 'lunchSchedule', 'bfastSchedule'].forEach(schedKey => {
         (state[schedKey] || []).forEach(slot => {

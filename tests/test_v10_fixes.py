@@ -27,10 +27,22 @@ for it in Q:
 for ch, meta in P["metadata"]["chains"].items():
     n = sum(1 for e in P["ingredients"].values() if ch in e)
     check("priced_count matches entries: " + ch, meta["priced_count"] == n, (meta["priced_count"], n))
-check("prices schema version unchanged (app requires 2.1)", str(P["metadata"]["version"]) == "2.1")
-check("every priced entry has a mapping pin", all(
-    any(n.lower() == k and ch in v for n, v in M.items())
-    for k, e in P["ingredients"].items() for ch in e if ch != "ingredient_name"))
+check("prices schema 3 (app also accepts legacy 2.1)", str(P["metadata"]["version"]) == "3")
+def has_pin_or_barcode(ing,key,entry):
+    pins=next((v for n,v in M.items() if n.lower()==ing),{})
+    chain=key.split('::')[0]
+    if chain in pins and str(pins[chain].get('item_code'))==str(entry['item_code']):return True
+    from israeli_prices import to_gtin14
+    # The legacy Victory catalog uses productId as item_code and its actual barcode in gtin.
+    if chain=='victory' and chain in pins and to_gtin14(str(pins[chain].get('item_code','')))==to_gtin14(str(entry.get('gtin',''))) and fp.same_product_name(entry['nameHe'],pins[chain].get('pinned_name')):return True
+    if entry.get('matchMethod')!='exact-gtin' or not entry.get('gtin'):return False
+    from israeli_prices import to_gtin14
+    source=pins.get(entry.get('matchedFromChain')) or {}
+    source_cfg=fp.CHAINS.get(entry.get('matchedFromChain'),{})
+    source_key=entry.get('matchedFromChain','')+'::'+source_cfg.get('store_id','')
+    source_entry=P['ingredients'].get(ing,{}).get(source_key,{}) or json.load(open(os.path.join(ROOT,'data','matching_reference.json')))['ingredients'].get(ing,{}).get(entry.get('matchedFromChain'),{})
+    return to_gtin14(str(source.get('item_code','')))==entry['gtin'] and fp.same_product_name(source_entry.get('nameHe'),source.get('pinned_name')) and fp.same_product_name(entry['nameHe'],source_entry.get('nameHe'))
+check("every priced entry has its own chain pin or exact barcode provenance",all(has_pin_or_barcode(k,ch,item) for k,e in P['ingredients'].items() for ch,item in e.items() if ch!='ingredient_name'))
 
 # ---- 2. feed pack derivation (osher-style rows) and name tolerance
 def item(name, qty, uom, uq="לא ידוע", weighted=False, price="9.90", code="1"):
