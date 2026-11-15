@@ -60,8 +60,15 @@ jobs:
             echo "No directory changes to commit."
           else
             git commit -m "Update store directory ($(date -u +%Y-%m-%d))"
-            git pull --rebase origin main || true
-            git push
+            for i in 1 2 3; do
+              git push && break
+              # another workflow may have landed a commit mid-run; unstaged
+              # regenerated artifacts block `pull --rebase`, so stash them first
+              git stash -u
+              git pull --rebase origin main
+              git stash pop || git stash drop
+              sleep 5
+            done
           fi
 
   fetch:
@@ -138,8 +145,15 @@ jobs:
             echo "No shard changes to commit."
           else
             git commit -m "Update national store prices ($(date -u +%Y-%m-%d))"
-            git pull --rebase origin main || true
-            git push
+            for i in 1 2 3; do
+              git push && break
+              # another workflow may have landed a commit mid-run; unstaged
+              # regenerated artifacts block `pull --rebase`, so stash them first
+              git stash -u
+              git pull --rebase origin main
+              git stash pop || git stash drop
+              sleep 5
+            done
           fi
 
       - name: Configure GitHub Pages

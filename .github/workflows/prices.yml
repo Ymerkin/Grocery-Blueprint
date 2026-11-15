@@ -57,7 +57,15 @@ jobs:
             git commit -m "Update supermarket prices ($(date -u +%Y-%m-%d))"
             # The national workflow can land a commit while this run fetches: rebase and retry once
             # instead of dying on a non-fast-forward push.
-            git push || { git pull --rebase origin main && git push; }
+            for i in 1 2 3; do
+              git push && break
+              # another workflow may have landed a commit mid-run; unstaged
+              # regenerated artifacts block `pull --rebase`, so stash them first
+              git stash -u
+              git pull --rebase origin main
+              git stash pop || git stash drop
+              sleep 5
+            done
           fi
 
       - name: Record the post-sync HEAD for the deploy job
