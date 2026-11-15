@@ -36,7 +36,7 @@ def canonical_products(old, mappings, quarantine):
     for ing, per in mappings['pins'].items():
         entries=(old.get('ingredients',{}).get(ing.lower().strip()) or {})
         for chain,pin in per.items():
-            if not (pin.get('approved_by_user') is True or pin.get('selected_by')=='assistant'):continue
+            if not (pin.get('approved_by_user') is True or str(pin.get('selected_by') or '').startswith('assistant')):continue
             code=str(pin.get('item_code','')); e=entries.get(chain)
             if not e: # schema 3 carries original default branch entries by store key
                 cfg=fp.CHAINS.get(chain)
@@ -60,7 +60,7 @@ def prices_for_store(chain, store, feed, mappings, canonical, quarantine):
     for ing,per in mappings['pins'].items():
         explicit=per.get(chain)
         # Chain-local codes are permitted only within their own chain. Names and packs still validate.
-        if explicit and (explicit.get('approved_by_user') or explicit.get('selected_by')=='assistant'):
+        if explicit and (explicit.get('approved_by_user') or str(explicit.get('selected_by') or '').startswith('assistant')):
             if (ing.lower().strip(),chain,str(explicit.get('item_code'))) not in quarantine:
                 local.setdefault(ing,{})[key]=copy.deepcopy(explicit)
         if key in local.get(ing,{}):continue

@@ -520,7 +520,7 @@ def build_prices(feeds, pins):
             if chain not in feeds:
                 continue
             approved = pin.get("approved_by_user") is True
-            assistant = pin.get("selected_by") == "assistant"
+            assistant = str(pin.get("selected_by") or "").startswith("assistant")
             if not (approved or assistant):
                 continue  # pins neither user-approved nor assistant-selected are ignored, never priced
             code = str(pin.get("item_code", "")).strip()
