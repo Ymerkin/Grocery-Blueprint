@@ -14,7 +14,7 @@
     "shefa-birkat-hashem::023",
     "super-yuda::241"
   ],
-  "checked_at": "2026-11-15T08:45:26.762364+00:00",
+  "checked_at": "2026-11-15T09:02:52.422035+00:00",
   "stores": {
     "shufersal::756": {
       "key": "shufersal::756",
@@ -9144,10 +9144,10 @@
       "store_id": "001",
       "name": "יוחננוף מפוח",
       "address": "רחוב המפוח 11, אזור התעשיה",
-      "city": "רחוב",
-      "city_en": "Rehov",
-      "lat": 32.45083,
-      "lon": 35.48914,
+      "city": "אזור",
+      "city_en": "Azor",
+      "lat": 32.02354,
+      "lon": 34.80739,
       "kind": "physical",
       "directory_source": "https://url.publishedprices.co.il/login",
       "city_code": "0"
@@ -15160,10 +15160,10 @@
       "store_id": "023",
       "name": "רמלה נאות שמיר",
       "address": "unknown",
-      "city": "שמיר",
-      "city_en": "Shamir",
-      "lat": 33.16671,
-      "lon": 35.65996,
+      "city": "רמלה",
+      "city_en": "Ramla",
+      "lat": 31.92776,
+      "lon": 34.8668,
       "kind": "physical",
       "directory_source": "https://shuk-hayir.binaprojects.com/Main.aspx",
       "city_code": "0"
@@ -18312,14 +18312,14 @@
       "name": "Carrefour Israel",
       "nameHe": "קרפור",
       "status": "unavailable",
-      "reason": "Live discovery failed; no verified directory",
+      "reason": "Command '['/opt/hostedtoolcache/Python/3.12.16/x64/bin/python', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/scripts/sync_stores.py', '--directory-worker', 'carrefour', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/data/directories/carrefour.json']' timed out after 75 seconds",
       "source": "https://prices.carrefour.co.il"
     },
     "hatzi-hinam": {
       "name": "Hatzi Hinam",
       "nameHe": "חצי חינם",
       "status": "unavailable",
-      "reason": "Live discovery failed; no verified directory",
+      "reason": "(\n           ^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/israeli_prices/core/http.py\", line 38, in get\n    return self._request(\"GET\", url, params=params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/israeli_prices/core/http.py\", line 55, in _request\n    raise PortalError(\nisraeli_prices.exceptions.PortalError: GET https://shop.hazi-hinam.co.il/Prices -> HTTP 403\n",
       "source": "https://shop.hazi-hinam.co.il/Prices"
     },
     "rami-levy": {
@@ -18440,21 +18440,21 @@
       "name": "Victory",
       "nameHe": "ויקטורי",
       "status": "unavailable",
-      "reason": "Live discovery failed; no verified directory",
+      "reason": "Command '['/opt/hostedtoolcache/Python/3.12.16/x64/bin/python', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/scripts/sync_stores.py', '--directory-worker', 'victory', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/data/directories/victory.json']' timed out after 75 seconds",
       "source": "https://laibcatalog.co.il/victory/index.html"
     },
     "mahsanei-hashuk": {
       "name": "Mahsanei HaShuk",
       "nameHe": "מחסני השוק",
       "status": "unavailable",
-      "reason": "Live discovery failed; no verified directory",
+      "reason": "Command '['/opt/hostedtoolcache/Python/3.12.16/x64/bin/python', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/scripts/sync_stores.py', '--directory-worker', 'mahsanei-hashuk', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/data/directories/mahsanei-hashuk.json']' timed out after 75 seconds",
       "source": "https://laibcatalog.co.il/mshuk/index.html"
     },
     "het-cohen": {
       "name": "Het Cohen",
       "nameHe": "ח. כהן",
       "status": "unavailable",
-      "reason": "Live discovery failed; no verified directory",
+      "reason": "Command '['/opt/hostedtoolcache/Python/3.12.16/x64/bin/python', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/scripts/sync_stores.py', '--directory-worker', 'het-cohen', '/home/runner/work/Grocery-Blueprint/Grocery-Blueprint/data/directories/het-cohen.json']' timed out after 75 seconds",
       "source": "https://laibcatalog.co.il/hcohen/index.html"
     }
   }
