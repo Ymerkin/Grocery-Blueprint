@@ -247,9 +247,14 @@ def run_shards(only,workers,outdir):
         c=cat['stores'][key];dest=ROOT/'data/stores'/shard_filename(key)
         dest.parent.mkdir(parents=True,exist_ok=True)
         try:
-            p=subprocess.run([sys.executable,__file__,'--worker',c['chain'],c['store_id'],str(dest),'--no-promos'],capture_output=True,text=True,timeout=config.get('store_timeout_seconds',110))
+            p=subprocess.run([sys.executable,__file__,'--worker',c['chain'],c['store_id'],str(dest),'nopromos'],capture_output=True,text=True,timeout=config.get('store_timeout_seconds',110))
             if p.returncode:raise RuntimeError(p.stderr[-700:])
             data=read(dest)
+            # A supermarket 'full' file with a toy catalog is a partial publication, not a real store: refuse it
+            # rather than ship a shard whose tiny coverage would masquerade as a working connection.
+            m=(data.get('metadata',{}).get('chains',{}) or {}).get(key) or {}
+            if int(m.get('item_count') or 0)<int(config.get('shard_min_items',1000)):
+                raise RuntimeError('price file implausibly small (%s items) - partial publication' % m.get('item_count'))
             fp.atomic_write(str(out/shard_filename(key)),data)
             return key,None
         except Exception as e:return key,str(e)
@@ -303,7 +308,7 @@ if __name__=='__main__':
     if a.directory_worker:
         chain,path=a.directory_worker;sf=get_stores(chain);fp.atomic_write(path,{'chain':next(c.model_dump() for c in list_chains() if c.slug==chain),'stores':[s.model_dump() for s in sf.stores]})
     elif a.worker:
-        chain,sid,path=a.worker[:3];worker(chain,sid,path,promos='--no-promos' not in a.worker[3:])
+        chain,sid,path=a.worker[:3];worker(chain,sid,path,promos='nopromos' not in a.worker[3:])
     elif a.catalog or a.cached_catalog:catalog(a.cached_catalog)
     elif a.shard_plan:
         print(json.dumps(shard_plan(a.shard_out),separators=(',',':')))
