@@ -78,8 +78,8 @@ with sync_playwright() as p:
             check("fresh: incompatible unit excluded with reason", ex["z"]["isLiveMatch"] is False and "Incompatible" in (ex["z"].get("unpricedReason") or ""), ex["z"])
             check("fresh: chicken 2500g weighted @ NIS30/kg = actual weight 2.5kg = 75", abs(ex["c"] - 75.0) < 0.01, ex["c"])
             check("fresh: citation shows source file", "SYNTHETIC-TEST-FIXTURE" in (ex["cm"] or ""), ex["cm"])
-            txt = pg.evaluate("document.getElementById('supermarketPriceGrid').innerText")
-            check("fresh: comparison shows same-basket line", "Same-basket" in txt, txt[:300])
+            txt = pg.evaluate("(document.getElementById('cartFootnotes')||{innerText:''}).innerText + ' ' + document.getElementById('supermarketPriceGrid').innerText")
+            check("fresh: comparison/footnotes explain the same-basket line", "Same-basket" in txt, txt[:300])
         if name in ("stale", "missing"):
             check(name + ": estimates only", not st["fresh"] and "estimates" in st["feed"].lower(), st)
         if name in ("v1", "underscore"):

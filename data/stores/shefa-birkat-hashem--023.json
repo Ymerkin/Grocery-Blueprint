@@ -1,0 +1,364 @@
+{
+  "metadata": {
+    "version": "2.1",
+    "chains": {
+      "shefa-birkat-hashem::023": {
+        "store_id": "023",
+        "store_name": "כהנמן בני ברק",
+        "source_file": "PriceFull7290058134977-000-023-20261115-050658.GZ",
+        "source_url": "https://shefabirkathashem.binaprojects.com/Download/PriceFull7290058134977-000-023-20261115-050658.GZ",
+        "published_at": "2026-11-15T05:06:58+02:00",
+        "published_at_assumed_tz": "Asia/Jerusalem",
+        "retrieved_at": "2026-11-15T06:16:44.368398+00:00",
+        "sha256": "8d58f6727b3d157cb552c79d41bd933dc7d900b26a22ba9461aa9b2903a2bbc8",
+        "item_count": 6498,
+        "priced_count": 10,
+        "chain": "shefa-birkat-hashem",
+        "kind": "physical",
+        "address": "כהנמן 107",
+        "city": ""
+      }
+    },
+    "drained_unpriced": []
+  },
+  "ingredients": {
+    "chickpea falafel mix": {
+      "ingredient_name": "Chickpea Falafel Mix",
+      "shefa-birkat-hashem::023": {
+        "item_code": "7290006983206",
+        "gtin": "07290006983206",
+        "nameHe": "פלאפל בקלי קלות 180 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 11.2,
+        "packQty": 180.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.06222,
+        "priceUpdateTime": "2026-11-13T10:56:00",
+        "metadataSource": "PriceFull7290058134977-000-023-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 023): ItemCode=7290006983206, price=11.2, pack=180.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "cooking cream 15%": {
+      "ingredient_name": "Cooking Cream 15%",
+      "shefa-birkat-hashem::023": {
+        "item_code": "7290000522340",
+        "gtin": "07290000522340",
+        "nameHe": "שמנת לבישול 15% 250 מ\"ל רמת הגולן",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 250.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0396,
+        "priceUpdateTime": "2026-11-13T10:56:00",
+        "metadataSource": "PriceFull7290058134977-000-023-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 023): ItemCode=7290000522340, price=9.9, pack=250.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "cottage cheese 5%": {
+      "ingredient_name": "Cottage Cheese 5%",
+      "shefa-birkat-hashem::023": {
+        "item_code": "7290011194246",
+        "gtin": "07290011194246",
+        "nameHe": "קוטג' 5% 250 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 7.3,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0292,
+        "priceUpdateTime": "2026-11-13T10:56:00",
+        "metadataSource": "PriceFull7290058134977-000-023-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 023): ItemCode=7290011194246, price=7.3, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "crushed canned tomatoes": {
+      "ingredient_name": "Crushed Canned Tomatoes",
+      "shefa-birkat-hashem::023": {
+        "item_code": "7290000208022",
+        "gtin": "07290000208022",
+        "nameHe": "עגבניות מרוסקות יכין 800 ג' A2.5",
+        "brand": "לא ידוע",
+        "packPrice": 11.1,
+        "packQty": 800.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01388,
+        "priceUpdateTime": "2026-11-13T10:56:00",
+        "metadataSource": "PriceFull7290058134977-000-023-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 023): ItemCode=7290000208022, price=11.1, pack=800.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "halloumi grilling cheese": {
+      "ingredient_name": "Halloumi Grilling Cheese",
+      "shefa-birkat-hashem::023": {
+        "item_code": "7290102393718",
+        "gtin": "07290102393718",
+        "nameHe": "חלומי בקר 200 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 25.2,
+        "packQty": 200.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.126,
+        "priceUpdateTime": "2026-11-13T10:56:00",
+        "metadataSource": "PriceFull7290058134977-000-023-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 023): ItemCode=7290102393718, price=25.2, pack=200.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "quick fluffy couscous": {
+      "ingredient_name": "Quick Fluffy Couscous",
+      "shefa-birkat-hashem::023": {
+        "item_code": "7290100702260",
+        "gtin": "07290100702260",
+        "nameHe": "קוסקוס דק 350 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 5.5,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01571,
+        "priceUpdateTime": "2026-11-13T10:56:00",
+        "metadataSource": "PriceFull7290058134977-000-023-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 023): ItemCode=7290100702260, price=5.5, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "raw sesame tahini": {
+      "ingredient_name": "Raw Sesame Tahini",
+      "shefa-birkat-hashem::023": {
+        "item_code": "7290000572819",
+        "gtin": "07290000572819",
+        "nameHe": "טחינה גולמית 1 ק\"ג אחוה",
+        "brand": "אחדות בע\"מ",
+        "packPrice": 24.2,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0242,
+        "priceUpdateTime": "2026-11-13T10:56:00",
+        "metadataSource": "PriceFull7290058134977-000-023-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 023): ItemCode=7290000572819, price=24.2, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "soft white cheese 5%": {
+      "ingredient_name": "Soft White Cheese 5%",
+      "shefa-birkat-hashem::023": {
+        "item_code": "7290000047621",
+        "gtin": "07290000047621",
+        "nameHe": "גבינה לבנה 5% 250 גרם בדצ",
+        "brand": "לא ידוע",
+        "packPrice": 5.87,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02348,
+        "priceUpdateTime": "2026-11-13T10:56:00",
+        "metadataSource": "PriceFull7290058134977-000-023-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 023): ItemCode=7290000047621, price=5.87, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "toasted pasta pearls (ptitim)": {
+      "ingredient_name": "Toasted Pasta Pearls (Ptitim)",
+      "shefa-birkat-hashem::023": {
+        "item_code": "7290000060408",
+        "gtin": "07290000060408",
+        "nameHe": "פתיתים אפויים טבעות אסם",
+        "brand": "לא ידוע",
+        "packPrice": 6.6,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0132,
+        "priceUpdateTime": "2026-11-13T10:56:00",
+        "metadataSource": "PriceFull7290058134977-000-023-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 023): ItemCode=7290000060408, price=6.6, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "caraway rye bread": {
+      "ingredient_name": "Caraway Rye Bread",
+      "shefa-birkat-hashem::023": {
+        "item_code": "7290002065616",
+        "gtin": "07290002065616",
+        "nameHe": "לחם שיפון גרעינים",
+        "brand": "שלמה א. אנג'ל",
+        "packPrice": 14.8,
+        "packQty": 750.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01973,
+        "priceUpdateTime": "2026-11-13T10:56:00",
+        "metadataSource": "PriceFull7290058134977-000-023-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 023): ItemCode=7290002065616, price=14.8, pack=750.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    }
+  },
+  "promotions": {
+    "shefa-birkat-hashem::023": {
+      "status": "ok",
+      "source_file": "PromoFull7290058134977-000-023-20261115-050658.GZ",
+      "source_url": "https://shefabirkathashem.binaprojects.com/Download/PromoFull7290058134977-000-023-20261115-050658.GZ",
+      "published_at": "2026-11-15T05:06:58+02:00",
+      "retrieved_at": "2026-11-15T06:16:54.705883+00:00",
+      "sha256": "aeaef7f1474fa27dc2bec9d4951c668fd337176c585f602320ef5a52c8e05cf2",
+      "offers": [
+        {
+          "promotion_id": "978854785",
+          "description": "קוסקוס אסם 2 ב 12",
+          "update_time": "2026-11-15T05:09:34.824000",
+          "start_time": "2026-11-01T00:00:00+02:00",
+          "end_time": "2026-11-28T00:00:00+02:00",
+          "allow_multiple_discounts": false,
+          "min_items_offered": null,
+          "club_id": "0",
+          "is_coupon": false,
+          "remarks": null,
+          "additional_restrictions": null,
+          "reward_type": null,
+          "min_qty": null,
+          "discounted_price": null,
+          "discount_rate": null,
+          "min_purchase_amount": null,
+          "items": [
+            {
+              "item_code": "7290000060408",
+              "item_type": 1,
+              "is_gift_item": null,
+              "reward_type": 10,
+              "min_qty": "2.0000",
+              "max_qty": null,
+              "discount_rate": null,
+              "discounted_price": "12.00",
+              "discounted_price_per_unit": null,
+              "group_id": 1,
+              "min_purchase_amount": null,
+              "gtin": "07290000060408"
+            }
+          ],
+          "offer_group_item_count": 8
+        },
+        {
+          "promotion_id": "978853282",
+          "description": "קוסקוס 2 ב 10",
+          "update_time": "2026-11-15T05:09:39.394000",
+          "start_time": "2026-11-01T00:00:00+02:00",
+          "end_time": "2026-11-28T00:00:00+02:00",
+          "allow_multiple_discounts": false,
+          "min_items_offered": null,
+          "club_id": "0",
+          "is_coupon": false,
+          "remarks": null,
+          "additional_restrictions": null,
+          "reward_type": null,
+          "min_qty": null,
+          "discounted_price": null,
+          "discount_rate": null,
+          "min_purchase_amount": null,
+          "items": [
+            {
+              "item_code": "7290100702260",
+              "item_type": 1,
+              "is_gift_item": null,
+              "reward_type": 10,
+              "min_qty": "2.0000",
+              "max_qty": null,
+              "discount_rate": null,
+              "discounted_price": "10.00",
+              "discounted_price_per_unit": null,
+              "group_id": 1,
+              "min_purchase_amount": null,
+              "gtin": "07290100702260"
+            }
+          ],
+          "offer_group_item_count": 4
+        },
+        {
+          "promotion_id": "978852924",
+          "description": "טחינה גולמית ב 18.90",
+          "update_time": "2026-11-15T05:09:40.094000",
+          "start_time": "2026-11-01T00:00:00+02:00",
+          "end_time": "2026-11-28T00:00:00+02:00",
+          "allow_multiple_discounts": false,
+          "min_items_offered": null,
+          "club_id": "0",
+          "is_coupon": false,
+          "remarks": null,
+          "additional_restrictions": null,
+          "reward_type": null,
+          "min_qty": null,
+          "discounted_price": null,
+          "discount_rate": null,
+          "min_purchase_amount": null,
+          "items": [
+            {
+              "item_code": "7290000572819",
+              "item_type": 1,
+              "is_gift_item": null,
+              "reward_type": 3,
+              "min_qty": "1.0000",
+              "max_qty": null,
+              "discount_rate": "21.90",
+              "discounted_price": "18.90",
+              "discounted_price_per_unit": "18.90",
+              "group_id": 1,
+              "min_purchase_amount": null,
+              "gtin": "07290000572819"
+            }
+          ],
+          "offer_group_item_count": 3
+        }
+      ]
+    }
+  },
+  "warnings": []
+}

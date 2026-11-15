@@ -179,7 +179,7 @@ with sync_playwright() as p:
         return {est: document.querySelectorAll('[data-testid=estimated-price]').length, act: document.querySelectorAll('[data-testid=actual-price]').length, t: [t.estimatedCount, t.actualCount + t.userEnteredCount],
                 cards: document.querySelectorAll('[data-testid=card-breakdown]').length, head: txt.includes('₪' + t.totalCart.toFixed(2)), brk: txt.includes('actual ₪' + t.actualTotal.toFixed(2)) && txt.includes('estimated ₪' + t.estimatedTotal.toFixed(2)),
                 old: /Matched items only|not in total/.test(document.body.innerText)}; })()""")
-    check("UI: estimated rows = estimated count, actual rows = actual count, configured default card breakdowns, headline and split shown, old 'matched only' wording gone", ui["est"] == ui["t"][0] and ui["act"] == ui["t"][1] and ui["cards"] == 7 and ui["head"] and ui["brk"] and not ui["old"], ui)
+    check("UI: estimated rows = estimated count, actual rows = actual count, configured default card breakdowns, headline and split shown, old 'matched only' wording gone", ui["est"] == ui["t"][0] and ui["act"] == ui["t"][1] and ui["cards"] == 12 and ui["head"] and ui["brk"] and not ui["old"], ui)
     pg.screenshot(path="/tmp/shot_complete_cart.png", full_page=False)
     check("no page errors", not errs, errs)
     b.close()

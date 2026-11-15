@@ -291,8 +291,8 @@
         </button>
 
         <button id="tabBtnPreferences" class="nav-tab flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 text-xs sm:text-sm font-medium rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 border border-transparent whitespace-nowrap shrink-0">
-          <i class="fa-solid fa-sliders"></i>
-          <span>Supermarkets</span>
+          <i class="fa-solid fa-gear"></i>
+          <span>Settings</span>
         </button>
       </nav>
     </div>
@@ -496,6 +496,13 @@
           <label class="text-xs text-slate-600">Store type<select id="branchKindFilter" class="block w-full border rounded-lg p-2 mt-1 bg-white text-base"><option value="">Online + local</option><option value="online">Online only</option><option value="physical">Local branches only</option></select></label>
           <label class="text-xs text-slate-600">Branch / address<input id="branchSearch" placeholder="e.g. בוגרשוב" class="block w-full border rounded-lg p-2 mt-1 text-base"></label>
         </div>
+        <div class="flex flex-wrap items-center gap-1.5 pt-1">
+          <span class="text-[11px] font-semibold text-slate-500">Compare:</span>
+          <button id="btnCompareNearMe" type="button" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-emerald-100 text-emerald-800 hover:bg-emerald-200 transition-all">Near me (Givat Shmuel)</button>
+          <button id="btnCompareOnline" type="button" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-blue-100 text-blue-800 hover:bg-blue-200 transition-all">Online stores</button>
+          <button id="btnCompareAll" type="button" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">All connected</button>
+        </div>
+        <div id="connectedStoreChecks" class="flex flex-wrap gap-1.5"></div>
         <p id="branchDirectoryStatus" class="text-xs text-slate-500" role="status">Loading branch directory...</p>
         <div id="branchCompared" class="flex flex-wrap gap-2"></div>
         <div id="branchResults" class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-80 overflow-y-auto"></div>
@@ -536,34 +543,6 @@
               <input type="checkbox" id="cartIncludeMealsExport" class="rounded text-emerald-600">
               <span>Include meals in exports</span>
             </label>
-          </div>
-        </div>
-
-        <!-- Live Price Transparency Status & Online Store Identifiers -->
-        <div class="mt-4 p-3 bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-wrap items-center justify-between gap-3" id="livePriceToolbar">
-          <div class="flex items-center gap-2 flex-wrap text-xs">
-            <span class="font-bold text-slate-800 flex items-center gap-1.5">
-              <i class="fa-solid fa-scale-balanced text-emerald-600"></i> Food Law Feeds:
-            </span>
-            <span id="feedStatusBadge" class="px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 max-w-full">
-              <i class="fa-solid fa-chart-line text-slate-500 text-[10px]"></i> Checking feed status...
-            </span>
-            <span id="planCoverageBadge" class="px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 max-w-full">
-              <i class="fa-solid fa-barcode text-slate-500 text-[10px]"></i> Computing coverage...
-            </span>
-          </div>
-
-          <!-- Verified Online Stores -->
-          <div class="flex items-center gap-2 text-xs flex-wrap">
-            <span class="font-bold text-slate-700 flex items-center gap-1">
-              <i class="fa-solid fa-truck text-emerald-600"></i> Original online source branches:
-            </span>
-            <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-100 text-emerald-800">
-              Rami Levy Store 039 (מרלוג אינטרנט)
-            </span>
-            <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-blue-100 text-blue-800">
-              Shufersal Store 413 (שופרסל ONLINE)
-            </span>
           </div>
         </div>
 
@@ -624,6 +603,36 @@
       <!-- Grocery Aisles Categorized List -->
       <div id="groceryAislesContainer" class="space-y-4">
         <!-- Rendered by JavaScript grouped by supermarket department -->
+      </div>
+
+      <!-- Footnotes: feed provenance, coverage and comparison basis -->
+      <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 space-y-2" id="cartFootnotes">
+        <h4 class="text-[11px] font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
+          <i class="fa-solid fa-circle-info text-slate-400"></i> Feed notes &amp; sources
+        </h4>
+        <div class="flex flex-wrap items-center gap-2 text-xs">
+          <span class="font-semibold text-slate-600 flex items-center gap-1">
+            <i class="fa-solid fa-scale-balanced text-emerald-600"></i> Food Law Feeds:
+          </span>
+          <span id="feedStatusBadge" class="px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 max-w-full">
+            <i class="fa-solid fa-chart-line text-slate-500 text-[10px]"></i> Checking feed status...
+          </span>
+          <span id="planCoverageBadge" class="px-2.5 py-1 rounded-xl text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200 flex flex-wrap items-center gap-x-2.5 gap-y-0.5 max-w-full">
+            <i class="fa-solid fa-barcode text-slate-500 text-[10px]"></i> Computing coverage...
+          </span>
+        </div>
+        <div class="flex items-center gap-2 text-[11px] text-slate-500 flex-wrap">
+          <span class="font-semibold text-slate-600 flex items-center gap-1">
+            <i class="fa-solid fa-truck text-emerald-600"></i> Original online source branches:
+          </span>
+          <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-100 text-emerald-800">
+            Rami Levy Store 039 (מרלוג אינטרנט)
+          </span>
+          <span class="px-2 py-0.5 rounded text-[10px] font-semibold bg-blue-100 text-blue-800">
+            Shufersal Store 413 (שופרסל ONLINE)
+          </span>
+        </div>
+        <div id="cartBasisNote"></div>
       </div>
 
       <!-- Print-only planned meals (follows the Include-meals export setting) -->
@@ -701,7 +710,7 @@
       </div>
 
       <!-- Pantry Grid -->
-      <div id="pantryGridContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div id="pantryGridContainer" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
         <!-- Rendered by JavaScript -->
       </div>
 
@@ -1579,6 +1588,7 @@ let state = {
       expandedItems: {},
       currentStore: 'rami_levy',
       onlineStoreSelected: 'rami_levy',
+      compareSelection: null,
       city: 'center',
       includeShabbat: false,
       shabbatMeals: { friday: null, lunch: null },
@@ -2284,16 +2294,16 @@ let state = {
         const isSelected = store.id === state.currentStore;
         const normKey = normChainKey(store.id);
 
-        let storeDisplayTitle = store.nameHe;
-        if (normKey === 'rami-levy') storeDisplayTitle = 'רמי לוי אונליין (סניף 039)';
-        else if (normKey === 'shufersal') storeDisplayTitle = 'שופרסל אונליין (סניף 413)';
-        else if (normKey === 'osher-ad') storeDisplayTitle = 'אושר עד (סניף קרית אונו 032)';
-        else if (normKey === 'yochananof') storeDisplayTitle = 'יוחננוף (סניף ת"א נחלת יצחק 035)';
-        else if (normKey === 'victory') storeDisplayTitle = 'ויקטורי אונליין';
-        else if (normKey === 'carrefour') storeDisplayTitle = 'קרפור ישראל';
         const cm = state.livePrices && state.livePrices.metadata.chains[normKey];
-        if (cm && cm.store_name) storeDisplayTitle = `${store.directoryStore?.chain_name_he==='Be פארם' ? 'Be פארם / ' : ''}${cm.store_name} (${cm.store_id})`;
-        else if (store.directoryStore) storeDisplayTitle = `${store.nameHe} (${store.directoryStore.store_id})`;
+        const ds = store.directoryStore || STORE_DIRECTORY.stores[normKey];
+        let storeDisplayTitle;
+        if (ds) {
+          const addr = (ds.address && ds.address !== 'unknown') ? String(ds.address).trim() : '';
+          const place = ds.kind === 'online' ? 'Online' : (addr || ds.city || ('Store ' + ds.store_id));
+          storeDisplayTitle = `${ds.chain_name_he} - ${ds.name} (${place})`;
+        } else if (normKey === 'carrefour') storeDisplayTitle = 'קרפור ישראל';
+        else if (normKey === 'victory') storeDisplayTitle = 'ויקטורי אונליין';
+        else storeDisplayTitle = store.nameHe;
         const tag = String((state.livePrices || {}).metadata?.version) === '3' ? [isChainPublished(normKey) ? (store.inStoreOnly ? 'Published branch prices' : 'Published online prices') : 'No current branch prices - estimates', isChainPublished(normKey) ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'] : (TAGS[normKey] || ['Estimate', 'bg-slate-200 text-slate-700']);
         const pricingModelTag = tag[0];
         const tagColorClass = tag[1];
@@ -2343,7 +2353,14 @@ let state = {
       const basisNote = document.createElement('div');
       basisNote.className = 'col-span-full p-2.5 rounded-lg bg-emerald-50 border border-emerald-200 text-[11px] text-emerald-900';
       basisNote.innerHTML = '<i class="fa-solid fa-receipt text-emerald-500"></i> <b>Complete cart at every store.</b> Every card prices the same items and quantities. A line with a valid price at that store keeps its <b>actual</b> price (whole packages round up; loose by-weight items are priced at actual weight). Only a line the store cannot price (no verified product or size, incompatible unit, or an outdated feed) is filled with an <b>estimate</b>, marked “est.” in terracotta on the row: the average of the other connected stores that do price that exact quantity, or, when no store prices it, the recipe baseline. Nothing else is adjusted. Your own custom prices are used as typed. <b>Carrefour</b> has no reachable price source, so all of its lines are estimates. The Same-basket line is the subtotal of items priced by every compared store.';
-      container.appendChild(basisNote);
+      const basisTarget = document.getElementById('cartBasisNote');
+      if (basisTarget) { basisTarget.replaceChildren(basisNote); } else { container.appendChild(basisNote); }
+      if (!allCards.length) {
+        const empty = document.createElement('div');
+        empty.className = 'col-span-full p-3 rounded-lg bg-slate-50 border border-slate-200 text-xs text-slate-500';
+        empty.textContent = 'No stores selected. Tick stores above to compare them.';
+        container.appendChild(empty);
+      }
       allCards.forEach(c => container.appendChild(c));
     }
 
@@ -2373,8 +2390,9 @@ let state = {
           if(STORE_DIRECTORY.stores[key]) SUPERMARKETS[legacy].inStoreOnly=STORE_DIRECTORY.stores[key].kind!=='online';
         }
       }
-      state.defaultBranchKeys=(STORE_DIRECTORY.default_compare_stores || []).filter(k=>STORE_DIRECTORY.stores[k]);
+      state.defaultBranchKeys=(STORE_DIRECTORY.default_compare_stores || []).filter(k=>STORE_DIRECTORY.stores[k] && STORE_DIRECTORY.stores[k].kind!=='pharmacy');
       state.defaultBranchKeys.forEach(registerDirectoryStore);
+      getCompareSelection().forEach(registerDirectoryStore);
       state.comparedBranches=Array.isArray(state.comparedBranches) ? state.comparedBranches.filter(k=>typeof k==='string' && STORE_DIRECTORY.stores[k]) : [];
       if(STORE_DIRECTORY.stores[state.currentStore] && !state.comparedBranches.includes(state.currentStore)) state.comparedBranches.push(state.currentStore);
       state.comparedBranches=state.comparedBranches.filter(k=>!Object.values(DEFAULT_BRANCH_KEYS).includes(k) && !state.defaultBranchKeys.includes(k));
@@ -2394,14 +2412,58 @@ let state = {
         }
       }
       renderBranchResults();
+      renderConnectedStoreChecks();
+    }
+    function connectedCompareStores() {
+      return Object.keys((state.livePrices && state.livePrices.metadata.chains) || {}).filter(k => {
+        const s = STORE_DIRECTORY.stores[k];
+        return s && s.kind !== 'pharmacy';
+      });
+    }
+    function getCompareSelection() {
+      const conn = connectedCompareStores();
+      let sel = Array.isArray(state.compareSelection) ? state.compareSelection.filter(k => conn.includes(k)) : null;
+      if (!sel) sel = (state.defaultBranchKeys || []).filter(k => conn.includes(k));
+      return sel;
+    }
+    function setCompareSelection(keys) {
+      state.compareSelection = [...new Set(keys)].filter(k => connectedCompareStores().includes(k));
+      state.compareSelection.forEach(registerDirectoryStore);
+      saveState(); renderAll(); renderBranchResults(); renderConnectedStoreChecks();
+    }
+    function setCompareQuick(mode) {
+      const conn = connectedCompareStores();
+      if (mode === 'near') setCompareSelection(conn.filter(k => { const s = STORE_DIRECTORY.stores[k]; return s.kind === 'physical' && s.city === 'גבעת שמואל'; }));
+      else if (mode === 'online') setCompareSelection(conn.filter(k => STORE_DIRECTORY.stores[k].kind === 'online'));
+      else setCompareSelection(conn);
+      showToast(mode === 'near' ? 'Comparing your Givat Shmuel branches' : mode === 'online' ? 'Comparing online stores' : 'Comparing all connected stores');
     }
     function comparedStoreConfigs() {
       if(!state.defaultBranchKeys?.length) return Object.values(SUPERMARKETS);
-      const keys=new Set([...state.defaultBranchKeys,...(state.comparedBranches || [])]);
-      return [...keys].map(key=>SUPERMARKETS[Object.keys(DEFAULT_BRANCH_KEYS).find(id=>DEFAULT_BRANCH_KEYS[id]===key)] || SUPERMARKETS[key]).filter(Boolean);
+      const keys = new Set([...getCompareSelection(), ...(state.comparedBranches || []).filter(k => { const s = STORE_DIRECTORY.stores[k]; return s && s.kind !== 'pharmacy'; })]);
+      return [...keys].map(key => SUPERMARKETS[Object.keys(DEFAULT_BRANCH_KEYS).find(id => DEFAULT_BRANCH_KEYS[id] === key)] || SUPERMARKETS[key]).filter(Boolean);
+    }
+    function renderConnectedStoreChecks() {
+      const box = document.getElementById('connectedStoreChecks'); if (!box) return;
+      box.replaceChildren();
+      const sel = getCompareSelection();
+      connectedCompareStores().forEach(key => {
+        const s = STORE_DIRECTORY.stores[key]; if (!s) return;
+        const addr = (s.address && s.address !== 'unknown') ? String(s.address).trim() : '';
+        const place = s.kind === 'online' ? 'Online' : (addr || s.city || ('Store ' + s.store_id));
+        const lab = document.createElement('label');
+        lab.className = 'flex items-center gap-1.5 px-2 py-1 rounded-lg border text-[11px] font-semibold cursor-pointer ' + (sel.includes(key) ? 'bg-emerald-50 border-emerald-300 text-emerald-800' : 'bg-white border-slate-200 text-slate-600');
+        const cb = document.createElement('input'); cb.type = 'checkbox'; cb.className = 'w-3.5 h-3.5 text-emerald-600 rounded border-slate-300'; cb.checked = sel.includes(key);
+        cb.addEventListener('change', () => {
+          const cur = getCompareSelection();
+          setCompareSelection(cb.checked ? [...cur, key] : cur.filter(k => k !== key));
+        });
+        const txt = document.createElement('span'); txt.textContent = `${s.chain_name_he} - ${s.name} (${place})`;
+        lab.append(cb, txt); box.appendChild(lab);
+      });
     }
     function registerDirectoryStore(key) {
-      const s=STORE_DIRECTORY.stores[key];if(!s || (SUPERMARKETS[key] && !SUPERMARKETS[key]._pending)) return;
+      const s=STORE_DIRECTORY.stores[key];if(!s || s.kind==='pharmacy' || (SUPERMARKETS[key] && !SUPERMARKETS[key]._pending)) return;
       // Online launch URLs are allowlisted from the existing working integrations, not constructed from branch names.
       const legacy=Object.keys(DEFAULT_BRANCH_KEYS).find(k=>DEFAULT_BRANCH_KEYS[k]===key);
       const base=legacy && SUPERMARKETS[legacy];
@@ -2414,15 +2476,16 @@ let state = {
       if(existing) delete SUPERMARKETS[key];
       state.comparedBranches=state.comparedBranches || [];
       if(!existing && !(state.defaultBranchKeys || []).includes(key) && !state.comparedBranches.includes(key)) state.comparedBranches.push(key);
+      if(!existing){ state.compareSelection=getCompareSelection(); if(!state.compareSelection.includes(key)) state.compareSelection.push(key); }
       state.currentStore=existing || key;state.onlineStoreSelected=state.currentStore;
-      saveState();renderAll();renderBranchResults();
+      saveState();renderAll();renderBranchResults();renderConnectedStoreChecks();
     }
     function renderBranchResults() {
       const box=document.getElementById('branchResults');if(!box) return;
       const compared=document.getElementById('branchCompared');if(compared){compared.replaceChildren();for(const key of state.comparedBranches || []){const c=STORE_DIRECTORY.stores[key];if(!c)continue;const b=document.createElement('button');b.className='text-xs rounded-full px-3 py-2 bg-emerald-50 border border-emerald-200 min-h-[44px]';b.textContent=`${c.name} ×`;b.title='Remove from comparison';b.onclick=()=>{state.comparedBranches=state.comparedBranches.filter(k=>k!==key);delete SUPERMARKETS[key];if(state.currentStore===key)state.currentStore='rami_levy';saveState();renderAll();renderBranchResults();};compared.appendChild(b);}}
       const q=(document.getElementById('branchSearch').value || '').toLowerCase().trim();
       const chain=document.getElementById('branchChainFilter').value,kind=document.getElementById('branchKindFilter').value;
-      const rows=Object.values(STORE_DIRECTORY.stores).filter(s=>(!chain || chain===s.chain)&&(!kind || kind===s.kind)&&(!q || `${s.chain_name} ${s.chain_name_he} ${s.name} ${s.address} ${s.city} ${s.store_id}`.toLowerCase().includes(q)));
+      const rows=Object.values(STORE_DIRECTORY.stores).filter(s=>s.kind!=='pharmacy'&&(!chain || chain===s.chain)&&(!kind || kind===s.kind)&&(!q || `${s.chain_name} ${s.chain_name_he} ${s.name} ${s.address} ${s.city} ${s.store_id}`.toLowerCase().includes(q)));
       rows.sort((a,b)=>(Number(!!state.livePrices?.metadata?.chains?.[b.key])-Number(!!state.livePrices?.metadata?.chains?.[a.key]))||a.name.localeCompare(b.name));
       box.replaceChildren();
       const status=document.getElementById('branchDirectoryStatus');if(status)status.textContent=`${rows.length} branches found${rows.length>60?' - showing 60; narrow your search':''}. Refresh schedule: 4 times/day. Directory-only branches need a snapshot connection before actual prices are available.`;
@@ -3795,24 +3858,19 @@ let state = {
           const storePrice = item.defaultPrice * mult;
 
           const card = document.createElement('div');
-          card.className = `p-4 rounded-xl border transition-all cursor-pointer flex flex-col justify-between ${
+          card.className = `p-2 rounded-lg border transition-all cursor-pointer flex items-center gap-2 ${
             isSelected ? 'bg-emerald-50/70 border-emerald-400 shadow-sm' : 'bg-white border-slate-200 hover:border-slate-300'
           }`;
           card.innerHTML = `
-            <div class="flex items-start justify-between">
-              <div class="w-8 h-8 rounded-lg ${isSelected ? 'bg-emerald-600 text-white' : 'bg-slate-100 text-slate-600'} flex items-center justify-center text-sm shadow-sm">
-                <i class="fa-solid ${item.icon}"></i>
-              </div>
-              <input type="checkbox" class="w-4 h-4 text-emerald-600 rounded border-slate-300 pointer-events-none" ${isSelected ? 'checked' : ''}>
+            <div class="w-6 h-6 shrink-0 rounded-md ${isSelected ? 'bg-emerald-600 text-white' : 'bg-slate-100 text-slate-600'} flex items-center justify-center text-[11px]">
+              <i class="fa-solid ${item.icon}"></i>
             </div>
-            <div class="mt-3">
-              <div class="text-xs font-bold text-slate-900">${escapeHtml(item.name)}</div>
-              <div class="text-[11px] text-slate-500 font-medium">${item.nameHe}</div>
+            <div class="min-w-0 flex-1">
+              <div class="text-[11px] font-bold text-slate-900 leading-tight break-words">${escapeHtml(item.name)}</div>
+              <div class="text-[10px] text-slate-500 font-medium leading-tight break-words">${item.nameHe}</div>
+              <div class="text-[10px] font-bold ${isSelected ? 'text-emerald-700' : 'text-slate-600'}">₪${storePrice.toFixed(2)}</div>
             </div>
-            <div class="mt-3 pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
-              <span class="text-[11px] text-slate-500">Saves on bill:</span>
-              <span class="font-bold ${isSelected ? 'text-emerald-700' : 'text-slate-700'}">₪${storePrice.toFixed(2)}</span>
-            </div>
+            <input type="checkbox" class="w-4 h-4 shrink-0 text-emerald-600 rounded border-slate-300 pointer-events-none" ${isSelected ? 'checked' : ''}>
           `;
 
           card.addEventListener('click', () => {
@@ -5047,8 +5105,22 @@ const NUTRITION_DB = {
   "whole grain brown rice": {kcal:367, p:7.5, c:76.2, f:3.2, src:"fdc:169703", note:"dry weight"},
   "whole wheat bread": {kcal:252, p:12.4, c:42.7, f:3.5, src:"fdc:172688"},
   "whole wheat challah": {kcal:252, p:12.4, c:42.7, f:3.5, src:"fdc:172688", note:"ww bread as proxy for ww challah"},
-  "yellow cheese slices": {kcal:356, p:24.9, c:2.2, f:27.4, src:"fdc:171241", note:"israeli yellow cheese is gouda-type"},
+  "yellow cheese slices": {kcal:356, p:24.9, c:2.2, f:27.4, src:"fdc:171241", note:"israeli yellow cheese is gouda-type", u:{"slices": 28, "slice": 28}},
   "yellow onions": {kcal:40.0, p:1.1, c:9.3, f:0.1, src:"fdc:170000"},
+  "pure date syrup (silan)": {kcal:300, p:0.0, c:75.0, f:0.0, src:"fdc:1562420", note:"branded date syrup", u:{"tbsp": 20.0}},
+  "za'atar herb blend": {kcal:276, p:9.1, c:63.9, f:7.4, src:"fdc:170938", approx:"dried thyme proxy; blend also contains sesame, so fat may be higher", u:{"tbsp": 5.0}},
+  "halloumi grilling cheese": {kcal:321, p:21.4, c:3.6, f:25.0, src:"fdc:2472184", note:"branded halloumi reference"},
+  "whole grain granola": {kcal:464, p:14.3, c:46.4, f:28.6, src:"fdc:565809", note:"branded nut granola reference"},
+  "labneh yogurt cheese": {kcal:179, p:3.6, c:3.6, f:17.9, src:"fdc:2676102", approx:"turkish labneh reference; local pack is 11% fat"},
+  "fresh parsley": {kcal:36, p:3.0, c:6.3, f:0.8, src:"fdc:2709796", u:{"bunch": 60.0}, approx:"packed bunch ~60g"},
+  "baharat spice blend": {kcal:325, p:14.3, c:55.8, f:14.0, src:"fdc:170924", approx:"curry powder proxy for mixed spice blend", u:{"tbsp": 6.0}},
+  "potato gnocchi": {kcal:156, p:4.4, c:32.2, f:0.8, src:"fdc:1914616", note:"branded potato gnocchi reference"},
+  "shawarma seasoning": {kcal:325, p:14.3, c:55.8, f:14.0, src:"fdc:170924", approx:"curry powder proxy for mixed spice blend", u:{"tbsp": 6.0}},
+  "chickpea falafel mix": {kcal:371, p:22.9, c:57.1, f:5.7, src:"fdc:2089803", note:"dry falafel mix reference"},
+  "red lentil protein pasta": {kcal:358, p:23.9, c:63.1, f:2.2, src:"fdc:174284", note:"red lentil pasta is ground red lentils; dry weight"},
+  "light coconut milk 5-7%": {kcal:65, p:1.0, c:3.0, f:6.0, src:"fdc:2705413", approx:"fat midpoint of the pack's 5-7% claim on a light coconut milk base"},
+  "flaky cheese bourekas": {kcal:350, p:8.0, c:32.0, f:21.0, approx:"puff-pastry + white cheese estimate; no single FDC reference"},
+  "fresh green asparagus": {kcal:20, p:2.2, c:3.9, f:0.1, src:"fdc:2709767", u:{"bunch": 250.0}, note:"bunch = pinned 250g retail pack"},
 };
 const NUTRITION_MISSING_NOTE = "No reference data - excluded from totals below.";
 
@@ -5239,6 +5311,7 @@ const NUTRITION_MISSING_NOTE = "No reference data - excluded from totals below."
       renderPantryGrid();
       renderPreferences();
       renderStoreDeals();
+      renderConnectedStoreChecks();
     }
 
     window.addEventListener('DOMContentLoaded', () => {
@@ -5390,6 +5463,9 @@ const NUTRITION_MISSING_NOTE = "No reference data - excluded from totals below."
       document.getElementById('tabBtnMacros').addEventListener('click', () => switchTab('Macros'));
       document.getElementById('tabBtnPantry').addEventListener('click', () => switchTab('Pantry'));
       document.getElementById('tabBtnPreferences').addEventListener('click', () => switchTab('Preferences'));
+      document.getElementById('btnCompareNearMe')?.addEventListener('click', () => setCompareQuick('near'));
+      document.getElementById('btnCompareOnline')?.addEventListener('click', () => setCompareQuick('online'));
+      document.getElementById('btnCompareAll')?.addEventListener('click', () => setCompareQuick('all'));
 
       document.getElementById('btnQuickCheapest').addEventListener('click', buildCheapestWeek);
       document.getElementById('btnQuickOnlineCart').addEventListener('click', openOnlineCartModal);

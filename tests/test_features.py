@@ -90,9 +90,21 @@ with sync_playwright() as p:
         check("%s cart-level meals toggle: synced, drives print section, print block hidden on screen" % tag,
               all(r2.values()), r2)
         # day/week partial labels present
-        r3 = pg.evaluate("switchTab('Macros') || (() => { const t = document.getElementById('macrosDaysContainer').innerText + document.getElementById('macrosSummary').innerText; return {dayPartial: /partial/i.test(t), weekly: /INCOMPLETE/.test(t), mayBe: /may be (lower|higher)/.test(t)}; })()")
+        r3 = pg.evaluate("""(() => {
+          const savedLen = RECIPES.length; const savedSched = state.activeSchedule;
+          switchTab('Macros');
+          const t0 = document.getElementById('macrosDaysContainer').innerText + document.getElementById('macrosSummary').innerText;
+          const fullCoverage = !/partial/i.test(t0) && !/INCOMPLETE/.test(t0);
+          RECIPES.unshift({id:'synthetic_unknown_test', title:'Synthetic Unknown Test', titleHe:'בדיקה', description:'', prepTime:'10 min', tags:[], appliances:[], ingredients:[{name:'unobtainium test item', qty:100, unit:'g'}]});
+          state.activeSchedule=[{day:'Sunday', dayHe:'יום ראשון', recipeId:'synthetic_unknown_test'}];
+          renderAll(); switchTab('Macros');
+          const t = document.getElementById('macrosDaysContainer').innerText + document.getElementById('macrosSummary').innerText;
+          const out = {fullCoverage, dayPartial: /partial/i.test(t), weekly: /INCOMPLETE/.test(t), mayBe: /may be (lower|higher)/.test(t)};
+          RECIPES.splice(0, RECIPES.length - savedLen); state.activeSchedule = savedSched; renderAll();
+          return out;
+        })()""")
         r4 = pg.evaluate("(() => { const rec = RECIPES.find(r => (r.ingredients||[]).some(i => { const e = NUTRITION_DB[String(i.name).toLowerCase()]; return e && e.approx; })); const m = rec ? computeRecipeMacros(rec.id) : null; return {found: !!rec, approxListed: !!(m && m.approx.length > 0)}; })()")
-        check("%s macros honest labels: day partial, weekly incomplete, may-be wording; bone/peel items flagged approx" % tag,
+        check("%s macros: default plan fully covered; unknown ingredient still gets honest partial/incomplete/may-be labels; approx items flagged" % tag,
               all(r3.values()) and r4["found"] and r4["approxListed"], (r3, r4))
         pg.evaluate("switchTab('Cart')")
         # --- overflow checks (document AND body-level) ---

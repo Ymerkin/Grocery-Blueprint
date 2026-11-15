@@ -1,0 +1,364 @@
+{
+  "metadata": {
+    "version": "2.1",
+    "chains": {
+      "shuk-hayir::312": {
+        "store_id": "312",
+        "store_name": "אונליין - בני ברק",
+        "source_file": "PriceFull7290058148776-000-312-20261115-050304.GZ",
+        "source_url": "https://shuk-hayir.binaprojects.com/Download/PriceFull7290058148776-000-312-20261115-050304.GZ",
+        "published_at": "2026-11-15T05:03:04+02:00",
+        "published_at_assumed_tz": "Asia/Jerusalem",
+        "retrieved_at": "2026-11-15T06:15:47.801106+00:00",
+        "sha256": "ae7437d4e894ad237e11e070d3da440ce828061d3a8c0973d7993214d6eb76f6",
+        "item_count": 2922,
+        "priced_count": 10,
+        "chain": "shuk-hayir",
+        "kind": "online",
+        "address": "https://www.shukcity.co.il/ 0",
+        "city": ""
+      }
+    },
+    "drained_unpriced": []
+  },
+  "ingredients": {
+    "cottage cheese 5%": {
+      "ingredient_name": "Cottage Cheese 5%",
+      "shuk-hayir::312": {
+        "item_code": "7290004127329",
+        "gtin": "07290004127329",
+        "nameHe": "קוטג' 5% תנובה 250 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 6.5,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.026,
+        "priceUpdateTime": "2026-11-13T00:44:00",
+        "metadataSource": "PriceFull7290058148776-000-312-20261115-050304.GZ (published 2026-11-15T05:03:04+02:00, store 312): ItemCode=7290004127329, price=6.5, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "crushed canned tomatoes": {
+      "ingredient_name": "Crushed Canned Tomatoes",
+      "shuk-hayir::312": {
+        "item_code": "7290000208022",
+        "gtin": "07290000208022",
+        "nameHe": "עגבניות מרוסקות יכין 800 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 11.9,
+        "packQty": 800.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01488,
+        "priceUpdateTime": "2026-11-12T21:26:00",
+        "metadataSource": "PriceFull7290058148776-000-312-20261115-050304.GZ (published 2026-11-15T05:03:04+02:00, store 312): ItemCode=7290000208022, price=11.9, pack=800.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "egg stir-fry noodles": {
+      "ingredient_name": "Egg Stir-Fry Noodles",
+      "shuk-hayir::312": {
+        "item_code": "7290018860984",
+        "gtin": "07290018860984",
+        "nameHe": "אטריות ביצים דקות 400 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 400.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02475,
+        "priceUpdateTime": "2026-11-12T21:36:00",
+        "metadataSource": "PriceFull7290058148776-000-312-20261115-050304.GZ (published 2026-11-15T05:03:04+02:00, store 312): ItemCode=7290018860984, price=9.9, pack=400.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "raw sesame tahini": {
+      "ingredient_name": "Raw Sesame Tahini",
+      "shuk-hayir::312": {
+        "item_code": "7290000572819",
+        "gtin": "07290000572819",
+        "nameHe": "טחינה גולמית אחוה 1 ק\"ג",
+        "brand": "לא ידוע",
+        "packPrice": 25.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0259,
+        "priceUpdateTime": "2026-11-13T00:44:00",
+        "metadataSource": "PriceFull7290058148776-000-312-20261115-050304.GZ (published 2026-11-15T05:03:04+02:00, store 312): ItemCode=7290000572819, price=25.9, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "seasoned breadcrumbs": {
+      "ingredient_name": "Seasoned Breadcrumbs",
+      "shuk-hayir::312": {
+        "item_code": "7290100680711",
+        "gtin": "07290100680711",
+        "nameHe": "פירורית זהב אסם 350 גרם",
+        "brand": "אסם",
+        "packPrice": 10.9,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03114,
+        "priceUpdateTime": "2026-11-12T22:49:00",
+        "metadataSource": "PriceFull7290058148776-000-312-20261115-050304.GZ (published 2026-11-15T05:03:04+02:00, store 312): ItemCode=7290100680711, price=10.9, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "soft white cheese 5%": {
+      "ingredient_name": "Soft White Cheese 5%",
+      "shuk-hayir::312": {
+        "item_code": "7290000474502",
+        "gtin": "07290000474502",
+        "nameHe": "גבינה לבנה 5% טרה 250 גרם מהדרין",
+        "brand": "הפריט בפיקוח",
+        "packPrice": 5.87,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02348,
+        "priceUpdateTime": "2026-11-13T00:44:00",
+        "metadataSource": "PriceFull7290058148776-000-312-20261115-050304.GZ (published 2026-11-15T05:03:04+02:00, store 312): ItemCode=7290000474502, price=5.87, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "toasted pasta pearls (ptitim)": {
+      "ingredient_name": "Toasted Pasta Pearls (Ptitim)",
+      "shuk-hayir::312": {
+        "item_code": "7290000060408",
+        "gtin": "07290000060408",
+        "nameHe": "פתיתים אפויים טבעות אסם 500 גרם",
+        "brand": "אסם",
+        "packPrice": 8.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0178,
+        "priceUpdateTime": "2026-11-12T22:07:00",
+        "metadataSource": "PriceFull7290058148776-000-312-20261115-050304.GZ (published 2026-11-15T05:03:04+02:00, store 312): ItemCode=7290000060408, price=8.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "crispy brown rice cakes": {
+      "ingredient_name": "Crispy Brown Rice Cakes",
+      "shuk-hayir::312": {
+        "item_code": "7290000068343",
+        "gtin": "07290000068343",
+        "nameHe": "פריכונים מאורז מלא אסם 140 גרם",
+        "brand": "אסם",
+        "packPrice": 11.9,
+        "packQty": 140.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.085,
+        "priceUpdateTime": "2026-11-12T21:26:00",
+        "metadataSource": "PriceFull7290058148776-000-312-20261115-050304.GZ (published 2026-11-15T05:03:04+02:00, store 312): ItemCode=7290000068343, price=11.9, pack=140.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "basil pesto spread": {
+      "ingredient_name": "Basil Pesto Spread",
+      "shuk-hayir::312": {
+        "item_code": "7290015858106",
+        "gtin": "07290015858106",
+        "nameHe": "פסטו ביתי עללחם 180 גרם",
+        "brand": "סלטי אחלה +עללחם",
+        "packPrice": 18.9,
+        "packQty": 180.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.105,
+        "priceUpdateTime": "2026-11-13T00:44:00",
+        "metadataSource": "PriceFull7290058148776-000-312-20261115-050304.GZ (published 2026-11-15T05:03:04+02:00, store 312): ItemCode=7290015858106, price=18.9, pack=180.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "extra virgin olive oil": {
+      "ingredient_name": "Extra Virgin Olive Oil",
+      "shuk-hayir::312": {
+        "item_code": "7290019603498",
+        "gtin": "07290019603498",
+        "nameHe": "שמן זית כתית מעולה מיה 750 מ\"ל",
+        "brand": "לא ידוע",
+        "packPrice": 32.9,
+        "packQty": 750.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04387,
+        "priceUpdateTime": "2026-11-13T00:44:00",
+        "metadataSource": "PriceFull7290058148776-000-312-20261115-050304.GZ (published 2026-11-15T05:03:04+02:00, store 312): ItemCode=7290019603498, price=32.9, pack=750.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    }
+  },
+  "promotions": {
+    "shuk-hayir::312": {
+      "status": "ok",
+      "source_file": "PromoFull7290058148776-000-312-20261115-050304.GZ",
+      "source_url": "https://shuk-hayir.binaprojects.com/Download/PromoFull7290058148776-000-312-20261115-050304.GZ",
+      "published_at": "2026-11-15T05:03:04+02:00",
+      "retrieved_at": "2026-11-15T06:16:01.345782+00:00",
+      "sha256": "4a5a6aef5199045d1422ad475b7c975fa01e0f1fb1f37047a6a2ea9a3c0bea5b",
+      "offers": [
+        {
+          "promotion_id": "201364597",
+          "description": "שמן זית כתית מעולה מיה 750 מ\"ל 2ב40",
+          "update_time": "2026-11-15T05:06:30.641000",
+          "start_time": "2026-11-01T00:00:00+02:00",
+          "end_time": "2026-11-28T00:00:00+02:00",
+          "allow_multiple_discounts": false,
+          "min_items_offered": null,
+          "club_id": "0",
+          "is_coupon": false,
+          "remarks": null,
+          "additional_restrictions": null,
+          "reward_type": null,
+          "min_qty": null,
+          "discounted_price": null,
+          "discount_rate": null,
+          "min_purchase_amount": null,
+          "items": [
+            {
+              "item_code": "7290019603498",
+              "item_type": 1,
+              "is_gift_item": null,
+              "reward_type": 1,
+              "min_qty": "2.0000",
+              "max_qty": null,
+              "discount_rate": "39.21",
+              "discounted_price": "40.00",
+              "discounted_price_per_unit": "2.67",
+              "group_id": 1,
+              "min_purchase_amount": null,
+              "gtin": "07290019603498"
+            }
+          ],
+          "offer_group_item_count": 1
+        },
+        {
+          "promotion_id": "201364160",
+          "description": "טחינה גולמית אחוה 1 קג 19.9",
+          "update_time": "2026-11-15T05:06:31.926000",
+          "start_time": "2026-11-02T00:00:00+02:00",
+          "end_time": "2026-11-28T00:00:00+02:00",
+          "allow_multiple_discounts": false,
+          "min_items_offered": null,
+          "club_id": "0",
+          "is_coupon": false,
+          "remarks": null,
+          "additional_restrictions": null,
+          "reward_type": null,
+          "min_qty": null,
+          "discounted_price": null,
+          "discount_rate": null,
+          "min_purchase_amount": null,
+          "items": [
+            {
+              "item_code": "7290000572819",
+              "item_type": 1,
+              "is_gift_item": null,
+              "reward_type": 3,
+              "min_qty": "1.0000",
+              "max_qty": null,
+              "discount_rate": "23.17",
+              "discounted_price": "19.90",
+              "discounted_price_per_unit": "19.90",
+              "group_id": 1,
+              "min_purchase_amount": null,
+              "gtin": "07290000572819"
+            }
+          ],
+          "offer_group_item_count": 1
+        },
+        {
+          "promotion_id": "201358662",
+          "description": "אטריות ביצים דקות/רחבות2 ב 15.90 ש\"ח",
+          "update_time": "2026-11-15T05:06:34.146000",
+          "start_time": "2026-11-02T00:00:00+02:00",
+          "end_time": "2026-11-28T00:00:00+02:00",
+          "allow_multiple_discounts": false,
+          "min_items_offered": null,
+          "club_id": "0",
+          "is_coupon": false,
+          "remarks": null,
+          "additional_restrictions": null,
+          "reward_type": null,
+          "min_qty": null,
+          "discounted_price": null,
+          "discount_rate": null,
+          "min_purchase_amount": null,
+          "items": [
+            {
+              "item_code": "7290018860984",
+              "item_type": 1,
+              "is_gift_item": null,
+              "reward_type": 10,
+              "min_qty": "2.0000",
+              "max_qty": null,
+              "discount_rate": null,
+              "discounted_price": "15.90",
+              "discounted_price_per_unit": null,
+              "group_id": 1,
+              "min_purchase_amount": null,
+              "gtin": "07290018860984"
+            }
+          ],
+          "offer_group_item_count": 1
+        }
+      ]
+    }
+  },
+  "warnings": []
+}

@@ -19,7 +19,7 @@ with sync_playwright() as p:
         pg.goto('http://127.0.0.1:%d/index.html'%srv.server_address[1]);pg.wait_for_function("state.livePricesLoaded && Object.keys(STORE_DIRECTORY.stores).length>500")
         pg.evaluate("switchTab('Cart')")
         result=pg.evaluate("({schema:state.livePrices.metadata.version,stores:Object.keys(STORE_DIRECTORY.stores).length,snapshots:PRICE_CHAINS.length,chains:Object.keys(STORE_DIRECTORY.chains).length})")
-        check(tag+' schema 3 and expanded directory',result['schema']=='3' and result['stores']>1000 and result['snapshots']==7 and result['chains']>6,result)
+        check(tag+' schema 3 and expanded directory',result['schema']=='3' and result['stores']>1000 and result['snapshots']==12 and result['chains']>6,result)
         check(tag+' legacy IDs resolve to exact online branches',pg.evaluate("normChainKey('rami-levy')==='rami-levy::039' && normChainKey('rami_levy')==='rami-levy::039' && normChainKey('shufersal')==='shufersal::413'"))
         # Save the exact feed-backed result rendered in both list and detail views.
         pg.evaluate("chooseDirectoryStore('shufersal::413');document.getElementById('storeDeals').scrollIntoView({block:'start'});scrollBy(0,-120)")
@@ -44,12 +44,39 @@ with sync_playwright() as p:
           m.published_at=new Date(Date.now()-49*3600000).toISOString();const stale=!isChainPublished(k);m.published_at=new Date(Date.now()+2*3600000).toISOString();const future=!isChainPublished(k);m.published_at=old;return stale&&future;})()""")
         check(tag+' stale/future source cannot remain actual in open session',gate)
         check(tag+' default cards are exactly online plus Givat Shmuel',pg.evaluate("JSON.stringify(comparedStoreConfigs().map(s=>normChainKey(s.id)).sort())===JSON.stringify(STORE_DIRECTORY.default_compare_stores.slice().sort())"))
+        # Nov 15 batch: Settings tab label, footnotes, picker selection model, pharmacy exclusion, card naming, pantry density, full macros coverage.
+        check(tag+' Supermarkets tab is now Settings',pg.evaluate("document.getElementById('tabBtnPreferences').innerText.includes('Settings')"))
+        check(tag+' feed info sits in cart footnotes',pg.evaluate("!!document.getElementById('cartFootnotes') && document.getElementById('cartFootnotes').contains(document.getElementById('feedStatusBadge')) && document.getElementById('cartFootnotes').contains(document.getElementById('planCoverageBadge')) && !document.getElementById('livePriceToolbar')"))
+        check(tag+' complete-cart basis note is a footnote',pg.evaluate("(document.getElementById('cartBasisNote')||{}).textContent?.includes('Complete cart at every store')===true"))
+        check(tag+' one checkbox per connected non-pharmacy store',pg.evaluate("document.querySelectorAll('#connectedStoreChecks input').length===12"))
+        check(tag+' every comparison card shows chain - branch (place)',pg.evaluate("[...document.querySelectorAll('#supermarketPriceGrid > div')].map(d=>d.querySelector('span.break-words')).filter(Boolean).every(s=>s.textContent.includes(' - ')&&s.textContent.includes('('))"))
+        check(tag+' directory marks pharmacy branches',pg.evaluate("Object.values(STORE_DIRECTORY.stores).some(s=>s.kind==='pharmacy')"))
+        pg.fill('#branchSearch','גבעת שמואל')
+        check(tag+' Givat Shmuel search shows supermarkets only',pg.evaluate("[...document.querySelectorAll('#branchResults button')].length===4 && ![...document.querySelectorAll('#branchResults button')].some(b=>/BE |Be פארם/.test(b.textContent))"))
+        pg.fill('#branchSearch','')
+        r=pg.evaluate("""(()=>{const before=document.querySelectorAll('#supermarketPriceGrid > div').length;
+          const lab=[...document.querySelectorAll('#connectedStoreChecks label')].find(l=>l.textContent.includes('טיב טעם'));lab.querySelector('input').click();
+          const after=document.querySelectorAll('#supermarketPriceGrid > div').length;
+          const lab2=[...document.querySelectorAll('#connectedStoreChecks label')].find(l=>l.textContent.includes('טיב טעם'));lab2.querySelector('input').click();
+          const restored=document.querySelectorAll('#supermarketPriceGrid > div').length;
+          return {before,after,restored};})()""")
+        check(tag+' store checkbox hides and restores its card',r['before']==12 and r['after']==11 and r['restored']==12,r)
+        r=pg.evaluate("""(()=>{document.getElementById('btnCompareNearMe').click();const near=getCompareSelection().slice().sort();
+          document.getElementById('btnCompareOnline').click();const online=getCompareSelection().slice().sort();
+          document.getElementById('btnCompareAll').click();const all=getCompareSelection().length;
+          return {near,online,all};})()""")
+        check(tag+' near me / online / all quick select',r['near']==['fresh-market::047','rami-levy::712','super-bareket::009','super-bareket::065'] and r['online']==['rami-levy::039','shufersal::413','shuk-hayir::312'] and r['all']==12,r)
+        check(tag+' selection restored to all connected',pg.evaluate("comparedStoreConfigs().length===12"))
+        pg.evaluate("switchTab('Pantry')")
+        check(tag+' pantry staples are compact multi-column on phone',pg.evaluate("document.getElementById('pantryGridContainer').className.includes('grid-cols-2') && document.querySelector('#pantryGridContainer > div').className.includes('flex items-center')"))
+        check(tag+' all recipe ingredients have nutrition coverage',pg.evaluate("RECIPES.every(r=>{const m=computeRecipeMacros(r.id);return m && m.missing.length===0;})"))
+        pg.evaluate("switchTab('Cart')")
         # Specific local branches from two chains outside the old six.
-        for key in ['rami-levy::712','fresh-market::047','super-bareket::009','super-bareket::065','shufersal::645']:
+        for key in ['rami-levy::712','fresh-market::047','super-bareket::009','super-bareket::065','osher-ad::032','yochananof::015','tiv-taam::025','super-yuda::241','shefa-birkat-hashem::023']:
             pg.evaluate('(k)=>chooseDirectoryStore(k)',key)
             st=pg.evaluate("({key:normChainKey(state.currentStore),actual:calculateCartTotals().actualCount,online:!document.getElementById('btnOpenOnlineCartModal').hidden,links:[...document.querySelectorAll('#groceryAislesContainer a')].filter(a=>a.textContent.includes('Online')).length,offers:activeStoreOffers(normChainKey(state.currentStore)).length})")
             check(tag+' physical branch isolation '+key,st['key']==key and not st['online'] and st['links']==0,st)
-            check(tag+' connected physical branch has actual products '+key,(st['actual']>0 or key=='shufersal::645'),st)
+            check(tag+' connected physical branch has actual products '+key,st['actual']>0,st)
             pg.evaluate('openOnlineCartModal()');check(tag+' physical direct modal call blocked '+key,not pg.locator('#onlineCartModal').is_visible())
         # Local/online filtering is genuine and searchable.
         pg.select_option('#branchChainFilter','super-bareket');pg.select_option('#branchKindFilter','physical');pg.fill('#branchSearch','הזיתים')

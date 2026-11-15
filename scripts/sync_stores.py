@@ -147,7 +147,7 @@ def catalog(use_cached=False):
                 key=store_key(c.slug,s['store_id'])
                 city=s.get('city') or '';city_code=city if city.isdigit() else None;city='גבעת שמואל' if city=='681' else ('' if city.isdigit() else city) # verified city 681 from explicit local branch records
                 stores[key]={'key':key,'chain':c.slug,'chain_name':c.name,'chain_name_he':c.name_he,'store_id':s['store_id'],'name':name,'address':s.get('address') or '', 'city':city,'kind':'online' if online else 'physical','directory_source':c.portal_url,'city_code':city_code}
-                if c.slug=='shufersal' and s.get('sub_chain_name')=='Be':stores[key].update(chain_name='Be pharmacy (Shufersal feed)',chain_name_he='Be פארם')
+                if c.slug=='shufersal' and s.get('sub_chain_name')=='Be':stores[key].update(chain_name='Be pharmacy (Shufersal feed)',chain_name_he='Be פארם',kind='pharmacy')
         except Exception as e:
             statuses[c.slug]={'name':c.name,'nameHe':c.name_he,'status':'unavailable','reason':str(e),'source':c.portal_url}
             for k,s in prev.get('stores',{}).items():
