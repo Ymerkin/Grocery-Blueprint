@@ -138,6 +138,26 @@ def worker(chain,sid,path,promos=True):
 
 def catalog(use_cached=False):
     prev=read(ROOT/'stores.json',{});stores={};statuses={}
+    loc=read(ROOT/'data/localities.json',{})
+    # Longest-first locality names plus common feed spellings (CBS uses קריית/נהרייה/כפ\u05e8 forms that
+    # chains shorten). A store's city is resolved from its CBS city_code first, then from a locality
+    # name appearing in the branch name/address. Unresolvable stores keep an empty city (honest).
+    names=sorted((v['n'] for v in loc.values()),key=len,reverse=True)
+    variants={}
+    for n in names:
+        if 'קריית' in n:variants[n.replace('קריית','קרית')]=n
+        if 'נהרייה' in n:variants['נהריה']=n
+    allnames=sorted(set(names)|set(variants),key=len,reverse=True)
+    def resolve_city(name,address,city_code):
+        cc=str(city_code or '').strip().lstrip('0') or '0'
+        if cc in loc:
+            L=loc[cc];return L['n'],L['e'],L['lat'],L['lon']
+        hay=(name or '')+' '+(address or '')
+        for n in allnames:
+            if n in hay:
+                canon=variants.get(n,n);L=loc.get(next((k for k,v in loc.items() if v['n']==canon),''),None)
+                if L:return L['n'],L['e'],L['lat'],L['lon']
+        return '','',None,None
     for c in list_chains(implemented_only=True):
         if c.sector!='supermarket':continue
         cache=ROOT/'data/directories'/f'{c.slug}.json';cache.parent.mkdir(parents=True,exist_ok=True)
@@ -158,7 +178,9 @@ def catalog(use_cached=False):
                 name=s.get('name') or c.name_he;online=s.get('store_type')==2 or any(w in name.lower() for w in ['online','אונליין','אינטרנט'])
                 key=store_key(c.slug,s['store_id'])
                 city=s.get('city') or '';city_code=city if city.isdigit() else None;city='גבעת שמואל' if city=='681' else ('' if city.isdigit() else city) # verified city 681 from explicit local branch records
-                stores[key]={'key':key,'chain':c.slug,'chain_name':c.name,'chain_name_he':c.name_he,'store_id':s['store_id'],'name':name,'address':s.get('address') or '', 'city':city,'kind':'online' if online else 'physical','directory_source':c.portal_url,'city_code':city_code}
+                rcity,rcity_en,rlat,rlon=resolve_city(name,s.get('address'),city_code)
+                if not city:city=rcity # feed-stated city wins; resolved locality fills the gaps
+                stores[key]={'key':key,'chain':c.slug,'chain_name':c.name,'chain_name_he':c.name_he,'store_id':s['store_id'],'name':name,'address':s.get('address') or '', 'city':city,'city_en':rcity_en,'lat':rlat,'lon':rlon,'kind':'online' if online else 'physical','directory_source':c.portal_url,'city_code':city_code}
                 if c.slug=='shufersal' and s.get('sub_chain_name')=='Be':stores[key].update(chain_name='Be pharmacy (Shufersal feed)',chain_name_he='Be פארם',kind='pharmacy')
         except Exception as e:
             statuses[c.slug]={'name':c.name,'nameHe':c.name_he,'status':'unavailable','reason':str(e),'source':c.portal_url}
