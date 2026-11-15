@@ -67,7 +67,7 @@ LINES = {
     "cucumbers in brine (pickles)": {"terms": [["מלפפונים"], ["כבושים", "חמוצים"]], "exclude": [], "price": (6, 20)},
     "farm eggs":               {"terms": [["ביצים"]], "exclude": ["מבושלות", "פסטה", "אטריות", "פתיתי", "אבקת", "עוף"], "price": (8, 30)},
     "farm eggs (12 pk)":       {"terms": [["ביצים"]], "exclude": ["מבושלות", "פסטה", "אטריות", "פתיתי", "אבקת", "עוף"], "price": (8, 30)},
-    "chicken pargiyot":        {"terms": [["פרגית"]], "exclude": [], "price": (20, 70), "weighted": True},
+    "chicken pargiyot":        {"terms": [["פרגית"]], "exclude": ["נקניקיות", "נקניק"], "price": (20, 70), "weighted": True},
     "ground beef":             {"terms": [["בקר טחון", "טחון בקר", "בשר טחון"]], "exclude": ["הודו", "עוף", "כמו בשר"], "price": (25, 80), "weighted": True},
     "firm tofu tnuva":         {"terms": [["טופו"]], "exclude": ["רוטב"], "price": (8, 25)},
     "greek yogurt 7%":         {"terms": [["יוגורט"], ["יווני"]], "exclude": [], "price": (5, 20)},
@@ -107,12 +107,16 @@ def norm_name(s):
     return re.sub(r"\s+", " ", s).strip()
 
 def gtin_valid(code):
-    d = re.sub(r"\D", "", str(code or ""))
-    if len(d) not in (8, 12, 13, 14):
+    """Same evidence bar as the sync pipeline: library checksum validation + rejection of
+    restricted-distribution/variable-measure prefixes that are not cross-retailer identities."""
+    from israeli_prices import to_gtin14
+    gt = to_gtin14(str(code))
+    if not gt:
         return None
-    d = d.zfill(14)
-    total = sum((3 if i % 2 else 1) * int(x) for i, x in enumerate(d[:-1]))
-    return d if (10 - total % 10) % 10 == int(d[-1]) else None
+    base = gt.lstrip('0')
+    if len(base) == 13 and base[:2] in {str(n) for n in range(20, 30)}:
+        return None
+    return gt
 
 def download_catalogs():
     CATDIR.mkdir(exist_ok=True)
