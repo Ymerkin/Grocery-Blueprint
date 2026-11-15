@@ -496,16 +496,16 @@
           <label class="text-xs text-slate-600">Store type<select id="branchKindFilter" class="block w-full border rounded-lg p-2 mt-1 bg-white text-base"><option value="">Online + local</option><option value="online">Online only</option><option value="physical">Local branches only</option></select></label>
           <label class="text-xs text-slate-600">Branch / address<input id="branchSearch" placeholder="e.g. בוגרשוב" class="block w-full border rounded-lg p-2 mt-1 text-base"></label>
         </div>
+        <p id="branchDirectoryStatus" class="text-xs text-slate-500" role="status">Loading branch directory...</p>
+        <div id="branchResults" class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-80 overflow-y-auto"></div>
         <div class="flex flex-wrap items-center gap-1.5 pt-1">
           <span class="text-[11px] font-semibold text-slate-500">Compare:</span>
           <button id="btnCompareNearMe" type="button" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-emerald-100 text-emerald-800 hover:bg-emerald-200 transition-all">Near me (Givat Shmuel)</button>
           <button id="btnCompareOnline" type="button" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-blue-100 text-blue-800 hover:bg-blue-200 transition-all">Online stores</button>
           <button id="btnCompareAll" type="button" class="px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">All connected</button>
         </div>
-        <div id="connectedStoreChecks" class="flex flex-wrap gap-1.5"></div>
-        <p id="branchDirectoryStatus" class="text-xs text-slate-500" role="status">Loading branch directory...</p>
         <div id="branchCompared" class="flex flex-wrap gap-2"></div>
-        <div id="branchResults" class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-80 overflow-y-auto"></div>
+        <div id="connectedStoreChecks" class="flex flex-wrap gap-1.5"></div>
         <details class="text-xs text-slate-500"><summary class="cursor-pointer">Connections and coverage</summary><div id="branchConnectionStatus" class="mt-2 space-y-1"></div></details>
       </section>
       <section id="storeDeals" class="bg-amber-50 rounded-2xl p-5 border border-amber-200 space-y-3"></section>
@@ -2464,8 +2464,8 @@ let state = {
       if(filter && filter.options.length===1) {
         const seen=new Map();Object.values(STORE_DIRECTORY.stores).forEach(s=>seen.set(s.chain,`${s.chain_name} / ${s.chain_name_he}`));
         [...seen].sort((a,b)=>a[1].localeCompare(b[1])).forEach(([key,label])=>filter.add(new Option(label,key)));
-        ['branchChainFilter','branchKindFilter','branchSearch'].forEach(id=>document.getElementById(id).addEventListener('input',renderBranchResults));
       }
+      ['branchChainFilter','branchKindFilter','branchSearch'].forEach(id=>{const el=document.getElementById(id);if(el && !el.dataset.branchFilterBound){el.addEventListener('input',renderBranchResults);el.dataset.branchFilterBound='1';}});
       const cs=document.getElementById('branchConnectionStatus');
       if(cs) {
         cs.replaceChildren();
@@ -2609,7 +2609,12 @@ let state = {
       rows.sort((a,b)=>(rank(b)-rank(a))||a.name.localeCompare(b.name));
       box.replaceChildren();
       const nationalOk = Object.values(SHARD_INDEX.stores || {}).filter(r => r.status === 'ok').length;
-      const status=document.getElementById('branchDirectoryStatus');if(status)status.textContent=`${rows.length} branches found${rows.length>60?' - showing 60; narrow your search':''}. Connected stores refresh 4x/day${nationalOk?`; national branches (${nationalOk} live) refresh daily`:''}. Directory-only branches show estimates until their chain becomes reachable.`;
+      const status=document.getElementById('branchDirectoryStatus');
+      if(status){
+        status.textContent=`${rows.length} branches found${rows.length>60?' - showing 60; narrow your search':''}. Connected stores refresh 4x/day${nationalOk?`; national branches (${nationalOk} live) refresh daily`:''}. Directory-only branches show estimates until their chain becomes reachable.`;
+        const filtering=!!(q||chain||kind);
+        status.className=filtering?'text-xs font-bold text-emerald-900 bg-emerald-50 border border-emerald-200 rounded-lg px-2 py-1.5':'text-xs text-slate-500';
+      }
       for(const s of rows.slice(0,60)) {
         const button=document.createElement('button');button.type='button';button.dataset.branchKey=s.key;
         button.className='text-left border border-slate-200 bg-slate-50 hover:bg-emerald-50 rounded-xl p-3 min-w-0 min-h-[44px]';
