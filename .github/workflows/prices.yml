@@ -55,7 +55,9 @@ jobs:
             echo "No price changes to commit."
           else
             git commit -m "Update supermarket prices ($(date -u +%Y-%m-%d))"
-            git push
+            # The national workflow can land a commit while this run fetches: rebase and retry once
+            # instead of dying on a non-fast-forward push.
+            git push || { git pull --rebase origin main && git push; }
           fi
 
       - name: Record the post-sync HEAD for the deploy job
