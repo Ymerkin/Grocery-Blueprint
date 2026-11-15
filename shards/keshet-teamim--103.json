@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "version": "3",
+    "chains": {
+      "keshet-teamim::103": {
+        "store_id": "103",
+        "store_name": "קולינריק חורב",
+        "source_file": "PriceFull7290785400000-103-202611150630.gz",
+        "source_url": "https://url.publishedprices.co.il/file/d/PriceFull7290785400000-103-202611150630.gz",
+        "published_at": "2026-11-15T06:30:00+02:00",
+        "published_at_assumed_tz": "Asia/Jerusalem",
+        "retrieved_at": "2026-11-15T07:57:37.371544+00:00",
+        "sha256": "44675a9087f3b36280da79d1015850d0f4cefba5c556c76601b07d3ca1eef4b3",
+        "item_count": 1909,
+        "priced_count": 2,
+        "chain": "keshet-teamim",
+        "kind": "physical",
+        "address": "חורב 15 | www.kulinarik.co.il/|",
+        "city": ""
+      }
+    },
+    "drained_unpriced": []
+  },
+  "ingredients": {
+    "sushi short grain rice": {
+      "ingredient_name": "Sushi Short Grain Rice",
+      "keshet-teamim::103": {
+        "item_code": "7290011996062",
+        "gtin": "07290011996062",
+        "nameHe": "אורז לסושי 1 קג",
+        "brand": ",",
+        "packPrice": 14.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0149,
+        "priceUpdateTime": "2026-08-10T08:59:50",
+        "metadataSource": "PriceFull7290785400000-103-202611150630.gz (published 2026-11-15T06:30:00+02:00, store 103): ItemCode=7290011996062, price=14.9, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "light coconut milk 5-7%": {
+      "ingredient_name": "Light Coconut Milk 5-7%",
+      "keshet-teamim::103": {
+        "item_code": "7290015603522",
+        "gtin": "07290015603522",
+        "nameHe": "נוזל אגוזי קוקוס 400",
+        "brand": "Celebes coconut corp",
+        "packPrice": 6.9,
+        "packQty": 400.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": "Recipe says 'light coconut milk'. Canned 'נוזל אגוזי קוקוס 5-7%' 400 ml, barcode 7290015603522 (Mizrach u'Maarav, Thailand); fat 5-7% in the feed name; the regular 17-19% can is the wrong fat level for a light-milk recipe.",
+        "packOverride": null,
+        "unitPriceNorm": 0.01725,
+        "priceUpdateTime": "2023-12-31T12:49:01",
+        "metadataSource": "PriceFull7290785400000-103-202611150630.gz (published 2026-11-15T06:30:00+02:00, store 103): ItemCode=7290015603522, price=6.9, pack=400.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    }
+  },
+  "promotions": {
+    "keshet-teamim::103": {
+      "status": "not-collected",
+      "reason": "national branch: price files only, refreshed once daily",
+      "offers": []
+    }
+  },
+  "warnings": [],
+  "sync_status": {
+    "keshet-teamim::103": {
+      "status": "ok",
+      "warnings": []
+    }
+  }
+}

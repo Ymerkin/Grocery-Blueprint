@@ -1,0 +1,676 @@
+{
+  "metadata": {
+    "version": "3",
+    "chains": {
+      "meshnat-yosef::001": {
+        "store_id": "001",
+        "store_name": "קיטי מרקט האמוראים 14",
+        "source_file": "PriceFull7290058289400-000-001-20261115-020252.GZ",
+        "source_url": "https://ktshivuk.binaprojects.com/Download/PriceFull7290058289400-000-001-20261115-020252.GZ",
+        "published_at": "2026-11-15T02:02:52+02:00",
+        "published_at_assumed_tz": "Asia/Jerusalem",
+        "retrieved_at": "2026-11-15T07:57:09.606892+00:00",
+        "sha256": "1188f0d03387df8d289b8a5e56842bf8e0b9e010fc78d2b5ffb6923838093d83",
+        "item_count": 3623,
+        "priced_count": 28,
+        "chain": "meshnat-yosef",
+        "kind": "physical",
+        "address": "האמוראים 14",
+        "city": ""
+      }
+    },
+    "drained_unpriced": []
+  },
+  "ingredients": {
+    "bulgarian / feta salty cheese": {
+      "ingredient_name": "Bulgarian / Feta Salty Cheese",
+      "meshnat-yosef::001": {
+        "item_code": "7290102397334",
+        "gtin": "07290102397334",
+        "nameHe": "בולגרית 5% משק צוריאל",
+        "brand": "לא ידוע",
+        "packPrice": 24.5,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.098,
+        "priceUpdateTime": "2026-11-13T10:18:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290102397334, price=24.5, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "canned chickpeas": {
+      "ingredient_name": "Canned Chickpeas",
+      "meshnat-yosef::001": {
+        "item_code": "7290112357113",
+        "gtin": "07290112357113",
+        "nameHe": "גרגרי חומוס 380ג שטראוס בקופסה",
+        "brand": "לא ידוע",
+        "packPrice": 6.9,
+        "packQty": 230.0,
+        "packUnit": "g",
+        "packBasis": "drained weight 230 g x 1 (source-verified)",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03,
+        "priceUpdateTime": "2026-11-13T15:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290112357113, price=6.9, pack=380.0 g",
+        "grossPackQty": 380.0,
+        "grossPackUnit": "g",
+        "drained": {
+          "per_unit_g": 230.0,
+          "units": 1,
+          "gross_pack": "380 g",
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290112357113/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        },
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "canned white cannellini beans": {
+      "ingredient_name": "Canned White Cannellini Beans",
+      "meshnat-yosef::001": {
+        "item_code": "7290112348142",
+        "gtin": "07290112348142",
+        "nameHe": "שעועית לבנה 380ג שטראוס בקופסה",
+        "brand": "לא ידוע",
+        "packPrice": 6.9,
+        "packQty": 230.0,
+        "packUnit": "g",
+        "packBasis": "drained weight 230 g x 1 (source-verified)",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03,
+        "priceUpdateTime": "2026-11-12T22:48:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290112348142, price=6.9, pack=380.0 g",
+        "grossPackQty": 380.0,
+        "grossPackUnit": "g",
+        "drained": {
+          "per_unit_g": 230.0,
+          "units": 1,
+          "gross_pack": "380 g",
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290112348142/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        },
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "chickpea falafel mix": {
+      "ingredient_name": "Chickpea Falafel Mix",
+      "meshnat-yosef::001": {
+        "item_code": "7290006983206",
+        "gtin": "07290006983206",
+        "nameHe": "אסם פלאפל בקלי קלות 8*180גרם",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 180.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.055,
+        "priceUpdateTime": "2026-11-13T00:52:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290006983206, price=9.9, pack=180.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "classic spaghetti pasta": {
+      "ingredient_name": "Classic Spaghetti Pasta",
+      "meshnat-yosef::001": {
+        "item_code": "7290000060880",
+        "gtin": "07290000060880",
+        "nameHe": "אסם ספגטי 20*500גרם",
+        "brand": "לא ידוע",
+        "packPrice": 5.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0118,
+        "priceUpdateTime": "2026-11-14T22:42:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290000060880, price=5.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "cottage cheese 5%": {
+      "ingredient_name": "Cottage Cheese 5%",
+      "meshnat-yosef::001": {
+        "item_code": "7290004127329",
+        "gtin": "07290004127329",
+        "nameHe": "קוטג' 5%, כשרות מהדרין, 250 גרם יצרן/מותג: תנובה",
+        "brand": "לא ידוע",
+        "packPrice": 6.0,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.024,
+        "priceUpdateTime": "2026-11-14T22:42:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290004127329, price=6.0, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "creamy natural peanut butter": {
+      "ingredient_name": "Creamy Natural Peanut Butter",
+      "meshnat-yosef::001": {
+        "item_code": "7290000446547",
+        "gtin": "07290000446547",
+        "nameHe": "חמאת בוטנים טבעית 350 גרם כשל\"פ בית יוסף",
+        "brand": "לא ידוע",
+        "packPrice": 13.9,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03971,
+        "priceUpdateTime": "2026-11-13T12:18:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290000446547, price=13.9, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "crushed canned tomatoes": {
+      "ingredient_name": "Crushed Canned Tomatoes",
+      "meshnat-yosef::001": {
+        "item_code": "7290000208022",
+        "gtin": "07290000208022",
+        "nameHe": "עגבניות מרוסקות",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 800.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01238,
+        "priceUpdateTime": "2026-11-13T15:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290000208022, price=9.9, pack=800.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "dry brown lentils": {
+      "ingredient_name": "Dry Brown Lentils",
+      "meshnat-yosef::001": {
+        "item_code": "7290110571184",
+        "gtin": "07290110571184",
+        "nameHe": "עדשים חומות 380ג שטראוס בקופסה",
+        "brand": "לא ידוע",
+        "packPrice": 6.9,
+        "packQty": 380.0,
+        "packUnit": "g",
+        "packBasis": "pack adopted from GTIN-identical osher-ad item 7290110571184 (local feed pack underivable)",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01816,
+        "priceUpdateTime": "2026-11-13T15:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290110571184, price=6.9, pack=380.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "dry green lentils": {
+      "ingredient_name": "Dry Green Lentils",
+      "meshnat-yosef::001": {
+        "item_code": "7290013677037",
+        "gtin": "07290013677037",
+        "nameHe": "עדשים ירוקות סלקטד 500 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 8.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0178,
+        "priceUpdateTime": "2026-11-15T00:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290013677037, price=8.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "dry red lentils": {
+      "ingredient_name": "Dry Red Lentils",
+      "meshnat-yosef::001": {
+        "item_code": "7290003643769",
+        "gtin": "07290003643769",
+        "nameHe": "עדשים אדומות 500 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 8.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "product name",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0178,
+        "priceUpdateTime": "2026-11-13T15:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290003643769, price=8.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "flour tortilla wraps": {
+      "ingredient_name": "Flour Tortilla Wraps",
+      "meshnat-yosef::001": {
+        "item_code": "7290107974066",
+        "gtin": "07290107974066",
+        "nameHe": "מאסטר שף עלי טורטיה 5 דגנים 320 גר",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 320.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03094,
+        "priceUpdateTime": "2026-11-13T10:18:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290107974066, price=9.9, pack=320.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "fluffy jasmine rice": {
+      "ingredient_name": "Fluffy Jasmine Rice",
+      "meshnat-yosef::001": {
+        "item_code": "7290100700396",
+        "gtin": "07290100700396",
+        "nameHe": "אורז יסמין קלאסי 1 קג",
+        "brand": "לא ידוע",
+        "packPrice": 11.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0119,
+        "priceUpdateTime": "2026-11-14T22:42:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290100700396, price=11.9, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "halloumi grilling cheese": {
+      "ingredient_name": "Halloumi Grilling Cheese",
+      "meshnat-yosef::001": {
+        "item_code": "7290102393718",
+        "gtin": "07290102393718",
+        "nameHe": "חלומי 28% משק צוריאל 200 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 23.9,
+        "packQty": 200.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.1195,
+        "priceUpdateTime": "2026-11-14T22:42:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290102393718, price=23.9, pack=200.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "lean ground turkey": {
+      "ingredient_name": "Lean Ground Turkey",
+      "meshnat-yosef::001": {
+        "item_code": "7290003751242",
+        "gtin": "07290003751242",
+        "nameHe": "הודו טחון 500 גרם גלאט עוף",
+        "brand": "לא ידוע",
+        "packPrice": 28.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0578,
+        "priceUpdateTime": "2026-11-15T00:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290003751242, price=28.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "matzo meal": {
+      "ingredient_name": "Matzo Meal",
+      "meshnat-yosef::001": {
+        "item_code": "7290008636650",
+        "gtin": "07290008636650",
+        "nameHe": "קמח מצה 500 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 6.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0138,
+        "priceUpdateTime": "2026-11-15T00:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290008636650, price=6.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "mayonnaise": {
+      "ingredient_name": "Mayonnaise",
+      "meshnat-yosef::001": {
+        "item_code": "7290000111186",
+        "gtin": "07290000111186",
+        "nameHe": "מיונז אמיתי 500 גרם תלמה",
+        "brand": "לא ידוע",
+        "packPrice": 10.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0218,
+        "priceUpdateTime": "2026-11-14T22:42:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290000111186, price=10.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "paprika": {
+      "ingredient_name": "Paprika",
+      "meshnat-yosef::001": {
+        "item_code": "7290002319429",
+        "gtin": "07290002319429",
+        "nameHe": "פפריקה מתוקה 80 גרם צנצנת",
+        "brand": "לא ידוע",
+        "packPrice": 5.9,
+        "packQty": 80.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.07375,
+        "priceUpdateTime": "2026-11-13T15:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290002319429, price=5.9, pack=80.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "pure butter": {
+      "ingredient_name": "Pure Butter",
+      "meshnat-yosef::001": {
+        "item_code": "7290102394814",
+        "gtin": "07290102394814",
+        "nameHe": "חמאה טרה כשרות מהדרין  200 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 200.0,
+        "packUnit": "g",
+        "packBasis": "product name",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0495,
+        "priceUpdateTime": "2026-11-15T00:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290102394814, price=9.9, pack=200.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "quick fluffy couscous": {
+      "ingredient_name": "Quick Fluffy Couscous",
+      "meshnat-yosef::001": {
+        "item_code": "7290002040064",
+        "gtin": "07290002040064",
+        "nameHe": "קוסקוס דק   350 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 4.9,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "product name",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.014,
+        "priceUpdateTime": "2026-11-13T15:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290002040064, price=4.9, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "seasoned breadcrumbs": {
+      "ingredient_name": "Seasoned Breadcrumbs",
+      "meshnat-yosef::001": {
+        "item_code": "7290100680711",
+        "gtin": "07290100680711",
+        "nameHe": "אסם פירורית זהב 12*350גרם",
+        "brand": "לא ידוע",
+        "packPrice": 7.9,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02257,
+        "priceUpdateTime": "2026-11-14T22:42:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290100680711, price=7.9, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "soft white cheese 5%": {
+      "ingredient_name": "Soft White Cheese 5%",
+      "meshnat-yosef::001": {
+        "item_code": "7290000474502",
+        "gtin": "07290000474502",
+        "nameHe": "גבינה לבנה 5% - 250 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 5.87,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02348,
+        "priceUpdateTime": "2026-11-15T00:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290000474502, price=5.87, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "soy sauce": {
+      "ingredient_name": "Soy Sauce",
+      "meshnat-yosef::001": {
+        "item_code": "7290116534244",
+        "gtin": "07290116534244",
+        "nameHe": "רוטב סויה בסגנון סיני 300 מ\"ל",
+        "brand": "לא ידוע",
+        "packPrice": 11.9,
+        "packQty": 300.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03967,
+        "priceUpdateTime": "2026-11-13T12:18:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290116534244, price=11.9, pack=300.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "sweet paprika": {
+      "ingredient_name": "Sweet Paprika",
+      "meshnat-yosef::001": {
+        "item_code": "7290002319429",
+        "gtin": "07290002319429",
+        "nameHe": "פפריקה מתוקה 80 גרם צנצנת",
+        "brand": "לא ידוע",
+        "packPrice": 5.9,
+        "packQty": 80.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.07375,
+        "priceUpdateTime": "2026-11-13T15:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290002319429, price=5.9, pack=80.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "toasted pasta pearls (ptitim)": {
+      "ingredient_name": "Toasted Pasta Pearls (Ptitim)",
+      "meshnat-yosef::001": {
+        "item_code": "7290000060408",
+        "gtin": "07290000060408",
+        "nameHe": "אסם פתיתים אפויים טבעות 12*500גרם",
+        "brand": "לא ידוע",
+        "packPrice": 5.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0118,
+        "priceUpdateTime": "2026-11-15T00:36:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290000060408, price=5.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "whole grain brown rice": {
+      "ingredient_name": "Whole Grain Brown Rice",
+      "meshnat-yosef::001": {
+        "item_code": "7290000211312",
+        "gtin": "07290000211312",
+        "nameHe": "אורז מלא 1 קג",
+        "brand": "לא ידוע",
+        "packPrice": 8.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0089,
+        "priceUpdateTime": "2026-11-12T22:59:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290000211312, price=8.9, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "crispy brown rice cakes": {
+      "ingredient_name": "Crispy Brown Rice Cakes",
+      "meshnat-yosef::001": {
+        "item_code": "7290008989091",
+        "gtin": "07290008989091",
+        "nameHe": "פריכיות אורז 310 גרם(שלישיות) כשל\"פ בית יוסף",
+        "brand": "לא ידוע",
+        "packPrice": 14.9,
+        "packQty": 310.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04806,
+        "priceUpdateTime": "2026-11-14T22:42:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290008989091, price=14.9, pack=310.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "crunchy garlic croutons": {
+      "ingredient_name": "Crunchy Garlic Croutons",
+      "meshnat-yosef::001": {
+        "item_code": "7290013358462",
+        "gtin": "07290013358462",
+        "nameHe": "מאסטר שף מיני קרוטונים למרק שוםבצל 350ג",
+        "brand": "לא ידוע",
+        "packPrice": 19.9,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.05686,
+        "priceUpdateTime": "2026-11-14T22:42:00",
+        "metadataSource": "PriceFull7290058289400-000-001-20261115-020252.GZ (published 2026-11-15T02:02:52+02:00, store 001): ItemCode=7290013358462, price=19.9, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    }
+  },
+  "promotions": {
+    "meshnat-yosef::001": {
+      "status": "not-collected",
+      "reason": "national branch: price files only, refreshed once daily",
+      "offers": []
+    }
+  },
+  "warnings": [],
+  "sync_status": {
+    "meshnat-yosef::001": {
+      "status": "ok",
+      "warnings": []
+    }
+  }
+}

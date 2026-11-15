@@ -1,0 +1,424 @@
+{
+  "metadata": {
+    "version": "3",
+    "chains": {
+      "shefa-birkat-hashem::001": {
+        "store_id": "001",
+        "store_name": "כף החיים",
+        "source_file": "PriceFull7290058134977-000-001-20261115-050658.GZ",
+        "source_url": "https://shefabirkathashem.binaprojects.com/Download/PriceFull7290058134977-000-001-20261115-050658.GZ",
+        "published_at": "2026-11-15T05:06:58+02:00",
+        "published_at_assumed_tz": "Asia/Jerusalem",
+        "retrieved_at": "2026-11-15T07:57:33.532967+00:00",
+        "sha256": "1e671f7867e397e6c4c6f065dbc546f4446d6508061f593a31e2c1d11d7dea05",
+        "item_count": 1787,
+        "priced_count": 17,
+        "chain": "shefa-birkat-hashem",
+        "kind": "physical",
+        "address": "כף החיים 38",
+        "city": ""
+      }
+    },
+    "drained_unpriced": []
+  },
+  "ingredients": {
+    "canned black beans": {
+      "ingredient_name": "Canned Black Beans",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290110559014",
+        "gtin": "07290110559014",
+        "nameHe": "שעועית שחורה 380 גרם טעם הטבע",
+        "brand": "לא ידוע",
+        "packPrice": 7.6,
+        "packQty": 230.0,
+        "packUnit": "g",
+        "packBasis": "drained weight 230 g x 1 (source-verified)",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03304,
+        "priceUpdateTime": "2026-11-10T07:45:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290110559014, price=7.6, pack=380.0 g",
+        "grossPackQty": 380.0,
+        "grossPackUnit": "g",
+        "drained": {
+          "per_unit_g": 230.0,
+          "units": 1,
+          "gross_pack": "380 g",
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290110559014/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        },
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "canned red kidney beans": {
+      "ingredient_name": "Canned Red Kidney Beans",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290112357106",
+        "gtin": "07290112357106",
+        "nameHe": "שעועית אדומה 380 ט.הטבע קופסה",
+        "brand": "לא ידוע",
+        "packPrice": 7.6,
+        "packQty": 380.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02,
+        "priceUpdateTime": "2026-11-10T07:45:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290112357106, price=7.6, pack=380.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "creamy natural peanut butter": {
+      "ingredient_name": "Creamy Natural Peanut Butter",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290000446547",
+        "gtin": "07290000446547",
+        "nameHe": "חמאת בוטנים טבעית 350 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 15.0,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04286,
+        "priceUpdateTime": "2026-11-10T07:44:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290000446547, price=15.0, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "crushed canned tomatoes": {
+      "ingredient_name": "Crushed Canned Tomatoes",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290000208022",
+        "gtin": "07290000208022",
+        "nameHe": "עגבניות מרוסקות יכין 800 ג' A2.5",
+        "brand": "לא ידוע",
+        "packPrice": 11.1,
+        "packQty": 800.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01388,
+        "priceUpdateTime": "2026-11-10T07:44:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290000208022, price=11.1, pack=800.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "lean ground turkey": {
+      "ingredient_name": "Lean Ground Turkey",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290003751242",
+        "gtin": "07290003751242",
+        "nameHe": "טחון הודו 500 גר'",
+        "brand": "לא ידוע",
+        "packPrice": 27.2,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0544,
+        "priceUpdateTime": "2026-11-10T07:44:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290003751242, price=27.2, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "mayonnaise": {
+      "ingredient_name": "Mayonnaise",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290000111186",
+        "gtin": "07290000111186",
+        "nameHe": "מיונז אמיתי 500 גר' תלמה",
+        "brand": "לא ידוע",
+        "packPrice": 12.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0258,
+        "priceUpdateTime": "2026-11-10T07:44:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290000111186, price=12.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "pure butter": {
+      "ingredient_name": "Pure Butter",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290102394814",
+        "gtin": "07290102394814",
+        "nameHe": "חמאה 200 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 11.3,
+        "packQty": 200.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0565,
+        "priceUpdateTime": "2026-11-10T07:45:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290102394814, price=11.3, pack=200.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "raw sesame tahini": {
+      "ingredient_name": "Raw Sesame Tahini",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290000572819",
+        "gtin": "07290000572819",
+        "nameHe": "טחינה גולמית 1 ק\"ג אחוה",
+        "brand": "אחדות בע\"מ",
+        "packPrice": 24.7,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0247,
+        "priceUpdateTime": "2026-11-10T07:44:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290000572819, price=24.7, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "seasoned breadcrumbs": {
+      "ingredient_name": "Seasoned Breadcrumbs",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290100680711",
+        "gtin": "07290100680711",
+        "nameHe": "פרורית זהב 350 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 8.9,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02543,
+        "priceUpdateTime": "2026-11-10T07:45:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290100680711, price=8.9, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "soft white cheese 5%": {
+      "ingredient_name": "Soft White Cheese 5%",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290000474502",
+        "gtin": "07290000474502",
+        "nameHe": "גבינה לבנה 5% 250 גרם טרה",
+        "brand": "לא ידוע",
+        "packPrice": 5.87,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02348,
+        "priceUpdateTime": "2026-11-10T07:44:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290000474502, price=5.87, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "soy sauce": {
+      "ingredient_name": "Soy Sauce",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290116534244",
+        "gtin": "07290116534244",
+        "nameHe": "רוטב סויה בסגנון סיני 300 מ\"ל",
+        "brand": "לא ידוע",
+        "packPrice": 13.5,
+        "packQty": 300.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.045,
+        "priceUpdateTime": "2026-11-10T07:45:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290116534244, price=13.5, pack=300.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "sweet paprika": {
+      "ingredient_name": "Sweet Paprika",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290011254117",
+        "gtin": "07290011254117",
+        "nameHe": "פפריקה מתוקה 80 גרם שקית",
+        "brand": "לא ידוע",
+        "packPrice": 4.5,
+        "packQty": 80.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.05625,
+        "priceUpdateTime": "2026-11-10T07:44:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290011254117, price=4.5, pack=80.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "toasted pasta pearls (ptitim)": {
+      "ingredient_name": "Toasted Pasta Pearls (Ptitim)",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290000060408",
+        "gtin": "07290000060408",
+        "nameHe": "פתיתים אפויים טבעות אסם",
+        "brand": "לא ידוע",
+        "packPrice": 7.8,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0156,
+        "priceUpdateTime": "2026-11-10T07:44:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290000060408, price=7.8, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "whole wheat bread": {
+      "ingredient_name": "Whole Wheat Bread",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290016967074",
+        "gtin": "07290016967074",
+        "nameHe": "אנג'ל חיטה מלאה",
+        "brand": "שלמה א. אנג'ל",
+        "packPrice": 19.4,
+        "packQty": 750.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02587,
+        "priceUpdateTime": "2026-11-10T07:45:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290016967074, price=19.4, pack=750.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "fresh sweet challah": {
+      "ingredient_name": "Fresh Sweet Challah",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290000379746",
+        "gtin": "07290000379746",
+        "nameHe": "חלה מתוקה אנגל חשופה",
+        "brand": "שלמה א. אנג'ל",
+        "packPrice": 15.7,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0314,
+        "priceUpdateTime": "2026-11-10T07:44:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290000379746, price=15.7, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "crispy brown rice cakes": {
+      "ingredient_name": "Crispy Brown Rice Cakes",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290008989091",
+        "gtin": "07290008989091",
+        "nameHe": "פריכיות שלישייה B-D",
+        "brand": "לא ידוע",
+        "packPrice": 14.9,
+        "packQty": 310.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04806,
+        "priceUpdateTime": "2026-11-10T07:44:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290008989091, price=14.9, pack=310.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "extra virgin olive oil": {
+      "ingredient_name": "Extra Virgin Olive Oil",
+      "shefa-birkat-hashem::001": {
+        "item_code": "7290019603498",
+        "gtin": "07290019603498",
+        "nameHe": "שמן זית כתית מעולה 750 מ\"ל -חדש",
+        "brand": "לא ידוע",
+        "packPrice": 31.9,
+        "packQty": 750.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": "user rule: 750ml-1L bottle, not 3L tin",
+        "packOverride": null,
+        "unitPriceNorm": 0.04253,
+        "priceUpdateTime": "2026-11-10T07:45:00",
+        "metadataSource": "PriceFull7290058134977-000-001-20261115-050658.GZ (published 2026-11-15T05:06:58+02:00, store 001): ItemCode=7290019603498, price=31.9, pack=750.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    }
+  },
+  "promotions": {
+    "shefa-birkat-hashem::001": {
+      "status": "not-collected",
+      "reason": "national branch: price files only, refreshed once daily",
+      "offers": []
+    }
+  },
+  "warnings": [],
+  "sync_status": {
+    "shefa-birkat-hashem::001": {
+      "status": "ok",
+      "warnings": []
+    }
+  }
+}

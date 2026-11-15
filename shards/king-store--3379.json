@@ -1,0 +1,612 @@
+{
+  "metadata": {
+    "version": "3",
+    "chains": {
+      "king-store::3379": {
+        "store_id": "3379",
+        "store_name": "וולט יפת -יפו תל אביב",
+        "source_file": "PriceFull7290058108879-000-3379-20261115-021457.GZ",
+        "source_url": "https://kingstore.binaprojects.com/Download/PriceFull7290058108879-000-3379-20261115-021457.GZ",
+        "published_at": "2026-11-15T02:14:57+02:00",
+        "published_at_assumed_tz": "Asia/Jerusalem",
+        "retrieved_at": "2026-11-15T07:57:27.961825+00:00",
+        "sha256": "139e0c8ce4c1d580261ea054e931a97743e47df5b8296f0c0698346d23ae4426",
+        "item_count": 1112,
+        "priced_count": 26,
+        "chain": "king-store",
+        "kind": "physical",
+        "address": "יפת 0",
+        "city": ""
+      }
+    },
+    "drained_unpriced": []
+  },
+  "ingredients": {
+    "classic spaghetti pasta": {
+      "ingredient_name": "Classic Spaghetti Pasta",
+      "king-store::3379": {
+        "item_code": "7290000060880",
+        "gtin": "07290000060880",
+        "nameHe": "פסטה ספגטי 500 ג' אסם",
+        "brand": "לא ידוע",
+        "packPrice": 7.7,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0154,
+        "priceUpdateTime": "2024-12-26T10:27:46",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290000060880, price=7.7, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "cooking cream 15%": {
+      "ingredient_name": "Cooking Cream 15%",
+      "king-store::3379": {
+        "item_code": "7290000056951",
+        "gtin": "07290000056951",
+        "nameHe": "שמנת לבישול 15% שומן 500 מ\"ל תנובה",
+        "brand": "לא ידוע",
+        "packPrice": 20.0,
+        "packQty": 500.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04,
+        "priceUpdateTime": "2025-05-06T15:01:36",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290000056951, price=20.0, pack=500.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "cottage cheese 5%": {
+      "ingredient_name": "Cottage Cheese 5%",
+      "king-store::3379": {
+        "item_code": "7290004127329",
+        "gtin": "07290004127329",
+        "nameHe": "קוטג' 5% 250 ג' תנובה",
+        "brand": "לא ידוע",
+        "packPrice": 6.6,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0264,
+        "priceUpdateTime": "2025-05-06T08:45:20",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290004127329, price=6.6, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "crushed canned tomatoes": {
+      "ingredient_name": "Crushed Canned Tomatoes",
+      "king-store::3379": {
+        "item_code": "7290000208022",
+        "gtin": "07290000208022",
+        "nameHe": "עגבניות מרוסקות פריכוז 800 ג' יכין",
+        "brand": "לא ידוע",
+        "packPrice": 11.9,
+        "packQty": 800.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01488,
+        "priceUpdateTime": "2025-02-12T11:37:59",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290000208022, price=11.9, pack=800.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "fettuccine pasta": {
+      "ingredient_name": "Fettuccine Pasta",
+      "king-store::3379": {
+        "item_code": "7290006653765",
+        "gtin": "07290006653765",
+        "nameHe": "פרפקטו פטוציני 500 ג' אסם",
+        "brand": "לא ידוע",
+        "packPrice": 8.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0178,
+        "priceUpdateTime": "2026-01-26T14:52:48",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290006653765, price=8.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "fluffy jasmine rice": {
+      "ingredient_name": "Fluffy Jasmine Rice",
+      "king-store::3379": {
+        "item_code": "7290100700396",
+        "gtin": "07290100700396",
+        "nameHe": "אורז יסמין קלאסי 1 ק\"ג סוגת",
+        "brand": "לא ידוע",
+        "packPrice": 14.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0149,
+        "priceUpdateTime": "2025-09-30T11:39:58",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290100700396, price=14.9, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "fresh celery": {
+      "ingredient_name": "Fresh Celery",
+      "king-store::3379": {
+        "item_code": "7290016334623",
+        "gtin": "07290016334623",
+        "nameHe": "סלרי עלים",
+        "brand": "לא ידוע",
+        "packPrice": 7.9,
+        "packQty": 1.0,
+        "packUnit": "units",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 7.9,
+        "priceUpdateTime": "2026-10-28T14:43:41",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290016334623, price=7.9, pack=1.0 units",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "fresh dill": {
+      "ingredient_name": "Fresh Dill",
+      "king-store::3379": {
+        "item_code": "7290016334593",
+        "gtin": "07290016334593",
+        "nameHe": "שמיר ארוז",
+        "brand": "לא ידוע",
+        "packPrice": 5.9,
+        "packQty": 1.0,
+        "packUnit": "units",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 5.9,
+        "priceUpdateTime": "2026-09-09T12:48:37",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290016334593, price=5.9, pack=1.0 units",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "fresh milk 3%": {
+      "ingredient_name": "Fresh Milk 3%",
+      "king-store::3379": {
+        "item_code": "7290010945306",
+        "gtin": "07290010945306",
+        "nameHe": "חלב 3% בקרטון 2 ל' טרה",
+        "brand": "לא ידוע",
+        "packPrice": 14.7,
+        "packQty": 2000.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.00735,
+        "priceUpdateTime": "2026-04-30T11:44:29",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290010945306, price=14.7, pack=2000.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "fresh parsley": {
+      "ingredient_name": "Fresh Parsley",
+      "king-store::3379": {
+        "item_code": "7290016334579",
+        "gtin": "07290016334579",
+        "nameHe": "פטרוזיליה ארוז",
+        "brand": "לא ידוע",
+        "packPrice": 5.9,
+        "packQty": 1.0,
+        "packUnit": "units",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 5.9,
+        "priceUpdateTime": "2026-09-09T12:48:35",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290016334579, price=5.9, pack=1.0 units",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "frozen cut green beans": {
+      "ingredient_name": "Frozen Cut Green Beans",
+      "king-store::3379": {
+        "item_code": "7290000104720",
+        "gtin": "07290000104720",
+        "nameHe": "שעועית ירוקה סנפרוסט 800ג'",
+        "brand": "לא ידוע",
+        "packPrice": 19.2,
+        "packQty": 800.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.024,
+        "priceUpdateTime": "2025-08-14T12:14:02",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290000104720, price=19.2, pack=800.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "frozen sweet green peas": {
+      "ingredient_name": "Frozen Sweet Green Peas",
+      "king-store::3379": {
+        "item_code": "7290000104201",
+        "gtin": "07290000104201",
+        "nameHe": "אפונה עדינה 600 ג' סנפרוסט",
+        "brand": "לא ידוע",
+        "packPrice": 19.2,
+        "packQty": 600.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.032,
+        "priceUpdateTime": "2024-12-26T10:28:59",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290000104201, price=19.2, pack=600.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "ground cumin": {
+      "ingredient_name": "Ground Cumin",
+      "king-store::3379": {
+        "item_code": "7290015324090",
+        "gtin": "07290015324090",
+        "nameHe": "כמון טחון 80 ג'",
+        "brand": "לא ידוע",
+        "packPrice": 8.5,
+        "packQty": 80.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.10625,
+        "priceUpdateTime": "2024-12-26T11:02:43",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290015324090, price=8.5, pack=80.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "mayonnaise": {
+      "ingredient_name": "Mayonnaise",
+      "king-store::3379": {
+        "item_code": "7290000111186",
+        "gtin": "07290000111186",
+        "nameHe": "מיונז אמיתי 500 ג' תלמה",
+        "brand": "לא ידוע",
+        "packPrice": 13.2,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0264,
+        "priceUpdateTime": "2024-12-26T10:41:51",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290000111186, price=13.2, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "paprika": {
+      "ingredient_name": "Paprika",
+      "king-store::3379": {
+        "item_code": "7290000134857",
+        "gtin": "07290000134857",
+        "nameHe": "פפריקה מתוקה 100 ג'",
+        "brand": "לא ידוע",
+        "packPrice": 10.5,
+        "packQty": 100.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.105,
+        "priceUpdateTime": "2024-12-26T10:42:25",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290000134857, price=10.5, pack=100.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "pickled cucumbers in brine": {
+      "ingredient_name": "Pickled Cucumbers in Brine",
+      "king-store::3379": {
+        "item_code": "7290002057352",
+        "gtin": "07290002057352",
+        "nameHe": "מלפפון במלח 7-9 560 ג' יבנה",
+        "brand": "לא ידוע",
+        "packPrice": 8.7,
+        "packQty": 560.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01554,
+        "priceUpdateTime": "2024-12-26T10:31:01",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290002057352, price=8.7, pack=560.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "seasoned breadcrumbs": {
+      "ingredient_name": "Seasoned Breadcrumbs",
+      "king-store::3379": {
+        "item_code": "7290100680711",
+        "gtin": "07290100680711",
+        "nameHe": "פירורית זהב 350 ג' אוסם",
+        "brand": "לא ידוע",
+        "packPrice": 11.2,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.032,
+        "priceUpdateTime": "2024-12-26T10:42:36",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290100680711, price=11.2, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "smoked salmon slices": {
+      "ingredient_name": "Smoked Salmon Slices",
+      "king-store::3379": {
+        "item_code": "7290008340618",
+        "gtin": "07290008340618",
+        "nameHe": "סלמון מעושן מצונן דלידג 100 ג'",
+        "brand": "לא ידוע",
+        "packPrice": 21.9,
+        "packQty": 100.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.219,
+        "priceUpdateTime": "2026-09-08T12:14:10",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290008340618, price=21.9, pack=100.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "soft white cheese 5%": {
+      "ingredient_name": "Soft White Cheese 5%",
+      "king-store::3379": {
+        "item_code": "7290000474502",
+        "gtin": "07290000474502",
+        "nameHe": "גבינה לבנה 5% 250 ג' טרה",
+        "brand": "לא ידוע",
+        "packPrice": 5.87,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02348,
+        "priceUpdateTime": "2026-04-30T11:44:17",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290000474502, price=5.87, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "sweet paprika": {
+      "ingredient_name": "Sweet Paprika",
+      "king-store::3379": {
+        "item_code": "7290000134857",
+        "gtin": "07290000134857",
+        "nameHe": "פפריקה מתוקה 100 ג'",
+        "brand": "לא ידוע",
+        "packPrice": 10.5,
+        "packQty": 100.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.105,
+        "priceUpdateTime": "2024-12-26T10:42:25",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290000134857, price=10.5, pack=100.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "whole wheat bread": {
+      "ingredient_name": "Whole Wheat Bread",
+      "king-store::3379": {
+        "item_code": "7290013027399",
+        "gtin": "07290013027399",
+        "nameHe": "לחם קמח מלא קל בתוספת שיפון 750 ג' אנג'ל",
+        "brand": "לא ידוע",
+        "packPrice": 16.9,
+        "packQty": 750.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02253,
+        "priceUpdateTime": "2024-12-26T10:58:06",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290013027399, price=16.9, pack=750.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "fresh or frozen blueberries": {
+      "ingredient_name": "Fresh or Frozen Blueberries",
+      "king-store::3379": {
+        "item_code": "7290000101927",
+        "gtin": "07290000101927",
+        "nameHe": "אוכמניות כחולות מוקפאות סנפרוסט 300 ג'",
+        "brand": "לא ידוע",
+        "packPrice": 16.9,
+        "packQty": 300.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.05633,
+        "priceUpdateTime": "2024-12-26T10:28:56",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290000101927, price=16.9, pack=300.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "caraway rye bread": {
+      "ingredient_name": "Caraway Rye Bread",
+      "king-store::3379": {
+        "item_code": "7290002065616",
+        "gtin": "07290002065616",
+        "nameHe": "לחם שיפון גרעינים 750 ג' אנג'ל",
+        "brand": "לא ידוע",
+        "packPrice": 14.9,
+        "packQty": 750.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01987,
+        "priceUpdateTime": "2024-12-26T10:48:27",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290002065616, price=14.9, pack=750.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "crispy brown rice cakes": {
+      "ingredient_name": "Crispy Brown Rice Cakes",
+      "king-store::3379": {
+        "item_code": "7290000068343",
+        "gtin": "07290000068343",
+        "nameHe": "פריכונים מאורז מלא 140 ג' אוסם",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 140.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.07071,
+        "priceUpdateTime": "2025-09-18T10:07:46",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290000068343, price=9.9, pack=140.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "basil pesto spread": {
+      "ingredient_name": "Basil Pesto Spread",
+      "king-store::3379": {
+        "item_code": "7290015858106",
+        "gtin": "07290015858106",
+        "nameHe": "ממרח פסטו ביתי 180 ג' עללחם",
+        "brand": "לא ידוע",
+        "packPrice": 19.2,
+        "packQty": 180.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.10667,
+        "priceUpdateTime": "2024-12-26T10:37:49",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290015858106, price=19.2, pack=180.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "yellow cheese slices": {
+      "ingredient_name": "Yellow Cheese Slices",
+      "king-store::3379": {
+        "item_code": "7290014763395",
+        "gtin": "07290014763395",
+        "nameHe": "עמק סמי מעדניה מהדרין 600 ג'",
+        "brand": "לא ידוע",
+        "packPrice": 39.9,
+        "packQty": 600.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0665,
+        "priceUpdateTime": "2024-12-26T10:37:19",
+        "metadataSource": "PriceFull7290058108879-000-3379-20261115-021457.GZ (published 2026-11-15T02:14:57+02:00, store 3379): ItemCode=7290014763395, price=39.9, pack=600.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    }
+  },
+  "promotions": {
+    "king-store::3379": {
+      "status": "not-collected",
+      "reason": "national branch: price files only, refreshed once daily",
+      "offers": []
+    }
+  },
+  "warnings": [],
+  "sync_status": {
+    "king-store::3379": {
+      "status": "ok",
+      "warnings": []
+    }
+  }
+}

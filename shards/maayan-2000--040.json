@@ -1,0 +1,722 @@
+{
+  "metadata": {
+    "version": "3",
+    "chains": {
+      "maayan-2000::040": {
+        "store_id": "040",
+        "store_name": "הרב קוק",
+        "source_file": "PriceFull7290058159628-000-040-20261115-030228.GZ",
+        "source_url": "https://maayan2000.binaprojects.com/Download/PriceFull7290058159628-000-040-20261115-030228.GZ",
+        "published_at": "2026-11-15T03:02:28+02:00",
+        "published_at_assumed_tz": "Asia/Jerusalem",
+        "retrieved_at": "2026-11-15T07:57:17.651689+00:00",
+        "sha256": "523629e4ba010daf5c1688caec373090410d04ac73aa334e52090798583ce3db",
+        "item_count": 2907,
+        "priced_count": 31,
+        "chain": "maayan-2000",
+        "kind": "physical",
+        "address": "הרב קוק 5",
+        "city": ""
+      }
+    },
+    "drained_unpriced": []
+  },
+  "ingredients": {
+    "chickpea falafel mix": {
+      "ingredient_name": "Chickpea Falafel Mix",
+      "maayan-2000::040": {
+        "item_code": "7290006983206",
+        "gtin": "07290006983206",
+        "nameHe": "תערובת פלאפל בקלי קלות 180 גר'",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 180.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.055,
+        "priceUpdateTime": "2026-11-14T21:17:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290006983206, price=9.9, pack=180.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "classic spaghetti pasta": {
+      "ingredient_name": "Classic Spaghetti Pasta",
+      "maayan-2000::040": {
+        "item_code": "7290000060880",
+        "gtin": "07290000060880",
+        "nameHe": "פסטה מס' 8 ספגטי אסם 500ג'",
+        "brand": "לא ידוע",
+        "packPrice": 6.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0138,
+        "priceUpdateTime": "2026-11-15T00:04:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000060880, price=6.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "cooked vacuum-packed beets": {
+      "ingredient_name": "Cooked Vacuum-Packed Beets",
+      "maayan-2000::040": {
+        "item_code": "7290003996575",
+        "gtin": "07290003996575",
+        "nameHe": "סלק אדום ואקום - שקית 500 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 7.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0158,
+        "priceUpdateTime": "2026-11-14T21:17:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290003996575, price=7.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "cooking cream 15%": {
+      "ingredient_name": "Cooking Cream 15%",
+      "maayan-2000::040": {
+        "item_code": "7290000056951",
+        "gtin": "07290000056951",
+        "nameHe": "שמנת עמידה לבישול 15% השף הלבן",
+        "brand": "תנובה - חלב ותוצרת החלב",
+        "packPrice": 20.5,
+        "packQty": 500.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.041,
+        "priceUpdateTime": "2026-11-15T00:04:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000056951, price=20.5, pack=500.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "cottage cheese 5%": {
+      "ingredient_name": "Cottage Cheese 5%",
+      "maayan-2000::040": {
+        "item_code": "7290004127329",
+        "gtin": "07290004127329",
+        "nameHe": "קוטג' 5% תנובה 250ג' מהדרין",
+        "brand": "תנובה - חלב ותוצרת החלב",
+        "packPrice": 6.5,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.026,
+        "priceUpdateTime": "2026-11-13T16:57:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290004127329, price=6.5, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "creamy natural peanut butter": {
+      "ingredient_name": "Creamy Natural Peanut Butter",
+      "maayan-2000::040": {
+        "item_code": "7290000446547",
+        "gtin": "07290000446547",
+        "nameHe": "חמאת בוטנים טבעי 350ג' בי&די",
+        "brand": "לא ידוע",
+        "packPrice": 14.9,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04257,
+        "priceUpdateTime": "2026-11-13T16:57:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000446547, price=14.9, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "crushed canned tomatoes": {
+      "ingredient_name": "Crushed Canned Tomatoes",
+      "maayan-2000::040": {
+        "item_code": "7290000208022",
+        "gtin": "07290000208022",
+        "nameHe": "עגבניות מרוסקות A2.5 יכין",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 800.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01238,
+        "priceUpdateTime": "2026-11-13T16:57:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000208022, price=9.9, pack=800.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "dry green lentils": {
+      "ingredient_name": "Dry Green Lentils",
+      "maayan-2000::040": {
+        "item_code": "7290013677037",
+        "gtin": "07290013677037",
+        "nameHe": "עדשים ירוקים בוואקום מיה 500 גר'",
+        "brand": "לא ידוע",
+        "packPrice": 10.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0218,
+        "priceUpdateTime": "2026-11-15T00:04:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290013677037, price=10.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "fresh champignon mushrooms": {
+      "ingredient_name": "Fresh Champignon Mushrooms",
+      "maayan-2000::040": {
+        "item_code": "7290003996209",
+        "gtin": "07290003996209",
+        "nameHe": "פטריות שמפיניון",
+        "brand": "לא ידוע",
+        "packPrice": 11.9,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "pack adopted from GTIN-identical rami-levy item 7290003996209 (local feed pack underivable)",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0476,
+        "priceUpdateTime": "2026-11-13T14:00:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290003996209, price=11.9, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "goat cheese log": {
+      "ingredient_name": "Goat Cheese Log",
+      "maayan-2000::040": {
+        "item_code": "7290000045917",
+        "gtin": "07290000045917",
+        "nameHe": "גבינת עזים (פרומעז) גליל",
+        "brand": "תנובה - חלב ותוצרת החלב",
+        "packPrice": 30.4,
+        "packQty": 200.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.152,
+        "priceUpdateTime": "2026-11-14T21:17:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000045917, price=30.4, pack=200.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "ground cumin": {
+      "ingredient_name": "Ground Cumin",
+      "maayan-2000::040": {
+        "item_code": "7290019603351",
+        "gtin": "07290019603351",
+        "nameHe": "כמון 80 גרם צנצנת",
+        "brand": "לא ידוע",
+        "packPrice": 8.9,
+        "packQty": 80.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.11125,
+        "priceUpdateTime": "2026-11-13T14:00:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290019603351, price=8.9, pack=80.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "ground turmeric": {
+      "ingredient_name": "Ground Turmeric",
+      "maayan-2000::040": {
+        "item_code": "7290002319450",
+        "gtin": "07290002319450",
+        "nameHe": "תבלין כרכום צנצנת 80 גר' מיה",
+        "brand": "לא ידוע",
+        "packPrice": 5.9,
+        "packQty": 80.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.07375,
+        "priceUpdateTime": "2026-11-14T21:17:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290002319450, price=5.9, pack=80.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "halloumi grilling cheese": {
+      "ingredient_name": "Halloumi Grilling Cheese",
+      "maayan-2000::040": {
+        "item_code": "7290102393718",
+        "gtin": "07290102393718",
+        "nameHe": "גבינת חלומי חלב בקר 28% צוריאל 200ג",
+        "brand": "לא ידוע",
+        "packPrice": 25.9,
+        "packQty": 200.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.1295,
+        "priceUpdateTime": "2026-11-15T00:04:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290102393718, price=25.9, pack=200.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "lean ground turkey": {
+      "ingredient_name": "Lean Ground Turkey",
+      "maayan-2000::040": {
+        "item_code": "7290003751242",
+        "gtin": "07290003751242",
+        "nameHe": "הודו טחון קפוא 500 גר'",
+        "brand": "לא ידוע",
+        "packPrice": 29.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0598,
+        "priceUpdateTime": "2026-11-15T00:04:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290003751242, price=29.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "matzo meal": {
+      "ingredient_name": "Matzo Meal",
+      "maayan-2000::040": {
+        "item_code": "7290008636650",
+        "gtin": "07290008636650",
+        "nameHe": "קמח מצה מיה 500 גר'",
+        "brand": "לא ידוע",
+        "packPrice": 6.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0138,
+        "priceUpdateTime": "2026-11-14T22:29:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290008636650, price=6.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "mayonnaise": {
+      "ingredient_name": "Mayonnaise",
+      "maayan-2000::040": {
+        "item_code": "7290000111186",
+        "gtin": "07290000111186",
+        "nameHe": "מיונז אמיתי תלמה 500 ג'",
+        "brand": "לא ידוע",
+        "packPrice": 12.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0258,
+        "priceUpdateTime": "2026-11-15T00:04:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000111186, price=12.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "paprika": {
+      "ingredient_name": "Paprika",
+      "maayan-2000::040": {
+        "item_code": "7290002319429",
+        "gtin": "07290002319429",
+        "nameHe": "תבלין פפריקה מתוקה 80 גר' מיה",
+        "brand": "לא ידוע",
+        "packPrice": 5.9,
+        "packQty": 80.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.07375,
+        "priceUpdateTime": "2026-11-13T16:57:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290002319429, price=5.9, pack=80.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "raw sesame tahini": {
+      "ingredient_name": "Raw Sesame Tahini",
+      "maayan-2000::040": {
+        "item_code": "7290000572819",
+        "gtin": "07290000572819",
+        "nameHe": "טחינה גולמית אחווה 1 ק\"ג",
+        "brand": "לא ידוע",
+        "packPrice": 24.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0249,
+        "priceUpdateTime": "2026-11-13T16:57:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000572819, price=24.9, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "seasoned breadcrumbs": {
+      "ingredient_name": "Seasoned Breadcrumbs",
+      "maayan-2000::040": {
+        "item_code": "7290100680711",
+        "gtin": "07290100680711",
+        "nameHe": "פירורית זהב אסם זהב 350ג'",
+        "brand": "לא ידוע",
+        "packPrice": 9.5,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02714,
+        "priceUpdateTime": "2026-11-13T16:57:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290100680711, price=9.5, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "smoked turkey breast slices": {
+      "ingredient_name": "Smoked Turkey Breast Slices",
+      "maayan-2000::040": {
+        "item_code": "7290003031757",
+        "gtin": "07290003031757",
+        "nameHe": "פסטרמה הודו בפפריקה טירת צבי 400 ג' מחפוד",
+        "brand": "טירת צבי",
+        "packPrice": 35.9,
+        "packQty": 400.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.08975,
+        "priceUpdateTime": "2026-11-13T14:00:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290003031757, price=35.9, pack=400.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "soft white cheese 5%": {
+      "ingredient_name": "Soft White Cheese 5%",
+      "maayan-2000::040": {
+        "item_code": "7290000474502",
+        "gtin": "07290000474502",
+        "nameHe": "גבינה לבנה 5% 250ג' טרה מהדרין",
+        "brand": "לא ידוע",
+        "packPrice": 5.87,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02348,
+        "priceUpdateTime": "2026-11-15T00:04:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000474502, price=5.87, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "soy sauce": {
+      "ingredient_name": "Soy Sauce",
+      "maayan-2000::040": {
+        "item_code": "7290116534244",
+        "gtin": "07290116534244",
+        "nameHe": "רוטב סויה בסגנון סיני 300מ\"ל",
+        "brand": "לא ידוע",
+        "packPrice": 13.9,
+        "packQty": 300.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04633,
+        "priceUpdateTime": "2026-11-14T21:17:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290116534244, price=13.9, pack=300.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "sushi short grain rice": {
+      "ingredient_name": "Sushi Short Grain Rice",
+      "maayan-2000::040": {
+        "item_code": "7290100701157",
+        "gtin": "07290100701157",
+        "nameHe": "אורז לסושי סוגת 1 ק\"ג",
+        "brand": "לא ידוע",
+        "packPrice": 13.5,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0135,
+        "priceUpdateTime": "2026-11-14T21:17:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290100701157, price=13.5, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "sweet paprika": {
+      "ingredient_name": "Sweet Paprika",
+      "maayan-2000::040": {
+        "item_code": "7290002319429",
+        "gtin": "07290002319429",
+        "nameHe": "תבלין פפריקה מתוקה 80 גר' מיה",
+        "brand": "לא ידוע",
+        "packPrice": 5.9,
+        "packQty": 80.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.07375,
+        "priceUpdateTime": "2026-11-13T16:57:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290002319429, price=5.9, pack=80.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "whole wheat bread": {
+      "ingredient_name": "Whole Wheat Bread",
+      "maayan-2000::040": {
+        "item_code": "7290016967074",
+        "gtin": "07290016967074",
+        "nameHe": "לחם אנג'ל 100 חיטה מלאה 750 גר'",
+        "brand": "לא ידוע",
+        "packPrice": 19.9,
+        "packQty": 750.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02653,
+        "priceUpdateTime": "2026-11-14T22:08:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290016967074, price=19.9, pack=750.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "fresh sweet challah": {
+      "ingredient_name": "Fresh Sweet Challah",
+      "maayan-2000::040": {
+        "item_code": "7290000497358",
+        "gtin": "07290000497358",
+        "nameHe": "חלה מתוקה ארוזה חלומית 500 גר'",
+        "brand": "לא ידוע",
+        "packPrice": 13.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0278,
+        "priceUpdateTime": "2026-11-14T21:17:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000497358, price=13.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "crispy brown rice cakes": {
+      "ingredient_name": "Crispy Brown Rice Cakes",
+      "maayan-2000::040": {
+        "item_code": "7290000068343",
+        "gtin": "07290000068343",
+        "nameHe": "פריכונים מאורז מלא 140 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 140.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.07071,
+        "priceUpdateTime": "2026-11-13T13:49:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000068343, price=9.9, pack=140.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "crunchy garlic croutons": {
+      "ingredient_name": "Crunchy Garlic Croutons",
+      "maayan-2000::040": {
+        "item_code": "7290000078212",
+        "gtin": "07290000078212",
+        "nameHe": "קרוטונים מתובלים 250ג' אסם",
+        "brand": "לא ידוע",
+        "packPrice": 15.9,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0636,
+        "priceUpdateTime": "2026-11-15T00:04:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000078212, price=15.9, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "basil pesto spread": {
+      "ingredient_name": "Basil Pesto Spread",
+      "maayan-2000::040": {
+        "item_code": "7290015858106",
+        "gtin": "07290015858106",
+        "nameHe": "ממרח פסטו ביתי 180 גר'",
+        "brand": "לא ידוע",
+        "packPrice": 17.9,
+        "packQty": 180.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.09944,
+        "priceUpdateTime": "2026-11-14T21:17:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290015858106, price=17.9, pack=180.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "flaky cheese bourekas": {
+      "ingredient_name": "Flaky Cheese Bourekas",
+      "maayan-2000::040": {
+        "item_code": "7290000238173",
+        "gtin": "07290000238173",
+        "nameHe": "בורקס גבינה מעדנות 800ג'",
+        "brand": "מעדנות",
+        "packPrice": 22.9,
+        "packQty": 800.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02862,
+        "priceUpdateTime": "2026-11-14T21:17:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290000238173, price=22.9, pack=800.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "extra virgin olive oil": {
+      "ingredient_name": "Extra Virgin Olive Oil",
+      "maayan-2000::040": {
+        "item_code": "7290019603498",
+        "gtin": "07290019603498",
+        "nameHe": "שמן זית כתית מעולה 750 מ\"ל",
+        "brand": "לא ידוע",
+        "packPrice": 31.9,
+        "packQty": 750.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": "user rule: 750ml-1L bottle, not 3L tin",
+        "packOverride": null,
+        "unitPriceNorm": 0.04253,
+        "priceUpdateTime": "2026-11-14T22:19:00",
+        "metadataSource": "PriceFull7290058159628-000-040-20261115-030228.GZ (published 2026-11-15T03:02:28+02:00, store 040): ItemCode=7290019603498, price=31.9, pack=750.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    }
+  },
+  "promotions": {
+    "maayan-2000::040": {
+      "status": "not-collected",
+      "reason": "national branch: price files only, refreshed once daily",
+      "offers": []
+    }
+  },
+  "warnings": [],
+  "sync_status": {
+    "maayan-2000::040": {
+      "status": "ok",
+      "warnings": []
+    }
+  }
+}

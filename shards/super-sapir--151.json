@@ -1,0 +1,676 @@
+{
+  "metadata": {
+    "version": "3",
+    "chains": {
+      "super-sapir::151": {
+        "store_id": "151",
+        "store_name": "המכולת גני תקוה זכיין ת.",
+        "source_file": "PriceFull7290058156016-004-151-20261115-034249.GZ",
+        "source_url": "https://supersapir.binaprojects.com/Download/PriceFull7290058156016-004-151-20261115-034249.GZ",
+        "published_at": "2026-11-15T03:42:49+02:00",
+        "published_at_assumed_tz": "Asia/Jerusalem",
+        "retrieved_at": "2026-11-15T07:58:59.527358+00:00",
+        "sha256": "46d342e418a9956f11ea68ce8d087c81b1694e028c7b02376006052ee7afe0b8",
+        "item_count": 1331,
+        "priced_count": 28,
+        "chain": "super-sapir",
+        "kind": "physical",
+        "address": "דרך הים 5",
+        "city": ""
+      }
+    },
+    "drained_unpriced": []
+  },
+  "ingredients": {
+    "bulgarian / feta salty cheese": {
+      "ingredient_name": "Bulgarian / Feta Salty Cheese",
+      "super-sapir::151": {
+        "item_code": "7290102397334",
+        "gtin": "07290102397334",
+        "nameHe": "בולגרית 5% 250 גר'",
+        "brand": "לא ידוע",
+        "packPrice": 32.9,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.1316,
+        "priceUpdateTime": "2026-11-13T12:27:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290102397334, price=32.9, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "canned chickpeas": {
+      "ingredient_name": "Canned Chickpeas",
+      "super-sapir::151": {
+        "item_code": "7290112357113",
+        "gtin": "07290112357113",
+        "nameHe": "גרגרי חומוס 380ג שטראוס טעם הטבע",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 230.0,
+        "packUnit": "g",
+        "packBasis": "drained weight 230 g x 1 (source-verified)",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04304,
+        "priceUpdateTime": "2026-11-13T13:43:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290112357113, price=9.9, pack=380.0 g",
+        "grossPackQty": 380.0,
+        "grossPackUnit": "g",
+        "drained": {
+          "per_unit_g": 230.0,
+          "units": 1,
+          "gross_pack": "380 g",
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290112357113/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        },
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "canned white cannellini beans": {
+      "ingredient_name": "Canned White Cannellini Beans",
+      "super-sapir::151": {
+        "item_code": "7290112348142",
+        "gtin": "07290112348142",
+        "nameHe": "שעועית לבנה 380ג שטראוס טעם הטבע",
+        "brand": "לא ידוע",
+        "packPrice": 11.9,
+        "packQty": 230.0,
+        "packUnit": "g",
+        "packBasis": "drained weight 230 g x 1 (source-verified)",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.05174,
+        "priceUpdateTime": "2026-11-13T14:36:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290112348142, price=11.9, pack=380.0 g",
+        "grossPackQty": 380.0,
+        "grossPackUnit": "g",
+        "drained": {
+          "per_unit_g": 230.0,
+          "units": 1,
+          "gross_pack": "380 g",
+          "gross_per_unit_g": 380,
+          "status": "source-verified",
+          "evidence": "Strauss Teva Hateva tin label (photo https://img.rami-levy.co.il/product/7290112348142/large.jpg viewed 4 Nov): net 380 g, drained ('לאחר סינון') 230 g"
+        },
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "classic spaghetti pasta": {
+      "ingredient_name": "Classic Spaghetti Pasta",
+      "super-sapir::151": {
+        "item_code": "7290000060880",
+        "gtin": "07290000060880",
+        "nameHe": "אסם ספגטי 20*500גרם",
+        "brand": "לא ידוע",
+        "packPrice": 8.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0178,
+        "priceUpdateTime": "2026-11-13T15:07:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290000060880, price=8.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "cottage cheese 5%": {
+      "ingredient_name": "Cottage Cheese 5%",
+      "super-sapir::151": {
+        "item_code": "7290004127329",
+        "gtin": "07290004127329",
+        "nameHe": "קוטג תנובה 5% 250 גרם בדצ",
+        "brand": "קוטג' 250 תנובה",
+        "packPrice": 6.9,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0276,
+        "priceUpdateTime": "2026-11-13T15:07:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290004127329, price=6.9, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "cream cheese spread": {
+      "ingredient_name": "Cream Cheese Spread",
+      "super-sapir::151": {
+        "item_code": "7290019635369",
+        "gtin": "07290019635369",
+        "nameHe": "גבינת שמנת 16%",
+        "brand": "לא ידוע",
+        "packPrice": 19.9,
+        "packQty": 200.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0995,
+        "priceUpdateTime": "2026-11-13T12:50:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290019635369, price=19.9, pack=200.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "dry green lentils": {
+      "ingredient_name": "Dry Green Lentils",
+      "super-sapir::151": {
+        "item_code": "7290003643752",
+        "gtin": "07290003643752",
+        "nameHe": "עדשים ירוקות 500 ג סוגת",
+        "brand": "לא ידוע",
+        "packPrice": 11.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0238,
+        "priceUpdateTime": "2026-11-13T14:47:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290003643752, price=11.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "firm tofu": {
+      "ingredient_name": "Firm Tofu",
+      "super-sapir::151": {
+        "item_code": "7290003726615",
+        "gtin": "07290003726615",
+        "nameHe": "טופו הבית במרקם קשה 300 גר'",
+        "brand": "לא ידוע",
+        "packPrice": 18.9,
+        "packQty": 300.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.063,
+        "priceUpdateTime": "2026-11-13T14:57:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290003726615, price=18.9, pack=300.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "flour tortilla wraps": {
+      "ingredient_name": "Flour Tortilla Wraps",
+      "super-sapir::151": {
+        "item_code": "7290006342645",
+        "gtin": "07290006342645",
+        "nameHe": "טורטיות 25 סמ 700 גר' 10 יח'",
+        "brand": "לא ידוע",
+        "packPrice": 17.9,
+        "packQty": 700.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02557,
+        "priceUpdateTime": "2026-11-13T16:00:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290006342645, price=17.9, pack=700.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "fluffy jasmine rice": {
+      "ingredient_name": "Fluffy Jasmine Rice",
+      "super-sapir::151": {
+        "item_code": "7290100700396",
+        "gtin": "07290100700396",
+        "nameHe": "אורז יסמין קלאסי 1 ק\"ג סוגת",
+        "brand": "לא ידוע",
+        "packPrice": 15.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0159,
+        "priceUpdateTime": "2026-11-13T14:47:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290100700396, price=15.9, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "fresh ricotta cheese": {
+      "ingredient_name": "Fresh Ricotta Cheese",
+      "super-sapir::151": {
+        "item_code": "7290000554822",
+        "gtin": "07290000554822",
+        "nameHe": "ריקוטה קלאסית 5%",
+        "brand": "לא ידוע",
+        "packPrice": 20.9,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0836,
+        "priceUpdateTime": "2026-11-13T14:26:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290000554822, price=20.9, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "frozen sweet green peas": {
+      "ingredient_name": "Frozen Sweet Green Peas",
+      "super-sapir::151": {
+        "item_code": "7290000104201",
+        "gtin": "07290000104201",
+        "nameHe": "אפונה עדינה סנפרוסט 600ג'",
+        "brand": "לא ידוע",
+        "packPrice": 26.9,
+        "packQty": 600.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04483,
+        "priceUpdateTime": "2026-11-13T14:26:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290000104201, price=26.9, pack=600.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "greek strained yogurt": {
+      "ingredient_name": "Greek Strained Yogurt",
+      "super-sapir::151": {
+        "item_code": "7290017065588",
+        "gtin": "07290017065588",
+        "nameHe": "יוגורט יווני 10%",
+        "brand": "לא ידוע",
+        "packPrice": 24.9,
+        "packQty": 600.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0415,
+        "priceUpdateTime": "2026-11-13T14:57:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290017065588, price=24.9, pack=600.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "labneh yogurt cheese": {
+      "ingredient_name": "Labneh Yogurt Cheese",
+      "super-sapir::151": {
+        "item_code": "7290005992735",
+        "gtin": "07290005992735",
+        "nameHe": "לאבנה 5%",
+        "brand": "לא ידוע",
+        "packPrice": 18.9,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0756,
+        "priceUpdateTime": "2026-11-13T14:26:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290005992735, price=18.9, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "matzo meal": {
+      "ingredient_name": "Matzo Meal",
+      "super-sapir::151": {
+        "item_code": "7290015193665",
+        "gtin": "07290015193665",
+        "nameHe": "קמח מצה חמץ 500גר",
+        "brand": "לא ידוע",
+        "packPrice": 6.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0138,
+        "priceUpdateTime": "2026-11-13T14:26:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290015193665, price=6.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "mayonnaise": {
+      "ingredient_name": "Mayonnaise",
+      "super-sapir::151": {
+        "item_code": "7290000111186",
+        "gtin": "07290000111186",
+        "nameHe": "מיונז אמיתי תלמה 500 ג'",
+        "brand": "לא ידוע",
+        "packPrice": 14.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0298,
+        "priceUpdateTime": "2026-11-13T15:18:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290000111186, price=14.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "paprika": {
+      "ingredient_name": "Paprika",
+      "super-sapir::151": {
+        "item_code": "7290000134857",
+        "gtin": "07290000134857",
+        "nameHe": "פפריקה מתוקה 100 גרם מיכל גדול",
+        "brand": "לא ידוע",
+        "packPrice": 13.9,
+        "packQty": 100.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.139,
+        "priceUpdateTime": "2026-11-13T15:49:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290000134857, price=13.9, pack=100.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "raw walnuts": {
+      "ingredient_name": "Raw Walnuts",
+      "super-sapir::151": {
+        "item_code": "7290006241191",
+        "gtin": "07290006241191",
+        "nameHe": "אגוזי מלך טבעיים 150 ג' ק.גת",
+        "brand": "לא ידוע",
+        "packPrice": 23.9,
+        "packQty": 150.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.15933,
+        "priceUpdateTime": "2026-11-13T13:43:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290006241191, price=23.9, pack=150.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "rolled oats (oatmeal)": {
+      "ingredient_name": "Rolled Oats (Oatmeal)",
+      "super-sapir::151": {
+        "item_code": "7290014095960",
+        "gtin": "07290014095960",
+        "nameHe": "שיבולת שועל עבה 400 גר' שקית",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 400.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02475,
+        "priceUpdateTime": "2026-11-13T15:07:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290014095960, price=9.9, pack=400.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "seasoned breadcrumbs": {
+      "ingredient_name": "Seasoned Breadcrumbs",
+      "super-sapir::151": {
+        "item_code": "7290100680711",
+        "gtin": "07290100680711",
+        "nameHe": "אסם פירורית זהב 12*350גרם",
+        "brand": "לא ידוע",
+        "packPrice": 11.9,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.034,
+        "priceUpdateTime": "2026-11-13T15:07:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290100680711, price=11.9, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "soft white cheese 5%": {
+      "ingredient_name": "Soft White Cheese 5%",
+      "super-sapir::151": {
+        "item_code": "7290000474502",
+        "gtin": "07290000474502",
+        "nameHe": "גבינה לבנה 5% מהדרין 250 ג'",
+        "brand": "מוצרים בפיקוח",
+        "packPrice": 5.87,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02348,
+        "priceUpdateTime": "2026-11-13T14:47:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290000474502, price=5.87, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "sushi short grain rice": {
+      "ingredient_name": "Sushi Short Grain Rice",
+      "super-sapir::151": {
+        "item_code": "7290100701157",
+        "gtin": "07290100701157",
+        "nameHe": "אורז סושי 1 קג",
+        "brand": "לא ידוע",
+        "packPrice": 17.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0179,
+        "priceUpdateTime": "2026-11-13T14:36:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290100701157, price=17.9, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "sweet paprika": {
+      "ingredient_name": "Sweet Paprika",
+      "super-sapir::151": {
+        "item_code": "7290000134857",
+        "gtin": "07290000134857",
+        "nameHe": "פפריקה מתוקה 100 גרם מיכל גדול",
+        "brand": "לא ידוע",
+        "packPrice": 13.9,
+        "packQty": 100.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.139,
+        "priceUpdateTime": "2026-11-13T15:49:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290000134857, price=13.9, pack=100.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "fresh sweet challah": {
+      "ingredient_name": "Fresh Sweet Challah",
+      "super-sapir::151": {
+        "item_code": "7290017947372",
+        "gtin": "07290017947372",
+        "nameHe": "חלה מתוקה ארוזה",
+        "brand": "לא ידוע",
+        "packPrice": 17.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "pack adopted from GTIN-identical rami-levy item 7290017947372 (local feed pack underivable)",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0358,
+        "priceUpdateTime": "2026-11-13T14:26:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290017947372, price=17.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "crunchy garlic croutons": {
+      "ingredient_name": "Crunchy Garlic Croutons",
+      "super-sapir::151": {
+        "item_code": "7290000078212",
+        "gtin": "07290000078212",
+        "nameHe": "אסם קרוטונים מתובלים 12*250גרם",
+        "brand": "לא ידוע",
+        "packPrice": 19.9,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0796,
+        "priceUpdateTime": "2026-11-13T13:43:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290000078212, price=19.9, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "feta cheese": {
+      "ingredient_name": "Feta Cheese",
+      "super-sapir::151": {
+        "item_code": "7290002973218",
+        "gtin": "07290002973218",
+        "nameHe": "בסגנון פטה *400 גרם",
+        "brand": "ה.פ נטו מלינדה",
+        "packPrice": 28.9,
+        "packQty": 400.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": "user rule: Greek-style white cheese OK",
+        "packOverride": null,
+        "unitPriceNorm": 0.07225,
+        "priceUpdateTime": "2026-11-13T13:32:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290002973218, price=28.9, pack=400.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "farm fresh eggs": {
+      "ingredient_name": "Farm Fresh Eggs",
+      "super-sapir::151": {
+        "item_code": "742259241901",
+        "gtin": "00742259241901",
+        "nameHe": "ביצים 12 יחידות L",
+        "brand": "מוצרים בפיקוח",
+        "packPrice": 14.54,
+        "packQty": 12.0,
+        "packUnit": "units",
+        "packBasis": "count in product name",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 1.21167,
+        "priceUpdateTime": "2026-11-13T15:49:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=742259241901, price=14.54, pack=12.0 units",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "sliced sandwich bread": {
+      "ingredient_name": "Sliced Sandwich Bread",
+      "super-sapir::151": {
+        "item_code": "7290002079477",
+        "gtin": "07290002079477",
+        "nameHe": "לחם אחיד שחור פרוס 750ג'",
+        "brand": "מוצרים בפיקוח",
+        "packPrice": 8.38,
+        "packQty": 750.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": "user rule: standard sliced loaf",
+        "packOverride": null,
+        "unitPriceNorm": 0.01117,
+        "priceUpdateTime": "2026-11-13T14:26:00",
+        "metadataSource": "PriceFull7290058156016-004-151-20261115-034249.GZ (published 2026-11-15T03:42:49+02:00, store 151): ItemCode=7290002079477, price=8.38, pack=750.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    }
+  },
+  "promotions": {
+    "super-sapir::151": {
+      "status": "not-collected",
+      "reason": "national branch: price files only, refreshed once daily",
+      "offers": []
+    }
+  },
+  "warnings": [],
+  "sync_status": {
+    "super-sapir::151": {
+      "status": "ok",
+      "warnings": []
+    }
+  }
+}
