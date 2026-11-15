@@ -70,11 +70,17 @@ def prices_for_store(chain, store, feed, mappings, canonical, quarantine):
             it=matches[0]
             if (ing.lower().strip(),chain,str(it.item_code)) in quarantine:continue
             pk=fp.derive_pack(it); src=seed['entry']
-            if not pk or pk['unit']!=src['packUnit'] or abs(pk['qty']-src.get('grossPackQty',src['packQty']))>1e-6:continue
-            if not fp.same_product_name(it.name,src['nameHe']):continue
+            src_qty=src.get('grossPackQty',src['packQty'])
+            # The checksum-valid GTIN is the pack identity: a locally underivable pack adopts the validated source
+            # pack, but a pack that parses to CONFLICTING values means unreliable feed data and rejects the match.
+            if pk and (pk['unit']!=src['packUnit'] or abs(pk['qty']-src_qty)>1e-6):continue
+            # Same barcode, different portal spelling: a shared significant word is enough (see fp.compatible_feed_name).
+            if not fp.compatible_feed_name(it.name,src['nameHe']):continue
             pin=copy.deepcopy(seed['pin']);pin['item_code']=str(it.item_code);pin['pinned_name']=it.name
             # Overrides from another chain are not generalized to a new feed.
             pin.pop('pack_override',None)
+            if not pk:
+                pin['gtin_identical_pack']={'qty':src_qty,'unit':src['packUnit'],'from_chain':seed['source_chain'],'from_code':str(seed['entry']['item_code'])}
             local.setdefault(ing,{})[key]=pin;origins[ing]=(seed['source_chain'],seed['gtin']);break
     fp.CHAINS[key]={'store_id':store['store_id'],'store_name':store['name']}
     fp.QUARANTINED={(i,key,c) for i,ch,c in quarantine if ch==chain}
@@ -108,7 +114,7 @@ def fetch_promos(chain, sid, codes):
         offer=p.model_dump(mode='json');offer['items']=[i.model_dump(mode='json') for i in relevant];offer['start_time']=start.isoformat();offer['end_time']=end.isoformat();offer['offer_group_item_count']=len(p.items);out.append(offer)
     return {'status':'ok','source_file':ref.name,'source_url':ref.url,'published_at':fp.iso_with_tz(ref.published_at),'retrieved_at':now.isoformat(),'sha256':hashlib.sha256(raw).hexdigest(),'offers':out}
 
-def worker(chain,sid,path):
+def worker(chain,sid,path,promos=True):
     store=read(ROOT/'stores.json')['stores'][store_key(chain,sid)]
     old=read(ROOT/'prices.json',{});reference=read(ROOT/'data/matching_reference.json',{});
     for ing,e in reference.get('ingredients',{}).items():
@@ -118,10 +124,16 @@ def worker(chain,sid,path):
     canonical=canonical_products(old,maps,q)
     feed=fp.fetch_chain(chain,sid,retries=1)
     data,warnings=prices_for_store(chain,store,feed,maps,canonical,q)
-    codes={e[store_key(chain,sid)]['item_code'] for e in data['ingredients'].values() if store_key(chain,sid) in e}
-    try:promo=fetch_promos(chain,sid,codes)
-    except Exception as e:promo={'status':'unavailable','reason':str(e),'offers':[]}
-    data['promotions']={store_key(chain,sid):promo};data['warnings']=warnings
+    data['metadata']['version']='3'  # per-store snapshots and shards use store-keyed schema 3, like prices.json
+    key=store_key(chain,sid)
+    if promos:
+        codes={e[key]['item_code'] for e in data['ingredients'].values() if key in e}
+        try:promo=fetch_promos(chain,sid,codes)
+        except Exception as e:promo={'status':'unavailable','reason':str(e),'offers':[]}
+    else:
+        promo={'status':'not-collected','reason':'national branch: price files only, refreshed once daily','offers':[]}
+    data['promotions']={key:promo};data['warnings']=warnings
+    data['sync_status']={key:{'status':'ok','warnings':warnings}}
     fp.atomic_write(path,data)
 
 def catalog(use_cached=False):
@@ -201,10 +213,102 @@ def run(only=None):
     fp.atomic_write(str(ROOT/'prices.json'),out)
     return 1 if selected and all(s['status']=='failed' for s in out['sync_status'].values()) else 0
 
+def shard_filename(key):return key.replace('::','--')+'.json'
+
+def national_stores(cat,config):
+    """Every non-pharmacy directory store of a national chain that is not a core connected store.
+    Excluded chains (victory, city-market) are never returned: directory-only, no claims."""
+    chains=set(config.get('national_chains') or [])-set(config.get('excluded_chains') or [])
+    core=set(config['refresh_stores'])
+    return sorted(k for k,s in cat['stores'].items() if s['chain'] in chains and s.get('kind')!='pharmacy' and k not in core)
+
+def shard_plan(out_path=None):
+    """Matrix groups for the national workflow: chains are never split mid-group unless a chain exceeds the
+    group size, and groups are ordered big-chain-first so one portal is never two jobs' whole workload."""
+    cat=read(ROOT/'stores.json');config=read(ROOT/'store_config.json')
+    size=int(config.get('shard_group_size',50))
+    bychain={}
+    for k in national_stores(cat,config):bychain.setdefault(cat['stores'][k]['chain'],[]).append(k)
+    groups=[]
+    for chain,ks in sorted(bychain.items(),key=lambda kv:-len(kv[1])):
+        for i in range(0,len(ks),size):groups.append(ks[i:i+size])
+    if out_path:fp.atomic_write(out_path,groups)
+    return groups
+
+def run_shards(only,workers,outdir):
+    """Fetch national stores into a FRESH output dir (never the repo's live shards/), one self-contained
+    schema-3 shard per store plus a results.json the publish step merges. Old shards survive failures."""
+    cat=read(ROOT/'stores.json');config=read(ROOT/'store_config.json')
+    selected=only or national_stores(cat,config)
+    out=Path(outdir);out.mkdir(parents=True,exist_ok=True)
+    results={}
+    def one(key):
+        if key not in cat['stores']:return key,'Not in verified directory'
+        c=cat['stores'][key];dest=ROOT/'data/stores'/shard_filename(key)
+        dest.parent.mkdir(parents=True,exist_ok=True)
+        try:
+            p=subprocess.run([sys.executable,__file__,'--worker',c['chain'],c['store_id'],str(dest),'--no-promos'],capture_output=True,text=True,timeout=config.get('store_timeout_seconds',110))
+            if p.returncode:raise RuntimeError(p.stderr[-700:])
+            data=read(dest)
+            fp.atomic_write(str(out/shard_filename(key)),data)
+            return key,None
+        except Exception as e:return key,str(e)
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for key,err in pool.map(one,selected):
+            results[key]={'status':'failed','reason':err} if err else {'status':'ok'}
+            print(key,('FAILED '+err) if err else 'OK',flush=True)
+    fp.atomic_write(str(out/'results.json'),{'checked_at':datetime.now(timezone.utc).isoformat(),'results':results})
+    return 1 if selected and all(r['status']=='failed' for r in results.values()) else 0
+
+def shard_publish(indirs):
+    """Merge fetched shard output dirs into the repo's shards/ and rebuild shards/index.json. A failed store keeps
+    its previous dated shard, marked failed in the index; a store with no shard at all is recorded as failed only."""
+    results={}
+    for d in indirs:
+        d=Path(d)
+        rj=d/'results.json'
+        if rj.exists():results.update((read(rj) or {}).get('results',{}))
+        for f in sorted(d.glob('*.json')):
+            if f.name=='results.json':continue
+            data=read(f)
+            if not data or str(data.get('metadata',{}).get('version'))!='3':continue
+            keys=[k for k in data.get('metadata',{}).get('chains',{})]
+            if len(keys)!=1:continue
+            dest=ROOT/'shards'/f.name;dest.parent.mkdir(parents=True,exist_ok=True)
+            fp.atomic_write(str(dest),data)
+    index={'version':'1','checked_at':datetime.now(timezone.utc).isoformat(),'stores':{}}
+    sdir=ROOT/'shards'
+    if sdir.exists():
+        for f in sorted(sdir.glob('*.json')):
+            if f.name=='index.json':continue
+            data=read(f)
+            if not data:continue
+            chains=data.get('metadata',{}).get('chains',{})
+            if len(chains)!=1:continue
+            key,m=next(iter(chains.items()))
+            index['stores'][key]={'status':'ok','published_at':m.get('published_at'),'retrieved_at':m.get('retrieved_at'),'priced_count':m.get('priced_count'),'path':'shards/'+f.name,'bytes':f.stat().st_size}
+    for key,r in results.items():
+        if r['status']=='ok':continue
+        if key in index['stores']:
+            index['stores'][key].update(status='failed',reason=r.get('reason'),note='last refresh failed; keeping the dated snapshot')
+        else:
+            index['stores'][key]={'status':'failed','reason':r.get('reason')}
+    fp.atomic_write(str(sdir/'index.json'),index)
+    print('shard index:',len(index['stores']),'stores,',sum(1 for v in index['stores'].values() if v['status']=='ok'),'ok')
+
+
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('--worker',nargs=3);ap.add_argument('--directory-worker',nargs=2);ap.add_argument('--catalog',action='store_true');ap.add_argument('--cached-catalog',action='store_true');ap.add_argument('--stores');a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--worker',nargs='+');ap.add_argument('--directory-worker',nargs=2);ap.add_argument('--catalog',action='store_true');ap.add_argument('--cached-catalog',action='store_true');ap.add_argument('--stores')
+    ap.add_argument('--shard-plan',action='store_true');ap.add_argument('--shard-out');ap.add_argument('--shard-publish',nargs='+');ap.add_argument('--shards');ap.add_argument('--workers',type=int);a=ap.parse_args()
     if a.directory_worker:
         chain,path=a.directory_worker;sf=get_stores(chain);fp.atomic_write(path,{'chain':next(c.model_dump() for c in list_chains() if c.slug==chain),'stores':[s.model_dump() for s in sf.stores]})
-    elif a.worker:worker(*a.worker)
+    elif a.worker:
+        chain,sid,path=a.worker[:3];worker(chain,sid,path,promos='--no-promos' not in a.worker[3:])
     elif a.catalog or a.cached_catalog:catalog(a.cached_catalog)
+    elif a.shard_plan:
+        print(json.dumps(shard_plan(a.shard_out),separators=(',',':')))
+    elif a.shard_publish:shard_publish(a.shard_publish)
+    elif a.shards is not None or a.shard_out:
+        selected=a.shards.split(',') if a.shards else None
+        sys.exit(run_shards(selected,a.workers or 6,a.shard_out or str(ROOT/'shards-out')))
     else:sys.exit(run(a.stores.split(',') if a.stores else None))

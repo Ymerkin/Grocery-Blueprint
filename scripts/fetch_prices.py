@@ -458,6 +458,42 @@ def same_product_name(feed_name, pinned_name):
     return len(short) >= 8 and long_.startswith(short)
 
 
+_NAME_STOP = {'ק"ג', 'קג', "ק''ג", 'גרם', 'גר', 'מ"ל', 'מל', 'ליטר', "ל'", 'יח', 'יחידה', 'יחידות', "יח'"}
+
+
+def _name_tokens(t):
+    """Significant product-name words: promotion markers, bracketed fragments, sizes, counts and
+    pure-number/percent tokens removed. What remains identifies WHAT the product is."""
+    t = re.sub(r"^\s*\*[^*]*\*\s*", "", str(t or ""))
+    t = re.sub(r"[\(\[].*?[\)\]]", " ", t)
+    t = norm_text(t)
+    toks = set()
+    for tok in re.split(r"[\s/\-]+", t):
+        tok = tok.strip(".,:%\"'")
+        if not tok or tok in _NAME_STOP:
+            continue
+        if re.search(r"\d", tok):
+            continue  # sizes, counts, percents, date-like fragments
+        toks.add(tok)
+    return toks
+
+
+def compatible_feed_name(feed_name, pinned_name):
+    """Cross-store sanity check used ONLY on top of a checksum-valid, unambiguous GTIN identity (the barcode
+    is the product anchor). Retailers spell the same product differently across portals, so instead of string
+    equality this requires the two names to share at least one significant word (3+ letters), or two shorter
+    shared words. A feed row sharing no meaningful word with the pinned name is treated as a data error and
+    rejected. Never used without the GTIN identity checks."""
+    if same_product_name(feed_name, pinned_name):
+        return True
+    a, b = _name_tokens(feed_name), _name_tokens(pinned_name)
+    if not a or not b:
+        return False
+    if any(len(t) >= 3 for t in a & b):
+        return True
+    return len([t for t in a & b if len(t) == 2]) >= 2
+
+
 
 QUARANTINED = set()
 
@@ -496,6 +532,13 @@ def build_prices(feeds, pins):
             if not same_product_name(it.name, pin.get("pinned_name")):
                 problems.append("%s | %s: name changed for code %s (pinned %r, feed %r) - re-review" % (chain, ing, code, pin.get("pinned_name"), it.name)); continue
             pk = derive_pack(it)
+            gip = pin.get("gtin_identical_pack")
+            if not pk and gip and gip.get("qty") and gip.get("unit") in ("g", "ml", "units"):
+                # Set only by the cross-store exact-GTIN path after full identity validation: the barcode IS the
+                # pack, so when this feed row's pack cannot be parsed locally the validated source pack is adopted.
+                pk = {"qty": float(gip["qty"]), "unit": gip["unit"],
+                      "basis": "pack adopted from GTIN-identical %s item %s (local feed pack underivable)" % (gip.get("from_chain"), gip.get("from_code")),
+                      "flags": ["pack adopted via checksum-valid GTIN identity"]}
             price = dnum(it.price)
             if not pk or not price or price <= 0:
                 problems.append("%s | %s: code %s has no derivable pack size or valid price" % (chain, ing, code)); continue

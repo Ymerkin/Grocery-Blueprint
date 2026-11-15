@@ -29,5 +29,33 @@
     "shuk-hayir::312",
     "shefa-birkat-hashem::023",
     "super-yuda::241"
-  ]
+  ],
+  "national_chains": [
+    "shufersal",
+    "super-sapir",
+    "rami-levy",
+    "fresh-market",
+    "tiv-taam",
+    "yochananof",
+    "king-store",
+    "maayan-2000",
+    "zol-vebegadol",
+    "keshet-teamim",
+    "super-yuda",
+    "shuk-hayir",
+    "osher-ad",
+    "shefa-birkat-hashem",
+    "super-bareket",
+    "salach-dabach",
+    "stop-market",
+    "politzer",
+    "meshnat-yosef"
+  ],
+  "excluded_chains": [
+    "victory",
+    "city-market"
+  ],
+  "shard_group_size": 50,
+  "shard_workers": 6,
+  "national_note": "National long tail: all non-pharmacy branches of refreshable chains, price files only (no promos), refreshed 1x/day. Victory and City Market excluded per user request (2026-11-15). Unreachable chains (carrefour, hatzi-hinam, het-cohen, mahsanei-hashuk) stay directory-only."
 }

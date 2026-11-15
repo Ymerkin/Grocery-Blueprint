@@ -44,7 +44,18 @@ class StoreSync(unittest.TestCase):
     def test_quarantined_target_cannot_price(self):d,_=self.build([make_item()],q={('rice','super-yuda',CODE)});self.assertFalse(d['ingredients'])
     def test_unselected_cannot_seed(self):self.pin.pop('selected_by');d,_=self.build([make_item()]);self.assertFalse(d['ingredients'])
     def test_user_selection_stays_user_selection(self):self.pin.pop('selected_by');self.pin['approved_by_user']=True;d,_=self.build([make_item()]);self.assertEqual(d['ingredients']['rice']['super-yuda::201']['selectionSource'],'user')
-    def test_unknown_pack_is_unpriced(self):d,_=self.build([PriceItem(item_code=CODE,name='אורז בסמטי',price=Decimal('2'),quantity=None,unit_qty=None)]);self.assertFalse(d['ingredients'])
+    def test_unknown_pack_adopts_gtin_identical_source_pack(self):
+        # Same checksum-valid barcode: the pack IS the validated source pack even when the local feed row cannot be parsed.
+        d,_=self.build([PriceItem(item_code=CODE,name='אורז בסמטי',price=Decimal('2'),quantity=None,unit_qty=None)])
+        e=d['ingredients']['rice']['super-yuda::201'];self.assertEqual(e['packQty'],1000);self.assertIn('GTIN-identical',e['packBasis'])
+    def test_conflicting_pack_still_unpriced(self):
+        d,_=self.build([PriceItem(item_code=CODE,name='אורז בסמטי',price=Decimal('2'),quantity=Decimal('2'),unit_qty='ק"ג')]);self.assertFalse(d['ingredients'])
+    def test_same_barcode_shared_word_name_matches(self):
+        # Portal spelling differs from the source chain's spelling, but a significant word is shared.
+        d,_=self.build([make_item(name='אורז בסמטי מושלם 1 ק"ג')]);self.assertTrue(d['ingredients'])
+    def test_same_barcode_no_shared_word_rejected(self):
+        # A feed row sharing no meaningful word with the validated name is treated as a data error, barcode or not.
+        d,_=self.build([make_item(name='תירס גרעיני 1 ק"ג')]);self.assertFalse(d['ingredients'])
     def test_nonpositive_price_unpriced(self):d,_=self.build([make_item(price='0')]);self.assertFalse(d['ingredients'])
     def test_different_branches_never_share_source(self):
         d,_=self.build([make_item()]);self.store['store_id']='202';d2,_=self.build([make_item(price='19')]);self.assertEqual(d['ingredients']['rice']['super-yuda::201']['packPrice'],12.9);self.assertEqual(d2['ingredients']['rice']['super-yuda::202']['packPrice'],19)

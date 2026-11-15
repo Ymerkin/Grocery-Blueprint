@@ -2366,6 +2366,59 @@ let state = {
 
     // Store directory and snapshot adapter. Directory records are NOT price connections.
     let STORE_DIRECTORY = {stores:{}, chains:{}};
+    // National per-store shards: tiny manifest at boot, one ~80KB shard fetched only when a store is actually compared.
+    let SHARD_INDEX = {version:'1', stores:{}};
+    const SHARD_LOADING = {};
+    function shardAvailableStores() {
+      return Object.keys(SHARD_INDEX.stores || {}).filter(k => {
+        const rec = SHARD_INDEX.stores[k], s = STORE_DIRECTORY.stores[k];
+        return rec && rec.path && s && s.kind !== 'pharmacy';
+      });
+    }
+    async function loadShardIndex() {
+      try { const r = await fetch('./shards/index.json', {cache:'no-store'}); if (r.ok) SHARD_INDEX = await r.json(); } catch(e) { /* national coverage absent: core stores still work */ }
+      if (!SHARD_INDEX || !SHARD_INDEX.stores) SHARD_INDEX = {version:'1', stores:{}};
+    }
+    function mergeShardIntoLivePrices(shard) {
+      const lp = state.livePrices; if (!lp) return;
+      Object.assign(lp.metadata.chains, shard.metadata.chains);
+      for (const [ing, entry] of Object.entries(shard.ingredients || {})) {
+        const target = lp.ingredients[ing] || (lp.ingredients[ing] = {ingredient_name: entry.ingredient_name});
+        for (const [k, v] of Object.entries(entry)) { if (k !== 'ingredient_name') target[k] = v; }
+      }
+      Object.assign(lp.promotions = lp.promotions || {}, shard.promotions || {});
+      Object.assign(lp.sync_status = lp.sync_status || {}, shard.sync_status || {});
+      for (const [ck, cm] of Object.entries(shard.metadata.chains)) {
+        if (!STORE_DIRECTORY.stores[ck]) STORE_DIRECTORY.stores[ck] = {key:ck, chain:ck.split('::')[0], chain_name:ck.split('::')[0], chain_name_he:(cm && cm.store_name) || ck.split('::')[0], store_id:(cm && cm.store_id) || ck.split('::')[1], name:(cm && cm.store_name) || ck, kind:(cm && cm.kind) || 'physical', address:(cm && cm.address) || '', city:(cm && cm.city) || ''};
+        if (!cm || !cm.source_file || !cm.published_at) continue;
+        const t = new Date(cm.published_at);
+        const ageHours = (Date.now() - t.getTime()) / 3600000;
+        if (isNaN(t.getTime()) || ageHours < -1 || ageHours > 48) continue;
+        state.chainFresh[ck] = true;
+        state.chainDates[ck] = t.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+        state.chainPriced[ck] = Object.values(shard.ingredients).filter(e => e && e[ck]).length;
+      }
+      state.isPricesFresh = Object.keys(state.chainFresh || {}).some(isChainPublished) || state.isPricesFresh;
+    }
+    async function ensureShardLoaded(key) {
+      if (!key || (state.livePrices && state.livePrices.metadata.chains[key])) return true;
+      const rec = (SHARD_INDEX.stores || {})[key];
+      if (!rec || !rec.path) return false;
+      if (SHARD_LOADING[key]) return SHARD_LOADING[key];
+      SHARD_LOADING[key] = (async () => {
+        try {
+          const res = await fetch('./' + rec.path, { cache: 'no-store' });
+          if (!res.ok) return false;
+          const shard = await res.json();
+          const v = validatePricesFile(shard);
+          if (!v.ok) return false;
+          mergeShardIntoLivePrices(shard);
+          return true;
+        } catch (e) { return false; }
+        finally { delete SHARD_LOADING[key]; }
+      })();
+      return SHARD_LOADING[key];
+    }
     const DEFAULT_BRANCH_KEYS = {shufersal:'shufersal::413',rami_levy:'rami-levy::039',victory:'victory::2331',osher_ad:'osher-ad::032',yohananof:'yochananof::035'};
     function dataStoreLabel(key) {
       const m=state.livePrices?.metadata?.chains?.[key];
@@ -2420,22 +2473,34 @@ let state = {
         return s && s.kind !== 'pharmacy';
       });
     }
+    // Everything selectable with real published prices: the core connected stores plus national branches whose shard is up.
+    function connectableStores() {
+      return [...new Set([...connectedCompareStores(), ...shardAvailableStores()])];
+    }
     function getCompareSelection() {
-      const conn = connectedCompareStores();
+      const conn = connectableStores();
       let sel = Array.isArray(state.compareSelection) ? state.compareSelection.filter(k => conn.includes(k)) : null;
       if (!sel) sel = (state.defaultBranchKeys || []).filter(k => conn.includes(k));
       return sel;
     }
     function setCompareSelection(keys) {
-      state.compareSelection = [...new Set(keys)].filter(k => connectedCompareStores().includes(k));
+      state.compareSelection = [...new Set(keys)].filter(k => connectableStores().includes(k));
       state.compareSelection.forEach(registerDirectoryStore);
       saveState(); renderAll(); renderBranchResults(); renderConnectedStoreChecks();
+      // National stores load their shard on demand; the comparison re-renders as each arrives.
+      const pending = state.compareSelection.filter(k => !(state.livePrices && state.livePrices.metadata.chains[k]));
+      if (pending.length) {
+        Promise.all(pending.map(ensureShardLoaded)).then(loaded => {
+          renderAll(); renderBranchResults(); renderConnectedStoreChecks();
+          const failed = pending.filter((k, i) => !loaded[i]);
+          if (failed.length) showToast('Some store prices could not be loaded - those cards show estimates only.', 'fa-triangle-exclamation', 'warning');
+        });
+      }
     }
     function setCompareQuick(mode) {
-      const conn = connectedCompareStores();
-      if (mode === 'near') setCompareSelection(conn.filter(k => { const s = STORE_DIRECTORY.stores[k]; return s.kind === 'physical' && s.city === 'גבעת שמואל'; }));
-      else if (mode === 'online') setCompareSelection(conn.filter(k => STORE_DIRECTORY.stores[k].kind === 'online'));
-      else setCompareSelection(conn);
+      if (mode === 'near') setCompareSelection(connectableStores().filter(k => { const s = STORE_DIRECTORY.stores[k]; return s.kind === 'physical' && s.city === 'גבעת שמואל'; }));
+      else if (mode === 'online') setCompareSelection(connectableStores().filter(k => STORE_DIRECTORY.stores[k].kind === 'online'));
+      else setCompareSelection(connectedCompareStores());
       showToast(mode === 'near' ? 'Comparing your Givat Shmuel branches' : mode === 'online' ? 'Comparing online stores' : 'Comparing all connected stores');
     }
     function comparedStoreConfigs() {
@@ -2447,7 +2512,10 @@ let state = {
       const box = document.getElementById('connectedStoreChecks'); if (!box) return;
       box.replaceChildren();
       const sel = getCompareSelection();
-      connectedCompareStores().forEach(key => {
+      // The quick strip shows the core connected stores plus any national branch already ticked (untick here).
+      // Every other national branch is added from the searchable directory below.
+      const strip = [...new Set([...connectedCompareStores(), ...sel])];
+      strip.forEach(key => {
         const s = STORE_DIRECTORY.stores[key]; if (!s) return;
         const addr = (s.address && s.address !== 'unknown') ? String(s.address).trim() : '';
         const place = s.kind === 'online' ? 'Online' : (addr || s.city || ('Store ' + s.store_id));
@@ -2479,23 +2547,40 @@ let state = {
       if(!existing){ state.compareSelection=getCompareSelection(); if(!state.compareSelection.includes(key)) state.compareSelection.push(key); }
       state.currentStore=existing || key;state.onlineStoreSelected=state.currentStore;
       saveState();renderAll();renderBranchResults();renderConnectedStoreChecks();
+      ensureShardLoaded(key).then(ok => {
+        if (!ok && (SHARD_INDEX.stores || {})[key]) showToast('This branch has no current price file - its card shows estimates only.', 'fa-triangle-exclamation', 'warning');
+        renderAll(); renderBranchResults(); renderConnectedStoreChecks();
+      });
     }
     function renderBranchResults() {
       const box=document.getElementById('branchResults');if(!box) return;
       const compared=document.getElementById('branchCompared');if(compared){compared.replaceChildren();for(const key of state.comparedBranches || []){const c=STORE_DIRECTORY.stores[key];if(!c)continue;const b=document.createElement('button');b.className='text-xs rounded-full px-3 py-2 bg-emerald-50 border border-emerald-200 min-h-[44px]';b.textContent=`${c.name} ×`;b.title='Remove from comparison';b.onclick=()=>{state.comparedBranches=state.comparedBranches.filter(k=>k!==key);delete SUPERMARKETS[key];if(state.currentStore===key)state.currentStore='rami_levy';saveState();renderAll();renderBranchResults();};compared.appendChild(b);}}
       const q=(document.getElementById('branchSearch').value || '').toLowerCase().trim();
       const chain=document.getElementById('branchChainFilter').value,kind=document.getElementById('branchKindFilter').value;
+      const shardRec = k => (SHARD_INDEX.stores || {})[k];
+      const liveLoaded = k => !!(state.livePrices?.metadata?.chains?.[k]);
       const rows=Object.values(STORE_DIRECTORY.stores).filter(s=>s.kind!=='pharmacy'&&(!chain || chain===s.chain)&&(!kind || kind===s.kind)&&(!q || `${s.chain_name} ${s.chain_name_he} ${s.name} ${s.address} ${s.city} ${s.store_id}`.toLowerCase().includes(q)));
-      rows.sort((a,b)=>(Number(!!state.livePrices?.metadata?.chains?.[b.key])-Number(!!state.livePrices?.metadata?.chains?.[a.key]))||a.name.localeCompare(b.name));
+      const rank = s => liveLoaded(s.key) ? 2 : (shardRec(s.key) && shardRec(s.key).path ? 1 : 0);
+      rows.sort((a,b)=>(rank(b)-rank(a))||a.name.localeCompare(b.name));
       box.replaceChildren();
-      const status=document.getElementById('branchDirectoryStatus');if(status)status.textContent=`${rows.length} branches found${rows.length>60?' - showing 60; narrow your search':''}. Refresh schedule: 4 times/day. Directory-only branches need a snapshot connection before actual prices are available.`;
+      const nationalOk = Object.values(SHARD_INDEX.stores || {}).filter(r => r.status === 'ok').length;
+      const status=document.getElementById('branchDirectoryStatus');if(status)status.textContent=`${rows.length} branches found${rows.length>60?' - showing 60; narrow your search':''}. Connected stores refresh 4x/day${nationalOk?`; national branches (${nationalOk} live) refresh daily`:''}. Directory-only branches show estimates until their chain becomes reachable.`;
       for(const s of rows.slice(0,60)) {
         const button=document.createElement('button');button.type='button';button.dataset.branchKey=s.key;
         button.className='text-left border border-slate-200 bg-slate-50 hover:bg-emerald-50 rounded-xl p-3 min-w-0 min-h-[44px]';
         const priced=isChainPublished(s.key),chosen=normChainKey(state.currentStore)===s.key;
+        const rec=shardRec(s.key);
         const title=document.createElement('div');title.className='text-xs font-bold text-slate-900 break-words';title.textContent=`${chosen?'✓ ':''}${s.chain_name_he} - ${s.name} (${s.store_id})`;
         const detail=document.createElement('div');detail.className='text-xs text-slate-500 mt-1 break-words';detail.textContent=`${s.kind==='online'?'Online':'Local branch'}${s.address&&s.address!=='unknown'?' / '+s.address:''}`;
-        const badge=document.createElement('div');badge.className='text-xs mt-1 '+(priced?'text-emerald-700':'text-amber-800');badge.textContent=priced?'Current branch prices connected':'No current branch prices - estimates only';
+        const badge=document.createElement('div');
+        let badgeText,badgeCls;
+        if (priced) { badgeText='Current branch prices connected'; badgeCls='text-emerald-700'; }
+        else if (liveLoaded(s.key)) { badgeText='Price file is dated - estimates where unmatched'; badgeCls='text-amber-800'; }
+        else if (rec && rec.status === 'ok') { badgeText='Live prices available - tap to load'; badgeCls='text-emerald-700'; }
+        else if (rec && rec.status === 'failed' && rec.path) { badgeText='Last refresh failed - dated snapshot, estimates where unmatched'; badgeCls='text-amber-800'; }
+        else if (rec && rec.status === 'failed') { badgeText='No current price file (last refresh failed) - estimates only'; badgeCls='text-amber-800'; }
+        else { badgeText='No current branch prices - estimates only'; badgeCls='text-amber-800'; }
+        badge.className='text-xs mt-1 '+badgeCls;badge.textContent=badgeText;
         button.append(title,detail,badge);button.onclick=()=>chooseDirectoryStore(s.key);box.appendChild(button);
       }
       if(!rows.length)box.textContent='No matching branches. Try the branch name or address in Hebrew.';
@@ -2598,6 +2683,7 @@ let state = {
             state.pricesRejectReason = v.reason;
           } else {
             await configureStoreDirectory(data);
+            await loadShardIndex();
             // Freshness is judged per chain from that chain's own source-file publication time. Never from generation or retrieval time.
             PRICE_CHAINS.forEach(ck => {
               const cm = data.metadata.chains[ck];
@@ -2616,6 +2702,9 @@ let state = {
             state.isPricesFresh = PRICE_CHAINS.some(isChainPublished);
             const dates = PRICE_CHAINS.filter(isChainPublished).map(ck => state.chainDates[ck]);
             state.livePricesDate = dates.length ? Array.from(new Set(dates)).join(' / ') : null;
+            // Restore national shard stores from the saved selection before the first render.
+            const wantShards = [...new Set([...getCompareSelection(), ...(state.comparedBranches || [])])].filter(k => !(data.metadata.chains[k]));
+            if (wantShards.length) await Promise.all(wantShards.map(ensureShardLoaded));
             if (!state.isPricesFresh) {
               const anyFresh = PRICE_CHAINS.some(ck => state.chainFresh[ck]);
               state.pricesRejectReason = anyFresh ? 'feed is current but no product mappings have been reviewed and approved yet' : 'published price feed is older than 48 hours or missing a source date';
