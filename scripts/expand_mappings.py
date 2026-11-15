@@ -38,7 +38,7 @@ LINES = {
     "sweet corn kernel can":   {"terms": [["תירס"]], "exclude": ["קלוי", "קלאוי", "פופקורן", "אבקת", "עמילן", "כדורי", "טורטייה"], "price": (3, 10)},
     "canned beans":            {"terms": [["שעועית"]], "exclude": ["ירוקה"], "price": (3, 12)},
     "dry green / brown lentils": {"terms": [["עדשים"]], "exclude": ["מבושל", "מוכן", "נבטי"], "price": (4, 15)},
-    "pearl barley":            {"terms": [["גריסי פנינה"], ["שעורה", "גריסים"]], "exclude": [], "price": (3, 12)},
+    "pearl barley":            {"terms": [["גריסי פנינה"]], "exclude": [], "price": (3, 15)},
     "couscous":                {"terms": [["קוסקוס"]], "exclude": ["מוכן", "מבושל"], "price": (4, 15)},
     "pasta pearls (ptitim)":   {"terms": [["פתיתים"]], "exclude": ["מוכן", "מבושל"], "price": (3, 12)},
     "brown / basmati rice":    {"terms": [["אורז"], ["בסמטי", "מלא"]], "exclude": ["מוכן", "מבושל"], "price": (6, 25)},
@@ -72,8 +72,8 @@ LINES = {
     "firm tofu tnuva":         {"terms": [["טופו"]], "exclude": ["רוטב"], "price": (8, 25)},
     "greek yogurt 7%":         {"terms": [["יוגורט"], ["יווני"]], "exclude": [], "price": (5, 20)},
     "bulgarian / feta cheese": {"terms": [["בולגרית", "פטה"]], "exclude": [], "price": (10, 35)},
-    "frozen broccoli":         {"terms": [["ברוקולי"], ["קפוא"]], "exclude": ["טרי"], "price": (8, 25)},
-    "frozen green beans":      {"terms": [["שעועית ירוקה"], ["קפואה", "קפוא"]], "exclude": [], "price": (8, 25)},
+    "frozen broccoli":         {"terms": [["ברוקולי"], ["קפוא", "קפואה", "קפואים", "קפואות", "מוקפא", "מוקפאת", "מוקפאים"]], "exclude": ["טרי"], "price": (8, 25)},
+    "frozen green beans":      {"terms": [["שעועית ירוקה"], ["קפואה", "קפוא", "קפואים", "קפואות", "מוקפא", "מוקפאת", "מוקפאים"]], "exclude": [], "price": (8, 25)},
     "pickled mango sauce (amba)": {"terms": [["עמבה"]], "exclude": [], "price": (5, 18)},
     "herb pepper sauce (skhug / harissa)": {"terms": [["סחוג", "חריסה"]], "exclude": [], "price": (5, 18)},
     "za'atar with sesame":     {"terms": [["זעתר"]], "exclude": ["לחם", "גבינה", "שמן זית"], "price": (4, 15)},
@@ -105,6 +105,24 @@ BUNDLES = {"baking powder & yeast", "coarse salt & black pepper", "cucumbers & t
 def norm_name(s):
     s = unicodedata.normalize("NFC", s or "")
     return re.sub(r"\s+", " ", s).strip()
+
+UNIT_TOKENS = {"ק\"ג", "קג", "קילוגרם", "גרם", "גר", 'מ\"ל', "מל", "ליטר", "יחידה", "יח", "ארוז", "טרי"}
+
+def name_tokens_norm(name):
+    """Order-insensitive token identity for the cross-chain name anchor: NFC, sizes/weights and
+    pure unit words stripped, numbers dropped. 'בשר בקר טחון טרי קג' -> {בשר,בקר,טחון}."""
+    s = norm_name(name)
+    toks = []
+    for t in s.split():
+        t = t.strip('.,()*')
+        if not t or t in UNIT_TOKENS or re.fullmatch(r"[\d./%]+", t):
+            continue
+        toks.append(t)
+    return frozenset(toks)
+
+def per_kg(it):
+    u = it.get("uom", "")
+    return "ק\"ג" in u or "קילוגרם" in u or "קג" in u
 
 def gtin_valid(code):
     """Same evidence bar as the sync pipeline: library checksum validation + rejection of
@@ -232,8 +250,10 @@ def propose(write=False):
     mappings = json.loads((ROOT / "mappings.json").read_text())
     pins = mappings["pins"]
     universe = app_universe()
-    pins_norm = {re.sub(r"\s+", " ", re.sub(r"\s*\([^)]*\)\s*", " ", p)).strip().lower() for p in pins}
-    unmapped = sorted(n for n in universe if n not in pins_norm)
+    def pnorm(p):
+        return re.sub(r"\s+", " ", re.sub(r"\s*\([^)]*\)\s*", " ", p)).strip().lower()
+    pins_norm = {pnorm(p) for p in pins}
+    unmapped = sorted(n for n in universe if pnorm(n) not in pins_norm)
     stale = [k for k in LINES if k not in unmapped and k not in pins]
     if stale:
         print("[!] spec lines not in the app universe (stale spec?): %s" % ", ".join(stale))
@@ -256,6 +276,55 @@ def propose(write=False):
         # different brands, so identical GTINs across chains are NOT required (existing hand-audit
         # pins also differ per chain). A line is pinned only when >=3 anchor chains get a solid pick.
         solid_chains = {c: v for c, v in per_chain.items() if gtin_valid(v["code"])}
+        if len(solid_chains) < 3:
+            # Chain-local anchor: the barcode column is unusable (internal PLU, 2x variable-measure
+            # prefix, or checksum-invalid), but the pipeline already permits chain-local pins within
+            # their own chain and re-verifies the exact pinned name on every build. Substitute a
+            # cross-chain NAME identity: the same normalized token-set name must win in >=3 anchor
+            # chains, prices must agree within 2.5x, and weighted lines require the weighted flag +
+            # per-kg pricing in every agreeing chain. Anything short stays an honest estimate.
+            by_name = {}
+            for c, v in per_chain.items():
+                if spec.get("weighted") and not (v["weighted"] and per_kg(v)):
+                    continue
+                by_name.setdefault(name_tokens_norm(v["name"]), {})[c] = v
+            best = max(by_name.values(), key=len) if by_name else {}
+            if len(best) >= 3:
+                prices = [v["price"] for v in best.values()]
+                if max(prices) <= 2.5 * min(prices):
+                    solid_chains = best
+        if len(solid_chains) < 3:
+            # GTIN corroboration across chains: feeds truncate Hebrew names, so a chain can stock
+            # the exact same barcode while its truncated name fails the full term check. When a
+            # full-terms winner carries a valid GTIN, adopt the SAME GTIN in chains where the raw
+            # catalog item shares a significant token with the winner's name, has no excluded or
+            # wrong-type word, and sits in the price band. The barcode is the identity; the name
+            # check is only a sanity guard.
+            winners = {c: v for c, v in per_chain.items() if gtin_valid(v["code"])}
+            for wc, w in list(winners.items()):
+                g = gtin_valid(w["code"])
+                wtoks = {t for t in name_tokens_norm(w["name"]) if len(t) >= 3}
+                required = {t for group in spec["terms"] for t in group}
+                for chain, cat in cats.items():
+                    if chain in winners:
+                        continue
+                    for it in cat["items"]:
+                        if gtin_valid(it["code"]) != g:
+                            continue
+                        n = it["name"]
+                        lo, hi = spec["price"]
+                        if not (lo <= it["price"] <= hi):
+                            continue
+                        if any(x in n for x in spec.get("exclude", [])):
+                            continue
+                        if any(b in n for b in GLOBAL_BLOCK if not any(b in t or t in b for t in required)):
+                            continue
+                        if not (wtoks & {t for t in name_tokens_norm(n) if len(t) >= 3}):
+                            continue
+                        winners[chain] = it
+                        break
+            if len(winners) >= 3:
+                solid_chains = winners
         solid = len(solid_chains) >= 3
         if solid:
             per_chain = solid_chains
