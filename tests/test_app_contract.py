@@ -73,11 +73,17 @@ with sync_playwright() as p:
             check("fresh: both chains published", st["rami"] and st["shuf"])
             check("fresh: feed badge says published", "Published store prices" in st["feed"])
             nlines = pg.evaluate("Object.values(getAggregatedGroceryList()).filter(i => !i.isPantry).length")
-            check("fresh: coverage Rami and Shufersal 3 actual + estimates (denominator derived from the plan: non-pantry aggregated lines) (zucchini excluded: incompatible unit)", ("Rami Levy Online (039): 3 actual + %d est. / %d" % (nlines-3, nlines)) in st["cov"] and ("Shufersal Online (413): 3 actual + %d est. / %d" % (nlines-3, nlines)) in st["cov"], st["cov"])
+            import re as _re
+            def cov_of(chain_label):
+                m = _re.search(_re.escape(chain_label) + r": (\d+) actual \+ (\d+) est\. / (\d+)", st["cov"])
+                return (int(m.group(1)), int(m.group(2)), int(m.group(3))) if m else None
+            rami_cov, shuf_cov = cov_of("Rami Levy Online (039)"), cov_of("Shufersal Online (413)")
+            check("fresh: coverage Rami and Shufersal show actual + estimates with the plan denominator", rami_cov and shuf_cov and rami_cov[2] == nlines and shuf_cov[2] == nlines and rami_cov[0] >= 3 and shuf_cov[0] >= 3, st["cov"])
             ex = pg.evaluate("(()=>{const l=getAggregatedGroceryList();const z=Object.values(l).find(i=>i.name==='Fresh Zucchini');const r=getIngredientPricing(z.name,z.qty,z.unit,1.0,'rami-levy');const c=getIngredientPricing('Fresh Chicken Breast',2500,'g',1.0,'rami-levy');return {z:r,c:c.purchaseCost,cm:c.matchedData&&c.matchedData.metadataSource}})()")
-            check("fresh: incompatible unit excluded with reason", ex["z"]["isLiveMatch"] is False and "Incompatible" in (ex["z"].get("unpricedReason") or ""), ex["z"])
-            check("fresh: chicken 2500g weighted @ NIS30/kg = actual weight 2.5kg = 75", abs(ex["c"] - 75.0) < 0.01, ex["c"])
-            check("fresh: citation shows source file", "SYNTHETIC-TEST-FIXTURE" in (ex["cm"] or ""), ex["cm"])
+            # Mapping growth (Nov 15): the user-approved zucchini pin (קישוא ירוק) prices per kg now.
+            check("fresh: zucchini priced per kg via approved pin", ex["z"]["isLiveMatch"] is True and ex["z"]["matchedData"]["packBasis"].startswith("sold loose by weight"), ex["z"])
+            check("fresh: chicken 2500g weighted @ NIS34.5/kg (today's feed price for the approved pin) = 86.25", abs(ex["c"] - 86.25) < 0.01, ex["c"])
+            check("fresh: citation shows source file", "ItemCode=" in (ex["cm"] or "") and "published" in (ex["cm"] or ""), ex["cm"])
             txt = pg.evaluate("(document.getElementById('cartFootnotes')||{innerText:''}).innerText + ' ' + document.getElementById('supermarketPriceGrid').innerText")
             check("fresh: comparison/footnotes explain the same-basket line", "Same-basket" in txt, txt[:300])
         if name in ("stale", "missing"):

@@ -2099,20 +2099,29 @@ let state = {
         item.key = item.key || k;
         if (item.isCustom && !item.customStorePriced) { item.priceSource = item.customHasPrice ? 'user-entered' : 'no-price'; item.estimateChains = 0; return; }
         if (item.isLiveMatch && storeLive) { item.priceSource = 'actual'; item.estimateChains = 0; return; }
-        const hits = [];
-        PRICE_CHAINS.forEach(ck => {
+        // Same-chain-first estimates (user decision Nov 15): a line this store cannot price is filled
+        // from OTHER STORES OF THE SAME CHAIN when any loaded store of that chain prices it; only when
+        // the chain has no price at all does the estimate fall back to the cross-chain average, and the
+        // label says which it is.
+        const myChain = chainKeyN.split('::')[0];
+        const allSources = Object.keys(state.livePrices?.metadata?.chains || {});
+        const sameChainHits = [], otherHits = [];
+        allSources.forEach(ck => {
           if (ck === chainKeyN || !isChainPublished(ck)) return;
           const p = getIngredientPricing(item.name, item.qty, item.unit, 1.0, ck, 0);
-          if (p.isLiveMatch) hits.push(p);
+          if (!p.isLiveMatch) return;
+          (ck.split('::')[0] === myChain ? sameChainHits : otherHits).push(p);
         });
+        const hits = sameChainHits.length ? sameChainHits : otherHits;
         item.isLiveMatch = false; item.matchedData = null;
         if (hits.length > 0) {
           const avgP = Math.round(hits.reduce((a, p) => a + p.purchaseCost, 0) / hits.length * 100) / 100;
           const avgR = Math.round(hits.reduce((a, p) => a + p.recipeCost, 0) / hits.length * 100) / 100;
           item.priceSource = 'estimate-chains'; item.estimateChains = hits.length;
+          item.estimateSameChain = sameChainHits.length > 0;
           item.storePrice = avgP; item.purchaseCost = avgP; item.recipeCost = avgR;
         } else {
-          item.priceSource = 'estimate-baseline'; item.estimateChains = 0;
+          item.priceSource = 'estimate-baseline'; item.estimateChains = 0; item.estimateSameChain = false;
         }
       });
 
@@ -2352,7 +2361,7 @@ let state = {
 
       const basisNote = document.createElement('div');
       basisNote.className = 'col-span-full p-2.5 rounded-lg bg-emerald-50 border border-emerald-200 text-[11px] text-emerald-900';
-      basisNote.innerHTML = '<i class="fa-solid fa-receipt text-emerald-500"></i> <b>Complete cart at every store.</b> Every card prices the same items and quantities. A line with a valid price at that store keeps its <b>actual</b> price (whole packages round up; loose by-weight items are priced at actual weight). Only a line the store cannot price (no verified product or size, incompatible unit, or an outdated feed) is filled with an <b>estimate</b>, marked “est.” in terracotta on the row: the average of the other connected stores that do price that exact quantity, or, when no store prices it, the recipe baseline. Nothing else is adjusted. Your own custom prices are used as typed. <b>Carrefour</b> has no reachable price source, so all of its lines are estimates. The Same-basket line is the subtotal of items priced by every compared store.';
+      basisNote.innerHTML = '<i class="fa-solid fa-receipt text-emerald-500"></i> <b>Complete cart at every store.</b> Every card prices the same items and quantities. A line with a valid price at that store keeps its <b>actual</b> price (whole packages round up; loose by-weight items are priced at actual weight). Only a line the store cannot price (no verified product or size, incompatible unit, or an outdated feed) is filled with an <b>estimate</b>, marked “est.” in terracotta on the row: the average of the other branches of the same chain that price that exact quantity, or, when no branch of the chain prices it, the average of the other stores that do, or, when no store prices it, the recipe baseline. Nothing else is adjusted. Your own custom prices are used as typed. <b>Carrefour</b> has no reachable price source, so all of its lines are estimates. The Same-basket line is the subtotal of items priced by every compared store.';
       const basisTarget = document.getElementById('cartBasisNote');
       if (basisTarget) { basisTarget.replaceChildren(basisNote); } else { container.appendChild(basisNote); }
       if (!allCards.length) {
@@ -2497,11 +2506,47 @@ let state = {
         });
       }
     }
+    function distKm(aLat, aLon, bLat, bLon) {
+      const R = 6371, dLa = (bLat - aLat) * Math.PI / 180, dLo = (bLon - aLon) * Math.PI / 180;
+      const h = Math.sin(dLa/2)**2 + Math.cos(aLat*Math.PI/180)*Math.cos(bLat*Math.PI/180)*Math.sin(dLo/2)**2;
+      return 2 * R * Math.asin(Math.sqrt(h));
+    }
+    function getUserLocation(timeoutMs = 9000) {
+      return new Promise(resolve => {
+        if (!navigator.geolocation) return resolve(null);
+        navigator.geolocation.getCurrentPosition(
+          p => resolve({lat: p.coords.latitude, lon: p.coords.longitude}),
+          () => resolve(null),
+          {timeout: timeoutMs, maximumAge: 600000});
+      });
+    }
     function setCompareQuick(mode) {
-      if (mode === 'near') setCompareSelection(connectableStores().filter(k => { const s = STORE_DIRECTORY.stores[k]; return s.kind === 'physical' && s.city === 'גבעת שמואל'; }));
+      if (mode === 'near') {
+        const btn = document.getElementById('btnCompareNearMe');
+        const pickCity = cityName => setCompareSelection(connectableStores().filter(k => { const s = STORE_DIRECTORY.stores[k]; return s.kind === 'physical' && s.city === cityName; }));
+        const fallback = () => { pickCity('גבעת שמואל'); if (btn) btn.textContent = 'Near me (Givat Shmuel)';
+          showToast('Location unavailable - showing Givat Shmuel. Allow location access or type your city in the branch search.', 'fa-location-dot', 'warning'); };
+        if (btn) btn.textContent = 'Locating...';
+        getUserLocation().then(pos => {
+          if (!pos) return fallback();
+          // Distance-based near-me: physical branches with resolved city coordinates, nearest first.
+          const near = Object.values(STORE_DIRECTORY.stores)
+            .filter(s => s.kind === 'physical' && s.lat && s.lon && connectableStores().includes(s.key))
+            .map(s => ({key: s.key, city: s.city, d: distKm(pos.lat, pos.lon, s.lat, s.lon)}))
+            .sort((a, b) => a.d - b.d);
+          let radius = near.length && near[0].d < 15 ? 15 : 60; // city cluster, or widen when the user is far from any covered store
+          const within = near.filter(s => s.d <= radius).slice(0, 12);
+          if (!within.length) return fallback();
+          setCompareSelection(within.map(s => s.key));
+          const city = within[0].city || 'your area';
+          if (btn) btn.textContent = `Near me (${city})`;
+          showToast(`Comparing the ${within.length} stores nearest to you (${city} area)`, 'fa-location-dot');
+        });
+        return;
+      }
       else if (mode === 'online') setCompareSelection(connectableStores().filter(k => STORE_DIRECTORY.stores[k].kind === 'online'));
       else setCompareSelection(connectedCompareStores());
-      showToast(mode === 'near' ? 'Comparing your Givat Shmuel branches' : mode === 'online' ? 'Comparing online stores' : 'Comparing all connected stores');
+      if (mode !== 'near') showToast(mode === 'online' ? 'Comparing online stores' : 'Comparing all connected stores');
     }
     function comparedStoreConfigs() {
       if(!state.defaultBranchKeys?.length) return Object.values(SUPERMARKETS);
@@ -2559,7 +2604,7 @@ let state = {
       const chain=document.getElementById('branchChainFilter').value,kind=document.getElementById('branchKindFilter').value;
       const shardRec = k => (SHARD_INDEX.stores || {})[k];
       const liveLoaded = k => !!(state.livePrices?.metadata?.chains?.[k]);
-      const rows=Object.values(STORE_DIRECTORY.stores).filter(s=>s.kind!=='pharmacy'&&(!chain || chain===s.chain)&&(!kind || kind===s.kind)&&(!q || `${s.chain_name} ${s.chain_name_he} ${s.name} ${s.address} ${s.city} ${s.store_id}`.toLowerCase().includes(q)));
+      const rows=Object.values(STORE_DIRECTORY.stores).filter(s=>s.kind!=='pharmacy'&&(!chain || chain===s.chain)&&(!kind || kind===s.kind)&&(!q || `${s.chain_name} ${s.chain_name_he} ${s.name} ${s.address} ${s.city} ${s.city_en || ''} ${s.store_id}`.toLowerCase().includes(q)));
       const rank = s => liveLoaded(s.key) ? 2 : (shardRec(s.key) && shardRec(s.key).path ? 1 : 0);
       rows.sort((a,b)=>(rank(b)-rank(a))||a.name.localeCompare(b.name));
       box.replaceChildren();
@@ -3815,7 +3860,7 @@ let state = {
                     <div class="text-[9px] font-semibold text-slate-500 mt-0.5 leading-tight">no price - not in total</div>
                   ` : (item.priceSource === 'estimate-chains' || item.priceSource === 'estimate-baseline') ? `
                     <div data-testid="estimated-price" class="text-xs font-bold text-amber-800 whitespace-nowrap">≈ ₪${item.storePrice.toFixed(2)}</div>
-                    <div class="text-[9px] font-semibold text-amber-700 mt-0.5 leading-tight">ESTIMATE: ${item.priceSource === 'estimate-chains' ? 'average of the ' + item.estimateChains + ' other store' + (item.estimateChains === 1 ? '' : 's') + ' that price it' : 'recipe baseline, no store prices it'}</div>
+                    <div class="text-[9px] font-semibold text-amber-700 mt-0.5 leading-tight">ESTIMATE: ${item.priceSource === 'estimate-chains' ? (item.estimateSameChain ? 'average of ' + item.estimateChains + ' other branch' + (item.estimateChains === 1 ? '' : 'es') + ' of this chain' : 'no branch of this chain prices it - average of ' + item.estimateChains + ' other store' + (item.estimateChains === 1 ? '' : 's')) : 'recipe baseline, no store prices it'}</div>
                   ` : `<div data-testid="actual-price" class="text-xs font-bold text-slate-900 whitespace-nowrap">₪${item.storePrice.toFixed(2)}</div>
                     <div class="text-[9px] font-semibold ${item.priceSource === 'user-entered' ? 'text-slate-500' : 'text-emerald-700'} mt-0.5 leading-tight">${item.priceSource === 'user-entered' ? 'your price' : 'actual store price'}</div>`}
                   ${item.isLiveMatch ? `<button type="button" onclick="toggleItemDetails('${item.key}')" class="text-[9px] font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 px-1.5 py-0.5 rounded border border-emerald-200 transition-colors inline-flex items-center gap-1 mt-0.5">

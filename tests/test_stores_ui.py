@@ -61,11 +61,17 @@ with sync_playwright() as p:
           const restored=document.querySelectorAll('#supermarketPriceGrid > div').length;
           return {before,after,restored};})()""")
         check(tag+' store checkbox hides and restores its card',r['before']==12 and r['after']==11 and r['restored']==12,r)
-        r=pg.evaluate("""(()=>{document.getElementById('btnCompareNearMe').click();const near=getCompareSelection().slice().sort();
+        # Near-me is async now (real geolocation with Givat Shmuel fallback). Stub a denial so the
+        # fallback resolves immediately: selection must equal the Givat Shmuel physical branches.
+        pg.evaluate("navigator.geolocation={getCurrentPosition:(ok,err)=>err({code:1,message:'denied'})}")
+        pg.evaluate("document.getElementById('btnCompareNearMe').click()")
+        pg.wait_for_function("document.getElementById('btnCompareNearMe').textContent!=='Locating...'", timeout=15000)
+        r=pg.evaluate("""(()=>{const near=getCompareSelection().slice().sort();
           document.getElementById('btnCompareOnline').click();const online=getCompareSelection().slice().sort();
           document.getElementById('btnCompareAll').click();const all=getCompareSelection().length;
           return {near,online,all};})()""")
-        check(tag+' near me / online / all quick select',r['near']==['fresh-market::047','rami-levy::712','super-bareket::009','super-bareket::065'] and r['online']==['rami-levy::039','shufersal::413','shuk-hayir::312'] and r['all']==12,r)
+        # Online quick select: every directory store of kind 'online' (grew with the national directory).
+        check(tag+' near me / online / all quick select',r['near']==['fresh-market::047','rami-levy::712','super-bareket::009','super-bareket::065'] and r['online']==sorted(['keshet-teamim::116','keshet-teamim::120','rami-levy::039','shufersal::413','shuk-hayir::304','shuk-hayir::305','shuk-hayir::309','shuk-hayir::311','shuk-hayir::312','shuk-hayir::319','super-sapir::034','tiv-taam::502','tiv-taam::503','tiv-taam::512','tiv-taam::514','tiv-taam::515','tiv-taam::519']) and r['all']==12,r)
         check(tag+' selection restored to all connected',pg.evaluate("comparedStoreConfigs().length===12"))
         pg.evaluate("switchTab('Pantry')")
         check(tag+' pantry staples are compact multi-column on phone',pg.evaluate("document.getElementById('pantryGridContainer').className.includes('grid-cols-2') && document.querySelector('#pantryGridContainer > div').className.includes('flex items-center')"))
