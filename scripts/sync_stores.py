@@ -263,7 +263,10 @@ def run_shards(only,workers,outdir):
             results[key]={'status':'failed','reason':err} if err else {'status':'ok'}
             print(key,('FAILED '+err) if err else 'OK',flush=True)
     fp.atomic_write(str(out/'results.json'),{'checked_at':datetime.now(timezone.utc).isoformat(),'results':results})
-    return 1 if selected and all(r['status']=='failed' for r in results.values()) else 0
+    # A completed sweep always exits 0, even when every store failed: per-store failure is an expected state
+    # (some branches simply never publish PriceFull) and results.json carries it honestly to the publish step.
+    # A job-level failure must kill the whole run and skip publishing, which is exactly wrong for an all-fail group.
+    return 0
 
 def shard_publish(indirs):
     """Merge fetched shard output dirs into the repo's shards/ and rebuild shards/index.json. A failed store keeps
