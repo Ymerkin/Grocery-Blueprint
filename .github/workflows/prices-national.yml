@@ -1,0 +1,161 @@
+name: Sync national supermarket prices and deploy Pages
+
+# National long tail: every non-pharmacy branch of every reachable chain (store_config.national_chains),
+# refreshed ONCE daily as per-store shard files. The 12 connected stores stay on prices.yml (4x/day).
+# Victory and City Market are excluded entirely (user request, 2026-11-15). Price files only: no PromoFull
+# pulls for national branches (halves portal load; shards say so honestly).
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Once daily, off the busy top of the hour (UTC), after chains publish overnight files.
+    - cron: '47 3 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write  # commit the refreshed branch directory
+    outputs:
+      groups: ${{ steps.plan.outputs.groups }}
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run script contract tests (synthetic fixtures, no network)
+        run: python tests/test_script_contract.py
+
+      - name: Test exact-barcode and store-isolation rules
+        run: python tests/test_store_sync.py
+
+      - name: Refresh the branch directory
+        run: python scripts/sync_stores.py --catalog
+
+      - name: Build the store matrix
+        id: plan
+        run: echo "groups=$(python scripts/sync_stores.py --shard-plan)" >> "$GITHUB_OUTPUT"
+
+      - name: Commit refreshed directory (if anything changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stores.json data/directories
+          if git diff --cached --quiet; then
+            echo "No directory changes to commit."
+          else
+            git commit -m "Update store directory ($(date -u +%Y-%m-%d))"
+            git pull --rebase origin main || true
+            git push
+          fi
+
+  fetch:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      matrix:
+        group: ${{ fromJSON(needs.plan.outputs.groups) }}
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch this group's store shards
+        run: python scripts/sync_stores.py --shards '${{ join(matrix.group, ',') }}' --shard-out shards-out --workers 6
+
+      - name: Upload shard results
+        uses: actions/upload-artifact@v4
+        with:
+          name: shards-${{ strategy.job-index }}
+          path: shards-out/
+          retention-days: 1
+          if-no-files-found: error
+
+  publish:
+    needs: [plan, fetch]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Download all shard artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: shards-in/
+          pattern: shards-*
+
+      - name: Merge shards and rebuild the national index
+        run: |
+          dirs=$(find shards-in -maxdepth 1 -mindepth 1 -type d | tr '\n' ' ')
+          python scripts/sync_stores.py --shard-publish $dirs
+
+      - name: Commit national shards (if anything changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add shards
+          if git diff --cached --quiet; then
+            echo "No shard changes to commit."
+          else
+            git commit -m "Update national store prices ($(date -u +%Y-%m-%d))"
+            git pull --rebase origin main || true
+            git push
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Stage the public site (app shell + published prices + national shards)
+        run: |
+          mkdir -p _site shards
+          cp index.html prices.json stores.json _site/
+          cp -r shards _site/
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
