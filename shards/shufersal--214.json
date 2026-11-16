@@ -5,18 +5,18 @@
       "shufersal::214": {
         "store_id": "214",
         "store_name": "יוניברס קרית גת- מלכי ישראל",
-        "source_file": "PriceFull7290027600007-002-214-20261115-030000.gz",
-        "source_url": "https://pricesprodpublic.blob.core.windows.net/pricefull/PriceFull7290027600007-002-214-20261115-030000.gz?sv=2014-02-14&sr=b&sig=rr3qUYhBjR3GAxPqbWYSGPwSAW3S93WlSoOUmMUU8nI%3D&se=2026-11-15T08%3A24%3A14Z&sp=r",
-        "published_at": "2026-11-15T03:00:00+02:00",
+        "source_file": "PriceFull7290027600007-002-214-20261116-034226.gz",
+        "source_url": "https://pricesprodpublic.blob.core.windows.net/pricefull/PriceFull7290027600007-002-214-20261116-034226.gz?sv=2014-02-14&sr=b&sig=KtYo5CinpSG54GjnurWnUV32WXz4NRBTKicS99T5rIo%3D&se=2026-11-16T05%3A44%3A07Z&sp=r",
+        "published_at": "2026-11-16T03:42:26+02:00",
         "published_at_assumed_tz": "Asia/Jerusalem",
-        "retrieved_at": "2026-11-15T07:57:42.897876+00:00",
-        "sha256": "ca5eccc3ed8edaa8696c4e8bb11d2b86fe2761b4a0637c376d9918cc4b2b6cf6",
-        "item_count": 8988,
-        "priced_count": 109,
+        "retrieved_at": "2026-11-16T05:17:57.325686+00:00",
+        "sha256": "5682ce31067a8cacd212aefdb063b9f18c10afa6b58b06e155e367b9c0e67338",
+        "item_count": 8979,
+        "priced_count": 137,
         "chain": "shufersal",
         "kind": "physical",
         "address": "מלכי ישראל 178",
-        "city": ""
+        "city": "קריית גת"
       }
     },
     "drained_unpriced": [
@@ -41,7 +41,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0059,
         "priceUpdateTime": "2024-12-15T10:17:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290003107216, price=5.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290003107216, price=5.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -62,7 +62,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1396,
         "priceUpdateTime": "2025-02-26T09:31:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000318400, price=34.9, pack=250.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000318400, price=34.9, pack=250.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "rami-levy"
       }
@@ -84,7 +84,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0956,
         "priceUpdateTime": "2025-08-03T09:04:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290002133889, price=23.9, pack=250.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290002133889, price=23.9, pack=250.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -96,7 +96,7 @@
       "shufersal::214": {
         "item_code": "7296073381693",
         "gtin": "07296073381693",
-        "nameHe": "זרעי ציה אורגניים 300 ג",
+        "nameHe": "זרעי צ'יה אורגניים 300 ג",
         "brand": "---",
         "packPrice": 21.9,
         "packQty": 300.0,
@@ -108,7 +108,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.073,
         "priceUpdateTime": "2024-12-11T15:15:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073381693, price=21.9, pack=300.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073381693, price=21.9, pack=300.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -129,7 +129,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.07722,
         "priceUpdateTime": "2024-12-18T14:18:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290015809214, price=13.9, pack=180.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290015809214, price=13.9, pack=180.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -150,7 +150,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02725,
         "priceUpdateTime": "2025-04-20T08:51:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290012911477, price=10.9, pack=400.0 ml",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290012911477, price=10.9, pack=400.0 ml",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -171,7 +171,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0218,
         "priceUpdateTime": "2026-09-04T14:59:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290003996575, price=10.9, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290003996575, price=10.9, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -192,7 +192,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0356,
         "priceUpdateTime": "2025-04-06T14:58:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000522340, price=8.9, pack=250.0 ml",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000522340, price=8.9, pack=250.0 ml",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -213,7 +213,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0236,
         "priceUpdateTime": "2025-08-31T14:23:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290004127329, price=5.9, pack=250.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290004127329, price=5.9, pack=250.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -234,7 +234,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0795,
         "priceUpdateTime": "2026-08-28T09:29:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290019635369, price=15.9, pack=200.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290019635369, price=15.9, pack=200.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -255,7 +255,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.04257,
         "priceUpdateTime": "2025-08-31T14:47:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000446547, price=14.9, pack=350.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000446547, price=14.9, pack=350.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -276,7 +276,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0129,
         "priceUpdateTime": "2024-09-12T11:37:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000963518, price=12.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000963518, price=12.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -297,7 +297,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.07316,
         "priceUpdateTime": "2024-12-30T08:56:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073592891, price=13.9, pack=190.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073592891, price=13.9, pack=190.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -318,7 +318,7 @@
         "packOverride": null,
         "unitPriceNorm": 7.9,
         "priceUpdateTime": "2024-10-14T12:01:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000978, price=7.9, pack=1.0 units",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000978, price=7.9, pack=1.0 units",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -339,7 +339,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01238,
         "priceUpdateTime": "2024-12-22T09:54:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073079866, price=9.9, pack=800.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073079866, price=9.9, pack=800.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -360,7 +360,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.04122,
         "priceUpdateTime": "2024-11-03T14:54:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073422211, price=16.9, pack=410.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073422211, price=16.9, pack=410.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -381,7 +381,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02725,
         "priceUpdateTime": "2026-07-30T18:22:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290018989937, price=10.9, pack=400.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290018989937, price=10.9, pack=400.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -402,7 +402,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0159,
         "priceUpdateTime": "2025-10-31T01:06:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073733409, price=15.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073733409, price=15.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -423,7 +423,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02867,
         "priceUpdateTime": "2025-05-21T13:38:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073691372, price=12.9, pack=450.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073691372, price=12.9, pack=450.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -444,7 +444,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0198,
         "priceUpdateTime": "2024-05-27T09:13:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=4260147890513, price=9.9, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=4260147890513, price=9.9, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -465,7 +465,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0158,
         "priceUpdateTime": "2025-01-27T10:08:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073011248, price=7.9, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073011248, price=7.9, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -486,7 +486,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.043,
         "priceUpdateTime": "2025-07-15T07:48:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290003726615, price=12.9, pack=300.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290003726615, price=12.9, pack=300.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -507,7 +507,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0119,
         "priceUpdateTime": "2023-11-30T10:00:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290113196414, price=11.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290113196414, price=11.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -528,7 +528,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-11-10T08:52:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000964775, price=9.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000964775, price=9.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -554,7 +554,7 @@
         },
         "unitPriceNorm": 0.118,
         "priceUpdateTime": "2025-08-31T14:19:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000001050, price=5.9, pack=50.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000001050, price=5.9, pack=50.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -575,7 +575,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0129,
         "priceUpdateTime": "2026-08-18T12:47:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000176, price=12.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000176, price=12.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -596,7 +596,7 @@
         "packOverride": null,
         "unitPriceNorm": 5.9,
         "priceUpdateTime": "2023-11-30T12:19:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290016334623, price=5.9, pack=1.0 units",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290016334623, price=5.9, pack=1.0 units",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -617,7 +617,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0476,
         "priceUpdateTime": "2026-10-13T09:07:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290003996209, price=11.9, pack=250.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290003996209, price=11.9, pack=250.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "rami-levy"
       }
@@ -639,7 +639,7 @@
         "packOverride": null,
         "unitPriceNorm": 5.9,
         "priceUpdateTime": "2025-08-31T14:19:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000633, price=5.9, pack=1.0 units",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000633, price=5.9, pack=1.0 units",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -660,7 +660,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0069,
         "priceUpdateTime": "2026-11-10T08:52:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000046, price=6.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000046, price=6.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -681,7 +681,7 @@
         "packOverride": null,
         "unitPriceNorm": 3.9,
         "priceUpdateTime": "2023-11-30T12:19:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290016334593, price=3.9, pack=1.0 units",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290016334593, price=3.9, pack=1.0 units",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -702,7 +702,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0079,
         "priceUpdateTime": "2026-09-01T14:23:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000114, price=7.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000114, price=7.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -723,7 +723,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0996,
         "priceUpdateTime": "2026-09-01T09:34:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290016334975, price=24.9, pack=250.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290016334975, price=24.9, pack=250.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -744,7 +744,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0198,
         "priceUpdateTime": "2025-10-31T01:06:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073733324, price=9.9, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073733324, price=9.9, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -765,7 +765,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-10-09T07:33:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000964492, price=9.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000964492, price=9.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -786,7 +786,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.00735,
         "priceUpdateTime": "2026-05-01T07:41:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290010945306, price=14.7, pack=2000.0 ml",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290010945306, price=14.7, pack=2000.0 ml",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -807,7 +807,7 @@
         "packOverride": null,
         "unitPriceNorm": 3.9,
         "priceUpdateTime": "2023-11-30T12:19:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290016334579, price=3.9, pack=1.0 units",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290016334579, price=3.9, pack=1.0 units",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -828,7 +828,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.018,
         "priceUpdateTime": "2024-12-10T09:31:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290009398786, price=9.0, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290009398786, price=9.0, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -849,7 +849,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0716,
         "priceUpdateTime": "2025-12-21T10:03:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000554822, price=17.9, pack=250.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000554822, price=17.9, pack=250.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -870,7 +870,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0069,
         "priceUpdateTime": "2026-10-05T10:24:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000022, price=6.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000022, price=6.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -891,7 +891,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0039,
         "priceUpdateTime": "2026-11-10T08:52:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000138, price=3.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000138, price=3.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -912,7 +912,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-11-10T08:52:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000053, price=9.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000053, price=9.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -933,7 +933,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02237,
         "priceUpdateTime": "2025-01-29T09:26:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073692621, price=17.9, pack=800.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073692621, price=17.9, pack=800.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -954,7 +954,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02487,
         "priceUpdateTime": "2024-05-16T14:59:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000104720, price=19.9, pack=800.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000104720, price=19.9, pack=800.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -975,7 +975,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03317,
         "priceUpdateTime": "2025-01-16T11:36:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000104201, price=19.9, pack=600.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000104201, price=19.9, pack=600.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -996,7 +996,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02694,
         "priceUpdateTime": "2026-07-07T09:30:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290014890589, price=22.9, pack=850.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290014890589, price=22.9, pack=850.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1017,28 +1017,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.138,
         "priceUpdateTime": "2024-12-15T11:08:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000134307, price=6.9, pack=50.0 g",
-        "matchMethod": "chain-local-pin"
-      }
-    },
-    "ground cumin": {
-      "ingredient_name": "Ground Cumin",
-      "shufersal::214": {
-        "item_code": "7290010003754",
-        "gtin": "07290010003754",
-        "nameHe": "כמון טחון בשקית 50 גרם",
-        "brand": null,
-        "packPrice": 6.9,
-        "packQty": 50.0,
-        "packUnit": "g",
-        "packBasis": "feed quantity and product name agree",
-        "isWeighted": false,
-        "selectionSource": "assistant",
-        "selectionNote": null,
-        "packOverride": null,
-        "unitPriceNorm": 0.138,
-        "priceUpdateTime": "2024-12-15T09:55:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290010003754, price=6.9, pack=50.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000134307, price=6.9, pack=50.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1059,7 +1038,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.119,
         "priceUpdateTime": "2024-12-15T11:15:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000134840, price=11.9, pack=100.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000134840, price=11.9, pack=100.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1080,7 +1059,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1245,
         "priceUpdateTime": "2025-08-22T09:58:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290102393718, price=24.9, pack=200.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290102393718, price=24.9, pack=200.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1101,7 +1080,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.028,
         "priceUpdateTime": "2025-08-31T13:50:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290002327066, price=17.5, pack=625.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290002327066, price=17.5, pack=625.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1122,7 +1101,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0146,
         "priceUpdateTime": "2024-12-26T11:02:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000130248, price=7.3, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000130248, price=7.3, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1143,7 +1122,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0159,
         "priceUpdateTime": "2023-06-16T01:06:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073629153, price=15.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073629153, price=15.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1164,7 +1143,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0259,
         "priceUpdateTime": "2026-01-04T12:26:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073719618, price=25.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073719618, price=25.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1185,7 +1164,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.12829,
         "priceUpdateTime": "2024-12-18T14:13:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=8010024006010, price=44.9, pack=350.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=8010024006010, price=44.9, pack=350.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1206,7 +1185,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.1,
         "priceUpdateTime": "2024-12-15T09:53:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073216247, price=10.0, pack=100.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073216247, price=10.0, pack=100.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1227,7 +1206,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0158,
         "priceUpdateTime": "2025-01-27T10:08:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073011217, price=7.9, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073011217, price=7.9, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1248,7 +1227,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01707,
         "priceUpdateTime": "2024-03-15T05:34:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290117905302, price=9.9, pack=580.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290117905302, price=9.9, pack=580.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1269,7 +1248,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03375,
         "priceUpdateTime": "2026-04-21T09:32:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290113194090, price=18.9, pack=560.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290113194090, price=18.9, pack=560.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1290,7 +1269,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0178,
         "priceUpdateTime": "2025-03-12T16:21:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290013861740, price=8.9, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290013861740, price=8.9, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1311,7 +1290,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0089,
         "priceUpdateTime": "2026-10-05T10:24:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290018619308, price=8.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290018619308, price=8.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1332,7 +1311,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0895,
         "priceUpdateTime": "2026-06-17T10:26:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=3274932103819, price=17.9, pack=200.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=3274932103819, price=17.9, pack=200.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1353,7 +1332,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02211,
         "priceUpdateTime": "2025-09-12T05:37:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290002703679, price=19.9, pack=900.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290002703679, price=19.9, pack=900.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1374,7 +1353,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0399,
         "priceUpdateTime": "2024-08-29T09:44:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073078609, price=39.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073078609, price=39.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1395,7 +1374,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.016,
         "priceUpdateTime": "2024-12-31T11:56:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290002040064, price=5.6, pack=350.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290002040064, price=5.6, pack=350.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1416,7 +1395,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0298,
         "priceUpdateTime": "2024-08-26T15:36:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073596387, price=14.9, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073596387, price=14.9, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1437,7 +1416,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0795,
         "priceUpdateTime": "2025-01-07T09:04:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073705895, price=15.9, pack=200.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073705895, price=15.9, pack=200.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1458,7 +1437,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0995,
         "priceUpdateTime": "2025-01-07T09:04:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073705949, price=19.9, pack=200.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073705949, price=19.9, pack=200.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1479,7 +1458,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0239,
         "priceUpdateTime": "2025-01-20T14:08:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290008343626, price=23.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290008343626, price=23.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1500,7 +1479,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0198,
         "priceUpdateTime": "2025-10-31T01:06:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073733324, price=9.9, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073733324, price=9.9, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1521,7 +1500,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-11-10T08:52:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000091, price=9.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000091, price=9.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1542,7 +1521,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0059,
         "priceUpdateTime": "2025-06-24T13:23:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000001036, price=5.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000001036, price=5.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1563,7 +1542,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02026,
         "priceUpdateTime": "2024-12-31T12:01:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073274667, price=9.2, pack=454.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073274667, price=9.2, pack=454.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1584,7 +1563,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-09-06T08:44:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000964980, price=9.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000964980, price=9.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1605,7 +1584,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01475,
         "priceUpdateTime": "2025-07-18T09:10:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290014095960, price=5.9, pack=400.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290014095960, price=5.9, pack=400.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1626,7 +1605,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0245,
         "priceUpdateTime": "2024-12-17T07:26:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290100700075, price=4.9, pack=200.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290100700075, price=4.9, pack=200.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1647,7 +1626,7 @@
         "packOverride": null,
         "unitPriceNorm": 5.33333,
         "priceUpdateTime": "2026-01-13T10:09:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290002020868, price=16.0, pack=3.0 units",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290002020868, price=16.0, pack=3.0 units",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1668,7 +1647,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.229,
         "priceUpdateTime": "2024-12-25T17:02:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290008340618, price=22.9, pack=100.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290008340618, price=22.9, pack=100.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1689,7 +1668,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.155,
         "priceUpdateTime": "2024-12-11T15:35:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000318950, price=27.9, pack=180.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000318950, price=27.9, pack=180.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1710,7 +1689,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0258,
         "priceUpdateTime": "2025-04-18T01:06:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290012911095, price=12.9, pack=500.0 ml",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290012911095, price=12.9, pack=500.0 ml",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1731,7 +1710,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0149,
         "priceUpdateTime": "2025-04-27T12:36:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290011996062, price=14.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290011996062, price=14.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1752,7 +1731,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0237,
         "priceUpdateTime": "2026-10-18T09:15:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000916, price=10.9, pack=460.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000916, price=10.9, pack=460.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1773,7 +1752,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01725,
         "priceUpdateTime": "2026-02-13T01:21:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290016087796, price=6.9, pack=400.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290016087796, price=6.9, pack=400.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1794,7 +1773,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.07375,
         "priceUpdateTime": "2024-12-15T09:54:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073216223, price=5.9, pack=80.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073216223, price=5.9, pack=80.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1815,7 +1794,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0079,
         "priceUpdateTime": "2026-10-12T09:14:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000428, price=7.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000428, price=7.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1836,7 +1815,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0138,
         "priceUpdateTime": "2025-08-31T14:32:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000060408, price=6.9, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000060408, price=6.9, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1857,7 +1836,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03225,
         "priceUpdateTime": "2024-12-26T11:02:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290015395045, price=12.9, pack=400.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290015395045, price=12.9, pack=400.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1878,7 +1857,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0299,
         "priceUpdateTime": "2025-02-02T09:22:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290011131968, price=29.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290011131968, price=29.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1899,7 +1878,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0212,
         "priceUpdateTime": "2026-01-27T18:02:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290013027399, price=15.9, pack=750.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290013027399, price=15.9, pack=750.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1920,7 +1899,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0049,
         "priceUpdateTime": "2026-10-05T10:24:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000480, price=4.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000480, price=4.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1941,7 +1920,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.08625,
         "priceUpdateTime": "2024-12-15T11:13:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290015324076, price=6.9, pack=80.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290015324076, price=6.9, pack=80.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1962,7 +1941,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.06167,
         "priceUpdateTime": "2024-12-30T13:55:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000101927, price=18.5, pack=300.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000101927, price=18.5, pack=300.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -1983,7 +1962,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0279,
         "priceUpdateTime": "2026-10-23T09:25:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000961606, price=27.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000961606, price=27.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2004,7 +1983,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03444,
         "priceUpdateTime": "2024-12-10T09:31:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290001902301, price=15.5, pack=450.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290001902301, price=15.5, pack=450.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2025,7 +2004,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0418,
         "priceUpdateTime": "2024-12-31T14:40:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290001598405, price=20.9, pack=500.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290001598405, price=20.9, pack=500.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2046,7 +2025,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02067,
         "priceUpdateTime": "2024-12-22T15:16:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000574370, price=15.5, pack=750.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000574370, price=15.5, pack=750.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2067,7 +2046,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.08091,
         "priceUpdateTime": "2024-11-05T12:42:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073441335, price=8.9, pack=110.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073441335, price=8.9, pack=110.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2088,7 +2067,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0636,
         "priceUpdateTime": "2025-06-04T09:19:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000078212, price=15.9, pack=250.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000078212, price=15.9, pack=250.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2109,7 +2088,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.119,
         "priceUpdateTime": "2025-12-26T01:15:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7296073728900, price=11.9, pack=100.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073728900, price=11.9, pack=100.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2130,7 +2109,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.03062,
         "priceUpdateTime": "2024-12-30T13:55:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000238173, price=24.5, pack=800.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000238173, price=24.5, pack=800.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2151,7 +2130,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0676,
         "priceUpdateTime": "2024-12-18T14:18:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=8032804430471, price=16.9, pack=250.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=8032804430471, price=16.9, pack=250.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2172,7 +2151,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02487,
         "priceUpdateTime": "2024-05-16T14:59:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000104881, price=19.9, pack=800.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000104881, price=19.9, pack=800.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2193,7 +2172,7 @@
         "packOverride": null,
         "unitPriceNorm": 8.9,
         "priceUpdateTime": "2025-05-28T11:07:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290016334166, price=8.9, pack=1.0 units",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290016334166, price=8.9, pack=1.0 units",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2214,7 +2193,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.099,
         "priceUpdateTime": "2025-12-21T08:19:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290009952988, price=99.0, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290009952988, price=99.0, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2235,7 +2214,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.06975,
         "priceUpdateTime": "2025-05-11T12:43:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290014760448, price=27.9, pack=400.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290014760448, price=27.9, pack=400.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2256,7 +2235,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.039,
         "priceUpdateTime": "2024-12-25T16:58:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290004229740, price=39.0, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290004229740, price=39.0, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2277,7 +2256,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.05781,
         "priceUpdateTime": "2023-12-18T15:28:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290005287206, price=25.9, pack=640.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290005287206, price=25.9, pack=640.0 g",
         "grossPackQty": 640.0,
         "grossPackUnit": "g",
         "drained": {
@@ -2308,7 +2287,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01117,
         "priceUpdateTime": "2025-01-02T13:17:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000574035, price=8.38, pack=750.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000574035, price=8.38, pack=750.0 g",
         "matchMethod": "chain-local-pin"
       }
     },
@@ -2329,7 +2308,616 @@
         "packOverride": null,
         "unitPriceNorm": 0.0099,
         "priceUpdateTime": "2026-11-10T08:52:00",
-        "metadataSource": "PriceFull7290027600007-002-214-20261115-030000.gz (published 2026-11-15T03:00:00+02:00, store 214): ItemCode=7290000000091, price=9.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000000091, price=9.9, pack=1000.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "apple cider / white vinegar": {
+      "ingredient_name": "apple cider / white vinegar",
+      "shufersal::214": {
+        "item_code": "7290000209012",
+        "gtin": "07290000209012",
+        "nameHe": "חומץ 5% 1 ליטר",
+        "brand": "זנלכל בע\"מ",
+        "packPrice": 6.9,
+        "packQty": 1000.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0069,
+        "priceUpdateTime": "2025-01-20T10:55:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000209012, price=6.9, pack=1000.0 ml",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "brown whole-grain rice": {
+      "ingredient_name": "brown whole-grain rice",
+      "shufersal::214": {
+        "item_code": "8901537076679",
+        "gtin": "08901537076679",
+        "nameHe": "אורז בסמטי חום מלא 1 ק\"ג",
+        "brand": "אל.טי.פודס לימיטד",
+        "packPrice": 16.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0169,
+        "priceUpdateTime": "2024-12-19T15:12:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=8901537076679, price=16.9, pack=1000.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "butter (100g)": {
+      "ingredient_name": "butter (100g)",
+      "shufersal::214": {
+        "item_code": "7290000369709",
+        "gtin": "07290000369709",
+        "nameHe": "חמאה מתובלת 100 גרם",
+        "brand": "גבינות עמיר ניצן",
+        "packPrice": 14.9,
+        "packQty": 100.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.149,
+        "priceUpdateTime": "2024-12-29T12:45:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000369709, price=14.9, pack=100.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "canned beans": {
+      "ingredient_name": "canned beans",
+      "shufersal::214": {
+        "item_code": "7296073733461",
+        "gtin": "07296073733461",
+        "nameHe": "שעועית לבנה 500 גרם",
+        "brand": "הנמל",
+        "packPrice": 9.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0198,
+        "priceUpdateTime": "2025-10-31T01:06:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073733461, price=9.9, pack=500.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "canned tuna in oil": {
+      "ingredient_name": "canned tuna in oil",
+      "shufersal::214": {
+        "item_code": "8009470013017",
+        "gtin": "08009470013017",
+        "nameHe": "מונג פרש פטה ונתחי טונה",
+        "brand": "---",
+        "packPrice": 6.9,
+        "packQty": 100.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.069,
+        "priceUpdateTime": "2024-03-08T01:15:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=8009470013017, price=6.9, pack=100.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "canned tuna in oil/water": {
+      "ingredient_name": "canned tuna in oil/water",
+      "shufersal::214": {
+        "item_code": "8009470013017",
+        "gtin": "08009470013017",
+        "nameHe": "מונג פרש פטה ונתחי טונה",
+        "brand": "---",
+        "packPrice": 6.9,
+        "packQty": 100.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.069,
+        "priceUpdateTime": "2024-03-08T01:15:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=8009470013017, price=6.9, pack=100.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "canola / sunflower oil": {
+      "ingredient_name": "canola / sunflower oil",
+      "shufersal::214": {
+        "item_code": "7290002692393",
+        "gtin": "07290002692393",
+        "nameHe": "שמן קנולה+ויטמיןE ל1",
+        "brand": "שמן תעשיות",
+        "packPrice": 16.9,
+        "packQty": 1000.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0169,
+        "priceUpdateTime": "2024-12-18T14:18:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290002692393, price=16.9, pack=1000.0 ml",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "coconut milk / cream": {
+      "ingredient_name": "coconut milk / cream",
+      "shufersal::214": {
+        "item_code": "8850161166204",
+        "gtin": "08850161166204",
+        "nameHe": "קרם קוקוס 500 מ\"ל",
+        "brand": "אמפווה",
+        "packPrice": 11.9,
+        "packQty": 500.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0238,
+        "priceUpdateTime": "2024-12-22T14:51:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=8850161166204, price=11.9, pack=500.0 ml",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "couscous": {
+      "ingredient_name": "couscous",
+      "shufersal::214": {
+        "item_code": "7290006653819",
+        "gtin": "07290006653819",
+        "nameHe": "קוסקוס דק 350 גרם",
+        "brand": "קוסקוס מזון",
+        "packPrice": 8.9,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02543,
+        "priceUpdateTime": "2026-04-19T09:01:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290006653819, price=8.9, pack=350.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "cucumbers in brine (pickles)": {
+      "ingredient_name": "cucumbers in brine (pickles)",
+      "shufersal::214": {
+        "item_code": "7290117268643",
+        "gtin": "07290117268643",
+        "nameHe": "מלפפונים כבושים במי מלח",
+        "brand": "זיתור סאן גידה סני וטיקר",
+        "packPrice": 13.9,
+        "packQty": 400.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03475,
+        "priceUpdateTime": "2026-07-21T12:20:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290117268643, price=13.9, pack=400.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "dry green / brown lentils": {
+      "ingredient_name": "dry green / brown lentils",
+      "shufersal::214": {
+        "item_code": "7296073733430",
+        "gtin": "07296073733430",
+        "nameHe": "עדשים שחורות 500 גרם",
+        "brand": "הנמל",
+        "packPrice": 9.9,
+        "packQty": 1.0,
+        "packUnit": "units",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 9.9,
+        "priceUpdateTime": "2025-10-31T01:06:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073733430, price=9.9, pack=1.0 units",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "firm tofu tnuva": {
+      "ingredient_name": "firm tofu tnuva",
+      "shufersal::214": {
+        "item_code": "7290110322021",
+        "gtin": "07290110322021",
+        "nameHe": "טופו עם בזיליקום",
+        "brand": "א.י.ן תעשיות",
+        "packPrice": 14.5,
+        "packQty": 300.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04833,
+        "priceUpdateTime": "2025-01-02T09:39:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290110322021, price=14.5, pack=300.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "greek yogurt 7%": {
+      "ingredient_name": "greek yogurt 7%",
+      "shufersal::214": {
+        "item_code": "7290013771384",
+        "gtin": "07290013771384",
+        "nameHe": "יוגורט יווני6.5%שומן400ג",
+        "brand": "מחלבות רמת הגולן",
+        "packPrice": 13.9,
+        "packQty": 400.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03475,
+        "priceUpdateTime": "2025-07-25T09:39:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290013771384, price=13.9, pack=400.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "ground coriander": {
+      "ingredient_name": "ground coriander",
+      "shufersal::214": {
+        "item_code": "7290015324564",
+        "gtin": "07290015324564",
+        "nameHe": "כוסברה טחונה מיכל גדול70",
+        "brand": "תבליני טעם וריח",
+        "packPrice": 11.9,
+        "packQty": 70.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.17,
+        "priceUpdateTime": "2024-12-15T11:16:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290015324564, price=11.9, pack=70.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "herb pepper sauce (skhug / harissa)": {
+      "ingredient_name": "herb pepper sauce (skhug / harissa)",
+      "shufersal::214": {
+        "item_code": "7290000208008",
+        "gtin": "07290000208008",
+        "nameHe": "חריסה 570 גרם",
+        "brand": "זנלכל בע\"מ",
+        "packPrice": 11.9,
+        "packQty": 570.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02088,
+        "priceUpdateTime": "2025-07-20T11:25:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000208008, price=11.9, pack=570.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "natural peanut butter": {
+      "ingredient_name": "natural peanut butter",
+      "shufersal::214": {
+        "item_code": "7290019297536",
+        "gtin": "07290019297536",
+        "nameHe": "חמאת בוטנים 510 גרם",
+        "brand": null,
+        "packPrice": 13.9,
+        "packQty": 510.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02725,
+        "priceUpdateTime": "2025-03-12T16:21:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290019297536, price=13.9, pack=510.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "pasta pearls (ptitim)": {
+      "ingredient_name": "pasta pearls (ptitim)",
+      "shufersal::214": {
+        "item_code": "7290000060408",
+        "gtin": "07290000060408",
+        "nameHe": "פתיתים טבעות 500 גרם",
+        "brand": "אסם תעשיות מזון בע\"מ",
+        "packPrice": 6.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0138,
+        "priceUpdateTime": "2025-08-31T14:32:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000060408, price=6.9, pack=500.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "pickled mango sauce (amba)": {
+      "ingredient_name": "pickled mango sauce (amba)",
+      "shufersal::214": {
+        "item_code": "7290005095801",
+        "gtin": "07290005095801",
+        "nameHe": "עמבה 500 גרם",
+        "brand": null,
+        "packPrice": 15.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0318,
+        "priceUpdateTime": "2024-12-15T11:11:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290005095801, price=15.9, pack=500.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "pita bread": {
+      "ingredient_name": "pita bread",
+      "shufersal::214": {
+        "item_code": "7290018540329",
+        "gtin": "07290018540329",
+        "nameHe": "פיתה פיתה 8*110ג אנגל",
+        "brand": "מאפיית שלמה א. אנגל",
+        "packPrice": 14.9,
+        "packQty": 880.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01693,
+        "priceUpdateTime": "2024-09-03T13:07:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290018540329, price=14.9, pack=880.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "pitted syrian / manzanilla olives": {
+      "ingredient_name": "pitted syrian / manzanilla olives",
+      "shufersal::214": {
+        "item_code": "7290005113222",
+        "gtin": "07290005113222",
+        "nameHe": "מיקס זיתים 340 גרם",
+        "brand": null,
+        "packPrice": 15.9,
+        "packQty": 340.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04676,
+        "priceUpdateTime": "2025-09-14T15:16:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290005113222, price=15.9, pack=340.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "pure date silan": {
+      "ingredient_name": "pure date silan",
+      "shufersal::214": {
+        "item_code": "7290002703679",
+        "gtin": "07290002703679",
+        "nameHe": "סילאן בצנצנת 900 גרם",
+        "brand": "מכוורת עין חרוד",
+        "packPrice": 19.9,
+        "packQty": 900.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02211,
+        "priceUpdateTime": "2025-09-12T05:37:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290002703679, price=19.9, pack=900.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "pure flower honey": {
+      "ingredient_name": "pure flower honey",
+      "shufersal::214": {
+        "item_code": "7290119042302",
+        "gtin": "07290119042302",
+        "nameHe": "עוגת דבש 400 גרם",
+        "brand": "תופינים מקבוצת קפולסקי",
+        "packPrice": 13.9,
+        "packQty": 400.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03475,
+        "priceUpdateTime": "2024-08-02T09:38:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290119042302, price=13.9, pack=400.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "sweet corn kernel can": {
+      "ingredient_name": "sweet corn kernel can",
+      "shufersal::214": {
+        "item_code": "7290010153534",
+        "gtin": "07290010153534",
+        "nameHe": "קמח תירס 400 גרם מיה",
+        "brand": "מיה",
+        "packPrice": 5.9,
+        "packQty": 400.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.01475,
+        "priceUpdateTime": "2025-12-05T10:24:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290010153534, price=5.9, pack=400.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "toasted sesame oil": {
+      "ingredient_name": "toasted sesame oil",
+      "shufersal::214": {
+        "item_code": "7290012911804",
+        "gtin": "07290012911804",
+        "nameHe": "שמן שומשום 150 מ\"ל",
+        "brand": "---",
+        "packPrice": 15.9,
+        "packQty": 150.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.106,
+        "priceUpdateTime": "2025-04-18T09:41:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290012911804, price=15.9, pack=150.0 ml",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "tomato paste (28-30%)": {
+      "ingredient_name": "tomato paste (28-30%)",
+      "shufersal::214": {
+        "item_code": "7290018989333",
+        "gtin": "07290018989333",
+        "nameHe": "רסק עגבניות טבעי יכין100",
+        "brand": "זנלכל בע\"מ",
+        "packPrice": 3.3,
+        "packQty": 100.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.033,
+        "priceUpdateTime": "2024-08-16T00:57:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290018989333, price=3.3, pack=100.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "za'atar with sesame": {
+      "ingredient_name": "za'atar with sesame",
+      "shufersal::214": {
+        "item_code": "7296073600862",
+        "gtin": "07296073600862",
+        "nameHe": "זעתר טרי (ק)",
+        "brand": "קטיף.",
+        "packPrice": 5.9,
+        "packQty": 1.0,
+        "packUnit": "units",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 5.9,
+        "priceUpdateTime": "2025-08-31T14:19:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073600862, price=5.9, pack=1.0 units",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "frozen broccoli": {
+      "ingredient_name": "frozen broccoli",
+      "shufersal::214": {
+        "item_code": "7296073692621",
+        "gtin": "07296073692621",
+        "nameHe": "ברוקולי מוקפא 800 גרם",
+        "brand": "גרין פרוסט פוד בע\"מ",
+        "packPrice": 17.9,
+        "packQty": 800.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02237,
+        "priceUpdateTime": "2025-01-29T09:26:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073692621, price=17.9, pack=800.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "frozen green beans": {
+      "ingredient_name": "frozen green beans",
+      "shufersal::214": {
+        "item_code": "7290000104683",
+        "gtin": "07290000104683",
+        "nameHe": "שעועית ירוקה שלמה מוקפאת",
+        "brand": "סנפרוסט",
+        "packPrice": 22.9,
+        "packQty": 800.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02862,
+        "priceUpdateTime": "2024-12-30T13:55:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7290000104683, price=22.9, pack=800.0 g",
+        "matchMethod": "chain-local-pin"
+      }
+    },
+    "pearl barley": {
+      "ingredient_name": "pearl barley",
+      "shufersal::214": {
+        "item_code": "7296073733300",
+        "gtin": "07296073733300",
+        "nameHe": "גריסי פנינה 1 ק\"ג",
+        "brand": "הנמל אריזות ושיווק בעמ",
+        "packPrice": 10.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0109,
+        "priceUpdateTime": "2025-10-24T00:54:00",
+        "metadataSource": "PriceFull7290027600007-002-214-20261116-034226.gz (published 2026-11-16T03:42:26+02:00, store 214): ItemCode=7296073733300, price=10.9, pack=1000.0 g",
         "matchMethod": "chain-local-pin"
       }
     }
@@ -2342,72 +2930,98 @@
     }
   },
   "warnings": [
-    "shufersal::214 | Beef Stew Chuck Cubes: pinned code 7290000916118 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Burger Buns: pinned code 7290000574462 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Canned Black Beans: pinned code 7290015009461 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Canned Red Kidney Beans: pinned code 7290015009478 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Classic Spaghetti Pasta: pinned code 8008912010034 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Dry Green Lentils: pinned code 7290001041208 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Fettuccine Pasta: pinned code 8004690050507 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Flour Tortilla Wraps: pinned code 7290117901205 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Fluffy Jasmine Rice: pinned code 7290013200198 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Fresh Baby Spinach: pinned code 7290003996742 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Fresh Chicken Livers: pinned code 7290002069577 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Fresh Mango: pinned code 7290000966434 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Fresh Salmon Fillet: pinned code 7290002345404 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Grated Parmesan Cheese: pinned code 7290019635000 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Labneh Yogurt Cheese: pinned code 7290003075652 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Lean Ground Turkey: pinned code 7290003751242 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Soft White Cheese 5%: pinned code 7290000047621 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Tilapia Fillets: pinned code 7290008255523 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | White Rice: pinned code 7290013200389 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Whole Fresh Chicken: pinned code 7290009802191 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Basil Pesto Spread: pinned code 7296073451914 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Fresh Chicken Breast: pinned code 7290009805291 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Chicken Drumsticks: pinned code 7290008455848 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Chicken Thighs & Drumsticks: pinned code 7290008455824 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Boneless Chicken Thighs (Pargiyot): pinned code 7290002804666 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Fresh Ground Beef: pinned code 7290000997704 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Fresh Denis (Sea Bream) Fillets: pinned code 7290000918983 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Sea Bass Fillets: pinned code 7290009393385 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Cod / White Fish Fillets: pinned code 7290008255523 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-    "shufersal::214 | Farm Fresh Eggs: pinned code 7290001201572 not in PriceFull7290027600007-002-214-20261115-030000.gz",
+    "shufersal::214 | Beef Stew Chuck Cubes: pinned code 7290000916118 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Burger Buns: pinned code 7290000574462 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Canned Black Beans: pinned code 7290015009461 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Canned Red Kidney Beans: pinned code 7290015009478 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Classic Spaghetti Pasta: pinned code 8008912010034 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Dry Green Lentils: pinned code 7290001041208 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Fettuccine Pasta: pinned code 8004690050507 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Flour Tortilla Wraps: pinned code 7290117901205 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Fluffy Jasmine Rice: pinned code 7290013200198 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Fresh Baby Spinach: pinned code 7290003996742 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Fresh Chicken Livers: pinned code 7290002069577 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Fresh Mango: pinned code 7290000966434 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Fresh Salmon Fillet: pinned code 7290002345404 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Grated Parmesan Cheese: pinned code 7290019635000 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Ground Cumin: pinned code 7290010003754 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Labneh Yogurt Cheese: pinned code 7290003075652 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Lean Ground Turkey: pinned code 7290003751242 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Soft White Cheese 5%: pinned code 7290000047621 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Tilapia Fillets: pinned code 7290008255523 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | White Rice: pinned code 7290013200389 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Whole Fresh Chicken: pinned code 7290009802191 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Basil Pesto Spread: pinned code 7296073451914 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Fresh Chicken Breast: pinned code 7290009805291 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Chicken Drumsticks: pinned code 7290008455848 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Chicken Thighs & Drumsticks: pinned code 7290008455824 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Boneless Chicken Thighs (Pargiyot): pinned code 7290002804666 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Fresh Ground Beef: pinned code 7290000997704 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Fresh Denis (Sea Bream) Fillets: pinned code 7290000918983 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Sea Bass Fillets: pinned code 7290009393385 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Cod / White Fish Fillets: pinned code 7290008255523 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | Farm Fresh Eggs: pinned code 7290001201572 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | basmati or persian rice: pinned code 7290013200297 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | brown / basmati rice: pinned code 7290013200297 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | bulgarian / feta cheese: pinned code 7290001258798 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | chicken pargiyot: pinned code 7290002804666 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | denis / tilapia fillets: pinned code 7290008255127 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | dijon / yellow mustard: pinned code 7290105439598 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | farm eggs: pinned code 7290001201619 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | farm eggs (12 pk): pinned code 7290001201619 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | ground beef: pinned code 7290000971230 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | penne / spaghetti: pinned code 8008912010034 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | penne or spaghetti: pinned code 8008912010034 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+    "shufersal::214 | white / brown sugar: pinned code 9012501004730 not in PriceFull7290027600007-002-214-20261116-034226.gz",
     "shufersal::214 | Canned Chickpeas: no source-verified drained weight for code 7290016087901"
   ],
   "sync_status": {
     "shufersal::214": {
       "status": "ok",
       "warnings": [
-        "shufersal::214 | Beef Stew Chuck Cubes: pinned code 7290000916118 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Burger Buns: pinned code 7290000574462 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Canned Black Beans: pinned code 7290015009461 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Canned Red Kidney Beans: pinned code 7290015009478 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Classic Spaghetti Pasta: pinned code 8008912010034 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Dry Green Lentils: pinned code 7290001041208 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Fettuccine Pasta: pinned code 8004690050507 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Flour Tortilla Wraps: pinned code 7290117901205 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Fluffy Jasmine Rice: pinned code 7290013200198 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Fresh Baby Spinach: pinned code 7290003996742 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Fresh Chicken Livers: pinned code 7290002069577 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Fresh Mango: pinned code 7290000966434 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Fresh Salmon Fillet: pinned code 7290002345404 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Grated Parmesan Cheese: pinned code 7290019635000 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Labneh Yogurt Cheese: pinned code 7290003075652 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Lean Ground Turkey: pinned code 7290003751242 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Soft White Cheese 5%: pinned code 7290000047621 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Tilapia Fillets: pinned code 7290008255523 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | White Rice: pinned code 7290013200389 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Whole Fresh Chicken: pinned code 7290009802191 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Basil Pesto Spread: pinned code 7296073451914 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Fresh Chicken Breast: pinned code 7290009805291 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Chicken Drumsticks: pinned code 7290008455848 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Chicken Thighs & Drumsticks: pinned code 7290008455824 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Boneless Chicken Thighs (Pargiyot): pinned code 7290002804666 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Fresh Ground Beef: pinned code 7290000997704 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Fresh Denis (Sea Bream) Fillets: pinned code 7290000918983 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Sea Bass Fillets: pinned code 7290009393385 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Cod / White Fish Fillets: pinned code 7290008255523 not in PriceFull7290027600007-002-214-20261115-030000.gz",
-        "shufersal::214 | Farm Fresh Eggs: pinned code 7290001201572 not in PriceFull7290027600007-002-214-20261115-030000.gz",
+        "shufersal::214 | Beef Stew Chuck Cubes: pinned code 7290000916118 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Burger Buns: pinned code 7290000574462 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Canned Black Beans: pinned code 7290015009461 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Canned Red Kidney Beans: pinned code 7290015009478 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Classic Spaghetti Pasta: pinned code 8008912010034 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Dry Green Lentils: pinned code 7290001041208 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Fettuccine Pasta: pinned code 8004690050507 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Flour Tortilla Wraps: pinned code 7290117901205 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Fluffy Jasmine Rice: pinned code 7290013200198 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Fresh Baby Spinach: pinned code 7290003996742 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Fresh Chicken Livers: pinned code 7290002069577 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Fresh Mango: pinned code 7290000966434 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Fresh Salmon Fillet: pinned code 7290002345404 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Grated Parmesan Cheese: pinned code 7290019635000 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Ground Cumin: pinned code 7290010003754 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Labneh Yogurt Cheese: pinned code 7290003075652 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Lean Ground Turkey: pinned code 7290003751242 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Soft White Cheese 5%: pinned code 7290000047621 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Tilapia Fillets: pinned code 7290008255523 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | White Rice: pinned code 7290013200389 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Whole Fresh Chicken: pinned code 7290009802191 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Basil Pesto Spread: pinned code 7296073451914 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Fresh Chicken Breast: pinned code 7290009805291 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Chicken Drumsticks: pinned code 7290008455848 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Chicken Thighs & Drumsticks: pinned code 7290008455824 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Boneless Chicken Thighs (Pargiyot): pinned code 7290002804666 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Fresh Ground Beef: pinned code 7290000997704 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Fresh Denis (Sea Bream) Fillets: pinned code 7290000918983 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Sea Bass Fillets: pinned code 7290009393385 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Cod / White Fish Fillets: pinned code 7290008255523 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | Farm Fresh Eggs: pinned code 7290001201572 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | basmati or persian rice: pinned code 7290013200297 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | brown / basmati rice: pinned code 7290013200297 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | bulgarian / feta cheese: pinned code 7290001258798 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | chicken pargiyot: pinned code 7290002804666 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | denis / tilapia fillets: pinned code 7290008255127 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | dijon / yellow mustard: pinned code 7290105439598 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | farm eggs: pinned code 7290001201619 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | farm eggs (12 pk): pinned code 7290001201619 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | ground beef: pinned code 7290000971230 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | penne / spaghetti: pinned code 8008912010034 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | penne or spaghetti: pinned code 8008912010034 not in PriceFull7290027600007-002-214-20261116-034226.gz",
+        "shufersal::214 | white / brown sugar: pinned code 9012501004730 not in PriceFull7290027600007-002-214-20261116-034226.gz",
         "shufersal::214 | Canned Chickpeas: no source-verified drained weight for code 7290016087901"
       ]
     }

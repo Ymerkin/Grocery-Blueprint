@@ -1,0 +1,490 @@
+{
+  "metadata": {
+    "version": "3",
+    "chains": {
+      "shuk-hayir::313": {
+        "store_id": "313",
+        "store_name": "אונליין - רמלה",
+        "source_file": "PriceFull7290058148776-000-313-20261116-050310.GZ",
+        "source_url": "https://shuk-hayir.binaprojects.com/Download/PriceFull7290058148776-000-313-20261116-050310.GZ",
+        "published_at": "2026-11-16T05:03:10+02:00",
+        "published_at_assumed_tz": "Asia/Jerusalem",
+        "retrieved_at": "2026-11-16T05:17:34.229683+00:00",
+        "sha256": "d35c413f437fa57ef4e803112f54f2dde16abce9fca6cbe630ad457a866cb622",
+        "item_count": 1063,
+        "priced_count": 20,
+        "chain": "shuk-hayir",
+        "kind": "online",
+        "address": "unknown",
+        "city": "רמלה"
+      }
+    },
+    "drained_unpriced": []
+  },
+  "ingredients": {
+    "cooking cream 15%": {
+      "ingredient_name": "Cooking Cream 15%",
+      "shuk-hayir::313": {
+        "item_code": "7290000522340",
+        "gtin": "07290000522340",
+        "nameHe": "שמנת לבישול 15% מחלבות רמת הגולן 250 מ\"ל",
+        "brand": "מחלבות רמת הגולן",
+        "packPrice": 10.0,
+        "packQty": 250.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04,
+        "priceUpdateTime": "2026-11-15T21:38:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290000522340, price=10.0, pack=250.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "cottage cheese 5%": {
+      "ingredient_name": "Cottage Cheese 5%",
+      "shuk-hayir::313": {
+        "item_code": "7290004127329",
+        "gtin": "07290004127329",
+        "nameHe": "קוטג' 5% תנובה 250 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 6.5,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.026,
+        "priceUpdateTime": "2026-11-16T00:18:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290004127329, price=6.5, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "dry green lentils": {
+      "ingredient_name": "Dry Green Lentils",
+      "shuk-hayir::313": {
+        "item_code": "7290001041208",
+        "gtin": "07290001041208",
+        "nameHe": "עדשים ירוקות מיה 1 ק\"ג",
+        "brand": "לא ידוע",
+        "packPrice": 12.9,
+        "packQty": 1000.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0129,
+        "priceUpdateTime": "2026-11-15T18:21:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290001041208, price=12.9, pack=1000.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "dry red lentils": {
+      "ingredient_name": "Dry Red Lentils",
+      "shuk-hayir::313": {
+        "item_code": "7290003643769",
+        "gtin": "07290003643769",
+        "nameHe": "עדשים אדומות סוגת 500 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 9.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0198,
+        "priceUpdateTime": "2026-11-15T21:38:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290003643769, price=9.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "farfalle (bowtie) pasta": {
+      "ingredient_name": "Farfalle (Bowtie) Pasta",
+      "shuk-hayir::313": {
+        "item_code": "8076809580144",
+        "gtin": "08076809580144",
+        "nameHe": "פסטה פרפלה 65 ברילה 500 גרם",
+        "brand": "ברילה",
+        "packPrice": 9.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0198,
+        "priceUpdateTime": "2026-11-16T00:18:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=8076809580144, price=9.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "flour tortilla wraps": {
+      "ingredient_name": "Flour Tortilla Wraps",
+      "shuk-hayir::313": {
+        "item_code": "7290107974066",
+        "gtin": "07290107974066",
+        "nameHe": "עלי טורטיה חמישה דגניה מאסטר שף 320 גרם",
+        "brand": "מנה",
+        "packPrice": 10.9,
+        "packQty": 320.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03406,
+        "priceUpdateTime": "2026-11-15T21:17:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290107974066, price=10.9, pack=320.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "fresh milk 3%": {
+      "ingredient_name": "Fresh Milk 3%",
+      "shuk-hayir::313": {
+        "item_code": "7290003029815",
+        "gtin": "07290003029815",
+        "nameHe": "כד חלב 3% יטבתה 2 ליטר מהדרין",
+        "brand": "לא ידוע",
+        "packPrice": 17.9,
+        "packQty": 2000.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.00895,
+        "priceUpdateTime": "2026-11-15T23:00:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290003029815, price=17.9, pack=2000.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "yochananof"
+      }
+    },
+    "greek strained yogurt": {
+      "ingredient_name": "Greek Strained Yogurt",
+      "shuk-hayir::313": {
+        "item_code": "7290013771384",
+        "gtin": "07290013771384",
+        "nameHe": "יוגורט יווני 6.5% רמת הגולן 400 גרם",
+        "brand": "מחלבות רמת הגולן",
+        "packPrice": 14.9,
+        "packQty": 400.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03725,
+        "priceUpdateTime": "2026-11-15T21:38:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290013771384, price=14.9, pack=400.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "mayonnaise": {
+      "ingredient_name": "Mayonnaise",
+      "shuk-hayir::313": {
+        "item_code": "7290000111186",
+        "gtin": "07290000111186",
+        "nameHe": "מיונז אמיתי תלמה 500 גרם בד\"צ",
+        "brand": "יוניליוור מזון",
+        "packPrice": 13.9,
+        "packQty": 500.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0278,
+        "priceUpdateTime": "2026-11-15T22:40:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290000111186, price=13.9, pack=500.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "soft white cheese 5%": {
+      "ingredient_name": "Soft White Cheese 5%",
+      "shuk-hayir::313": {
+        "item_code": "7290000474502",
+        "gtin": "07290000474502",
+        "nameHe": "גבינה לבנה 5% טרה 250 גרם מהדרין",
+        "brand": "הפריט בפיקוח",
+        "packPrice": 5.87,
+        "packQty": 250.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02348,
+        "priceUpdateTime": "2026-11-15T21:48:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290000474502, price=5.87, pack=250.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "whole grain granola": {
+      "ingredient_name": "Whole Grain Granola",
+      "shuk-hayir::313": {
+        "item_code": "7290014471443",
+        "gtin": "07290014471443",
+        "nameHe": "גרנולה צימוקים אגוזים ושקדים שקדיה 850 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 24.9,
+        "packQty": 850.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02929,
+        "priceUpdateTime": "2026-11-15T12:07:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290014471443, price=24.9, pack=850.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "whole wheat bread": {
+      "ingredient_name": "Whole Wheat Bread",
+      "shuk-hayir::313": {
+        "item_code": "7290016967074",
+        "gtin": "07290016967074",
+        "nameHe": "לחם מחיטה מלאה אנג'ל 750 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 18.9,
+        "packQty": 750.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0252,
+        "priceUpdateTime": "2026-11-15T21:48:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290016967074, price=18.9, pack=750.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "caraway rye bread": {
+      "ingredient_name": "Caraway Rye Bread",
+      "shuk-hayir::313": {
+        "item_code": "7290002065616",
+        "gtin": "07290002065616",
+        "nameHe": "לחם שיפון גרעינים אנג'ל 750 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 15.9,
+        "packQty": 750.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0212,
+        "priceUpdateTime": "2026-11-15T19:54:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290002065616, price=15.9, pack=750.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "yellow cheese slices": {
+      "ingredient_name": "Yellow Cheese Slices",
+      "shuk-hayir::313": {
+        "item_code": "7290014763395",
+        "gtin": "07290014763395",
+        "nameHe": "עמק סמי מהדרין 600 גרם",
+        "brand": "לא ידוע",
+        "packPrice": 39.9,
+        "packQty": 600.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0665,
+        "priceUpdateTime": "2026-11-15T21:38:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290014763395, price=39.9, pack=600.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
+    "canned chunk light tuna": {
+      "ingredient_name": "Canned Chunk Light Tuna",
+      "shuk-hayir::313": {
+        "item_code": "7290005287206",
+        "gtin": "07290005287206",
+        "nameHe": "רביעיית טונה בשמן סטארקיסט 160 גרם",
+        "brand": "סטארקיסט",
+        "packPrice": 26.9,
+        "packQty": 448.0,
+        "packUnit": "g",
+        "packBasis": "drained weight 112 g x 4 (source-verified)",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": "user rule: canned tuna in oil, no pouch substitution",
+        "packOverride": null,
+        "unitPriceNorm": 0.06004,
+        "priceUpdateTime": "2026-11-16T00:18:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290005287206, price=26.9, pack=640.0 g",
+        "grossPackQty": 640.0,
+        "grossPackUnit": "g",
+        "drained": {
+          "per_unit_g": 112.0,
+          "units": 4,
+          "gross_pack": "640 g",
+          "gross_per_unit_g": 160,
+          "status": "source-verified",
+          "evidence": "Pack photo https://img.rami-levy.co.il/product/7290005287206/large.jpg (viewed 4 Nov, same barcode): 'בשמן 160 גר' ליחידה, 112 גר' מסונן', 4 יח''. 4 tins x 112 g drained = 448 g; gross 640 g."
+        },
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "extra virgin olive oil": {
+      "ingredient_name": "Extra Virgin Olive Oil",
+      "shuk-hayir::313": {
+        "item_code": "7290019603498",
+        "gtin": "07290019603498",
+        "nameHe": "שמן זית כתית מעולה מיה 750 מ\"ל",
+        "brand": "לא ידוע",
+        "packPrice": 32.9,
+        "packQty": 750.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": "user rule: 750ml-1L bottle, not 3L tin",
+        "packOverride": null,
+        "unitPriceNorm": 0.04387,
+        "priceUpdateTime": "2026-11-16T00:18:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290019603498, price=32.9, pack=750.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "sliced sandwich bread": {
+      "ingredient_name": "Sliced Sandwich Bread",
+      "shuk-hayir::313": {
+        "item_code": "7290000574035",
+        "gtin": "07290000574035",
+        "nameHe": "לחם אחיד פרוס 750גרם דגנית עין בר",
+        "brand": "הפריט בפיקוח",
+        "packPrice": 8.3,
+        "packQty": 750.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": "user rule: standard sliced loaf",
+        "packOverride": null,
+        "unitPriceNorm": 0.01107,
+        "priceUpdateTime": "2026-11-15T23:21:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290000574035, price=8.3, pack=750.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "couscous": {
+      "ingredient_name": "couscous",
+      "shuk-hayir::313": {
+        "item_code": "7290006653819",
+        "gtin": "07290006653819",
+        "nameHe": "קוסוקס דק אסם 350 גרם",
+        "brand": "אסם",
+        "packPrice": 8.9,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02543,
+        "priceUpdateTime": "2026-11-15T23:21:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290006653819, price=8.9, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "greek yogurt 7%": {
+      "ingredient_name": "greek yogurt 7%",
+      "shuk-hayir::313": {
+        "item_code": "7290013771384",
+        "gtin": "07290013771384",
+        "nameHe": "יוגורט יווני 6.5% רמת הגולן 400 גרם",
+        "brand": "מחלבות רמת הגולן",
+        "packPrice": 14.9,
+        "packQty": 400.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03725,
+        "priceUpdateTime": "2026-11-15T21:38:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290013771384, price=14.9, pack=400.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "frozen green beans": {
+      "ingredient_name": "frozen green beans",
+      "shuk-hayir::313": {
+        "item_code": "7290000104683",
+        "gtin": "07290000104683",
+        "nameHe": "שעועית ירוקה שלמה סנפרוסט 800 גרם",
+        "brand": "סנפרוסט",
+        "packPrice": 24.9,
+        "packQty": 800.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.03112,
+        "priceUpdateTime": "2026-11-15T21:38:00",
+        "metadataSource": "PriceFull7290058148776-000-313-20261116-050310.GZ (published 2026-11-16T05:03:10+02:00, store 313): ItemCode=7290000104683, price=24.9, pack=800.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    }
+  },
+  "promotions": {
+    "shuk-hayir::313": {
+      "status": "not-collected",
+      "reason": "national branch: price files only, refreshed once daily",
+      "offers": []
+    }
+  },
+  "warnings": [],
+  "sync_status": {
+    "shuk-hayir::313": {
+      "status": "ok",
+      "warnings": []
+    }
+  }
+}
