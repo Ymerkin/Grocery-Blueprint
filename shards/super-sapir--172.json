@@ -5,14 +5,14 @@
       "super-sapir::172": {
         "store_id": "172",
         "store_name": "המכולת שלנו קרית טבעון",
-        "source_file": "PriceFull7290058156016-004-172-20261116-034057.GZ",
-        "source_url": "https://supersapir.binaprojects.com/Download/PriceFull7290058156016-004-172-20261116-034057.GZ",
-        "published_at": "2026-11-16T03:40:57+02:00",
+        "source_file": "PriceFull7290058156016-004-172-20261117-034752.GZ",
+        "source_url": "https://supersapir.binaprojects.com/Download/PriceFull7290058156016-004-172-20261117-034752.GZ",
+        "published_at": "2026-11-17T03:47:52+02:00",
         "published_at_assumed_tz": "Asia/Jerusalem",
-        "retrieved_at": "2026-11-16T05:17:26.522852+00:00",
-        "sha256": "8894379adfb92b3ab41a1abb7c9fafd2d4be27fd74d0f50c36db7d2ee1132e07",
-        "item_count": 1080,
-        "priced_count": 28,
+        "retrieved_at": "2026-11-17T04:49:02.499816+00:00",
+        "sha256": "1c1be394c3a9a7d9e6158942fb5d1615f4251396d67dcb3edd3a528341afd63d",
+        "item_count": 1049,
+        "priced_count": 26,
         "chain": "super-sapir",
         "kind": "physical",
         "address": "משה דיין 8",
@@ -38,8 +38,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.0996,
-        "priceUpdateTime": "2026-11-15T20:58:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290005992575, price=24.9, pack=250.0 g",
+        "priceUpdateTime": "2026-11-16T13:18:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290005992575, price=24.9, pack=250.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "yochananof"
       }
@@ -60,8 +60,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.05174,
-        "priceUpdateTime": "2026-11-15T21:40:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290112348142, price=11.9, pack=380.0 g",
+        "priceUpdateTime": "2026-11-16T17:53:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290112348142, price=11.9, pack=380.0 g",
         "grossPackQty": 380.0,
         "grossPackUnit": "g",
         "drained": {
@@ -92,32 +92,10 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.0276,
-        "priceUpdateTime": "2026-11-16T00:10:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290004127329, price=6.9, pack=250.0 g",
+        "priceUpdateTime": "2026-11-16T23:29:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290004127329, price=6.9, pack=250.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
-      }
-    },
-    "dry green lentils": {
-      "ingredient_name": "Dry Green Lentils",
-      "super-sapir::172": {
-        "item_code": "7290003643752",
-        "gtin": "07290003643752",
-        "nameHe": "עדשים ירוקות 500 ג סוגת",
-        "brand": "לא ידוע",
-        "packPrice": 11.9,
-        "packQty": 500.0,
-        "packUnit": "g",
-        "packBasis": "feed quantity",
-        "isWeighted": false,
-        "selectionSource": "assistant",
-        "selectionNote": null,
-        "packOverride": null,
-        "unitPriceNorm": 0.0238,
-        "priceUpdateTime": "2026-11-15T20:47:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290003643752, price=11.9, pack=500.0 g",
-        "matchMethod": "exact-gtin",
-        "matchedFromChain": "yochananof"
       }
     },
     "dry red lentils": {
@@ -136,8 +114,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.0238,
-        "priceUpdateTime": "2026-11-15T23:34:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290003643769, price=11.9, pack=500.0 g",
+        "priceUpdateTime": "2026-11-16T22:47:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290003643769, price=11.9, pack=500.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "yochananof"
       }
@@ -158,8 +136,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.05906,
-        "priceUpdateTime": "2026-11-15T21:09:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290107974066, price=18.9, pack=320.0 g",
+        "priceUpdateTime": "2026-11-16T21:24:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290107974066, price=18.9, pack=320.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "yochananof"
       }
@@ -180,8 +158,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.0159,
-        "priceUpdateTime": "2026-11-15T22:32:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290100700396, price=15.9, pack=1000.0 g",
+        "priceUpdateTime": "2026-11-16T22:06:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290100700396, price=15.9, pack=1000.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
       }
@@ -202,8 +180,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 3.9,
-        "priceUpdateTime": "2026-11-15T21:09:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290012724824, price=3.9, pack=1.0 units",
+        "priceUpdateTime": "2026-11-16T21:24:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290012724824, price=3.9, pack=1.0 units",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "yochananof"
       }
@@ -224,8 +202,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 3.9,
-        "priceUpdateTime": "2026-11-15T21:09:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290012724848, price=3.9, pack=1.0 units",
+        "priceUpdateTime": "2026-11-17T00:09:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290012724848, price=3.9, pack=1.0 units",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "yochananof"
       }
@@ -246,8 +224,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.03362,
-        "priceUpdateTime": "2026-11-15T20:37:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290000104720, price=26.9, pack=800.0 g",
+        "priceUpdateTime": "2026-11-16T19:18:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290000104720, price=26.9, pack=800.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -268,8 +246,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.04483,
-        "priceUpdateTime": "2026-11-15T22:11:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290000104201, price=26.9, pack=600.0 g",
+        "priceUpdateTime": "2026-11-16T21:14:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290000104201, price=26.9, pack=600.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -290,8 +268,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.139,
-        "priceUpdateTime": "2026-11-15T21:50:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290000134840, price=13.9, pack=100.0 g",
+        "priceUpdateTime": "2026-11-16T21:35:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290000134840, price=13.9, pack=100.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -312,8 +290,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.0756,
-        "priceUpdateTime": "2026-11-15T20:58:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290005992735, price=18.9, pack=250.0 g",
+        "priceUpdateTime": "2026-11-16T21:14:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290005992735, price=18.9, pack=250.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "yochananof"
       }
@@ -334,8 +312,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.0298,
-        "priceUpdateTime": "2026-11-15T23:54:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290000111186, price=14.9, pack=500.0 g",
+        "priceUpdateTime": "2026-11-16T23:54:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290000111186, price=14.9, pack=500.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
       }
@@ -356,8 +334,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.139,
-        "priceUpdateTime": "2026-11-15T20:47:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290000134857, price=13.9, pack=100.0 g",
+        "priceUpdateTime": "2026-11-16T22:37:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290000134857, price=13.9, pack=100.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "yochananof"
       }
@@ -378,8 +356,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.034,
-        "priceUpdateTime": "2026-11-15T22:11:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290100680711, price=11.9, pack=350.0 g",
+        "priceUpdateTime": "2026-11-17T00:09:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290100680711, price=11.9, pack=350.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
       }
@@ -400,8 +378,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.299,
-        "priceUpdateTime": "2026-11-15T20:58:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290008340618, price=29.9, pack=100.0 g",
+        "priceUpdateTime": "2026-11-16T20:11:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290008340618, price=29.9, pack=100.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
       }
@@ -422,8 +400,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.05967,
-        "priceUpdateTime": "2026-11-15T20:16:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290116534244, price=17.9, pack=300.0 ml",
+        "priceUpdateTime": "2026-11-16T21:56:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290116534244, price=17.9, pack=300.0 ml",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
       }
@@ -444,8 +422,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.139,
-        "priceUpdateTime": "2026-11-15T20:47:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290000134857, price=13.9, pack=100.0 g",
+        "priceUpdateTime": "2026-11-16T22:37:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290000134857, price=13.9, pack=100.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "yochananof"
       }
@@ -466,8 +444,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.085,
-        "priceUpdateTime": "2026-11-15T23:54:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290000068343, price=11.9, pack=140.0 g",
+        "priceUpdateTime": "2026-11-16T22:37:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290000068343, price=11.9, pack=140.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
       }
@@ -488,8 +466,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.0796,
-        "priceUpdateTime": "2026-11-15T21:09:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290000078212, price=19.9, pack=250.0 g",
+        "priceUpdateTime": "2026-11-16T21:14:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290000078212, price=19.9, pack=250.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -510,32 +488,10 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.13833,
-        "priceUpdateTime": "2026-11-15T19:34:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290015858106, price=24.9, pack=180.0 g",
+        "priceUpdateTime": "2026-11-16T20:32:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290015858106, price=24.9, pack=180.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
-      }
-    },
-    "flaky cheese bourekas": {
-      "ingredient_name": "Flaky Cheese Bourekas",
-      "super-sapir::172": {
-        "item_code": "7290000238173",
-        "gtin": "07290000238173",
-        "nameHe": "בורקס גבינה מעדנות",
-        "brand": "לא ידוע",
-        "packPrice": 29.9,
-        "packQty": 800.0,
-        "packUnit": "g",
-        "packBasis": "feed quantity",
-        "isWeighted": false,
-        "selectionSource": "assistant",
-        "selectionNote": null,
-        "packOverride": null,
-        "unitPriceNorm": 0.03737,
-        "priceUpdateTime": "2026-11-15T22:32:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290000238173, price=29.9, pack=800.0 g",
-        "matchMethod": "exact-gtin",
-        "matchedFromChain": "shufersal"
       }
     },
     "canned chunk light tuna": {
@@ -554,8 +510,8 @@
         "selectionNote": "user rule: canned tuna in oil, no pouch substitution",
         "packOverride": null,
         "unitPriceNorm": 0.06674,
-        "priceUpdateTime": "2026-11-15T21:09:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290005287206, price=29.9, pack=640.0 g",
+        "priceUpdateTime": "2026-11-16T21:24:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290005287206, price=29.9, pack=640.0 g",
         "grossPackQty": 640.0,
         "grossPackUnit": "g",
         "drained": {
@@ -586,8 +542,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.0109,
-        "priceUpdateTime": "2026-11-16T00:10:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290000272726, price=10.9, pack=1000.0 ml",
+        "priceUpdateTime": "2026-11-16T22:58:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290000272726, price=10.9, pack=1000.0 ml",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
       }
@@ -608,8 +564,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.03225,
-        "priceUpdateTime": "2026-11-15T23:03:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290015603560, price=12.9, pack=400.0 ml",
+        "priceUpdateTime": "2026-11-16T17:43:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290015603560, price=12.9, pack=400.0 ml",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
       }
@@ -630,8 +586,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.48444,
-        "priceUpdateTime": "2026-11-15T21:29:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290112490032, price=10.9, pack=22.5 g",
+        "priceUpdateTime": "2026-11-16T21:56:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290112490032, price=10.9, pack=22.5 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "rami-levy"
       }
@@ -652,8 +608,8 @@
         "selectionNote": null,
         "packOverride": null,
         "unitPriceNorm": 0.0069,
-        "priceUpdateTime": "2026-11-15T22:42:00",
-        "metadataSource": "PriceFull7290058156016-004-172-20261116-034057.GZ (published 2026-11-16T03:40:57+02:00, store 172): ItemCode=7290000211503, price=6.9, pack=1000.0 g",
+        "priceUpdateTime": "2026-11-17T00:09:00",
+        "metadataSource": "PriceFull7290058156016-004-172-20261117-034752.GZ (published 2026-11-17T03:47:52+02:00, store 172): ItemCode=7290000211503, price=6.9, pack=1000.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
       }
