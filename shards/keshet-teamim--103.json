@@ -5,14 +5,14 @@
       "keshet-teamim::103": {
         "store_id": "103",
         "store_name": "קולינריק חורב",
-        "source_file": "PriceFull7290785400000-103-202611180630.gz",
-        "source_url": "https://url.publishedprices.co.il/file/d/PriceFull7290785400000-103-202611180630.gz",
-        "published_at": "2026-11-18T06:30:00+02:00",
+        "source_file": "PriceFull7290785400000-103-202611190630.gz",
+        "source_url": "https://url.publishedprices.co.il/file/d/PriceFull7290785400000-103-202611190630.gz",
+        "published_at": "2026-11-19T06:30:00+02:00",
         "published_at_assumed_tz": "Asia/Jerusalem",
-        "retrieved_at": "2026-11-18T04:52:02.029561+00:00",
-        "sha256": "4835b61ce2e2d03fd958f740c5f16c7d6d8fc9eae40f665cc437fb79874ad040",
-        "item_count": 1886,
-        "priced_count": 4,
+        "retrieved_at": "2026-11-19T04:54:18.206839+00:00",
+        "sha256": "530d4a630e386d34945e35d87478dd1b55866c5a7defc20283d466be18fb533b",
+        "item_count": 1925,
+        "priced_count": 3,
         "chain": "keshet-teamim",
         "kind": "physical",
         "address": "חורב 15 | www.kulinarik.co.il/|",
@@ -39,7 +39,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0258,
         "priceUpdateTime": "2026-02-06T11:25:09",
-        "metadataSource": "PriceFull7290785400000-103-202611180630.gz (published 2026-11-18T06:30:00+02:00, store 103): ItemCode=7290012911095, price=12.9, pack=500.0 ml",
+        "metadataSource": "PriceFull7290785400000-103-202611190630.gz (published 2026-11-19T06:30:00+02:00, store 103): ItemCode=7290012911095, price=12.9, pack=500.0 ml",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -61,7 +61,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0149,
         "priceUpdateTime": "2026-08-10T08:59:50",
-        "metadataSource": "PriceFull7290785400000-103-202611180630.gz (published 2026-11-18T06:30:00+02:00, store 103): ItemCode=7290011996062, price=14.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290785400000-103-202611190630.gz (published 2026-11-19T06:30:00+02:00, store 103): ItemCode=7290011996062, price=14.9, pack=1000.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -83,31 +83,9 @@
         "packOverride": null,
         "unitPriceNorm": 0.01725,
         "priceUpdateTime": "2023-12-31T12:49:01",
-        "metadataSource": "PriceFull7290785400000-103-202611180630.gz (published 2026-11-18T06:30:00+02:00, store 103): ItemCode=7290015603522, price=6.9, pack=400.0 ml",
+        "metadataSource": "PriceFull7290785400000-103-202611190630.gz (published 2026-11-19T06:30:00+02:00, store 103): ItemCode=7290015603522, price=6.9, pack=400.0 ml",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
-      }
-    },
-    "pure flower honey": {
-      "ingredient_name": "pure flower honey",
-      "keshet-teamim::103": {
-        "item_code": "7290010032259",
-        "gtin": "07290010032259",
-        "nameHe": "דבש חמניות 500 גר",
-        "brand": ",",
-        "packPrice": 29.9,
-        "packQty": 500.0,
-        "packUnit": "g",
-        "packBasis": "feed quantity and product name agree",
-        "isWeighted": false,
-        "selectionSource": "assistant",
-        "selectionNote": null,
-        "packOverride": null,
-        "unitPriceNorm": 0.0598,
-        "priceUpdateTime": "2025-08-29T09:29:29",
-        "metadataSource": "PriceFull7290785400000-103-202611180630.gz (published 2026-11-18T06:30:00+02:00, store 103): ItemCode=7290010032259, price=29.9, pack=500.0 g",
-        "matchMethod": "exact-gtin",
-        "matchedFromChain": "rami-levy"
       }
     }
   },
