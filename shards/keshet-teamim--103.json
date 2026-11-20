@@ -5,14 +5,14 @@
       "keshet-teamim::103": {
         "store_id": "103",
         "store_name": "קולינריק חורב",
-        "source_file": "PriceFull7290785400000-103-202611190630.gz",
-        "source_url": "https://url.publishedprices.co.il/file/d/PriceFull7290785400000-103-202611190630.gz",
-        "published_at": "2026-11-19T06:30:00+02:00",
+        "source_file": "PriceFull7290785400000-103-202611200630.gz",
+        "source_url": "https://url.publishedprices.co.il/file/d/PriceFull7290785400000-103-202611200630.gz",
+        "published_at": "2026-11-20T06:30:00+02:00",
         "published_at_assumed_tz": "Asia/Jerusalem",
-        "retrieved_at": "2026-11-19T04:54:18.206839+00:00",
-        "sha256": "530d4a630e386d34945e35d87478dd1b55866c5a7defc20283d466be18fb533b",
-        "item_count": 1925,
-        "priced_count": 3,
+        "retrieved_at": "2026-11-20T04:50:23.197576+00:00",
+        "sha256": "286dce306fd8f9430e62b39132c9e47621b80f3bbf4f6997d8355a9536f23563",
+        "item_count": 2784,
+        "priced_count": 9,
         "chain": "keshet-teamim",
         "kind": "physical",
         "address": "חורב 15 | www.kulinarik.co.il/|",
@@ -22,6 +22,94 @@
     "drained_unpriced": []
   },
   "ingredients": {
+    "creamy natural peanut butter": {
+      "ingredient_name": "Creamy Natural Peanut Butter",
+      "keshet-teamim::103": {
+        "item_code": "7290000446547",
+        "gtin": "07290000446547",
+        "nameHe": "חמאת בוטנים טבעית בט",
+        "brand": ",",
+        "packPrice": 14.9,
+        "packQty": 350.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.04257,
+        "priceUpdateTime": "2026-02-02T09:45:35",
+        "metadataSource": "PriceFull7290785400000-103-202611200630.gz (published 2026-11-20T06:30:00+02:00, store 103): ItemCode=7290000446547, price=14.9, pack=350.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "fresh dill": {
+      "ingredient_name": "Fresh Dill",
+      "keshet-teamim::103": {
+        "item_code": "7290016334593",
+        "gtin": "07290016334593",
+        "nameHe": "שמיר ארוז",
+        "brand": ",",
+        "packPrice": 4.9,
+        "packQty": 1.0,
+        "packUnit": "units",
+        "packBasis": "pack adopted from GTIN-identical shufersal item 7290016334593 (local feed pack underivable)",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 4.9,
+        "priceUpdateTime": "2025-11-06T09:05:35",
+        "metadataSource": "PriceFull7290785400000-103-202611200630.gz (published 2026-11-20T06:30:00+02:00, store 103): ItemCode=7290016334593, price=4.9, pack=1.0 units",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "fresh parsley": {
+      "ingredient_name": "Fresh Parsley",
+      "keshet-teamim::103": {
+        "item_code": "7290016334579",
+        "gtin": "07290016334579",
+        "nameHe": "פטרוזיליה ארוז",
+        "brand": ",",
+        "packPrice": 4.9,
+        "packQty": 1.0,
+        "packUnit": "units",
+        "packBasis": "pack adopted from GTIN-identical shufersal item 7290016334579 (local feed pack underivable)",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 4.9,
+        "priceUpdateTime": "2025-11-06T09:06:03",
+        "metadataSource": "PriceFull7290785400000-103-202611200630.gz (published 2026-11-20T06:30:00+02:00, store 103): ItemCode=7290016334579, price=4.9, pack=1.0 units",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
+      }
+    },
+    "rice vermicelli noodles": {
+      "ingredient_name": "Rice Vermicelli Noodles",
+      "keshet-teamim::103": {
+        "item_code": "308910525744",
+        "gtin": "00308910525744",
+        "nameHe": "אטריות אורז דקות 454",
+        "brand": "Oriental food co. lt",
+        "packPrice": 11.9,
+        "packQty": 454.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.02621,
+        "priceUpdateTime": "2023-12-31T12:48:29",
+        "metadataSource": "PriceFull7290785400000-103-202611200630.gz (published 2026-11-20T06:30:00+02:00, store 103): ItemCode=308910525744, price=11.9, pack=454.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "osher-ad"
+      }
+    },
     "soy sauce": {
       "ingredient_name": "Soy Sauce",
       "keshet-teamim::103": {
@@ -39,7 +127,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0258,
         "priceUpdateTime": "2026-02-06T11:25:09",
-        "metadataSource": "PriceFull7290785400000-103-202611190630.gz (published 2026-11-19T06:30:00+02:00, store 103): ItemCode=7290012911095, price=12.9, pack=500.0 ml",
+        "metadataSource": "PriceFull7290785400000-103-202611200630.gz (published 2026-11-20T06:30:00+02:00, store 103): ItemCode=7290012911095, price=12.9, pack=500.0 ml",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -61,7 +149,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0149,
         "priceUpdateTime": "2026-08-10T08:59:50",
-        "metadataSource": "PriceFull7290785400000-103-202611190630.gz (published 2026-11-19T06:30:00+02:00, store 103): ItemCode=7290011996062, price=14.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290785400000-103-202611200630.gz (published 2026-11-20T06:30:00+02:00, store 103): ItemCode=7290011996062, price=14.9, pack=1000.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -83,9 +171,53 @@
         "packOverride": null,
         "unitPriceNorm": 0.01725,
         "priceUpdateTime": "2023-12-31T12:49:01",
-        "metadataSource": "PriceFull7290785400000-103-202611190630.gz (published 2026-11-19T06:30:00+02:00, store 103): ItemCode=7290015603522, price=6.9, pack=400.0 ml",
+        "metadataSource": "PriceFull7290785400000-103-202611200630.gz (published 2026-11-20T06:30:00+02:00, store 103): ItemCode=7290015603522, price=6.9, pack=400.0 ml",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
+      }
+    },
+    "butter (100g)": {
+      "ingredient_name": "butter (100g)",
+      "keshet-teamim::103": {
+        "item_code": "7290108503746",
+        "gtin": "07290108503746",
+        "nameHe": "חמאה מלוחה מבלגיה 20",
+        "brand": "לוטס",
+        "packPrice": 16.9,
+        "packQty": 200.0,
+        "packUnit": "g",
+        "packBasis": "feed quantity",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.0845,
+        "priceUpdateTime": "2025-04-08T18:06:45",
+        "metadataSource": "PriceFull7290785400000-103-202611200630.gz (published 2026-11-20T06:30:00+02:00, store 103): ItemCode=7290108503746, price=16.9, pack=200.0 g",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "rami-levy"
+      }
+    },
+    "toasted sesame oil": {
+      "ingredient_name": "toasted sesame oil",
+      "keshet-teamim::103": {
+        "item_code": "7290012911804",
+        "gtin": "07290012911804",
+        "nameHe": "שמן שומשום 150 מל",
+        "brand": "גואנגדונג גוד טייסט",
+        "packPrice": 15.9,
+        "packQty": 150.0,
+        "packUnit": "ml",
+        "packBasis": "feed quantity and product name agree",
+        "isWeighted": false,
+        "selectionSource": "assistant",
+        "selectionNote": null,
+        "packOverride": null,
+        "unitPriceNorm": 0.106,
+        "priceUpdateTime": "2026-03-01T11:04:57",
+        "metadataSource": "PriceFull7290785400000-103-202611200630.gz (published 2026-11-20T06:30:00+02:00, store 103): ItemCode=7290012911804, price=15.9, pack=150.0 ml",
+        "matchMethod": "exact-gtin",
+        "matchedFromChain": "shufersal"
       }
     }
   },
