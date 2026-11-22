@@ -5,14 +5,14 @@
       "keshet-teamim::103": {
         "store_id": "103",
         "store_name": "קולינריק חורב",
-        "source_file": "PriceFull7290785400000-103-202611210630.gz",
-        "source_url": "https://url.publishedprices.co.il/file/d/PriceFull7290785400000-103-202611210630.gz",
-        "published_at": "2026-11-21T06:30:00+02:00",
+        "source_file": "PriceFull7290785400000-103-202611220630.gz",
+        "source_url": "https://url.publishedprices.co.il/file/d/PriceFull7290785400000-103-202611220630.gz",
+        "published_at": "2026-11-22T06:30:00+02:00",
         "published_at_assumed_tz": "Asia/Jerusalem",
-        "retrieved_at": "2026-11-21T04:47:40.417184+00:00",
-        "sha256": "c8903f5f528f1958e231ef0beb2257f175e4fdfa1d8e72a2bf91ecf7a4fe4d40",
-        "item_count": 2793,
-        "priced_count": 9,
+        "retrieved_at": "2026-11-22T04:50:17.854209+00:00",
+        "sha256": "c5d2479a7f98aa6524204ec7093b19a6e512ac6b29644d823df87904416431e2",
+        "item_count": 2724,
+        "priced_count": 7,
         "chain": "keshet-teamim",
         "kind": "physical",
         "address": "חורב 15 | www.kulinarik.co.il/|",
@@ -39,7 +39,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.04257,
         "priceUpdateTime": "2026-02-02T09:45:35",
-        "metadataSource": "PriceFull7290785400000-103-202611210630.gz (published 2026-11-21T06:30:00+02:00, store 103): ItemCode=7290000446547, price=14.9, pack=350.0 g",
+        "metadataSource": "PriceFull7290785400000-103-202611220630.gz (published 2026-11-22T06:30:00+02:00, store 103): ItemCode=7290000446547, price=14.9, pack=350.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -61,7 +61,7 @@
         "packOverride": null,
         "unitPriceNorm": 4.9,
         "priceUpdateTime": "2025-11-06T09:05:35",
-        "metadataSource": "PriceFull7290785400000-103-202611210630.gz (published 2026-11-21T06:30:00+02:00, store 103): ItemCode=7290016334593, price=4.9, pack=1.0 units",
+        "metadataSource": "PriceFull7290785400000-103-202611220630.gz (published 2026-11-22T06:30:00+02:00, store 103): ItemCode=7290016334593, price=4.9, pack=1.0 units",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -83,7 +83,7 @@
         "packOverride": null,
         "unitPriceNorm": 4.9,
         "priceUpdateTime": "2025-11-06T09:06:03",
-        "metadataSource": "PriceFull7290785400000-103-202611210630.gz (published 2026-11-21T06:30:00+02:00, store 103): ItemCode=7290016334579, price=4.9, pack=1.0 units",
+        "metadataSource": "PriceFull7290785400000-103-202611220630.gz (published 2026-11-22T06:30:00+02:00, store 103): ItemCode=7290016334579, price=4.9, pack=1.0 units",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -105,7 +105,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.02621,
         "priceUpdateTime": "2023-12-31T12:48:29",
-        "metadataSource": "PriceFull7290785400000-103-202611210630.gz (published 2026-11-21T06:30:00+02:00, store 103): ItemCode=308910525744, price=11.9, pack=454.0 g",
+        "metadataSource": "PriceFull7290785400000-103-202611220630.gz (published 2026-11-22T06:30:00+02:00, store 103): ItemCode=308910525744, price=11.9, pack=454.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
       }
@@ -127,29 +127,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.0258,
         "priceUpdateTime": "2026-02-06T11:25:09",
-        "metadataSource": "PriceFull7290785400000-103-202611210630.gz (published 2026-11-21T06:30:00+02:00, store 103): ItemCode=7290012911095, price=12.9, pack=500.0 ml",
-        "matchMethod": "exact-gtin",
-        "matchedFromChain": "shufersal"
-      }
-    },
-    "sushi short grain rice": {
-      "ingredient_name": "Sushi Short Grain Rice",
-      "keshet-teamim::103": {
-        "item_code": "7290011996062",
-        "gtin": "07290011996062",
-        "nameHe": "אורז לסושי 1 קג",
-        "brand": ",",
-        "packPrice": 14.9,
-        "packQty": 1000.0,
-        "packUnit": "g",
-        "packBasis": "feed quantity and product name agree",
-        "isWeighted": false,
-        "selectionSource": "assistant",
-        "selectionNote": null,
-        "packOverride": null,
-        "unitPriceNorm": 0.0149,
-        "priceUpdateTime": "2026-08-10T08:59:50",
-        "metadataSource": "PriceFull7290785400000-103-202611210630.gz (published 2026-11-21T06:30:00+02:00, store 103): ItemCode=7290011996062, price=14.9, pack=1000.0 g",
+        "metadataSource": "PriceFull7290785400000-103-202611220630.gz (published 2026-11-22T06:30:00+02:00, store 103): ItemCode=7290012911095, price=12.9, pack=500.0 ml",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "shufersal"
       }
@@ -171,7 +149,7 @@
         "packOverride": null,
         "unitPriceNorm": 0.01725,
         "priceUpdateTime": "2023-12-31T12:49:01",
-        "metadataSource": "PriceFull7290785400000-103-202611210630.gz (published 2026-11-21T06:30:00+02:00, store 103): ItemCode=7290015603522, price=6.9, pack=400.0 ml",
+        "metadataSource": "PriceFull7290785400000-103-202611220630.gz (published 2026-11-22T06:30:00+02:00, store 103): ItemCode=7290015603522, price=6.9, pack=400.0 ml",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "osher-ad"
       }
@@ -193,31 +171,9 @@
         "packOverride": null,
         "unitPriceNorm": 0.0845,
         "priceUpdateTime": "2025-04-08T18:06:45",
-        "metadataSource": "PriceFull7290785400000-103-202611210630.gz (published 2026-11-21T06:30:00+02:00, store 103): ItemCode=7290108503746, price=16.9, pack=200.0 g",
+        "metadataSource": "PriceFull7290785400000-103-202611220630.gz (published 2026-11-22T06:30:00+02:00, store 103): ItemCode=7290108503746, price=16.9, pack=200.0 g",
         "matchMethod": "exact-gtin",
         "matchedFromChain": "rami-levy"
-      }
-    },
-    "toasted sesame oil": {
-      "ingredient_name": "toasted sesame oil",
-      "keshet-teamim::103": {
-        "item_code": "7290012911804",
-        "gtin": "07290012911804",
-        "nameHe": "שמן שומשום 150 מל",
-        "brand": "גואנגדונג גוד טייסט",
-        "packPrice": 15.9,
-        "packQty": 150.0,
-        "packUnit": "ml",
-        "packBasis": "feed quantity and product name agree",
-        "isWeighted": false,
-        "selectionSource": "assistant",
-        "selectionNote": null,
-        "packOverride": null,
-        "unitPriceNorm": 0.106,
-        "priceUpdateTime": "2026-03-01T11:04:57",
-        "metadataSource": "PriceFull7290785400000-103-202611210630.gz (published 2026-11-21T06:30:00+02:00, store 103): ItemCode=7290012911804, price=15.9, pack=150.0 ml",
-        "matchMethod": "exact-gtin",
-        "matchedFromChain": "shufersal"
       }
     }
   },
